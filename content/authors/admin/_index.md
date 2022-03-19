@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Antonio Sberna
+title: Antonio P. Sberna
 
 # Is this the primary user of the site?
 superuser: true

@@ -11,10 +11,10 @@ main:
     url: '#education'
     weight: 20
   - name: Publications
-    url: '#publications'
+    url: '#paper'
     weight: 30
   - name: Conference
-    url: '#conference'
+    url: '#proceeding'
     weight: 40
   - name: Activities
     url: '#activities'
