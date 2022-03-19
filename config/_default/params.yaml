@@ -17,11 +17,11 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    org_name: 'Politecnico di Torino'
+    description: 'Personal webpage of Antonio Sberna'
+    twitter: 'AntonioSberna'
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-0KQK65HRRE'
     baidu_tongji: ''
   verification:
     google: ''
@@ -41,9 +41,9 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Antonio P. Sberna' #. This work is licensed under {license}'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
@@ -51,8 +51,8 @@ footer:
 # Localization
 
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: '02 January 2006'
+  time_format: '15:04'
   address_format: en-us
 
 # Site features
@@ -70,7 +70,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/AntonioSberna/PersonalWebPageSource'
     content_dir: content
     branch: master
   avatar:
@@ -91,7 +91,7 @@ features:
       index_name: ''
       show_logo: false
   map:
-    provider: ''
+    provider: 'mapnik'
     api_key: ''
     zoom: 15
 
