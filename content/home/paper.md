@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 90
 
-title: Papers in International Journals
-subtitle: ''
+title: Papers
+subtitle: in International Peer-Review Journals
 
 content:
   # Filter on criteria
@@ -32,7 +32,7 @@ content:
   order: desc
 design:
   # Choose a view for the listings:
-  view: 4
+  view: 5
   columns: '2'
 
 

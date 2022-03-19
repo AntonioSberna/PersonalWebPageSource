@@ -17,7 +17,7 @@ main:
     url: '#proceeding'
     weight: 40
   - name: Activities
-    url: '#activities'
+    url: '#activity'
     weight: 50
   - name: Contact
     url: '#contact'

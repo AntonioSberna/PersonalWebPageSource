@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 90
 
-title: Proceeding in National and International Conferences
-subtitle: ''
+title: Proceedings
+subtitle: in National and International Conferences
 
 content:
   # Filter on criteria
