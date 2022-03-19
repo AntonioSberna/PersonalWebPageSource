@@ -3,8 +3,8 @@
 
 <svg
    width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   height="202mm"
+   viewBox="0 0 210 202"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
@@ -23,15 +23,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.17861602"
-     inkscape:cx="-257.53569"
-     inkscape:cy="876.1812"
+     inkscape:zoom="0.71446408"
+     inkscape:cx="340.11507"
+     inkscape:cy="387.00336"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     height="296mm" />
   <defs
      id="defs2" />
   <g
@@ -39,14 +40,14 @@
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.294178"
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.110035"
        id="path1489"
-       cx="171.83041"
-       cy="102.2095"
-       rx="278.4838"
-       ry="268.11472" />
+       cx="105.2494"
+       cy="101.28276"
+       rx="104.16486"
+       ry="100.28638" />
     <g
-       transform="matrix(0.03527778,0,0,-0.03527778,-73.015881,334.60028)"
+       transform="matrix(0.0131954,0,0,-0.0131954,13.666418,188.20685)"
        fill="#000000"
        stroke="none"
        id="g975">
