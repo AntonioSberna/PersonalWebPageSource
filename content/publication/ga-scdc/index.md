@@ -70,3 +70,14 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+
+
+## **Highlights**
+
+* A new genetic-algorithm based framework to optimize of retrofitting interventions in RC structures is presented.
+* The method minimizes retrofitting-related costs for steel-jacketing of reinforced concrete columns.
+* The framework efficaciously provides retrofitting optimization for RC structures with shear and ductility lacks.
+* Specific genetic operators and functions have been developed and calibrated.
+* It is proved that the framework can effectively reduce the intervention costs maintaining structural safety.
+* The framework can be a support for engineers in designing efficient existing structures seismic retrofitting.

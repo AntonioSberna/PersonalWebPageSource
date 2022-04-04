@@ -96,7 +96,3 @@ slides: ""
 
 * The framework can be used by practitioners as a tool for sustainable retrofitting interventions.
 
-
-## **Abstract**
-
-Retrofitting of existing reinforced concrete (RC) frame structures by steel angles and battens (steel-jacketing) is a commonly employed technique used to retrofit beams and columns against gravity and seismic loads. Steel-jacketing (SJ) effectively provides additional deformation and strength capacity to RC members but its application is associated with noticeable downtime of the building and non-negligible costs, depending on the amount of structural and non-structural manufacturing and materials. This paper presents an optimization framework aimed at the minimization of seismic retrofitting-related costs by an optimal placement (topological optimization) and amount of steel-jacketing reinforcement. In the proposed framework a 3D RC frame fiber-section model implemented in OpenSees is handled by a genetic algorithm routine that iterates reinforcement configurations to match the optimal solution. The feasibility of each solution is controlled by the outcomes of a static pushover analysis in the framework of N2 method. Results will provide optimized location and amount of steel-jacketing reinforcement, showing how effective and sustainable reduction of retrofitting costs is achievable maintaining a specified safety level.
