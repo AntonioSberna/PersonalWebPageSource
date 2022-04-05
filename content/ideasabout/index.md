@@ -1,12 +1,12 @@
 ---
-title: Ideas of ...
+title: Ideas about ...
 summary: This is just a container place where I collect ideas and notes about things I know little about but that I would like to deepen.
 date: "2022-01-01T00:00:00Z"
 
 
-reading_time: false  # Show estimated reading time?
+reading_time: 1 min  # Show estimated reading time?
 share: false  # Show social sharing links?
-profile: true  # Show author profile?
+profile: false  # Show author profile?
 comments: false  # Show comments?
 
 # Optional header image (relative to `assets/media/` folder).
