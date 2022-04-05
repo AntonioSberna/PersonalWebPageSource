@@ -53,6 +53,13 @@ in Structural Dynamics and Earthquake Engineering*, streamed from Athens (Greece
 * **2022 Spring** [Safety assessment and retrofitting of existing structures and infrastructures](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLMX&p_a_acc=2022), Politecnico di Torino
 
 
+### Chapter in didactic books
+---
+
+* [Metodi di analisi strutturale - Sistemi di Travi e Telai Piani](https://www.clut.it/ita/architettura-ingegneria-civile-edile-urbanistica-museografia/-/metodi-di-analisi-strutturale-sistemi-di-travi-e-telai-piani/503.html) - Fabio Di Trapani, CLUT 2022
+
+
+
 
 ### Thesis advisor
 ---
