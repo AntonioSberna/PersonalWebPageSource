@@ -34,10 +34,12 @@ in Structural Dynamics and Earthquake Engineering*, streamed from Athens (Greece
 
 
 
-### Organizing committee of international conference
+### Organizing committee of international conferences and courses
 ---
 
+* [*Summer School - 7th International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5th-6th July 2022.
 * [*2nd EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7th-8th July 2022.
+
 
 
 
