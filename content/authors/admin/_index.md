@@ -14,7 +14,7 @@ organizations:
   url: https://www.polito.it/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My current research interests include structural optimization of retrofitting interventions in existing structures.
+bio: PhD Student of Civil and Environmental Engineering (Structural Design) at Polytechnic University of Turin
 
 # Interests to show in About widget
 interests:
@@ -72,6 +72,6 @@ email: "antonio.sberna@polito.it"
 highlight_name: true
 ---
 
-Antonio P. Sberna is a PhD student of Civil and Environmental Engineering at the Polytechnic University of Turin. His current research interest regards optimization of seismic retrofitting in existing structures. 
+Antonio P. Sberna is a PhD student of Civil and Environmental Engineering (Structural design) at the Polytechnic University of Turin. His current research interest regard structural optimization, in particular his currently working on optimization of seismic retrofitting interventions in existing structures. 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/cv.pdf" "newtab" >}}resumé{{< /staticref >}}.
