@@ -18,6 +18,7 @@ content:
 
   # Contact details (edit or remove options as required)
   email: antonio.sberna@polito.it
+  phone: +39 011 090 5323
   address:
     street: Corso Duca degli Abruzzi 24
     city: Turin
@@ -27,7 +28,7 @@ content:
   coordinates:
     latitude: '45.062612'
     longitude: '7.661687'
-  directions: DISEG door 3, floor 4
+  directions: DISEG door 3, floor 4,  intercom 5323
 
     
 design:

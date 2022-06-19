@@ -25,7 +25,7 @@ publication_short: ""
 abstract: "Design of seismic retrofitting of reinforced concrete (RC) structures compares structural safety on the one hand, and costs on the other. Steel-jacketing (SJ) is a very common and effective retrofitting technique, used to provide additional ductility and shear capacity to concrete members. However, its application is associated with significant invasiveness and noticeable economical and downtime costs limiting its sustainability. In this paper a new specific optimization framework addressing the minimization of seismic retrofitting-related costs is developed and presented. A new genetic algorithm routine is defined by developing modified genetic operators capable of addressing retrofitting optimization both for RC structures with ductility-critical and shear-critical RC columns, including additional shear demand due to infill-frame interaction. The framework provides the position of the column to retrofit and amount of steel-jacketing reinforcement so that the intervention costs are minimized. Applications of the framework are finally proposed with different case study structures. Results will show that the proposed approach is sufficiently general and robust to handle structural configuration having significantly different structural deficiencies and also that sustainability of retrofitting intervention is achievable by means of artificial intelligence aided optimization."
 
 # Summary. An optional shortened abstract.
-summary: "A new framework to optimize retrofitting interventions for RC structures with shear and ductility lacks."
+summary: "A new framework to optimize retrofitting interventions for RC structures with shear and ductility lacks"
 
 tags: []
 categories: []
