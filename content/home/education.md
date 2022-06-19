@@ -57,7 +57,7 @@ experience:
     date_end: '2017-04-05'
     description: |2-
       Bachelor thesis (in italian): *Influenza dello sforzo normale sul collasso plastico di strutture intelaiate
-      (Effect of axial load on the plastic collapse of frame structures)*
+      (Effect of axial load on the plastic analysis of frame structures)*
       
       Advisor: Prof. Annalisa Greco
 
