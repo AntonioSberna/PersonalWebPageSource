@@ -18,6 +18,7 @@ bio: PhD Student of Civil and Environmental Engineering (Structural Design) at P
 
 # Interests to show in About widget
 interests:
+- Structural Design
 - Earthquake Engineering
 - Structural Optimization
 - Computer-aided structural design

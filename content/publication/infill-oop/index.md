@@ -9,7 +9,7 @@ authors:
   - admin
   - Gabriele Bertagnoli
 date: 2021-08-01T00:00:01+01:00
-doi: ""
+doi: "10.1016/j.engstruct.2022.114422"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2021-06-03T00:00:01+01:00
@@ -41,7 +41,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: 
+url_pdf: https://authors.elsevier.com/c/1fPEw_3DEQ3L-M
 url_code:
 url_dataset:
 url_poster:
@@ -75,5 +75,18 @@ slides: ""
 
 
 
+
+
 ## **Highlights**
 
+* A new empirical formulation for the evaluation of the out-of-plane resistance of masonry infills is presented.
+
+* The formula is based on a hybrid dataset made of real experimental tests and refined numerical simulations.
+
+* An in-depth finite element investigation is carried out with a refined micromodel properly validated.
+
+* The new formula takes into account the effect of vertical loads on the out-of-plane resistance of infills.
+
+* A conversion factor is introduced to compare point-load and distributed load out-of-plane tests.
+
+* A comparison with literature models confirms large improvement of predictive capacity by the proposed model.

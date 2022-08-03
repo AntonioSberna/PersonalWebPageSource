@@ -7,7 +7,7 @@ authors:
   - admin
   - Giuseppe C. Marano
 date: 2021-08-02T00:00:01+01:01
-doi: ""
+doi: "10.1016/j.compstruc.2022.106855"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2021-06-03T00:00:01+01:01
@@ -39,7 +39,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: 
+url_pdf: https://authors.elsevier.com/c/1fTYoAQPs3lC6
 url_code:
 url_dataset:
 url_poster:
@@ -73,5 +73,18 @@ slides: ""
 
 
 
+
+
 ## **Highlights**
 
+* An novel AI-based framework for the seismic retrofitting cost optimization of RC buildings is proposed.
+
+* The framework also controls service life cost through the evaluation of the expected annual loss (EAL).
+
+* The method can provide multiple topological and sizing optimization of the reinforcement.
+
+* The optimization process is based on a genetic algorithm handling a fiber-section model realized in OpenSees.
+
+* The application of the method can effectively reduce retrofitting costs maintaining a specified EAL.
+
+* The framework can be implemented as a tool for cost-effective and sustainable design of retrofitting.
