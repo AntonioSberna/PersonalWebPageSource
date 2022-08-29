@@ -20,7 +20,7 @@ publishDate: 2020-06-25T00:00:00+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "IWSS2020 - 1st Italian Workshop on Shell and Spatial Structures, 25th-26th June 2020"
+publication: "IWSS2020 - 1<sup>st</sup> Italian Workshop on Shell and Spatial Structures, 25<sup>th</sup>-26<sup>th</sup> June 2020"
 publication_short: ""
 
 abstract: ""

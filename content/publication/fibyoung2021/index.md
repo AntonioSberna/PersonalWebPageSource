@@ -19,7 +19,7 @@ publishDate: 2021-11-18T00:00:01+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "2nd Symposium on Concrete and Concrete Structures, 18th-19th November 2021"
+publication: "2<sup>nd</sup> Symposium on Concrete and Concrete Structures, 18<sup>th</sup>-19<sup>th</sup> November 2021"
 publication_short: ""
 
 abstract: ""

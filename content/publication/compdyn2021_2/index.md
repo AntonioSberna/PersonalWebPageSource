@@ -19,7 +19,7 @@ publishDate: 2021-06-28T00:00:01+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "COMPDYN2021 - 8th ECCOMAS International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering, 28th-30th June 2021"
+publication: "COMPDYN2021 - 8<sup>th</sup> ECCOMAS International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering, 28<sup>th</sup>-30<sup>th</sup> June 2021"
 publication_short: ""
 
 abstract: ""

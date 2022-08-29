@@ -19,7 +19,7 @@ publishDate: 2021-05-26T00:00:01+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "IGF26 - 26th International Conference on Fracture and Structural Integrity, 26th-31st May 2021"
+publication: "IGF26 - 26<sup>th</sup> International Conference on Fracture and Structural Integrity, 26<sup>th</sup>-31<sup>st</sup> May 2021"
 publication_short: ""
 
 abstract: ""

@@ -20,7 +20,7 @@ publishDate: 2021-04-14T00:00:01+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Italian Concrete Days 2020 14th-16th April 2021"
+publication: "Italian Concrete Days 2020 14<sup>th</sup>-16<sup>th</sup> April 2021"
 publication_short: ""
 
 abstract: ""

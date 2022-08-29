@@ -21,7 +21,7 @@ publishDate: 2021-08-29T00:00:01+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "EUROSTRUCT2021 - 1st Conference of the European Association on Quality Control of Bridges and Structures, 29th-1st September 2021"
+publication: "EUROSTRUCT2021 - 1<sup>st</sup> Conference of the European Association on Quality Control of Bridges and Structures, 29<sup>th</sup>-1<sup>st</sup> September 2021"
 publication_short: ""
 
 abstract: ""
