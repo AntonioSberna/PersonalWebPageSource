@@ -29,8 +29,10 @@ design:
 
 * **Aug 2022** [*14<sup>th</sup> Computational Structures Technology*](https://www.cstconference.com/), Montpellier (France)
 
-<!-- * **Sep 2022** [*3<sup>rd</sup> European Conference on Earthquake Engineering and Seismology*](https://3ecees.ro/), Bucharest (Romania) -->
-<!-- * **Sep 2022** [*19<sup>rd</sup> Italian Conference on Earthquake Engineering*](http://convegno.anidis.it/index.php/anidis/2022), Turin (Italy)  -->
+<!-- * **Sep 2022** [*3<sup>rd</sup> European Conference on Earthquake Engineering and Seismology*](https://3ecees.ro/), Bucharest (Romania)
+ -->
+<!-- * **Sep 2022** [*19<sup>rd</sup> Italian Conference on Earthquake Engineering*](http://convegno.anidis.it/index.php/anidis/2022), Turin (Italy)
+  -->
 
 
 
@@ -65,7 +67,7 @@ design:
 ### Chapter in didactic books
 ---
 
-* [Metodi di analisi strutturale - Sistemi di Travi e Telai Piani](https://www.clut.it/ita/architettura-ingegneria-civile-edile-urbanistica-museografia/-/metodi-di-analisi-strutturale-sistemi-di-travi-e-telai-piani/503.html) - Fabio Di Trapani, CLUT 2022
+* Chapter 6 - [Metodi di analisi strutturale - Sistemi di Travi e Telai Piani](https://www.clut.it/ita/architettura-ingegneria-civile-edile-urbanistica-museografia/-/metodi-di-analisi-strutturale-sistemi-di-travi-e-telai-piani/503.html) - Fabio Di Trapani, CLUT 2022 
 
 
 
