@@ -46,8 +46,8 @@ design:
 ### Organizing committee of international conferences and courses
 ---
 
-* [*Summer School - 7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5th-6th July 2022.
-* [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7th-8th July 2022.
+* [*Summer School - 7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
+* [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7<sup>th</sup>-8<sup>th</sup> July 2022.
 
 
 
