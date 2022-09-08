@@ -48,7 +48,7 @@ social:
   link: '/#contact'
 - icon: graduation-cap
   icon_pack: fas
-  link: https://www.diseg.polito.it/personale/scheda/(nominativo)/antonio.sberna 
+  link: https://www.diseg.polito.it/en/personale/scheda/(nominativo)/antonio.sberna 
 - icon: scopus
   icon_pack: ai
   link: https://www.scopus.com/authid/detail.uri?authorId=57217025383
