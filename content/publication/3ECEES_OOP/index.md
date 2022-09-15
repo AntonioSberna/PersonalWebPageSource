@@ -1,16 +1,18 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Expected Annual Loss oriented seismic retrofitting optimization of RC frame structures using a new AI-based framework"
+title: "Predictive equations for the out‐of-plane resistance of masonry infills in RC frames by a data‐driven approach"
 authors:
   - Di Trapani Fabio
+  - Vizzino Alessandro
+  - Tomaselli Giovanni 
   - admin
-  - Marano Giuseppe C
-date: 2021-06-28T00:00:01+01:00
+  - Bertagnoli Gabriele
+date: 2022-09-06T00:00:01+01:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-06-28T00:00:01+01:00
+publishDate: 2022-09-06T00:00:01+01:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -19,7 +21,7 @@ publishDate: 2021-06-28T00:00:01+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "COMPDYN2021 - 8<sup>th</sup> ECCOMAS International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering, 28<sup>th</sup>-30<sup>th</sup> June 2021 | streamed from Athens (Greece)"
+publication: "3ECEES - 3<sup>rd</sup> European conference on Earthquake Engineering and Seismology, 4<sup>th</sup>-9<sup>th</sup> September 2022 | Bucharest (Romania)"
 publication_short: ""
 
 abstract: ""
@@ -39,13 +41,13 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://3ecees.ro/wp-content/uploads/2022/08/Proceedings_3ECEES_2022.pdf
 url_code:
 url_dataset:
 url_poster:
 url_project:
 url_slides:
-url_source: https://2021.compdyn.org/files/uploads/general/2021_programme.pdf
+url_source: https://3ecees.ro/program/
 url_video:
 
 # Featured image

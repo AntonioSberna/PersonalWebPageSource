@@ -29,10 +29,9 @@ design:
 
 * **Aug 2022** [*14<sup>th</sup> Computational Structures Technology*](https://www.cstconference.com/), Montpellier (France)
 
-<!-- * **Sep 2022** [*3<sup>rd</sup> European Conference on Earthquake Engineering and Seismology*](https://3ecees.ro/), Bucharest (Romania)
- -->
-<!-- * **Sep 2022** [*19<sup>rd</sup> Italian Conference on Earthquake Engineering*](http://convegno.anidis.it/index.php/anidis/2022), Turin (Italy)
-  -->
+* **Sep 2022** [*3<sup>rd</sup> European Conference on Earthquake Engineering & Seismology*](https://3ecees.ro/), Bucharest (Romania)
+
+* **Sep 2022** [*19<sup>rd</sup> Italian Conference on Earthquake Engineering*](http://convegno.anidis.it/index.php/anidis/2022), Turin (Italy)
 
 
 
