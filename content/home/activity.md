@@ -18,11 +18,6 @@ design:
 
 * **Jun 2021** [*COMPDYN 2021 - 8<sup>th</sup> International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering*](https://2021.compdyn.org/), streamed from Athens (Greece)
 
-
-* **July 2021** [*6<sup>th</sup>International course on Seismic Analysis of Structures using OpenSees*](https://www.researchgate.net/profile/Giovanni-Minafo/project/6th-International-Course-on-Seismic-Analysis-of-Structures-using-OpenSees-Finite-element-based-framework-and-civil-engineering-University-of-Palermo/attachment/60cddd7f6160740001e41d10/AS:1036382780792833@1624104318985/download/Progr_OpenSees2021_Palermo_def.pdf?context=ProjectUpdatesLog)
-(as tutor), University of Palermo (Italy)
-
-
 * **Nov 2021** [*2<sup>nd</sup> FIB Symposium on Concrete and Concrete Structures*](http://fibitaliayoung.it/index.php/symposium-2021-english-version/), Rome (Italy)
 
 * **Jul 2022** [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy)
@@ -31,7 +26,7 @@ design:
 
 * **Sep 2022** [*3<sup>rd</sup> European Conference on Earthquake Engineering & Seismology*](https://3ecees.ro/), Bucharest (Romania)
 
-* **Sep 2022** [*19<sup>rd</sup> Italian Conference on Earthquake Engineering*](http://convegno.anidis.it/index.php/anidis/2022), Turin (Italy)
+* **Sep 2022** [*19<sup>th</sup> Italian Conference on Earthquake Engineering*](http://convegno.anidis.it/index.php/anidis/2022), Turin (Italy)
 
 
 
@@ -44,9 +39,11 @@ design:
 
 ### Organizing committee of international conferences and courses
 ---
+* **Tutor** [*6<sup>th</sup>International course on "Seismic Analysis of Structures using OpenSees"*](https://www.researchgate.net/profile/Giovanni-Minafo/project/6th-International-Course-on-Seismic-Analysis-of-Structures-using-OpenSees-Finite-element-based-framework-and-civil-engineering-University-of-Palermo/attachment/60cddd7f6160740001e41d10/AS:1036382780792833@1624104318985/download/Progr_OpenSees2021_Palermo_def.pdf?context=ProjectUpdatesLog)
+, Palermo (Italy), 19<sup>th</sup>-22<sup>th</sup> July 2020.
 
-* [*Summer School - 7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
-* [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7<sup>th</sup>-8<sup>th</sup> July 2022.
+* **Scientific and Organizing committee** [*7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
+* **Organizing committee** [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7<sup>th</sup>-8<sup>th</sup> July 2022.
 
 
 

@@ -75,4 +75,4 @@ highlight_name: true
 
 Antonio P. Sberna is a PhD student of Civil and Environmental Engineering (Structural design) at the Polytechnic University of Turin. His current research interest regard structural optimization, in particular his currently working on optimization of seismic retrofitting interventions in existing structures. 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/cv.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/cv_Sberna_Antonio.pdf" "newtab" >}}resumé{{< /staticref >}}.
