@@ -20,7 +20,7 @@ publishDate: 2022-08-23T00:00:01+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "CST - 14<sup>th</sup> International Conference on Computational Structures Technology, 23<sup>th</sup>-25<sup>th</sup> August 2022 | Montpellier (France)"
+publication: "CST - 14<sup>th</sup> International Conference on Computational Structures Technology, 23<sup>rd</sup>-25<sup>th</sup> August 2022 | Montpellier (France)"
 publication_short: ""
 
 abstract: ""
