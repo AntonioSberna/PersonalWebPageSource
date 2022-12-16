@@ -41,7 +41,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Antonio P. Sberna <a rel="me" href="https://mastodon.uno/@antoniosberna">Mastodon</a>' #. This work is licensed under {license}'
+    notice: '© {year} <a rel="me" href="https://mastodon.uno/@antoniosberna">Antonio P. Sberna</a>' #. This work is licensed under {license}'
     license:
       enable: false
       allow_derivatives: false
