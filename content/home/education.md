@@ -22,6 +22,17 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Visiting research
+    company: University of California in San Diego
+    company_url: 'https://structures.ucsd.edu/'
+    company_logo: ucsd
+    location: San Diego (US)
+    date_start: '2022-12-01'
+    date_end: '2022-06-15'
+    description: |2-
+      Research topic: *Seismic retrofit optimization of non-ductile RC buildings using soft-computing techniques within the framework of probabilistic performance-based earthquake engineering.*
+
+      Advisor: Prof. Joel P. Conte
   - title: PhD in Civil and Environmental Engineering
     company: Polytechnic University of Turin
     company_url: 'https://www.polito.it/'
