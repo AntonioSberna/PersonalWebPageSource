@@ -22,7 +22,7 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Visiting research
+  - title: Visiting research period
     company: University of California in San Diego
     company_url: 'https://structures.ucsd.edu/'
     company_logo: ucsd
