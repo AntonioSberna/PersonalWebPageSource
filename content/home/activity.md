@@ -13,7 +13,7 @@ design:
 
 
 
-### Speaker in congresses, conferences and courses
+### Presentations in conferences and workshops
 ---
 
 * **Jun 2021** [*COMPDYN 2021 - 8<sup>th</sup> International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering*](https://2021.compdyn.org/), streamed from Athens (Greece)
@@ -28,7 +28,9 @@ design:
 
 * **Sep 2022** [*19<sup>th</sup> Italian Conference on Earthquake Engineering*](http://convegno.anidis.it/index.php/anidis/2022), Turin (Italy)
 
+* **Aug 2023** [*Engineering Mechanics Institute International Conference 2023*](https://emi2023ic.com/), Palermo (Italy)
 
+* **Jan 2024** [*Workshop - Recent research results using OpenSees*](https://www.linkedin.com/feed/update/urn:li:activity:7149133331433947136), University College London (UK)
 
 
 
@@ -43,7 +45,7 @@ design:
 , Palermo (Italy), 19<sup>th</sup>-22<sup>th</sup> July 2020.
 
 * **Scientific and Organizing committee** [*7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
-* **Organizing committee** [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7<sup>th</sup>-8<sup>th</sup> July 2022.
+* **Scientific and Organizing committee** [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7<sup>th</sup>-8<sup>th</sup> July 2022.
 
 
 
@@ -54,16 +56,16 @@ design:
 
 
 
-### Teaching assistance
+### Teaching activities
 ---
 
-* **2022 Spring** [Safety assessment and retrofitting of existing structures and infrastructures](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLMX&p_a_acc=2022), Politecnico di Torino
+* **2022 Spring** [*Tutor - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLMX&p_a_acc=2022), Politecnico di Torino
 
 
-### Chapter in didactic books
+### Books
 ---
 
-* Chapter 6 - [Metodi di analisi strutturale - Sistemi di Travi e Telai Piani](https://www.clut.it/ita/architettura-ingegneria-civile-edile-urbanistica-museografia/-/metodi-di-analisi-strutturale-sistemi-di-travi-e-telai-piani/503.html) - Fabio Di Trapani, CLUT 2022 
+* Chapter 6 - [Chapert in: *Metodi di analisi strutturale - Sistemi di Travi e Telai Piani* (in italian)](https://www.clut.it/ita/architettura-ingegneria-civile-edile-urbanistica-museografia/-/metodi-di-analisi-strutturale-sistemi-di-travi-e-telai-piani/503.html) - Fabio Di Trapani, CLUT 2022 
 
 
 
@@ -71,13 +73,15 @@ design:
 ### Thesis advisor
 ---
 
-* **Coletta Dario** [Ottimizzazione del rinforzo sismico di strutture in muratura mediante l'uso di algoritmi genetici](https://webthesis.biblio.polito.it/20663/), rel. Di Trapani Fabio, **Sberna Antonio P.**, Politecnico di Torino, 2021 
+* **Alexandre Milliet** [*Investigation of collapse resistance in tall timber buildings*](https://frangi.ibk.ethz.ch/de/forschung/reliability-of-glued-laminated-timber/robustness_highrise.html), rel. Cao Alex S., **Sberna Antonio P.**, ETH Zurich, 2023
+
+* **Coletta Dario** [*Ottimizzazione del rinforzo sismico di strutture in muratura mediante l'uso di algoritmi genetici*](https://webthesis.biblio.polito.it/20663/), rel. Di Trapani Fabio, **Sberna Antonio P.**, Politecnico di Torino, 2021 
 
 
 
-### Referee activity
+
+### Reviewer activity
 ---
+Peer-review for journal:
 
-I've been a reviewer for the journal:
-
-[Advances in Civil Engineering](https://www.hindawi.com/journals/ace/)
+[*Advances in Civil Engineering*](https://www.hindawi.com/journals/ace/)
