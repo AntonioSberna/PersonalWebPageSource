@@ -19,7 +19,7 @@ publishDate: 2022-09-11T00:00:01+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "3ECEES - 19<sup>th</sup> ANIDIS Conference - Seismic Engineering in Italy , 11<sup>th</sup>-15<sup>th</sup> September 2022 | Turin (Italy)"
+publication: "19<sup>th</sup> ANIDIS Conference - Seismic Engineering in Italy , 11<sup>th</sup>-15<sup>th</sup> September 2022 | Turin (Italy)"
 publication_short: ""
 
 abstract: ""
