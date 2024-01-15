@@ -28,7 +28,7 @@ experience:
     company_logo: ucsd
     location: San Diego (US)
     date_start: '2022-12-01'
-    date_end: ''
+    date_end: '2023-12-31'
     description: |2-
       Research topic: *Seismic retrofit optimization of non-ductile RC buildings using soft-computing techniques within the framework of probabilistic performance-based earthquake engineering.*
 
