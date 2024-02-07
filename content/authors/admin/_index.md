@@ -28,15 +28,19 @@ interests:
 # Education to show in About widget
 education:
   courses:
+  - course: Visiting researcher
+    institution: University of California San Diego
+    year: 2023
+    
   - course: PhD in Civil and Environmental Engineering
     institution: Polytechnic University of Turin
     year: current
-  - course: MEng in Civil Engineering
-    institution: Polytechnic University of Turin
-    year: 2020
-  - course: BSc in Civil and Environmental Engineering
-    institution: University of Catania
-    year: 2017
+  #- course: MEng in Civil Engineering 
+  #  institution: Polytechnic University of Turin
+  #  year: 2020
+  #- course: BSc in Civil and Environmental Engineering
+  #  institution: University of Catania
+  #  year: 2017
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
