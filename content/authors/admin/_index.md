@@ -77,7 +77,6 @@ email: "antonio.sberna@polito.it"
 highlight_name: true
 ---
 
-Antonio P. Sberna is a Ph.D. student of Civil and Environmental Engineering, with a focus on **Structural Design**, at the Polytechnic University of Turin in Italy. His current research interest regards structural optimization, in particular, he is currently working on the **optimization of seismic retrofitting interventions in existing structures**. He is currently spending a period as a visiting researcher at the University of California in San Diego focusing on performance-based design of seismic retrofitting interventions for non-ductile structures.
-
+Antonio P. Sberna is a Ph.D. student in Civil and Environmental Engineering, specializing in __structural design__ at the Polytechnic University of Turin in Italy. His research is centered on __structural optimization__, with a specific focus on enhancing __seismic retrofitting of existing structures__. He spent a period as a visiting researcher at the University of California, San Diego, where he contributed in __performance-based design methodologies__ for seismic retrofitting interventions in non-ductile structures.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/cv_Sberna_Antonio.pdf" "newtab" >}}resumé{{< /staticref >}}.
