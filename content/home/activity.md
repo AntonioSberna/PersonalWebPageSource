@@ -65,7 +65,7 @@ design:
 ### Books
 ---
 
-* Chapter 6 - [Chapert in: *Metodi di analisi strutturale - Sistemi di Travi e Telai Piani* (in italian)](https://www.clut.it/ita/architettura-ingegneria-civile-edile-urbanistica-museografia/-/metodi-di-analisi-strutturale-sistemi-di-travi-e-telai-piani/503.html) - Fabio Di Trapani, CLUT 2022 
+* Chapter 6 - [*Metodi di analisi strutturale - Sistemi di Travi e Telai Piani* (in italian)](https://www.clut.it/ita/architettura-ingegneria-civile-edile-urbanistica-museografia/-/metodi-di-analisi-strutturale-sistemi-di-travi-e-telai-piani/503.html) - Fabio Di Trapani, CLUT 2022 
 
 
 
