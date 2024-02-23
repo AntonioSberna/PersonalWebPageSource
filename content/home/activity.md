@@ -75,9 +75,9 @@ design:
 
 * **Coletta Dario** [*Ottimizzazione del rinforzo sismico di strutture in muratura mediante l'uso di algoritmi genetici*](https://webthesis.biblio.polito.it/20663/), rel. Di Trapani Fabio, **Sberna Antonio P.**, Politecnico di Torino, 2021 
 
-* **Alexandre Milliet** [*Investigation of collapse resistance in tall timber buildings*](https://frangi.ibk.ethz.ch/de/forschung/reliability-of-glued-laminated-timber/robustness_highrise.html), rel. Cao Alex S., **Sberna Antonio P.**, ETH Zurich, 2023
+* **Alexandre Milliet** [*Investigation of collapse resistance in tall timber buildings*](https://frangi.ibk.ethz.ch/de/forschung/reliability-of-glued-laminated-timber/robustness_highrise.html), rel. Frangi A., Cao Alex S., **Sberna Antonio P.**, ETH Zurich, 2023
 
-* **Cristian Marra** [*Thesis title to be defined*](), rel. Di Trapani Fabio, **Sberna Antonio P.**, Politecnico di Torino, 2024
+* **Cristian Marra** [*Definizione di modelli strutturali ridotti per l'analisi dinamica non lineare di strutture intelaiate in calcestruzzo armato*](https://webthesis.biblio.polito.it), rel. Di Trapani Fabio, **Sberna Antonio P.**, Politecnico di Torino, 2024
 
 
 
