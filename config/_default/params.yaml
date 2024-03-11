@@ -17,14 +17,14 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: 'Politecnico di Torino'
-    description: 'Personal webpage of Antonio Sberna'
+    org_name: Politecnico di Torino
+    description: Personal webpage of Antonio Sberna
     twitter: 'AntonioSberna'
   analytics:
-    google_analytics: 'G-V3BSP5QYMB'
+    google_analytics: G-V3BSP5QYMB
     baidu_tongji: ''
   verification:
-    google: 'google-site-verification=9zb7oGE_LV_Qw_l9tFk6_Xsk21lT5UP6SzGgWzzrvfA'
+    google: 6XqKr1idymMEsGiwK6TTZHtZRFdxkiqJYsecRj-LwXs
     baidu: ''
 
 # Site header
