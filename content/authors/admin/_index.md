@@ -62,12 +62,13 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/antonio-sberna/
+- icon: figshare
+  icon_pack: ai
+  link: https://www.webofscience.com/wos/author/record/HQY-4344-2023
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0001-7231-8382
-#- icon: cv
-#  icon_pack: ai
-#  link: uploads/cv.pdf
+
 
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)

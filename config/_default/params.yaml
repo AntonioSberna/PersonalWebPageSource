@@ -76,7 +76,7 @@ features:
   avatar:
     gravatar: false
     shape: circle
-  comment:
+  comment: 
     provider: ''
     disqus:
       shortname: ''
