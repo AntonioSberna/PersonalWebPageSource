@@ -88,3 +88,5 @@ Peer-review for the following international journals:
 * [*Advances in Civil Engineering*](https://www.hindawi.com/journals/ace/)
  
 * [*Journal of Asian Architecture and Building Engineering*](https://www.tandfonline.com/journals/tabe20)
+
+* [*Buildings*](https://www.mdpi.com/journal/buildings)
