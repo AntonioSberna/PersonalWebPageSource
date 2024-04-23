@@ -73,11 +73,13 @@ design:
 ### Thesis advisor
 ---
 
-* **Coletta Dario** [*Optimization of seismic reinforcement for masonry structures using genetic algorithms*](https://webthesis.biblio.polito.it/20663/), rel. Di Trapani Fabio, **Sberna Antonio P.**, Politecnico di Torino, 2021 
+* **Dario Coletta** [*Optimization of seismic reinforcement for masonry structures using genetic algorithms*](https://webthesis.biblio.polito.it/20663/), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2021 
 
-* **Alexandre Milliet** [*Investigation of collapse resistance in tall timber buildings*](https://frangi.ibk.ethz.ch/de/forschung/reliability-of-glued-laminated-timber/robustness_highrise.html), rel. Frangi A., Cao Alex S., **Sberna Antonio P.**, ETH Zurich, 2023
+* **Alexandre Milliet** [*Investigation of collapse resistance in tall timber buildings*](https://frangi.ibk.ethz.ch/de/forschung/reliability-of-glued-laminated-timber/robustness_highrise.html), supervisors: Frangi A., Cao A.S., **Sberna A.P.**, ETH Zurich, 2023
 
-* **Cristian Marra** [*Definition of reduced structural models for the nonlinear dynamic analysis of framed reinforced concrete structures*](https://webthesis.biblio.polito.it), rel. Di Trapani Fabio, **Sberna Antonio P.**, Politecnico di Torino, 2024
+* **Cristian Marra** [*Definition of reduced structural models for the nonlinear dynamic analysis of framed reinforced concrete structures*](https://webthesis.biblio.polito.it/31432/), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2024
+
+* **Santosh Shrestha** [*Calibration of a multi-strut macro model for seismic analysis of infilled reinforced concrete frames*](https://webthesis.biblio.polito.it/30754/), supervisors: Di Trapani F., **Sberna A.P.**, Di Benedetto M., Politecnico di Torino, 2024
 
 
 
