@@ -28,8 +28,8 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: ["structural optimization", "existing structures", "seismic retrofitting", "genetic algorithms", "masonry structures", "CRM", "OpenSees", "non-linear static analyses"]
+categories: ["conference proceeding"]
 featured: false
 
 # Custom links (optional).

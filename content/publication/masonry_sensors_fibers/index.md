@@ -29,8 +29,8 @@ experimentally tested by performing induced damage tests on two half-scale mason
 # Summary. An optional shortened abstract.
 summary: "Investigates innovative stress sensors for Structural Health Monitoring in masonry structures."
 
-tags: []
-categories: []
+tags: ["masonry structures", "sensors", "SHM", "OpenSees", "non-linear static analyses"]
+categories: ["Journal paper"]
 featured: false
 
 # Custom links (optional).

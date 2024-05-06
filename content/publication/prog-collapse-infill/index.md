@@ -32,8 +32,8 @@ abstract: "The response of reinforced concrete (RC) frame building structures to
 # Summary. An optional shortened abstract.
 summary: "An analysis of the effect of masonry infills on progressive collapse of RC frame structures"
 
-tags: []
-categories: []
+tags: ["progressive collapse", "masonry infills", "concrete structures", "OpenSees", "non-linear dynamic analysis"]
+categories: ["journal paper"]
 featured: false
 
 # Custom links (optional).

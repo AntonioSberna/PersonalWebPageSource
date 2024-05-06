@@ -29,8 +29,8 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: ["progressive collapse", "masonry infills", "concrete structures", "OpenSees", "non-linear dynamic analysis"]
+categories: ["conference proceeding"]
 featured: false
 
 # Custom links (optional).

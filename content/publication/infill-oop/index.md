@@ -29,8 +29,8 @@ abstract: "The paper presents a new empirical expression estimating the out-of-p
 # Summary. An optional shortened abstract.
 summary: "Genetic algorithm application to determine an empirical formulation for oop strenght of infills starting from a set of experimental and numerica results"
 
-tags: []
-categories: []
+tags: ["masonry infills", "out-of-plane", "genetic algorithms", "non-linear data fitting", "multivariate analysis"]
+categories: ["journal paper"]
 featured: false
 
 # Custom links (optional).

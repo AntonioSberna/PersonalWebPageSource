@@ -27,8 +27,8 @@ abstract: "The design of seismic retrofitting of existing structures (e.g. reinf
 # Summary. An optional shortened abstract.
 summary: "New advancement on the computer-aided design of seismic retrofitting intervention based on the evaluation of EAL"
 
-tags: []
-categories: []
+tags: ["structural optimization", "existing structures", "seismic retrofitting", "Expected Annual Losses", "genetic algorithms", "concrete structures", "FRP", "steel braces", "OpenSees", "non-linear static analyses"]
+categories: ["journal paper"]
 featured: false
 
 # Custom links (optional).

@@ -27,8 +27,8 @@ abstract: "The paper presents a novel optimization framework aimed at the minimi
 # Summary. An optional shortened abstract.
 summary: "New framework for the cost optimization of CRM retrofitting in masonry structures involving linear elastic analyses."
 
-tags: []
-categories: []
+tags: ["structural optimization", "existing structures", "seismic retrofitting", "genetic algorithms", "masonry structures", "CRM", "OpenSees", "non-linear static analyses"]
+categories: ["Journal paper"]
 featured: false
 
 # Custom links (optional).

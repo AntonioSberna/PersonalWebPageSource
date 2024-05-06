@@ -27,8 +27,8 @@ abstract: "Design of seismic retrofitting of reinforced concrete (RC) structures
 # Summary. An optional shortened abstract.
 summary: "A new framework to optimize retrofitting interventions for RC structures with shear and ductility lacks"
 
-tags: []
-categories: []
+tags: ["structural optimization", "existing structures", "seismic retrofitting", "genetic algorithms", "concrete structures", "steel jacketing", "OpenSees", "non-linear static analyses"]
+categories: ["journal paper"]
 featured: false
 
 # Custom links (optional).

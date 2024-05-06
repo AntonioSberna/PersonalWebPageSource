@@ -29,8 +29,8 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: ["masonry infills", "out-of-plane", "genetic algorithms", "non-linear data fitting", "multivariate analysis"]
+categories: ["conference proceeding"]
 featured: false
 
 # Custom links (optional).

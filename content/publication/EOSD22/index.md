@@ -31,8 +31,8 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: ["masonry infills", "concrete structures", "local effect", "OpenSees", "non-linear static analyses"]
+categories: ["conference proceeding"]
 featured: false
 
 # Custom links (optional).

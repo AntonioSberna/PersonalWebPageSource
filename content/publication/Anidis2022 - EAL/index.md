@@ -27,8 +27,8 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: ["structural optimization", "existing structures", "seismic retrofitting", "Expected Annual Losses", "genetic algorithms", "concrete structures", "FRP", "steel braces", "OpenSees", "non-linear static analyses"]
+categories: ["conference proceeding"]
 featured: false
 
 # Custom links (optional).

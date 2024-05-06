@@ -29,8 +29,8 @@ abstract: "Retrofitting of existing reinforced concrete (RC) frame structures by
 # Summary. An optional shortened abstract.
 summary: "The first application of genetic algorithms to pinpoint the optimal arrangement of steel jacketing retrofitting interventions on RC columns"
 
-tags: []
-categories: []
+tags: ["structural optimization", "existing structures", "seismic retrofitting", "genetic algorithms", "concrete structures", "steel jacketing", "OpenSees", "non-linear static analyses"]
+categories: ["journal paper"]
 featured: false
 
 # Custom links (optional).
