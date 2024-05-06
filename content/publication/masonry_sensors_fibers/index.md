@@ -79,5 +79,5 @@ slides: ""
 
 <!-- ## **Highlights**  -->
 
-## **Pubblication process state: **
-Apr 2023 - Submitted
+### Pubblication process state:
+* Apr 2023 - Submitted

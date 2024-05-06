@@ -39,7 +39,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://link.springer.com/journal/10518
+url_pdf: 
 url_code:
 url_dataset:
 url_poster:
@@ -89,7 +89,9 @@ slides: ""
 
 * The framework can be implemented as a tool for cost-effective and sustainable design of retrofitting. -->
 
-## **Pubblication process state: **
-Nov 2023 - Under review
-Jan 2024 - Minor revision suggested by both reviewers
-Apr 2024 - Accepted, in press
+### Pubblication process state:
+* Nov 2023 - Under review
+
+* Jan 2024 - Minor revision suggested by both reviewers
+
+* Apr 2024 - Accepted, in press
