@@ -22,7 +22,7 @@ publication_types: ["1"]
 publication: "19<sup>th</sup> ANIDIS Conference - Seismic Engineering in Italy , 11<sup>th</sup>-15<sup>th</sup> September 2022 | Turin (Italy)"
 publication_short: ""
 
-abstract: ""
+abstract: "The design of seismic retrofitting for existing reinforced concrete frame structures concerns the determination of the position and the arrangement of reinforcements. Currently, this design practice is mainly based on trial-and-error attempts and engineers’ experience, without a formal implementation of cost/performance optimization. Though, the implementation of this intervention is associated with significant costs, noticeable downtimes, and elevated invasiveness. This paper presents a new genetic algorithm-based framework for the optimization of two different retrofitting techniques (FRP column wrapping and concentric steel braces) that aims at minimizing costs considering indirectly the lessening of expected annual values. The feasibility of each tentative solution is controlled by the outcomes of static pushover analyses in the framework of the N2 method, achieved by a 3D fiber-section model implemented in OpenSees. Application of the framework in a realistic case study structure will show that the sustainability of retrofitting intervention is achievable by employing artificial intelligence aided structural design."
 
 # Summary. An optional shortened abstract.
 summary: ""

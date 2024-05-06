@@ -6,7 +6,7 @@ authors:
   - Di Trapani Fabio
   - admin
   - Demartino Cristoforo
-  - Marano Giuseppe C
+  - Marano Giuseppe C.
 date: 2022-09-06T00:00:01+01:00
 doi: ""
 
@@ -23,7 +23,7 @@ publication_types: ["1"]
 publication: "3ECEES - 3<sup>rd</sup> European conference on Earthquake Engineering and Seismology, 4<sup>th</sup>-9<sup>th</sup> September 2022 | Bucharest (Romania)"
 publication_short: ""
 
-abstract: ""
+abstract: "The design of seismic retrofitting of existing masonry structures concerns the determination of the position and the arrangement of reinforcements. Currently, this design  practice is mainly based on trial-and-error attempts and engineers’ experience, without a formal implementation of cost/performance optimization. However, retrofitting interventions are generally associated with relevant costs, significant invasiveness, and noticeable downtime. This paper presents a novel optimization framework aimed at the minimization of seismic retrofitting-related costs by an optimal placement (topological optimization) of reinforced plasters in masonry structures. In the proposed framework 3D equivalent masonry model implemented in OpenSees is handled by a genetic algorithm developed in MATLAB® routine that iterates reinforcement configurations to match the optimal solution. The feasibility of each solution is controlled by shear and flexural safety checks of masonry walls. The framework is finally tested with a real case study structure, showing the suitability of the algorithm to provide cost-effective retrofitting solutions."
 
 # Summary. An optional shortened abstract.
 summary: ""

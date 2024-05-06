@@ -22,7 +22,7 @@ publication_types: ["1"]
 publication: "2<sup>nd</sup> Symposium on Concrete and Concrete Structures, 18<sup>th</sup>-19<sup>th</sup> November 2021 | Rome (Italy)"
 publication_short: ""
 
-abstract: ""
+abstract: "The pressing necessity of enhancing the seismic safety of existing structures in earthquake-prone areas has led, in recent years, the research to propose a vast number of new retrofitting techniques. Though, the implementation of this intervention is associated with high costs, noticeable invasiveness, and signif-icant downtime. Currently, there are no formal methods to optimize these kinds of interventions thus, their design is entrusted only to engineers’ intuition. This paper presents a new genetic algorithm-based framework for the optimization of two different retrofitting techniques (FRP column wrapping and concentric steel bracings) that aims at minimizing costs considering indirectly the reduction of expected annual values."
 
 # Summary. An optional shortened abstract.
 summary: ""

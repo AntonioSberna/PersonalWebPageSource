@@ -23,7 +23,7 @@ publication_types: ["1"]
 publication: "Italian Concrete Days 2020 14<sup>th</sup>-16<sup>th</sup> April 2021 | streamed from Naples (Italy)"
 publication_short: ""
 
-abstract: ""
+abstract: "Currently retrofitting design of RC frame buildings is essentially based on engineering's intuition and experience, leading to a trial-and-error approach. This paper presents two frameworks for the engineered optimization of the seismic retrofitting for reinforced concrete buildings. The first one is directed at minimizing the intervention costs; the second one instead is based on the assessment of the expected annual loss.  Both applications are based on a genetic algorithm developed in MatLab that aims to characterize the optimal solution in terms of retrofitting position (topological optimization) and amount (sizing optimization). In both cases, the feasibility of each tentative solution is controlled by a static pushover analysis in the framework of the N2 method, achieved by a 3D fiber-section model realized in OpenSees. It is also shown, through different case studies, that the proposed methodologies are efficient to find optimal retrofitting configurations, significantly reducing invasiveness and downtime."
 
 # Summary. An optional shortened abstract.
 summary: ""

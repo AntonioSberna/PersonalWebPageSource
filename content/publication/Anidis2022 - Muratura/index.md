@@ -23,7 +23,7 @@ publication_types: ["1"]
 publication: "19<sup>th</sup> ANIDIS Conference - Seismic Engineering in Italy , 11<sup>th</sup>-15<sup>th</sup> September 2022 | Turin (Italy)"
 publication_short: ""
 
-abstract: ""
+abstract: "The pressing necessity of enhancing the seismic safety of existing masonry structures in earthquake-prone areas has led, in recent years, the research to propose a vast amount of new retrofitting techniques. However, retrofitting interventions are generally associated with important costs. Currently, there are no formal methods to optimize these interventions thus, their design is entrusted only to engineers’ intuition. This paper presents a novel optimization framework aimed at the minimization of seismic retrofitting-related costs by an optimal placement (topological optimization) of reinforced plasters in masonry structures. In the proposed framework a 3D equivalent masonry model implemented in OpenSees is handled by a genetic algorithm developed in MATLAB® routine that iterates reinforcement configurations to match the optimal solution. The feasibility of each solution is controlled by the outcomes of a seismic static equivalent analysis by controlling the safety check of masonry walls with respect to both flexural and shear collapse. It is also shown, through a case study, that the proposed approach is efficient to pinpoint optimal retrofitting configurations, significantly reducing invasiveness and downtime."
 
 # Summary. An optional shortened abstract.
 summary: ""

@@ -22,7 +22,7 @@ publication_types: ["1"]
 publication: "COMPDYN2021 - 8<sup>th</sup> ECCOMAS International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering, 28<sup>th</sup>-30<sup>th</sup> June 2021 | streamed from Athens (Greece)"
 publication_short: ""
 
-abstract: ""
+abstract: "The paper presents a new specific optimization framework that is directed at minimizing seismic retrofitting intervention costs of reinforced concrete (RC) frame structures. A genetic algorithm routine is developed to provide as outputs the individuation of the retrofitted columns (topological optimization) and amount of steel-jacketing reinforcement. The major novelty regards the framework's capacity to perform retrofitting optimization both for RC structures with ductility-critical and shear-critical RC columns, also considering the additional shear demand due to infill-frame interaction. Modified genetic operators (population generator, elitism, and mutation) are defined and calibrated to be effective and computationally sustainable. The feasibility of each tentative solution is controlled by a static pushover analysis in the framework of the N2 method, accomplished by a 3D fiber-section model implemented in OpenSees. It is shown that the proposed procedure is sufficiently general and robust to handle structural configurations having different structural deficiencies, significantly reducing invasiveness, downtime, and costs."
 
 # Summary. An optional shortened abstract.
 summary: ""

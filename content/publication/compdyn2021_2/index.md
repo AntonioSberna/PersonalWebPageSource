@@ -22,7 +22,7 @@ publication_types: ["1"]
 publication: "COMPDYN2021 - 8<sup>th</sup> ECCOMAS International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering, 28<sup>th</sup>-30<sup>th</sup> June 2021 | streamed from Athens (Greece)"
 publication_short: ""
 
-abstract: ""
+abstract: "The paper proposes a new genetic algorithm-based framework aimed at efficiently design mul- tiple seismic retrofitting interventions for reinforced concrete (RC) frame structures minimizing the costs of intervention. The feasibility of each tentative solution is assessed by considering in indirect way the expected annual loss (EAL). EAL evaluation is performed referring to different limit states whose repairing costs are expressed as a percentage of reconstruction costs and evaluating the respective mean annual frequency of exceedance. To effectively engage both serviceability and ultimate limit states, the compresence of two different retrofitting systems is considered. Steel bracings are used to increase the global stiffness of the structure and improve operational and damage limit states performance. FRP wrapping of columns is used to manage the life safety and collapse limit state demands. The optimization carried out by the novel AI- based framework implementing a genetic algorithm (GA). For both the retrofitting systems, their position within the structure (topological optimization) and their sizing are provided as output. Results will show that seismic retrofitting can be effectively optimized to minimize costs controlling the expected annual loss."
 
 # Summary. An optional shortened abstract.
 summary: ""

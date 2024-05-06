@@ -24,7 +24,7 @@ publication_types: ["1"]
 publication: "EUROSTRUCT2021 - 1<sup>st</sup> Conference of the European Association on Quality Control of Bridges and Structures, 29<sup>th</sup>-1<sup>st</sup> September 2021 | Padua (Italy)"
 publication_short: ""
 
-abstract: ""
+abstract: "Building structures response to accidental actions such as impact or explosions depends on their robustness, and redundancy of the structural sys- tem. When a column is lost, the initial structural configuration rapidly evolves into a different resisting system, and this occurs in a dynamic regime. The paper investigates the role of infilled frames in the dynamic response of a 2D frame subject to an instantaneous column removal case. A newly developed equiva- lent-strut approach is used to model the mechanical response of the infills. The simulations are carried out using the OpenSees software platform, comparing the dynamic responses with and without considering the influence of masonry infills. Results show that infill contribution provides substantial modification of the resisting mechanism and that they can be crucial to the limitation of the progressive collapse."
 
 # Summary. An optional shortened abstract.
 summary: ""

@@ -24,7 +24,7 @@ publication_types: ["1"]
 publication: "3ECEES - 3<sup>rd</sup> European conference on Earthquake Engineering and Seismology, 4<sup>th</sup>-9<sup>th</sup> September 2022 | Bucharest (Romania)"
 publication_short: ""
 
-abstract: ""
+abstract: "Assessment of the out-of-plane (OOP)  resistance of masonry infills is necessary to provide safety checks against their potential failure due to the inertial out-of-plane OOP forces. In this paper, a new empirical expression for the evaluation the out-of-plane resistance of infilled reinforced concrete frames subject to earthquake out-of-plane inertial forces is proposed. The new model is calibrated through an artificial intelligence-based optimization process based on a hybrid dataset, including both experimental data from real tests and numerical simulations from a refined FE micro-models realized in Abaqus environment. The new model takes into account the effect of vertical loads, the slenderness ratio and the aspect ratio of the infill and also introduces a specific conversion factor to uniformize the results from point-load and uniform load out-of-plane tests. Results presented in the paper will show a noticeable accuracy of the proposed model in estimating the ultimate out-of-plane load of a masonry infill wall, with respect to available models."
 
 # Summary. An optional shortened abstract.
 summary: ""

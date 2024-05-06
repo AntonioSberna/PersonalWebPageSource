@@ -23,7 +23,7 @@ publication_types: ["1"]
 publication: "IWSS2020 - 1<sup>st</sup> Italian Workshop on Shell and Spatial Structures, 25<sup>th</sup>-26<sup>th</sup> June 2020 | streamed from Turin (Italy)"
 publication_short: ""
 
-abstract: ""
+abstract: "The paper presents a new optimization framework which is aimed at obtaining minimization costs by optimizing the position and the amount of steel jacketing retrofitting. The proposed methodology is applied to the case study of a 3D RC frame realized in OpenSees and handled within the framework of a genetic algorithm optimization. The algorithm iterates geometric and mechanical parameters configurations, based on the outcomes of static pushover analysis, in order to match the optimal retrofitting solution, intended as the one minimizing the costs and, at the same time, maintaining a specified safety level. Results of the proposed framework will provide optimized location and amount of steel-jacketing reinforcement. It is finally shown that the use of engineering optimization methods can be effectively used to limit intervention costs without a substantial modification of structural safety.   "
 
 # Summary. An optional shortened abstract.
 summary: ""
