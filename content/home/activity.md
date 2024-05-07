@@ -96,3 +96,5 @@ Peer-review for the following international journals:
 * [*Buildings*](https://www.mdpi.com/journal/buildings)
 
 * [*Algorithms*](https://www.mdpi.com/journal/algorithms)
+
+* [*Modelling*](https://www.mdpi.com/journal/modelling)
