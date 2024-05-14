@@ -76,7 +76,6 @@ projects: []
 slides: ""
 ---
 
-<p align=center> <strong>Publication</strong>: Journal </p>
 <p align=center> <strong>Publication</strong>: in 
 <a href="https://www.sciencedirect.com/journal/structures"><strong>Structures</strong></a> vol <a href="https://www.sciencedirect.com/journal/structures/vol/54/suppl/C">54</a></br></br></p>
 
