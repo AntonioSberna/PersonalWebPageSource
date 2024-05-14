@@ -3,14 +3,16 @@
 
 title: "Cost-effective topology optimization of existing masonry structure seismic reinforcements by a new genetic algorithm-based framework"
 authors:
-  - Di Trapani Fabio
   - admin
+  - Cristoforo Demartino
+  - Ivo Vanzi
   - Giuseppe C. Marano
+  - Fabio Di Trapani 
 date: 2024-02-01T00:00:01+01:01
-doi: ""
+doi: "10.1007/s10518-024-01900-5"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2024-01-01T00:00:01+01:01
+publishDate: 2024-05-13T00:00:01+01:01
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -39,13 +41,13 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: 
+url_pdf: https://link.springer.com/content/pdf/10.1007/s10518-024-01900-5.pdf
 url_code:
 url_dataset:
 url_poster:
 url_project:
 url_slides:
-url_source:
+url_source: https://rdcu.be/dHSqk
 url_video:
 
 # Featured image
@@ -61,7 +63,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: []
+projects: ["seismic retrofitting optimization"]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -72,6 +74,9 @@ slides: ""
 ---
 
 
+
+<p align=center> <strong>Publication</strong>: in 
+<a href="https://link.springer.com/journal/10518"><strong>Bulletin of Earthquake Engineering</strong></a> vol <a href="https://link.springer.com/journal/10518/volumes-and-issues">22</a></br></br></p>
 
 
 
@@ -87,11 +92,11 @@ slides: ""
 
 * The application of the method can effectively reduce retrofitting costs maintaining a specified EAL.
 
-* The framework can be implemented as a tool for cost-effective and sustainable design of retrofitting. -->
+* The framework can be implemented as a tool for cost-effective and sustainable design of retrofitting. 
 
 ### Pubblication process state:
 * Nov 2023 - Under review
 
 * Jan 2024 - Minor revision suggested by both reviewers
 
-* Apr 2024 - Accepted, in press
+* Apr 2024 - Accepted, in press -->
