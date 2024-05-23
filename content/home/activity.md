@@ -98,3 +98,5 @@ Peer-review for the following international journals:
 * [*Algorithms*](https://www.mdpi.com/journal/algorithms)
 
 * [*Modelling*](https://www.mdpi.com/journal/modelling)
+
+* [*Symmetry*](https://www.mdpi.com/journal/Symmetry)
