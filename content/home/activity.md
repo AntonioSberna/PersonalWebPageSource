@@ -32,6 +32,12 @@ design:
 
 * **Jan 2024** [*Workshop - Recent research results using OpenSees*](https://www.linkedin.com/feed/update/urn:li:activity:7149133331433947136), University College London (UK)
 
+* **Jul 2024** [*World Conference of Earthquake Engineering 2024*](https://www.wcee2024.it/), Milan (Italy)
+
+* **Jul 2024** [*3<sup>th</sup> Structural Engineering Workshop*](/uploads/flyer_3rd_structural_engineering_workshop.pdf), Palermo (Italy)
+
+* **Jul 2024** [*6<sup>th</sup> Eurasian Conference on OpenSees*](https://www.eurasianopensees.com/beijing-2024/), Beijing (China)
+
 
 
 
@@ -41,17 +47,15 @@ design:
 
 ### Organizing committee of international conferences and courses
 ---
-* **Tutor** [*6<sup>th</sup>International course on "Seismic Analysis of Structures using OpenSees"*](https://www.researchgate.net/profile/Giovanni-Minafo/project/6th-International-Course-on-Seismic-Analysis-of-Structures-using-OpenSees-Finite-element-based-framework-and-civil-engineering-University-of-Palermo/attachment/60cddd7f6160740001e41d10/AS:1036382780792833@1624104318985/download/Progr_OpenSees2021_Palermo_def.pdf?context=ProjectUpdatesLog)
-, Palermo (Italy), 19<sup>th</sup>-22<sup>th</sup> July 2020.
+
 
 * **Scientific and Organizing committee** [*7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
 
 * **Scientific and Organizing committee** [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7<sup>th</sup>-8<sup>th</sup> July 2022.
 
-* **Organizing committee** [*3<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://www.eurasianopensees.com/eos-conference/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
+* **Scientific and Organizing committee** [*8<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://www.eurasianopensees.com/eos-course-2024/), Beijing (China), 22<sup>nd</sup>-23<sup>rd</sup> July 2024.
 
-
-
+* **Organizing committee** [*6<sup>th</sup> Eurasian Conference on OpenSees*](https://www.eurasianopensees.com/beijing-2024/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
 
 
 
@@ -61,7 +65,17 @@ design:
 ### Teaching activities
 ---
 
+* **2021 Summer** [*Tutor - 6<sup>th</sup> International course on "Seismic Analysis of Structures using OpenSees"*](https://www.researchgate.net/profile/Giovanni-Minafo/project/6th-International-Course-on-Seismic-Analysis-of-Structures-using-OpenSees-Finite-element-based-framework-and-civil-engineering-University-of-Palermo/attachment/60cddd7f6160740001e41d10/AS:1036382780792833@1624104318985/download/Progr_OpenSees2021_Palermo_def.pdf?context=ProjectUpdatesLog)
+, Palermo (Italy), 19<sup>th</sup>-22<sup>th</sup> July 2021.
+
 * **2022 Spring** [*Tutor - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLMX&p_a_acc=2022), Politecnico di Torino
+
+* **2022 Summer** [*Tutor - 7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
+
+* **2024 Spring** [*Tutor - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLVA&p_a_acc=2024&p_header=S&p_lang=IT&multi=N), Politecnico di Torino
+
+* **2024 Summer** [*8<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees*](https://www.eurasianopensees.com/eos-course-2024/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
+
 
 
 ### Books
