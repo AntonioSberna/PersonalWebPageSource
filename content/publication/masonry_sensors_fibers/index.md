@@ -7,11 +7,11 @@ authors:
   - Maria Concetta Oddo 
   - admin
   - Lidia La Mendola
-date: 2024-04-08T00:00:01+01:01
+date: 2024-10-25T00:00:01+01:01
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2024-04-08T00:00:01+01:01
+publishDate: 2024-09-24T00:00:01+01:01
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -41,13 +41,13 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: 
+url_pdf: https://authors.elsevier.com/c/1jq0o3O1E1YJt5
 url_code:
 url_dataset:
 url_poster:
 url_project:
 url_slides:
-url_source:
+url_source: https://www.sciencedirect.com/science/article/pii/S0950061824032197?dgcid=coauthor
 url_video:
 
 # Featured image
@@ -77,7 +77,14 @@ slides: ""
 
 
 
-<!-- ## **Highlights**  -->
+## **Highlights**  
 
-### Pubblication process state:
-* Apr 2023 - Submitted
+* Two types of stress sensors embedded in mortar joints are tested for real time monitoring of masonry structures.
+
+* Half scaled masonry wall specimens made of three piers were arranged with calcarenite and clay masonry.
+
+* Damage to the central pier was induced during the test by a progressive reduction of the cross-section.
+
+* A numerical micro-model is used as reference for comparison of vertical stress measures.
+
+* Simplified fiber-section equivalent frame modelling is validated as an effective approach for real time monitoring
