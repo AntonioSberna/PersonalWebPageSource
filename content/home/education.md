@@ -33,19 +33,19 @@ experience:
       Research topic: *Seismic retrofit optimization of non-ductile RC buildings using soft-computing techniques within the framework of probabilistic performance-based earthquake engineering.*
 
       Advisor: Prof. Joel P. Conte
-  - title: PhD in Civil and Environmental Engineering
+  - title: Ph.D. in Civil and Environmental Engineering
     company: Polytechnic University of Turin
     company_url: 'https://www.polito.it/'
     company_logo: poli
     location: Turin (Italy)
     date_start: '2020-10-01'
-    date_end: ''
+    date_end: '2024-09-23'
     description: |2-
       Research intererest: *Optimization of retrofitting intervention of existing structures. Artificial intelligence applications for seismic engineering and collapse risks reduction.*
 
       Advisors: Prof. Giuseppe Marano and Prof. Fabio Di Trapani
         
-  - title: MEng Civil Engineering (structures)
+  - title: M.Eng. Civil Engineering (structures)
     company: Polytechnic University of Turin
     company_url: 'https://www.polito.it/'
     company_logo: poli
@@ -59,7 +59,7 @@ experience:
 
     
         
-  - title: BSc Civil and Environmental Engineering
+  - title: B.Sc. Civil and Environmental Engineering
     company: University of Catania
     company_url: 'https://www.unict.it/'
     company_logo: unict

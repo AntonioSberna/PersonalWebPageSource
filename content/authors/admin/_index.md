@@ -6,7 +6,7 @@ title: Antonio P. Sberna
 superuser: true
 
 # Role/position/tagline
-role: PhD student of Structural Engineering
+role: Research fellow in Structural Engineering
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -14,7 +14,7 @@ organizations:
   url: https://www.polito.it/
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD Student of Civil and Environmental Engineering (Structural Design) at Polytechnic University of Turin
+bio: Research fellow in Structural Engineering at Polytechnic University of Turin
 
 # Interests to show in About widget
 interests:
@@ -28,13 +28,15 @@ interests:
 # Education to show in About widget
 education:
   courses:
+  - course: PhD in Civil and Environmental Engineering
+    institution: Polytechnic University of Turin
+    year: 2024
+
   - course: Visiting researcher
     institution: University of California San Diego
     year: 2023
     
-  - course: PhD in Civil and Environmental Engineering
-    institution: Polytechnic University of Turin
-    year: current
+
   #- course: MEng in Civil Engineering 
   #  institution: Polytechnic University of Turin
   #  year: 2020
@@ -78,6 +80,6 @@ email: "antonio.sberna@polito.it"
 highlight_name: true
 ---
 
-Antonio P. Sberna is a Ph.D. student in Civil and Environmental Engineering, specializing in __structural design__ at the Polytechnic University of Turin in Italy. His research is centered on __structural optimization__, with a specific focus on enhancing __seismic retrofitting of existing structures__. He spent a period as a visiting researcher at the University of California, San Diego, where he contributed in __performance-based design methodologies__ for seismic retrofitting interventions in non-ductile structures.
+Antonio P. Sberna is a Research Fellow of Structural Engineering at the Polytechnic University of Turin in Italy. His research activities mainly focus on __structural optimization__, with a specific focus on enhancing __seismic retrofitting design of existing structures__. He spent a period as a visiting researcher at the University of California, San Diego, where he contributed in __performance-based design methodologies__ for seismic retrofitting interventions in non-ductile structures.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/cv_Sberna_Antonio.pdf" "newtab" >}}resumé{{< /staticref >}}.
