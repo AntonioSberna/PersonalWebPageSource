@@ -18,7 +18,7 @@ content:
 
   # Contact details (edit or remove options as required)
   email: antonio.sberna@polito.it
-  phone: +39 011 090 5323
+  phone: +39 011 090 5302
   address:
     street: Corso Duca degli Abruzzi 24
     city: Turin
