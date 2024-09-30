@@ -28,7 +28,7 @@ content:
   coordinates:
     latitude: '45.062612'
     longitude: '7.661687'
-  directions: DISEG door 3, 4<sup>th</sup> floor,  intercom 5323
+  directions: DISEG door 3, 4<sup>th</sup> floor,  intercom 5302
 
     
 design:
