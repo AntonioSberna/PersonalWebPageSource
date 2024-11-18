@@ -82,6 +82,6 @@ slides: ""
 
 <!-- ## **Highlights**   -->
 
-## **Pubblication**
+## **Publication process**
 
 - Sept. 2024 Under review
