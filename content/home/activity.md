@@ -116,3 +116,5 @@ Peer-review for the following international journals:
 * [*AI*](https://www.mdpi.com/journal/ai)
 
 * [*Symmetry*](https://www.mdpi.com/journal/Symmetry)
+
+* [*Natural Hazards*](https://link.springer.com/journal/11069)
