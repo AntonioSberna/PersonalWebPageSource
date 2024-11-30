@@ -97,6 +97,7 @@ design:
 
 * **Santosh Shrestha** [*Calibration of a multi-strut macro model for seismic analysis of infilled reinforced concrete frames*](https://webthesis.biblio.polito.it/30754/), supervisors: Di Trapani F., **Sberna A.P.**, Di Benedetto M., Politecnico di Torino, 2024
 
+* **Fabio Fraschini** [*Development of a Graphical User Interface for the Analysis of Reinforced Concrete Sections*](https://github.com/AntonioSberna/RC-Section-Flex-GUI), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2024
 
 
 ### Reviewer activity
