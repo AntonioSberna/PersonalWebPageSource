@@ -119,3 +119,5 @@ Peer-review for the following international journals:
 * [*Symmetry*](https://www.mdpi.com/journal/Symmetry)
 
 * [*Natural Hazards*](https://link.springer.com/journal/11069)
+
+* [*Big Data and Cognitive Computing*](https://www.mdpi.com/journal/BDCC)
