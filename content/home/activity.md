@@ -121,3 +121,5 @@ Peer-review for the following international journals:
 * [*Natural Hazards*](https://link.springer.com/journal/11069)
 
 * [*Big Data and Cognitive Computing*](https://www.mdpi.com/journal/BDCC)
+
+* [Sustainability](https://www.mdpi.com/journal/sustainability)
