@@ -15,31 +15,27 @@ design:
 
 ### Presentations in conferences and workshops
 ---
-
-* **Jun 2021** [*COMPDYN 2021 - 8<sup>th</sup> International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering*](https://2021.compdyn.org/), streamed from Athens (Greece)
-
-* **Nov 2021** [*2<sup>nd</sup> FIB Symposium on Concrete and Concrete Structures*](http://fibitaliayoung.it/index.php/symposium-2021-english-version/), Rome (Italy)
-
-* **Jul 2022** [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy)
-
-* **Aug 2022** [*14<sup>th</sup> Computational Structures Technology*](https://www.cstconference.com/), Montpellier (France)
-
-* **Sep 2022** [*3<sup>rd</sup> European Conference on Earthquake Engineering & Seismology*](https://3ecees.ro/), Bucharest (Romania)
-
-* **Sep 2022** [*19<sup>th</sup> Italian Conference on Earthquake Engineering*](http://convegno.anidis.it/index.php/anidis/2022), Turin (Italy)
-
-* **Aug 2023** [*Engineering Mechanics Institute International Conference 2023*](https://emi2023ic.com/), Palermo (Italy)
-
-* **Jan 2024** [*Workshop - Recent research results using OpenSees*](https://www.linkedin.com/feed/update/urn:li:activity:7149133331433947136), University College London (UK)
-
-* **Jul 2024** [*World Conference of Earthquake Engineering 2024*](https://www.wcee2024.it/), Milan (Italy)
+* **Jul 2024** [*6<sup>th</sup> Eurasian Conference on OpenSees*](https://www.eurasianopensees.com/beijing-2024/), Beijing (China)
 
 * **Jul 2024** [*3<sup>th</sup> Structural Engineering Workshop*](/uploads/flyer_3rd_structural_engineering_workshop.pdf), Palermo (Italy)
 
-* **Jul 2024** [*6<sup>th</sup> Eurasian Conference on OpenSees*](https://www.eurasianopensees.com/beijing-2024/), Beijing (China)
+* **Jul 2024** [*World Conference of Earthquake Engineering 2024*](https://www.wcee2024.it/), Milan (Italy)
 
+* **Jan 2024** [*Workshop - Recent research results using OpenSees*](https://www.linkedin.com/feed/update/urn:li:activity:7149133331433947136), University College London (UK)
 
+* **Aug 2023** [*Engineering Mechanics Institute International Conference 2023*](https://emi2023ic.com/), Palermo (Italy)
 
+* **Sep 2022** [*19<sup>th</sup> Italian Conference on Earthquake Engineering*](http://convegno.anidis.it/index.php/anidis/2022), Turin (Italy)
+
+* **Sep 2022** [*3<sup>rd</sup> European Conference on Earthquake Engineering & Seismology*](https://3ecees.ro/), Bucharest (Romania)
+
+* **Aug 2022** [*14<sup>th</sup> Computational Structures Technology*](https://www.cstconference.com/), Montpellier (France)
+
+* **Jul 2022** [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy)
+
+* **Nov 2021** [*2<sup>nd</sup> FIB Symposium on Concrete and Concrete Structures*](http://fibitaliayoung.it/index.php/symposium-2021-english-version/), Rome (Italy)
+
+* **Jun 2021** [*COMPDYN 2021 - 8<sup>th</sup> International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering*](https://2021.compdyn.org/), streamed from Athens (Greece)
 
 
 
@@ -48,14 +44,13 @@ design:
 ### Organizing committee of international conferences and courses
 ---
 
-
-* **Scientific and Organizing committee** [*7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
-
-* **Scientific and Organizing committee** [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7<sup>th</sup>-8<sup>th</sup> July 2022.
+* **Organizing committee** [*6<sup>th</sup> Eurasian Conference on OpenSees*](https://www.eurasianopensees.com/beijing-2024/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
 
 * **Scientific and Organizing committee** [*8<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://www.eurasianopensees.com/eos-course-2024/), Beijing (China), 22<sup>nd</sup>-23<sup>rd</sup> July 2024.
 
-* **Organizing committee** [*6<sup>th</sup> Eurasian Conference on OpenSees*](https://www.eurasianopensees.com/beijing-2024/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
+* **Scientific and Organizing committee** [*2<sup>nd</sup> EOS Eurasian Conference on OpenSees*](https://eosd2022.weebly.com/), Turin (Italy), 7<sup>th</sup>-8<sup>th</sup> July 2022.
+
+* **Scientific and Organizing committee** [*7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
 
 
 
@@ -65,17 +60,15 @@ design:
 ### Teaching activities
 ---
 
-* **2021 Summer** [*Tutor - 6<sup>th</sup> International course on "Seismic Analysis of Structures using OpenSees"*](https://www.researchgate.net/profile/Giovanni-Minafo/project/6th-International-Course-on-Seismic-Analysis-of-Structures-using-OpenSees-Finite-element-based-framework-and-civil-engineering-University-of-Palermo/attachment/60cddd7f6160740001e41d10/AS:1036382780792833@1624104318985/download/Progr_OpenSees2021_Palermo_def.pdf?context=ProjectUpdatesLog)
-, Palermo (Italy), 19<sup>th</sup>-22<sup>th</sup> July 2021.
-
-* **2022 Spring** [*Tutor - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLMX&p_a_acc=2022), Politecnico di Torino
-
-* **2022 Summer** [*Tutor - 7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
+* **2024 Summer** [*8<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees*](https://www.eurasianopensees.com/eos-course-2024/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
 
 * **2024 Spring** [*Tutor - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLVA&p_a_acc=2024&p_header=S&p_lang=IT&multi=N), Politecnico di Torino
 
-* **2024 Summer** [*8<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees*](https://www.eurasianopensees.com/eos-course-2024/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
+* **2022 Summer** [*Tutor - 7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
 
+* **2022 Spring** [*Tutor - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLMX&p_a_acc=2022), Politecnico di Torino
+
+* **2021 Summer** [*Tutor - 6<sup>th</sup> International course on "Seismic Analysis of Structures using OpenSees"*](https://www.researchgate.net/profile/Giovanni-Minafo/project/6th-International-Course-on-Seismic-Analysis-of-Structures-using-OpenSees-Finite-element-based-framework-and-civil-engineering-University-of-Palermo/attachment/60cddd7f6160740001e41d10/AS:1036382780792833@1624104318985/download/Progr_OpenSees2021_Palermo_def.pdf?context=ProjectUpdatesLog), Palermo (Italy), 19<sup>th</sup>-22<sup>th</sup> July 2021.
 
 
 ### Books
@@ -89,16 +82,16 @@ design:
 ### Thesis advisor
 ---
 
-* **Dario Coletta** [*Optimization of seismic reinforcement for masonry structures using genetic algorithms*](https://webthesis.biblio.polito.it/20663/), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2021 
-
-* **Alexandre Milliet** [*Investigation of collapse resistance in tall timber buildings*](https://frangi.ibk.ethz.ch/de/forschung/reliability-of-glued-laminated-timber/robustness_highrise.html), supervisors: Frangi A., Cao A.S., **Sberna A.P.**, ETH Zurich, 2023
+* **Fabio Fraschini** [*Development of a Graphical User Interface for the Analysis of Reinforced Concrete Sections*](https://github.com/AntonioSberna/RC-Section-Flex-GUI), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2024
 
 * **Cristian Marra** [*Definition of reduced structural models for the nonlinear dynamic analysis of framed reinforced concrete structures*](https://webthesis.biblio.polito.it/31432/), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2024
 
 * **Santosh Shrestha** [*Calibration of a multi-strut macro model for seismic analysis of infilled reinforced concrete frames*](https://webthesis.biblio.polito.it/30754/), supervisors: Di Trapani F., **Sberna A.P.**, Di Benedetto M., Politecnico di Torino, 2024
 
-* **Fabio Fraschini** [*Development of a Graphical User Interface for the Analysis of Reinforced Concrete Sections*](https://github.com/AntonioSberna/RC-Section-Flex-GUI), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2024
+* **Alexandre Milliet** [*Investigation of collapse resistance in tall timber buildings*](https://frangi.ibk.ethz.ch/de/forschung/reliability-of-glued-laminated-timber/robustness_highrise.html), supervisors: Frangi A., Cao A.S., **Sberna A.P.**, ETH Zurich, 2023
 
+* **Dario Coletta** [*Optimization of seismic reinforcement for masonry structures using genetic algorithms*](https://webthesis.biblio.polito.it/20663/), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2021 
+  
 
 ### Reviewer activity
 ---
@@ -109,6 +102,8 @@ Peer-review for the following international journals:
 * [*Journal of Asian Architecture and Building Engineering*](https://www.tandfonline.com/journals/tabe20)
 
 * [*Buildings*](https://www.mdpi.com/journal/buildings)
+  
+* [*Natural Hazards*](https://link.springer.com/journal/11069)
 
 * [*Algorithms*](https://www.mdpi.com/journal/algorithms)
 
@@ -117,8 +112,6 @@ Peer-review for the following international journals:
 * [*AI*](https://www.mdpi.com/journal/ai)
 
 * [*Symmetry*](https://www.mdpi.com/journal/Symmetry)
-
-* [*Natural Hazards*](https://link.springer.com/journal/11069)
 
 * [*Big Data and Cognitive Computing*](https://www.mdpi.com/journal/BDCC)
 
