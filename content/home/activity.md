@@ -15,6 +15,11 @@ design:
 
 ### Presentations in conferences and workshops
 ---
+
+* **Jul 2025** [*10<sup>th</sup> International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering*](https://2025.compdyn.org/), Rhodes (Greece)
+
+* **Jun 2025** [*14<sup>th</sup> International Conference on Structural Safety and Reliability - ICOSSAR'25*](https://www.icossar2025.org/), Los Angeles (US)
+
 * **Jul 2024** [*6<sup>th</sup> Eurasian Conference on OpenSees*](https://www.eurasianopensees.com/beijing-2024/), Beijing (China)
 
 * **Jul 2024** [*3<sup>th</sup> Structural Engineering Workshop*](/uploads/flyer_3rd_structural_engineering_workshop.pdf), Palermo (Italy)
