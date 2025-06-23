@@ -7,11 +7,11 @@ authors:
   - Marilisa Di Benedetto
   - admin
   - Camata Guido
-date: 2024-11-01T00:00:01+01:00
+date: 2025-03-12T00:00:01+01:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2024-11-01T00:00:01+01:00
+publishDate: 2025-03-12T00:00:01+01:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -26,7 +26,7 @@ publication_short: "J Struct Eng"
 abstract: "The paper presents a practice-oriented analytical formulation to evaluate the additional and total shear demand due to frame-infill interaction under seismic loads. The model leverages the simple equivalent strut approach to model the infilled frame while estimating the actual shear demand with a straightforward analytical correction. The total shear demand is decomposed into the sum of the shear demand resulting from structural analysis and the additional demand due to the interaction with the infill. The formulation is based on the static equivalence between the equivalent strut macro-model and a refined finite element micro-model of the infilled frame, which is assumed as the benchmark. A dataset of experimental tests is defined and numerically replicated with the micro and macro models. The actual shear demand distribution is extracted from the refined micro-model via numerical integration at specific section cuts. A predictive analytical model for the additional shear demand is finally formulated and validated. Results show the enhanced capability of the proposed model, combined with the equivalent strut approach, to approximate the actual shear demand at the column ends compared to available literature models. The proposed approach enables step-by-step verification of the local shear demand during nonlinear analyses and predicts the maximum expected additional shear demand for design purposes."
 
 # Summary. An optional shortened abstract.
-summary: "Proposing an analytical model accurately predicts additional shear demand due to frame-infill interaction under seismic loads."
+summary: "Proposing an analytical model accurately predicts additional shear demand due to frame-infill interaction under seismic loads"
 
 tags: ["Infilled Frames", "Masonry", "Reinforced Concrete", "Micro-model", "Macro-model", "Additional shear demand", "OpenSees", "STKO"]
 categories: ["journal paper"]
@@ -78,4 +78,5 @@ slides: ""
 
 ## **Publication process:**
 
-- Nov. 2024 Under review
+- Nov 2024 - Under review
+- Jun 2025 - Accepted
