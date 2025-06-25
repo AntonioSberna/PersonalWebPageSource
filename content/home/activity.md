@@ -87,6 +87,8 @@ design:
 ### Thesis advisor
 ---
 
+* **Luca Biancotto** [*Fragility functions of unreinforced masonry aggregate buildings under varying unit-interconnectivity conditions*](https://webthesis.biblio.polito.it/34801/1/tesi.pdf) supervisors: Castaldo P., Di Trapani F., Villar S., **Sberna A.P.**, Politecnico di Torino, 2025
+
 * **Fabio Fraschini** [*Development of a Graphical User Interface for the Analysis of Reinforced Concrete Sections*](https://github.com/AntonioSberna/RC-Section-Flex-GUI), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2024
 
 * **Cristian Marra** [*Definition of reduced structural models for the nonlinear dynamic analysis of framed reinforced concrete structures*](https://webthesis.biblio.polito.it/31432/), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2024
@@ -96,7 +98,7 @@ design:
 * **Alexandre Milliet** [*Investigation of collapse resistance in tall timber buildings*](https://frangi.ibk.ethz.ch/de/forschung/reliability-of-glued-laminated-timber/robustness_highrise.html), supervisors: Frangi A., Cao A.S., **Sberna A.P.**, ETH Zurich, 2023
 
 * **Dario Coletta** [*Optimization of seismic reinforcement for masonry structures using genetic algorithms*](https://webthesis.biblio.polito.it/20663/), supervisors: Di Trapani F., **Sberna A.P.**, Politecnico di Torino, 2021 
-  
+
 
 ### Reviewer activity
 ---
