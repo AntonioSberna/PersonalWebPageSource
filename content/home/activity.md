@@ -123,3 +123,7 @@ Peer-review for the following international journals:
 * [*Big Data and Cognitive Computing*](https://www.mdpi.com/journal/BDCC)
 
 * [Sustainability](https://www.mdpi.com/journal/sustainability)
+
+* [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
+
+* [Structures](https://www.sciencedirect.com/journal/structures)
