@@ -116,6 +116,7 @@ Peer-review for the following international journals:
   - [*Buildings*](https://www.mdpi.com/journal/buildings)
   - [*Sustainability*](https://www.mdpi.com/journal/sustainability)
   - [*Modelling*](https://www.mdpi.com/journal/modelling)
+  - [*Structures and Buildings*](https://www.icevirtuallibrary.com/toc/jstbu/current)
 
 - Algorithms and AI
   - [*Engineering Applications of Artificial Intelligence*](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
