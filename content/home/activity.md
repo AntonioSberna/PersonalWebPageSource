@@ -121,13 +121,17 @@ Peer-review for the following international journals:
 * [*Modelling*](https://www.mdpi.com/journal/modelling)
 
 * [*AI*](https://www.mdpi.com/journal/ai)
-
+  
 * [*Symmetry*](https://www.mdpi.com/journal/Symmetry)
+  
+* [*Drones*](https://www.mdpi.com/journal/drones)
 
 * [*Big Data and Cognitive Computing*](https://www.mdpi.com/journal/BDCC)
 
-* [Sustainability](https://www.mdpi.com/journal/sustainability)
+* [*Sustainability*](https://www.mdpi.com/journal/sustainability)
 
-* [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
+* [*Engineering Applications of Artificial Intelligence*](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
 
-* [Structures](https://www.sciencedirect.com/journal/structures)
+* [*Structures*](https://www.sciencedirect.com/journal/structures)
+
+* [*Biomimetics*](https://www.mdpi.com/journal/biomimetics)
