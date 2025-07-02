@@ -49,6 +49,8 @@ design:
 ### Organizing committee of international conferences and courses
 ---
 
+* **Scientific and Organizing committee** [*9<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://www.eurasianopensees.com/os-courses/9th-international-course/), Lausanne (Switzerland), 5<sup>th</sup>-7<sup>th</sup> March 2025.
+
 * **Organizing committee** [*6<sup>th</sup> Eurasian Conference on OpenSees*](https://www.eurasianopensees.com/beijing-2024/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
 
 * **Scientific and Organizing committee** [*8<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://www.eurasianopensees.com/eos-course-2024/), Beijing (China), 22<sup>nd</sup>-23<sup>rd</sup> July 2024.
