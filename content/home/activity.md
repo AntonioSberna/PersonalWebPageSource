@@ -65,17 +65,17 @@ design:
 ### Teaching activities
 ---
 
-* **2025 Spring** [*Tutor - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLVA&p_a_acc=2025&p_header=S&p_lang=IT&multi=N), Politecnico di Torino
+* **2025 Spring** [*TA - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLVA&p_a_acc=2025&p_header=S&p_lang=IT&multi=N), Politecnico di Torino
 
 * **2025 Spring** [*9<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees*](https://www.eurasianopensees.com/os-courses/9th-international-course/), Lousanne (Switzerland), 5<sup>th</sup>7<sup>th</sup> March 2025.
 
 * **2024 Summer** [*8<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees*](https://www.eurasianopensees.com/eos-course-2024/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
 
-* **2024 Spring** [*Tutor - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLVA&p_a_acc=2024&p_header=S&p_lang=IT&multi=N), Politecnico di Torino
+* **2024 Spring** [*TA - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLVA&p_a_acc=2024&p_header=S&p_lang=IT&multi=N), Politecnico di Torino
 
 * **2022 Summer** [*Tutor - 7<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees"*](https://international.polito.it/catalogue/summer_schools/2022/seismic_analysis_of_structures_using_opensees_summer_school_7th_edition), Turin (Italy), 5<sup>th</sup>-6<sup>th</sup> July 2022.
 
-* **2022 Spring** [*Tutor - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLMX&p_a_acc=2022), Politecnico di Torino
+* **2022 Spring** [*TA - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLMX&p_a_acc=2022), Politecnico di Torino
 
 * **2021 Summer** [*Tutor - 6<sup>th</sup> International course on "Seismic Analysis of Structures using OpenSees"*](https://www.researchgate.net/profile/Giovanni-Minafo/project/6th-International-Course-on-Seismic-Analysis-of-Structures-using-OpenSees-Finite-element-based-framework-and-civil-engineering-University-of-Palermo/attachment/60cddd7f6160740001e41d10/AS:1036382780792833@1624104318985/download/Progr_OpenSees2021_Palermo_def.pdf?context=ProjectUpdatesLog), Palermo (Italy), 19<sup>th</sup>-22<sup>th</sup> July 2021.
 
@@ -117,6 +117,7 @@ Peer-review for the following international journals:
   - [*Sustainability*](https://www.mdpi.com/journal/sustainability)
   - [*Modelling*](https://www.mdpi.com/journal/modelling)
   - [*Structures and Buildings*](https://www.icevirtuallibrary.com/toc/jstbu/current)
+
 
 - Algorithms and AI
   - [*Engineering Applications of Artificial Intelligence*](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
