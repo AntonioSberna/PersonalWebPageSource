@@ -108,30 +108,20 @@ design:
 ---
 Peer-review for the following international journals:
 
-* [*Advances in Civil Engineering*](https://www.hindawi.com/journals/ace/)
- 
-* [*Journal of Asian Architecture and Building Engineering*](https://www.tandfonline.com/journals/tabe20)
+- Structural Engineering
+  - [*Structures*](https://www.sciencedirect.com/journal/structures)
+  - [*Natural Hazards*](https://link.springer.com/journal/11069)
+  - [*Journal of Asian Architecture and Building Engineering*](https://www.tandfonline.com/journals/tabe20)
+  - [*Advances in Civil Engineering*](https://www.hindawi.com/journals/ace/)
+  - [*Buildings*](https://www.mdpi.com/journal/buildings)
+  - [*Sustainability*](https://www.mdpi.com/journal/sustainability)
+  - [*Modelling*](https://www.mdpi.com/journal/modelling)
 
-* [*Buildings*](https://www.mdpi.com/journal/buildings)
-  
-* [*Natural Hazards*](https://link.springer.com/journal/11069)
-
-* [*Algorithms*](https://www.mdpi.com/journal/algorithms)
-
-* [*Modelling*](https://www.mdpi.com/journal/modelling)
-
-* [*AI*](https://www.mdpi.com/journal/ai)
-  
-* [*Symmetry*](https://www.mdpi.com/journal/Symmetry)
-  
-* [*Drones*](https://www.mdpi.com/journal/drones)
-
-* [*Big Data and Cognitive Computing*](https://www.mdpi.com/journal/BDCC)
-
-* [*Sustainability*](https://www.mdpi.com/journal/sustainability)
-
-* [*Engineering Applications of Artificial Intelligence*](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
-
-* [*Structures*](https://www.sciencedirect.com/journal/structures)
-
-* [*Biomimetics*](https://www.mdpi.com/journal/biomimetics)
+- Algorithms and AI
+  - [*Engineering Applications of Artificial Intelligence*](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
+  - [*Algorithms*](https://www.mdpi.com/journal/algorithms)
+  - [*AI*](https://www.mdpi.com/journal/ai)
+  - [*Symmetry*](https://www.mdpi.com/journal/Symmetry)
+  - [*Drones*](https://www.mdpi.com/journal/drones)
+  - [*Big Data and Cognitive Computing*](https://www.mdpi.com/journal/BDCC)
+  - [*Biomimetics*](https://www.mdpi.com/journal/biomimetics)
