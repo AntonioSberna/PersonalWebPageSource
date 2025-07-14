@@ -7,7 +7,7 @@ authors:
   - Di Benedetto Marilisa
   - Di Trapani Fabio
 date: 2025-04-10T00:00:01+01:00
-doi: 
+doi: https://doi.org/10.1007/s10518-025-02213-x
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2025-04-10T00:00:01+01:00
