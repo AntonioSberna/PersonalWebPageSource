@@ -111,6 +111,7 @@ design:
 Peer-review for the following international journals:
 
 - Structural Engineering
+  - [*Engineering Structures*](https://www.sciencedirect.com/journal/engineering-structures)
   - [*Structures*](https://www.sciencedirect.com/journal/structures)
   - [*Natural Hazards*](https://link.springer.com/journal/11069)
   - [*Journal of Asian Architecture and Building Engineering*](https://www.tandfonline.com/journals/tabe20)
