@@ -39,13 +39,13 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: 
+url_pdf: https://rdcu.be/exk9I
 url_code:
 url_dataset:
 url_poster:
 url_project:
 url_slides:
-url_source:
+url_source: https://link.springer.com/article/10.1007/s10518-025-02213-x
 url_video:
 
 # Featured image
@@ -92,9 +92,3 @@ slides: ""
 
 
 
-
-
-## **Publication process:**
-
-- Feb 2025 Under review
-- Jun 2025 Accepted
