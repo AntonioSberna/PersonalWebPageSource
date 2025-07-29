@@ -108,7 +108,7 @@ design:
 
 ### Reviewer activity
 ---
-Peer-review for the following international journals:
+Peer reviewer for the following international journals:
 
 - Structural Engineering
   - [*Engineering Structures*](https://www.sciencedirect.com/journal/engineering-structures)

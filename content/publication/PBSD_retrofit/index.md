@@ -7,8 +7,8 @@ authors:
   - Angshuman Deb
   - Di Trapani Fabio
   - Joel P. Conte
-date: 2025-02-26T00:00:01+01:01
-doi: ""
+date: 2025-03-12T00:00:01+01:01
+doi: "https://doi.org/10.1016/j.probengmech.2025.103818"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2025-02-26T00:00:01+01:01
@@ -81,3 +81,4 @@ slides: ""
 ## **Publication process**
 
 - Sept. 2024 Under review
+- Jul. 2025 Accepted

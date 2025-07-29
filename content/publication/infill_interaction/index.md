@@ -7,8 +7,8 @@ authors:
   - Marilisa Di Benedetto
   - admin
   - Camata Guido
-date: 2025-03-12T00:00:01+01:00
-doi: ""
+date: 2025-02-26T00:00:01+01:00
+doi: "https://doi.org/10.1061/JSENDH/STENG-14684"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2025-03-12T00:00:01+01:00
