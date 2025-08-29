@@ -69,7 +69,7 @@ design:
 
 * **2025 Spring** [*TA - Safety assessment and retrofitting of existing structures and infrastructures*](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLVA&p_a_acc=2025&p_header=S&p_lang=IT&multi=N), Politecnico di Torino
 
-* **2025 Spring** [*9<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees*](https://www.eurasianopensees.com/os-courses/9th-international-course/), Lousanne (Switzerland), 5<sup>th</sup>7<sup>th</sup> March 2025.
+* **2025 Spring** [*9<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees*](https://www.eurasianopensees.com/os-courses/9th-international-course/), Lousanne (Switzerland), 5<sup>th</sup>-7<sup>th</sup> March 2025.
 
 * **2024 Summer** [*8<sup>th</sup> International Course on "Seismic Analysis of Structures using OpenSees*](https://www.eurasianopensees.com/eos-course-2024/), Beijing (China), 24<sup>th</sup>-25<sup>th</sup> July 2024.
 
@@ -120,6 +120,7 @@ Peer reviewer for the following international journals:
   - [*Sustainability*](https://www.mdpi.com/journal/sustainability)
   - [*Modelling*](https://www.mdpi.com/journal/modelling)
   - [*Structures and Buildings*](https://www.icevirtuallibrary.com/toc/jstbu/current)
+  - [*Smart Infractures and Construction*](https://www.emeraldgrouppublishing.com/journal/jsmic)
 
 
 - Algorithms and AI
