@@ -114,6 +114,7 @@ Peer reviewer for the following international journals:
   - [*Engineering Structures*](https://www.sciencedirect.com/journal/engineering-structures)
   - [*Structures*](https://www.sciencedirect.com/journal/structures)
   - [*Natural Hazards*](https://link.springer.com/journal/11069)
+  - [*Reliability Engineering & System Safety*](https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety)
   - [*Journal of Asian Architecture and Building Engineering*](https://www.tandfonline.com/journals/tabe20)
   - [*Advances in Civil Engineering*](https://www.hindawi.com/journals/ace/)
   - [*Buildings*](https://www.mdpi.com/journal/buildings)
@@ -121,6 +122,8 @@ Peer reviewer for the following international journals:
   - [*Modelling*](https://www.mdpi.com/journal/modelling)
   - [*Structures and Buildings*](https://www.icevirtuallibrary.com/toc/jstbu/current)
   - [*Smart Infractures and Construction*](https://www.emeraldgrouppublishing.com/journal/jsmic)
+  - [*Engineering History and Heritage*](https://www.emeraldgrouppublishing.com/journal/jenhh)
+  - [*Engineering and Computational Mechanics*](https://www.emeraldgrouppublishing.com/journal/jencm)
 
 
 - Algorithms and AI
