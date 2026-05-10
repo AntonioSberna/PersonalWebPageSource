@@ -4,6 +4,11 @@ set -e
 echo "Building site..."
 ./hugo --minify
 
+echo "Pushing website codesource"
+git add .
+git commit -m "deploy $(date '+%Y-%m-%d %H:%M')"
+git push origin master
+
 echo "Deploying to GitHub Pages..."
 cd public
 git add .
