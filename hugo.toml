@@ -1,0 +1,126 @@
+baseURL = 'https://AntonioSberna.github.io/'
+locale = 'en-us'
+title = 'Antonio P. Sberna'
+
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 30
+paginate = 10
+
+[params]
+  description = "Personal webpage of Antonio P. Sberna - Research Fellow in Structural Engineering"
+  author = "Antonio P. Sberna"
+  role = "Research fellow in Structural Engineering"
+  organization = "University of Chieti-Pescara"
+  organizationURL = "https://www.unich.it/"
+  address     = "Viale Pindaro 42, 65127, Pescara (PE), Italy"
+  addressURL  = "https://maps.app.goo.gl/i3iF9ZL2Pw16CMhP7"
+  addressNote = ""   # optional detail line shown below the address (e.g. "Room 3, 2nd floor")
+  googleAnalytics = "G-0KQK65HRRE"
+
+  bio = """Antonio P. Sberna is a Research Fellow of Structural Engineering at the University of Chieti-Pescara in Italy. His research activities mainly focus on **earthquake engineering**, with a specific focus on enhancing **seismic retrofitting design of existing structures**, **performance-based earthquake engineering**, and **structural optimization**."""
+
+  # --- array-of-tables must come last within [params] ---
+  [[params.emails]]
+    address = "antoniopio.sberna@collaboratori.unich.it"
+    label   = ""   # primary — no label
+
+  [[params.emails]]
+    address = "antonio.sberna@polito.it"
+    label   = "Politecnico di Torino"
+
+  [[params.emails]]
+    address = "asberna@ucsd.edu"
+    label   = "University of California San Diego"
+
+  [params.social]
+    email      = "mailto:antoniopio.sberna@collaboratori.unich.it"
+    scopus     = "https://www.scopus.com/authid/detail.uri?authorId=57217025383"
+    researchgate = "https://www.researchgate.net/profile/Antonio-Sberna"
+    linkedin   = "https://www.linkedin.com/in/antonio-sberna/"
+    wos        = "https://www.webofscience.com/wos/author/record/HQY-4344-2023"
+    orcid      = "https://orcid.org/0000-0001-7231-8382"
+    github     = "https://github.com/AntonioSberna"
+    scholar    = "https://scholar.google.com/citations?user=PLACEHOLDER"
+    mastodon   = "https://mastodon.uno/@antoniosberna"
+    cv         = "/uploads/cv_Sberna_Antonio.pdf"
+
+  [[params.interests]]
+    name = "Structural Design"
+  [[params.interests]]
+    name = "Earthquake Engineering"
+  [[params.interests]]
+    name = "Structural Optimization"
+  [[params.interests]]
+    name = "Computer-aided structural design"
+  [[params.interests]]
+    name = "Existing structures retrofitting"
+
+  [[params.education]]
+    title = "Visiting research period"
+    institution = "University of California San Diego"
+    institutionURL = "https://structures.ucsd.edu/"
+    location = "San Diego, US"
+    dateStart = "Dec 2022"
+    dateEnd = "Dec 2023"
+    logo = "/images/brands/ucsd.svg"
+    brandColor = "#182B49"
+    description = "Research topic: *Seismic retrofit optimization of non-ductile RC buildings using soft-computing techniques within the framework of probabilistic performance-based earthquake engineering.*\n\nAdvisor: Prof. Joel P. Conte"
+
+  [[params.education]]
+    title = "Ph.D. in Civil and Environmental Engineering"
+    institution = "Polytechnic University of Turin"
+    institutionURL = "https://www.polito.it/"
+    location = "Turin, Italy"
+    dateStart = "Oct 2020"
+    dateEnd = "Sept 2024"
+    logo = "/images/brands/poli.svg"
+    brandColor = "#003087"
+    description = "Research interest: *Optimization of retrofitting intervention of existing structures. Artificial intelligence applications for seismic engineering and collapse risks reduction.*\n\nAdvisors: Prof. Giuseppe Marano and Prof. Fabio Di Trapani"
+
+  [[params.education]]
+    title = "M.Eng. Civil Engineering (structures)"
+    institution = "Polytechnic University of Turin"
+    institutionURL = "https://www.polito.it/"
+    location = "Turin, Italy"
+    dateStart = "Oct 2017"
+    dateEnd = "Jul 2020"
+    logo = "/images/brands/poli.svg"
+    brandColor = "#003087"
+    description = "Master thesis: *Optimal seismic retrofitting of reinforced concrete buildings by steel-jacketing using a genetic algorithm-based framework*\n\nAdvisors: Prof. Fabio Di Trapani and Prof. Giuseppe Marano"
+
+  [[params.education]]
+    title = "B.Sc. Civil and Environmental Engineering"
+    institution = "University of Catania"
+    institutionURL = "https://www.unict.it/"
+    location = "Catania, Italy"
+    dateStart = "Oct 2013"
+    dateEnd = "Apr 2017"
+    logo = "/images/brands/unict.svg"
+    brandColor = "#1B3A6B"
+    description = "Bachelor thesis: *Influenza dello sforzo normale sul collasso plastico di strutture intelaiate*\n\nAdvisor: Prof. Annalisa Greco"
+
+  [params.pgp]
+    fingerprint = "007B A6C3 98EF 6681 181E 62D5 8B99 3986 B9C9 2821"
+    url         = "https://keys.openpgp.org/search?q=antonio.sberna%40polito.it"
+
+  [params.office]
+    # OpenStreetMap embed URL — edit bbox and marker to reposition the pin
+    mapURL = "https://www.openstreetmap.org/export/embed.html?bbox=14.1728%2C42.4013%2C14.2728%2C42.5013&layer=mapnik&marker=42.4513%2C14.2228"
+    mapLink = "https://www.openstreetmap.org/node/12755384821"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+
+[permalinks]
+  papers      = "/papers/:slug/"
+  proceedings = "/proceedings/:slug/"

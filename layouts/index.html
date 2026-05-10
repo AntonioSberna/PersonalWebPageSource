@@ -1,0 +1,271 @@
+{{ define "main" }}
+
+<!-- ============================================================  ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about__grid">
+
+      <div class="about__photo-wrap">
+        <img src="/images/avatar.jpeg" alt="Antonio P. Sberna" class="about__photo" loading="lazy">
+
+        <!-- Social icon links (below photo) -->
+        <ul class="network-icon" aria-label="Social and academic profiles">
+          <li>
+            <a href="mailto:{{ site.Params.email }}" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.Params.social.orcid }}" target="_blank" rel="noopener" title="ORCID">
+              <i class="ai ai-orcid"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.Params.social.scopus }}" target="_blank" rel="noopener" title="Scopus">
+              <i class="ai ai-scopus"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.Params.social.researchgate }}" target="_blank" rel="noopener" title="ResearchGate">
+              <i class="ai ai-researchgate"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.Params.social.wos }}" target="_blank" rel="noopener" title="Web of Science / Clarivate">
+              <i class="ai ai-clarivate"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.Params.social.scholar }}" target="_blank" rel="noopener" title="Google Scholar">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.Params.social.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.Params.social.github }}" target="_blank" rel="noopener" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h1 class="about__name">Antonio P. Sberna</h1>
+        <p class="about__role">{{ site.Params.role }}</p>
+        <p class="about__org"><a href="{{ site.Params.organizationURL }}">{{ site.Params.organization }}</a></p>
+
+        <div class="about__bio">{{ site.Params.bio | markdownify }}</div>
+
+        <a href="{{ site.Params.social.cv }}" target="_blank" class="about__cv-link">
+          <i class="fas fa-download" style="font-size:0.85rem"></i> Download CV
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================  EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Education &amp; Experience</h2>
+      <hr>
+    </div>
+    <div class="exp-list">
+      {{ range site.Params.education }}
+      <div class="exp-card">
+        <div class="exp-card__logo"{{ with .brandColor }} style="border-color:{{ . }}"{{ end }}>
+          <a href="{{ .institutionURL }}" target="_blank" rel="noopener" title="{{ .institution }}">
+            {{ $svgPath := printf "static%s" .logo }}
+            {{ readFile $svgPath | safeHTML }}
+          </a>
+        </div>
+        <div class="exp-card__body">
+          <div class="exp-card__title">{{ .title }}</div>
+          <div class="exp-card__org"><a href="{{ .institutionURL }}" target="_blank" rel="noopener">{{ .institution }}</a></div>
+          <div class="exp-card__meta">
+            <span>{{ .dateStart }} – {{ .dateEnd }}</span>
+            <span>{{ .location }}</span>
+          </div>
+          <div class="exp-card__desc">{{ .description | markdownify }}</div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================  PAPERS (last 3, showcase) -->
+<section id="paper">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Papers</h2>
+      <p class="section-subtitle">in International Peer-Review Journals</p>
+      <hr>
+    </div>
+
+    {{ $journals := (where site.RegularPages "Section" "papers").ByDate.Reverse }}
+
+    <div class="showcase-list">
+      {{ range $i, $p := first 3 $journals }}
+      {{ $img := $p.Resources.GetMatch "featured.*" }}
+      <div class="showcase-item{{ if eq (mod $i 2) 1 }} showcase-item--reverse{{ end }}">
+
+        {{ if $img }}
+        <div class="showcase-item__img">
+          <a href="{{ $p.RelPermalink }}">
+            <img src="{{ $img.RelPermalink }}" alt="{{ $p.Title }}" loading="lazy">
+          </a>
+        </div>
+        {{ else }}
+        <div class="showcase-item__img" style="background:var(--bg-card); border-radius:6px; height:220px; display:flex; align-items:center; justify-content:center; color:var(--text-muted); font-size:2rem;">📄</div>
+        {{ end }}
+
+        <div class="showcase-item__body">
+          <div class="showcase-item__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></div>
+          {{ with $p.Params.summary }}<p class="showcase-item__summary">{{ . }}</p>{{ end }}
+          <div class="btn-links">
+            {{ with $p.Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub btn-pub--primary">PDF</a>{{ end }}
+            {{ with $p.Params.doi }}<a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="btn-pub">DOI</a>{{ end }}
+            {{ with $p.Params.url_source }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Source</a>{{ end }}
+            <a href="{{ $p.RelPermalink }}" class="btn-pub">Details</a>
+          </div>
+        </div>
+
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="see-all"><a href="/papers/">See all papers →</a></div>
+  </div>
+</section>
+
+<!-- ============================================================  PROCEEDINGS (last 3, citation) -->
+<section id="proceeding">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Conference Proceedings</h2>
+      <p class="section-subtitle">International peer-reviewed conferences</p>
+      <hr>
+    </div>
+
+    {{ $confs := (where site.RegularPages "Section" "proceedings").ByDate.Reverse }}
+
+    <div class="citation-list">
+      {{ range first 3 $confs }}
+      <div class="citation-item">
+        <div class="citation-item__icon">📄</div>
+        <div class="citation-item__body">
+          <div class="citation-item__authors">
+            {{ range $i, $a := .Params.authors }}
+            {{- if $i }}, {{ end }}
+            {{- if eq $a "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ $a }}{{ end }}
+            {{- end }}
+            ({{ .Date.Format "2006" }}).
+          </div>
+          <div class="citation-item__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a>.</div>
+          <div class="citation-item__venue">{{ .Params.publication | safeHTML }}</div>
+          <div class="btn-links">
+            {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub btn-pub--primary">PDF</a>{{ end }}
+            {{ with .Params.url_source }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Source</a>{{ end }}
+            {{ with .Params.doi }}<a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="btn-pub">DOI</a>{{ end }}
+            {{ with .Params.url_video }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Video</a>{{ end }}
+            <a href="{{ .RelPermalink }}" class="btn-pub">Details</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="see-all"><a href="/proceedings/">See all proceedings →</a></div>
+  </div>
+</section>
+
+<!-- ============================================================  ACTIVITIES -->
+<section id="activity">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Activities</h2>
+      <hr>
+    </div>
+    {{ partial "activities.html" . }}
+  </div>
+</section>
+
+<!-- ============================================================  CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Contact</h2>
+      <hr>
+    </div>
+    <div class="contact-layout">
+
+      <!-- Left: contact items -->
+      <div class="contact-items">
+        {{ with site.Params.emails }}
+        <div class="contact-item">
+          <div class="contact-item__icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="contact-item__label">Email</div>
+            {{ range $i, $e := . }}
+            <div class="contact-item__value{{ if $i }} contact-item__value--alt{{ end }}">
+              <a href="mailto:{{ $e.address }}">{{ $e.address }}</a>
+              {{ with $e.label }}<span class="contact-email-label">{{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+        <div class="contact-item">
+          <div class="contact-item__icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="contact-item__label">Address</div>
+            <div class="contact-item__value">
+              {{ with site.Params.addressURL }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+              {{ site.Params.address }}
+              {{ with site.Params.addressURL }}</a>{{ end }}
+              {{ with site.Params.addressNote }}<br><small style="color:var(--text-muted)">{{ . }}</small>{{ end }}
+            </div>
+          </div>
+        </div>
+        {{ with site.Params.pgp }}
+        <div class="contact-item">
+          <div class="contact-item__icon"><i class="fas fa-key"></i></div>
+          <div>
+            <div class="contact-item__label">PGP key</div>
+            <div class="contact-item__value">
+              <a href="{{ .url }}" target="_blank" rel="noopener" title="Download public key from OpenPGP">
+                <code class="pgp-fingerprint">{{ .fingerprint }}</code>
+              </a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Right: map -->
+      {{ with site.Params.office }}
+      <div class="contact-map">
+        <iframe
+          src="{{ .mapURL }}"
+          title="Office location"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+          allowfullscreen></iframe>
+        <a href="{{ .mapLink }}" target="_blank" rel="noopener" class="contact-map__link">
+          View larger map <i class="fas fa-external-link-alt" style="font-size:0.75rem"></i>
+        </a>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

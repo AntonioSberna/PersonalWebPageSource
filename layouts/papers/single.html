@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="pub-full">
+  <a href="/papers/" class="back-link">← Back to Papers</a>
+
+  <div class="pub-full__type">Journal Article</div>
+
+  <h1 class="pub-full__title">{{ .Title }}</h1>
+
+  <div class="pub-full__authors">
+    {{ range $i, $a := .Params.authors }}
+    {{- if $i }}, {{ end }}
+    {{- if eq $a "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ $a }}{{ end }}
+    {{- end }}
+  </div>
+
+  <div class="pub-full__venue">
+    {{ with .Params.publication }}{{ . | safeHTML }}{{ end }}
+    {{ with .Date }} &mdash; {{ .Format "January 2006" }}{{ end }}
+  </div>
+
+  <!-- Links -->
+  <div class="btn-links" style="margin-bottom:1.5rem">
+    {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub btn-pub--primary">PDF</a>{{ end }}
+    {{ with .Params.doi }}<a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="btn-pub">DOI</a>{{ end }}
+    {{ with .Params.url_source }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Source</a>{{ end }}
+    {{ with .Params.url_video }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Video</a>{{ end }}
+    {{ with .Params.url_code }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Code</a>{{ end }}
+    {{ with .Params.url_dataset }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Dataset</a>{{ end }}
+  </div>
+
+  <!-- Featured image -->
+  {{ $img := .Resources.GetMatch "featured.*" }}
+  {{ if $img }}
+  <div class="pub-full__img">
+    <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
+  </div>
+  {{ end }}
+
+  <!-- Abstract -->
+  {{ with .Params.abstract }}
+  <div class="pub-full__abstract">
+    <h3>Abstract</h3>
+    <p>{{ . }}</p>
+  </div>
+  {{ end }}
+
+  <!-- Tags -->
+  {{ with .Params.tags }}
+  <div class="pub-tags" style="margin:1rem 0 1.5rem">
+    {{ range . }}<span class="pub-tag">{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ if .Content }}
+  <hr class="section-rule">
+  <div class="pub-body">{{ .Content }}</div>
+  {{ end }}
+</div>
+{{ end }}

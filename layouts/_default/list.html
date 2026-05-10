@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+  </div>
+</div>
+<div class="container" style="padding-top:2rem; padding-bottom:3rem">
+  {{ range .Pages }}
+  <article style="margin-bottom:1.5rem; padding-bottom:1.5rem; border-bottom:1px solid var(--border)">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ with .Date }}<time style="font-size:0.85rem; color:var(--text-muted)">{{ .Format "January 2, 2006" }}</time>{{ end }}
+    {{ with .Summary }}<p style="margin-top:0.5rem">{{ . }}</p>{{ end }}
+  </article>
+  {{ end }}
+</div>
+{{ end }}

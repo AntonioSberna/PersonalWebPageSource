@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>Conference Proceedings</h1>
+    <p>Papers presented at international peer-reviewed conferences</p>
+  </div>
+</div>
+
+<div class="pub-full-list">
+  <div class="container">
+
+    {{ $confs := (where site.RegularPages "Section" "proceedings").ByDate.Reverse }}
+
+    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.5rem">
+      {{ len $confs }} publications
+    </p>
+
+    <div class="citation-list">
+      {{ range $confs }}
+      <div class="citation-item">
+        <div class="citation-item__icon">📄</div>
+        <div class="citation-item__body">
+          <div class="citation-item__authors">
+            {{ range $i, $a := .Params.authors }}
+            {{- if $i }}, {{ end }}
+            {{- if eq $a "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ $a }}{{ end }}
+            {{- end }}
+            ({{ .Date.Format "2006" }}).
+          </div>
+          <div class="citation-item__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a>.</div>
+          <div class="citation-item__venue">{{ .Params.publication | safeHTML }}</div>
+          <div class="btn-links" style="margin-top:0.4rem">
+            {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub btn-pub--primary">PDF</a>{{ end }}
+            {{ with .Params.url_source }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Source</a>{{ end }}
+            {{ with .Params.doi }}<a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="btn-pub">DOI</a>{{ end }}
+            {{ with .Params.url_video }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Video</a>{{ end }}
+            <a href="{{ .RelPermalink }}" class="btn-pub">Details</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+</div>
+{{ end }}

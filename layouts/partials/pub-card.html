@@ -1,0 +1,46 @@
+{{ $type := index .Params.publication_types 0 | default "0" }}
+{{ $typeLabel := "" }}
+{{ if eq $type "2" }}{{ $typeLabel = "Journal Article" }}{{ end }}
+{{ if eq $type "1" }}{{ $typeLabel = "Conference Paper" }}{{ end }}
+{{ if eq $type "3" }}{{ $typeLabel = "Preprint" }}{{ end }}
+{{ if eq $type "5" }}{{ $typeLabel = "Book" }}{{ end }}
+{{ if eq $type "6" }}{{ $typeLabel = "Book Chapter" }}{{ end }}
+{{ if eq $type "7" }}{{ $typeLabel = "Thesis" }}{{ end }}
+
+<div class="pub-card" data-type="{{ $type }}">
+  {{ if $typeLabel }}
+  <div class="pub-card__venue">{{ $typeLabel }}</div>
+  {{ end }}
+  <div class="pub-card__title">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </div>
+  <div class="pub-card__authors">
+    {{ range $i, $a := .Params.authors }}
+    {{- if $i }}, {{ end }}
+    {{- if eq $a "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ $a }}{{ end }}
+    {{- end }}
+  </div>
+  <div class="pub-card__meta">
+    {{ with .Params.publication }}{{ . | safeHTML }}{{ end }}
+    {{ with .Date }} &mdash; {{ .Format "2006" }}{{ end }}
+    {{ with .Params.doi }} &mdash; <a href="https://doi.org/{{ . | strings.TrimPrefix "https://doi.org/" }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+  </div>
+  {{ with .Params.summary }}
+  <div class="pub-card__summary">{{ . }}</div>
+  {{ end }}
+  <div class="pub-card__links">
+    {{ with .Params.url_pdf }}
+    <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link pub-link--primary">PDF</a>
+    {{ end }}
+    {{ with .Params.url_source }}
+    <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link">Source</a>
+    {{ end }}
+    {{ with .Params.doi }}
+    <a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="pub-link">DOI</a>
+    {{ end }}
+    {{ with .Params.url_video }}
+    <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link">Video</a>
+    {{ end }}
+    <a href="{{ .RelPermalink }}" class="pub-link">Details</a>
+  </div>
+</div>

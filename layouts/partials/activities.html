@@ -1,0 +1,140 @@
+{{ $a := hugo.Data.activities }}
+
+{{ with $a.presentations }}
+<div class="activity-section">
+  <h3>Presentations in conferences</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      <strong>{{ .date }}</strong>
+      {{ if .url }}
+      <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}><em>{{ .title }}</em></a>
+      {{ else }}<em>{{ .title }}</em>{{ end }},
+      {{ .location }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ with $a.organizing }}
+<div class="activity-section">
+  <h3>Organizing committee</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      <strong>{{ .role }}</strong> —
+      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em></a>,
+      {{ .location }}, {{ .date }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ with $a.invited }}
+<div class="activity-section">
+  <h3>Invited Talks &amp; Keynotes</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      <strong>{{ .date }}</strong> —
+      <em>{{ .role }}</em> —
+      <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .title }}</a>,
+      {{ .location }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ with $a.teaching }}
+<div class="activity-section">
+  <h3>Teaching activities</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      <strong>{{ .date }}</strong> —
+      {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ end }}
+      {{ .role }} — <em>{{ .title }}</em>
+      {{ if .url }}</a>{{ end }},
+      {{ .institution }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ with $a.books }}
+<div class="activity-section">
+  <h3>Books</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      {{ .contribution }} —
+      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em>{{ with .note }} ({{ . }}){{ end }}</a>
+      — {{ .credit }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ with $a.fellowships }}
+<div class="activity-section">
+  <h3>Fellowships</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      <strong>{{ .date }}</strong> —
+      {{ .title }},
+      <a href="{{ .url }}" target="_blank" rel="noopener">{{ .institution }}</a>
+      {{ with .note }}<span style="color:var(--text-muted);">({{ . }})</span>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ with $a.theses }}
+<div class="activity-section">
+  <h3>Thesis advisor</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      <strong>{{ .student }}</strong> —
+      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em></a> —
+      {{ range $i, $adv := .advisors }}{{ if $i }}, {{ end }}{{ if eq $adv "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ $adv }}{{ end }}{{ end }}
+      — {{ .institution }}, {{ .year }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ with $a.reviewer }}
+<div class="activity-section">
+  <h3>Reviewer activity</h3>
+  <p class="activity-reviewer-note">Peer reviewer for the following international journals:</p>
+  <div class="reviewer-cols">
+    {{ range . }}
+    <div>
+      <h4>{{ .category }}</h4>
+      <ul class="activity-list">
+        {{ range .journals }}
+        <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></li>
+        {{ end }}
+      </ul>
+      {{ with .proceedings }}
+      <h4 class="reviewer-subheading">Conference proceedings</h4>
+      <ul class="activity-list">
+        {{ range . }}
+        <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
