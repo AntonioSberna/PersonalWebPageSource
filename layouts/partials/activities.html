@@ -39,8 +39,7 @@
     {{ range . }}
     <li>
       <strong>{{ .date }}</strong> —
-      <em>{{ .role }}</em> —
-      <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .title }}</a>,
+      <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .role }} — {{ .title }}</a>,
       {{ .location }}
     </li>
     {{ end }}
