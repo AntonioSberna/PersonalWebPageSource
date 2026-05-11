@@ -231,6 +231,8 @@ reviewer:
         url: "https://www.emeraldgrouppublishing.com/journal/jencm"
       - name: "Transport"
         url: "https://www.emeraldgrouppublishing.com/journal/jtran"
+      - name: "Archives of Computational Methods in Engineering"
+        url: "https://link.springer.com/journal/11831"
   - category: "Algorithms & AI"
     journals:
       - name: "Engineering Applications of Artificial Intelligence"
