@@ -1,16 +1,13 @@
 ---
-title: "Seismic risk reduction of masonry barrel vaults using CRM: fragility assessment using a fiber-section approach"
+title: "Analytical formulation for biaxial curvature domains of rectangular reinforced concrete sections"
 authors:
-  - Campisi Filippo
+  - admin
+  - Quaranta Giuseppe
   - Di Trapani Fabio
-  - Di Leto Marielisa
-  - Cucchiara Calogero
-  - admi
-  - La Mendola Lidia
 date: 2025-09-11
 publication_types: ["1"]
 publication: "20th ANIDIS Conference, 7th–11th September 2026 | Assisi (Italy)"
-abstract: "Masonry barrel vaults made of calcarenite natural stone are widespread in the built heritage of the Mediterranean area. Post earthquake observations have highlighted their vulnerability under seismic loads especially when they are used as secondary elements carrying their own weight only. This study explores the effectiveness of seismic risk reduction for calcarenite masonry barrel vaults using cementitious reinforced mortar (CRM) in the extrados combined with Glass Fiber Reinforced Polymer (GRFP) grids. A force-based fiber-section beam/column model is implemented to effectively capturing axial force–bending moment interaction while reducing computational costs. Multiple-stripe analyses are carried out for different configurations of the case study based on a real calcarenite masonry barrel vault. The results show that CRM retrofitting can increase displacement capacity and shift fragility curves to higher intensities, with spectral accelerations at 50% collapse probability from two to six times greater than the as-built condition. The influence of additional boundary conditions such as the presence of backfill material and the premature debonding of the reinforcement are also investigated."
-tags: ["CRM", "Finite Element", "Fragility", "Masonry vaults", "OpenSees", "Retrofitting", "STKO"]
-doi: "https://doi.org/10.1016/j.prostr.2025.12.153"
+abstract: "This study proposes a novel closed-form analytical model for defining the biaxial ultimate curvature domains of rectangular reinforced concrete (RC) sections under combined axial load and biaxial bending. The model is derived through a hybrid approach that couples high-fidelity fiber-based sectional analysis with data-driven calibration. A comprehensive parametric database, covering a wide range of geometric configurations, reinforcement ratios, and material properties, is generated and used to calibrate a super-ellipse-based formulation for the curvature domain. The key innovation lies in the derivation of an explicit expression for the super-ellipse shape exponent, obtained via a multi-population Genetic Programming (GP) symbolic regression algorithm. This expression accounts for the combined effects of axial load, reinforcement layout, and reinforcement ratio, thereby improving accuracy compared to existing models that rely on simplified assumptions. The resulting closed-form solution efficiently captures the direction-dependent inelastic deformation capacity of RC sections without requiring computationally intensive numerical analyses. Its applicability is demonstrated through extensive validation against the numerical database, showing excellent agreement. The proposed model offers structural engineers a practical tool for ductility verification and plastic hinge calibration, advancing performance-based seismic design methodologies."
+tags: ["biaxial bending", "cross-section", "curvature domain", "genetic programming", "machine learning", "optimization", "reinforced concrete"]
+doi: "https://doi.org/10.1016/j.prostr.2025.12.239"
 ---
