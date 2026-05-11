@@ -7,7 +7,7 @@ echo "Building site..."
 echo "Pushing website codesource"
 git add .
 git commit -m "deploy $(date '+%Y-%m-%d %H:%M')"
-git push origin master
+git push origin master --force
 
 echo "Deploying to GitHub Pages..."
 cd public
