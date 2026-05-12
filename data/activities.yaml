@@ -252,12 +252,12 @@ reviewer:
     proceedings:
       - name: "13th U.S. National Conference on Earthquake Engineering"
         url: "https://13ncee.eeri.org/"
-      - name: "Proceedings of the 20th Italian Conference on Earthquake Engineering"
+      - name: "20th Italian Conference on Earthquake Engineering"
         url: "https://convegno.anidis.it/index.php/anidis/2025"
-      - name: "Proceedings of the 6th Eurasian Conference on OpenSees"
+      - name: "6th Eurasian Conference on OpenSees"
         url: "https://www.eurasianopensees.com/eos-conferences/beijing-2024/"
-      - name: "Proceedings of the 19th Italian Conference on Earthquake Engineering"
+      - name: "19th Italian Conference on Earthquake Engineering"
         url: "https://convegno.anidis.it/index.php/anidis/2022"
-      - name: "Proceedings of the 2nd EOS Eurasian Conference on OpenSees"
+      - name: "2nd EOS Eurasian Conference on OpenSees"
         url: "https://eosd2022.weebly.com/"
               
