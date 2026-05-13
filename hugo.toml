@@ -16,7 +16,7 @@ paginate = 10
   address     = "Viale Pindaro 42, 65127, Pescara (PE), Italy"
   addressURL  = "https://maps.app.goo.gl/i3iF9ZL2Pw16CMhP7"
   addressNote = ""   # optional detail line shown below the address (e.g. "Room 3, 2nd floor")
-  googleAnalytics = "G-0KQK65HRRE"
+  googleAnalytics = "G-V3BSP5QYMB"
 
   bio = """Antonio P. Sberna is a Research Fellow of Structural Engineering at the University of Chieti-Pescara in Italy. His research activities mainly focus on **earthquake engineering**, with a specific focus on enhancing **seismic retrofitting design of existing structures**, **performance-based earthquake engineering**, and **structural optimization**."""
 
