@@ -41,7 +41,7 @@ paginate = 10
     wos        = "https://www.webofscience.com/wos/author/record/HQY-4344-2023"
     orcid      = "https://orcid.org/0000-0001-7231-8382"
     github     = "https://github.com/AntonioSberna"
-    scholar    = "https://scholar.google.com/citations?user=PLACEHOLDER"
+    scholar    = "https://scholar.google.com/citations?user=vZ-j9g0AAAAJ&hl=en&oi=ao"
     mastodon   = "https://mastodon.uno/@antoniosberna"
     cv         = "/uploads/cv_Sberna_Antonio.pdf"
 
