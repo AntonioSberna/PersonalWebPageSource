@@ -79,7 +79,7 @@ paginate = 10
     description = "Research interest: *Optimization of retrofitting intervention of existing structures. Artificial intelligence applications for seismic engineering and collapse risks reduction.*\n\nAdvisors: Prof. Giuseppe Marano and Prof. Fabio Di Trapani"
 
   [[params.education]]
-    title = "M.Eng. Civil Engineering (structures)"
+    title = "M.Sc. Civil Engineering (structures)"
     institution = "Polytechnic University of Turin"
     institutionURL = "https://www.polito.it/"
     location = "Turin, Italy"
