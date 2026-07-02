@@ -5,8 +5,8 @@ institution: "University of Chieti-Pescara, Italy"
 role: "Instructor"
 ---
 
-<!-- <img src="nonlin_masonry_group_photo_2026.jpg" alt="Group photo" style="display:block; margin:0     
-  auto; width:60%; border-radius:6px;">   -->
+<img src="nonlin_masonry_group_photo_2026.jpg" alt="Group photo" style="display:block; margin:0     
+  auto; width:60%; border-radius:6px;">  
 
 ## Course description
 
