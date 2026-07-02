@@ -100,6 +100,11 @@ invited:
     location: "University College London, UK"
 
 teaching:
+  - date: "2026 Summer"
+    role: "Instructor"
+    title: "Ph.D. Course on Nonlinear Analysis of Masonry Structures"
+    url: "./teaching/nonlin_masonry_2026"
+    institution: "University of Chieti-Pescara, Italy"
   - date: "2026 Spring"
     role: "Instructor"
     title: "10th International Course on Seismic Analysis of Structures using OpenSees"
@@ -231,8 +236,8 @@ reviewer:
         url: "https://www.emeraldgrouppublishing.com/journal/jencm"
       - name: "Transport"
         url: "https://www.emeraldgrouppublishing.com/journal/jtran"
-      - name: "Archives of Computational Methods in Engineering"
-        url: "https://link.springer.com/journal/11831"
+      - name: "Forensic Engineering"
+        url: "https://www.emerald.com/jfoen"
   - category: "Algorithms & AI"
     journals:
       - name: "Engineering Applications of Artificial Intelligence"
@@ -249,6 +254,8 @@ reviewer:
         url: "https://www.mdpi.com/journal/BDCC"
       - name: "Biomimetics"
         url: "https://www.mdpi.com/journal/biomimetics"
+      - name: "Applied Artificial Intelligence"
+        url: "https://www.tandfonline.com/journals/uaai20"
     proceedings:
       - name: "13th U.S. National Conference on Earthquake Engineering"
         url: "https://13ncee.eeri.org/"

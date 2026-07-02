@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>Teaching</h1>
+    <p>Course materials and resources for students</p>
+  </div>
+</div>
+
+<div class="pub-full-list">
+  <div class="container">
+    <div class="teaching-grid">
+      {{ range .Pages.ByParam "year" }}
+      <a href="{{ .RelPermalink }}" class="teaching-card">
+        <div class="teaching-card__year">{{ .Params.year }}</div>
+        <div class="teaching-card__title">{{ .Title }}</div>
+        {{ with .Params.institution }}<div class="teaching-card__inst">{{ . }}</div>{{ end }}
+        {{ with .Params.role }}<div class="teaching-card__role">{{ . }}</div>{{ end }}
+        {{ with .Description }}<p class="teaching-card__desc">{{ . }}</p>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0.5rem">
+      <a href="/teaching/">← Teaching</a>
+    </div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.institution }}<p style="color:var(--accent); margin-top:0.3rem">{{ . }}</p>{{ end }}
+    <div style="display:flex; gap:1.2rem; margin-top:0.5rem; font-size:0.85rem; color:var(--text-muted)">
+      {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.role }}<span>{{ . }}</span>{{ end }}
+    </div>
+  </div>
+</div>
+
+<div class="pub-full-list">
+  <div class="container">
+    <div class="teaching-content">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+{{ end }}

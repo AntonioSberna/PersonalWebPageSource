@@ -38,7 +38,7 @@
   --accent-hover: #303f9f;
   --accent-light: #e8eaf6;
   --border:     #dde3ee;
-  --nav-bg:     #3f51b5;
+  --nav-bg:     #1b2d8fd8;
   --nav-text:   #ffffff;
   --nav-text-active: #a1a7c9;
   --shadow:     0 2px 8px rgba(0,0,0,0.10);
@@ -66,7 +66,11 @@ body {
   font-family: 'Roboto', 'Segoe UI', system-ui, -apple-system, sans-serif;
   line-height: 1.7;
   transition: background 0.3s, color 0.3s;
+  display: flex;                                               
+  flex-direction: column;                                             
+  min-height: 100vh;                                                                                                                  
 }
+#main-content { flex: 1; }
 
 a {
   color: var(--accent);
@@ -575,12 +579,13 @@ section:nth-child(even) { background: var(--bg-alt); }
    Publication list pages (full /papers/ and /proceedings/)
    ============================================================ */
 .page-header {
-  background: var(--nav-bg);
-  color: var(--nav-text);
+  background: var(--bg-alt);
+  color: var(--text);
   padding: 3rem 1.5rem 2.5rem;
+  border-bottom: 1px solid var(--border);
 }
-.page-header h1 { font-size: 1.8rem; color: var(--nav-text); margin-bottom: 0.3rem; }
-.page-header p { color: rgba(255,255,255,0.65); margin: 0; font-size: 0.9rem; }
+.page-header h1 { font-size: 1.8rem; color: var(--text); margin-bottom: 0.3rem; }
+.page-header p { color: var(--text-muted); margin: 0; font-size: 0.9rem; }
 
 .pub-full-list { padding: 3rem 0; }
 
@@ -641,8 +646,9 @@ section:nth-child(even) { background: var(--bg-alt); }
   overflow: hidden;
   margin-bottom: 1.5rem;
   box-shadow: var(--shadow);
+  text-align: center; 
 }
-.pub-full__img img { width: 100%; max-height: 300px; object-fit: cover; display: block; }
+.pub-full__img img { max-width: 80%; max-height: 250px; width: auto; object-fit: contain; display: inline-block; }  
 
 /* Tags */
 .pub-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 1rem 0; }
@@ -681,6 +687,43 @@ section:nth-child(even) { background: var(--bg-alt); }
 .reviewer-cols h4 { font-size: 0.8rem; font-family: 'Roboto', sans-serif; font-weight: 600; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .reviewer-subheading { margin-top: 1.8rem; }
 @media (max-width: 600px) { .reviewer-cols { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   Teaching
+   ============================================================ */
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.teaching-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.4rem;
+  text-decoration: none !important;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.teaching-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-card);
+  text-decoration: none !important;
+}
+.teaching-card__year { font-size: 0.75rem; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+.teaching-card__title { font-size: 1rem; font-weight: 600; color: var(--text); margin-bottom: 0.3rem; }
+.teaching-card__inst { font-size: 0.85rem; color: var(--text-muted); }
+.teaching-card__role { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.15rem; }
+.teaching-card__desc { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.6rem; }
+
+.teaching-content { max-width: 720px; }
+.teaching-content h2 { font-size: 1.15rem; margin: 2rem 0 0.75rem; color: var(--text); }
+.teaching-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.teaching-content th { text-align: left; padding: 0.5rem 0.8rem; background: var(--bg-card2); color: var(--text-muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.teaching-content td { padding: 0.55rem 0.8rem; border-top: 1px solid var(--border); color: var(--text); }
+.teaching-content ul { padding-left: 1.2rem; }
+.teaching-content li { margin-bottom: 0.4rem; font-size: 0.9rem; }
 
 /* ============================================================
    Contact
