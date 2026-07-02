@@ -648,7 +648,7 @@ section:nth-child(even) { background: var(--bg-alt); }
   box-shadow: var(--shadow);
   text-align: center; 
 }
-.pub-full__img img { max-width: 80%; max-height: 250px; width: auto; object-fit: contain; display: inline-block; }  
+.pub-full__img img { max-width: 80%; max-height: 250px; width: auto; object-fit: contain; display: inline-block; border-radius:6px }  
 
 /* Tags */
 .pub-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 1rem 0; }
