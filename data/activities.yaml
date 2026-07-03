@@ -101,12 +101,12 @@ invited:
 
 teaching:
   - date: "2026 Summer"
-    role: "Instructor"
+    role: "Lecturer"
     title: "Ph.D. Course on Nonlinear Analysis of Masonry Structures"
     url: "./teaching/nonlin_masonry_2026"
     institution: "University of Chieti-Pescara, Italy"
   - date: "2026 Spring"
-    role: "Instructor"
+    role: "Lecturer"
     title: "10th International Course on Seismic Analysis of Structures using OpenSees"
     url: "https://www.eurasianopensees.com/os-courses/10th-international-course/"
     institution: "University of Minho, Portugal"
@@ -116,7 +116,7 @@ teaching:
     url: "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01UDLVA&p_a_acc=2025&p_header=S&p_lang=IT&multi=N"
     institution: "Politecnico di Torino"
   - date: "2025 Spring"
-    role: "Instructor"
+    role: "Lecturer"
     title: "9th International Course on Seismic Analysis of Structures using OpenSees"
     url: "https://www.eurasianopensees.com/os-courses/9th-international-course/"
     institution: "EPFL, Switzerland"
