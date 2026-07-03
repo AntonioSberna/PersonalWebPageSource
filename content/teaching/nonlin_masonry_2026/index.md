@@ -4,9 +4,9 @@ year: "2026"
 institution: "University of Chieti-Pescara, Italy"
 role: "Lecturer"
 ---
+<img src="nonlin_masonry_flyer_2026.jpg" alt="Flyer" style="display:block; margin:0     
+  auto; width:70%; border-radius:4px;">  
 
-<img src="nonlin_masonry_group_photo_2026.jpg" alt="Group photo" style="display:block; margin:0     
-  auto; width:60%; border-radius:6px;">  
 
 ## Course description
 
@@ -20,6 +20,9 @@ The course introduces the nonlinear behaviour and numerical modelling of masonry
 - [Official short program](https://www.ingeo.unich.it/documenti/__0__uda/__12729__ingeo/__12731__corsi_dottorato/__16535__dottorato_in_engineering_science/Training_activities_PhD_Engineering_Science_C41.pdf)
 - [Detailed program](nonlin_masonry_program_2026.pdf)
 
+
+<img src="nonlin_masonry_group_photo_2026.jpg" alt="Group photo" style="display:block; margin:0     
+  auto; width:60%; border-radius:6px;">  
 
 
 ## Questionario finale
