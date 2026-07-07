@@ -5,7 +5,18 @@ fellowships:
     url: "https://structures.ucsd.edu/"
     note: "Erasmus+ Staff Exchange programme"
 
+  - date: "Feb 2026"
+    title: "MSCA Postdoctoral Fellowship – Seal of Excellence"
+    institution: "European Commission"
+    url: "/uploads/msca_2025_SofE.pdf"
+    note: "Awarded to a high-quality proposal that could not be funded due to budgetary constraints"
+
+
 presentations:
+  - date: "Jul 2026"
+    title: "7th Eurasian Conference on OpenSees"
+    url: "https://www.eurasianopensees.com/eos-conferences/lausanne-2026/"
+    location: "Lausanne, Switzerland"
   - date: "Sep 2025"
     title: "4th fib Symposium on Concrete and Concrete Structures"
     url: "https://www.cte-eventi.com/fibyoungsymposium/"
@@ -56,6 +67,11 @@ presentations:
     location: "Athens, Greece"
 
 organizing:
+  - role: "Organizing committee"
+    title: "7th Eurasian Conference on OpenSees"
+    url: "https://www.eurasianopensees.com/eos-conferences/lausanne-2026/"
+    location: "Lausanne, Switzerland"
+    date: "Jul 2026"
   - role: "Scientific and Organizing committee"
     title: "9th International Course on Seismic Analysis of Structures using OpenSees"
     url: "https://www.eurasianopensees.com/os-courses/9th-international-course/"
