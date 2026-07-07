@@ -1,15 +1,15 @@
 fellowships:
-  - date: "May 2025"
-    title: "Visiting Research Scholar"
-    institution: "University of California, San Diego (UCSD)"
-    url: "https://structures.ucsd.edu/"
-    note: "Erasmus+ Staff Exchange programme"
-
   - date: "Feb 2026"
     title: "MSCA Postdoctoral Fellowship – Seal of Excellence"
     institution: "European Commission"
     url: "/uploads/msca_2025_SofE.pdf"
     note: "Awarded to a high-quality proposal that could not be funded due to budgetary constraints"
+    
+  - date: "May 2025"
+    title: "Visiting Research Scholar"
+    institution: "University of California, San Diego (UCSD)"
+    url: "https://structures.ucsd.edu/"
+    note: "Erasmus+ Staff Exchange programme"
 
 
 presentations:
