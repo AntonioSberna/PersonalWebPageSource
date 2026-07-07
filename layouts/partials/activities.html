@@ -86,8 +86,8 @@
     {{ range . }}
     <li>
       <strong>{{ .date }}</strong> —
-      {{ .title }},
-      <a href="{{ .url }}" target="_blank" rel="noopener">{{ .institution }}</a>
+      <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }},
+      {{ .institution }}</a>
       {{ with .note }}<span style="color:var(--text-muted);">({{ . }})</span>{{ end }}
     </li>
     {{ end }}
