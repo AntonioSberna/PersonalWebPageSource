@@ -254,6 +254,9 @@ reviewer:
         url: "https://www.emeraldgrouppublishing.com/journal/jtran"
       - name: "Forensic Engineering"
         url: "https://www.emerald.com/jfoen"
+      - name: "Journal of Structural Integrity and Maintenance"
+        url: "https://www.tandfonline.com/journals/tstr20"
+        
   - category: "Algorithms & AI"
     journals:
       - name: "Engineering Applications of Artificial Intelligence"
