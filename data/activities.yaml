@@ -1,4 +1,18 @@
 
+books:
+  - contribution: "Chapter 3"
+    title: "Sustainable Retrofitting Toward Resilient Buildings & Infrastructures - Optimal retrofitting design"
+    note: "on preorder, it will be released on 25 October 2026"
+    credit: "Tiago Ferreira - World Scientific Publishing Co Pte Ltd, 2026"
+    url: "https://amzn.eu/d/0ecc8Ajc"
+  - contribution: "Chapter 6"
+    title: "Metodi di analisi strutturale — Sistemi di Travi e Telai Piani"
+    note: "in Italian"
+    url: "https://www.clut.it/ita/architettura-ingegneria-civile-edile-urbanistica-museografia/-/metodi-di-analisi-strutturale-sistemi-di-travi-e-telai-piani/503.html"
+    credit: "Fabio Di Trapani — CLUT, 2022"
+
+
+
 teaching:
   - date: "2026 Summer"
     role: "Lecturer"
@@ -45,8 +59,6 @@ teaching:
     title: "6th International Course on Seismic Analysis of Structures using OpenSees"
     url: "https://www.eurasianopensees.com/os-courses/sixth-edition/"
     institution: "University of Palermo, Italy"
-
-
 
 
 
@@ -167,12 +179,7 @@ invited:
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7149133331433947136"
     location: "University College London, UK"
 
-books:
-  - contribution: "Chapter 6"
-    title: "Metodi di analisi strutturale — Sistemi di Travi e Telai Piani"
-    note: "in Italian"
-    url: "https://www.clut.it/ita/architettura-ingegneria-civile-edile-urbanistica-museografia/-/metodi-di-analisi-strutturale-sistemi-di-travi-e-telai-piani/503.html"
-    credit: "Fabio Di Trapani — CLUT, 2022"
+
 
 theses:
   - student: "Riccardo Ditta"

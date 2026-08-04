@@ -1,5 +1,38 @@
 {{ $a := hugo.Data.activities }}
 
+{{ with $a.books }}
+<div class="activity-section">
+  <h3>Books</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      {{ .contribution }} —
+      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em>{{ with .note }} ({{ . }}){{ end }}</a>
+      — {{ .credit }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+
+{{ with $a.teaching }}
+<div class="activity-section">
+  <h3><a href="/teaching/">Teaching activities</a></h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      <strong>{{ .date }}</strong> —
+      {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ end }}
+      {{ .role }} — <em>{{ .title }}</em>
+      {{ if .url }}</a>{{ end }},
+      {{ .institution }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
 {{ with $a.presentations }}
 <div class="activity-section">
   <h3>Presentations in conferences</h3>
@@ -47,37 +80,6 @@
 </div>
 {{ end }}
 
-{{ with $a.teaching }}
-<div class="activity-section">
-  <h3><a href="/teaching/">Teaching activities</a></h3>
-  <ul class="activity-list">
-    {{ range . }}
-    <li>
-      <strong>{{ .date }}</strong> —
-      {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ end }}
-      {{ .role }} — <em>{{ .title }}</em>
-      {{ if .url }}</a>{{ end }},
-      {{ .institution }}
-    </li>
-    {{ end }}
-  </ul>
-</div>
-{{ end }}
-
-{{ with $a.books }}
-<div class="activity-section">
-  <h3>Books</h3>
-  <ul class="activity-list">
-    {{ range . }}
-    <li>
-      {{ .contribution }} —
-      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em>{{ with .note }} ({{ . }}){{ end }}</a>
-      — {{ .credit }}
-    </li>
-    {{ end }}
-  </ul>
-</div>
-{{ end }}
 
 {{ with $a.fellowships }}
 <div class="activity-section">
