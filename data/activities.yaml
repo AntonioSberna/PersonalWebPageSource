@@ -254,6 +254,8 @@ reviewer:
         url: "https://www.mdpi.com/journal/sustainability"
       - name: "Modelling"
         url: "https://www.mdpi.com/journal/modelling"
+      - name: "Infrastructure"
+        url: "https://www.mdpi.com/journal/infrastructures"
       - name: "Structures and Buildings"
         url: "https://www.icevirtuallibrary.com/toc/jstbu/current"
       - name: "Smart Infrastructures and Construction"
@@ -268,7 +270,7 @@ reviewer:
         url: "https://www.emerald.com/jfoen"
       - name: "Journal of Structural Integrity and Maintenance"
         url: "https://www.tandfonline.com/journals/tstr20"
-        
+
   - category: "Algorithms & AI"
     journals:
       - name: "Engineering Applications of Artificial Intelligence"
