@@ -25,8 +25,7 @@ The course introduces the nonlinear behaviour and numerical modelling of masonry
   auto; width:60%; border-radius:6px;">  
 
 
-## Questionario finale
+## Final questionnaire
 
-Questionario attivo fino al 9 luglio. Compilazione: circa due minuti.
-
-<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=0Lf4QSGaXEGcaaZ5hPPQ3l3z7C0bnZ9Ep-sTFWHQMOdUNERHRFAyRklTVDI1STBDNkpSV1M3UVJCVC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+The questionnaire will remain open until 9 July 2026.
+Estimated completion time: approximately two minutes.
