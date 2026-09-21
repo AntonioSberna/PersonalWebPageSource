@@ -28,4 +28,5 @@ The course introduces the nonlinear behaviour and numerical modelling of masonry
 ## Final questionnaire
 
 The questionnaire will remain open until 9 July 2026.
+
 Estimated completion time: approximately two minutes.
