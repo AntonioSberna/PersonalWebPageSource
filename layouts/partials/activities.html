@@ -97,6 +97,23 @@
 </div>
 {{ end }}
 
+
+{{ with $a.chair }}
+<div class="activity-section">
+  <h3>Special session organizer and chair</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      <strong>{{ .role }}</strong> —
+      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em></a>,
+      {{ .location }}, {{ .date }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+
 {{ with $a.theses }}
 <div class="activity-section">
   <h3>Thesis advisor</h3>
