@@ -6,7 +6,7 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      {{ .contribution }} —
+      <strong>{{ .contribution }}:</strong>
       <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em>{{ with .note }} ({{ . }}){{ end }}</a>
       — {{ .credit }}
     </li>
@@ -22,11 +22,10 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      <strong>{{ .date }}</strong> —
+      <strong>{{ .date }}:</strong>
       {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ end }}
       {{ .role }} — <em>{{ .title }}</em>
-      {{ if .url }}</a>{{ end }},
-      {{ .institution }}
+      {{ if .url }}</a>{{ end }} — {{ .institution }}
     </li>
     {{ end }}
   </ul>
@@ -39,11 +38,10 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      <strong>{{ .date }}</strong>
+      <strong>{{ .date }}:</strong>
       {{ if .url }}
       <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}><em>{{ .title }}</em></a>
-      {{ else }}<em>{{ .title }}</em>{{ end }},
-      {{ .location }}
+      {{ else }}<em>{{ .title }}</em>{{ end }} — {{ .location }}
     </li>
     {{ end }}
   </ul>
@@ -56,9 +54,8 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      <strong>{{ .role }}</strong> —
-      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em></a>,
-      {{ .location }}, {{ .date }}
+      <strong>{{ .role }}:</strong>
+      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em></a> — {{ .location }}, {{ .date }}
     </li>
     {{ end }}
   </ul>
@@ -71,9 +68,8 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      <strong>{{ .date }}</strong> —
-      <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .role }} — {{ .title }}</a>,
-      {{ .location }}
+      <strong>{{ .date }}:</strong>
+      <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .role }} — {{ .title }}</a> — {{ .location }}
     </li>
     {{ end }}
   </ul>
@@ -87,7 +83,7 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      <strong>{{ .date }}</strong> —
+      <strong>{{ .date }}:</strong>
       <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }},
       {{ .institution }}</a>
       {{ with .note }}<span style="color:var(--text-muted);">({{ . }})</span>{{ end }}
@@ -104,7 +100,7 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      <strong>{{ .date }}</strong> — {{ .title }}, {{ .institution }}<br>
+      <strong>{{ .date }}:</strong> {{ .title }}, {{ .institution }}<br>
       {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .project }}</a>{{ else }}{{ .project }}{{ end }}
       {{ if or .funding .coordinator }}
       <br><span style="color:var(--text-muted);">
@@ -124,9 +120,8 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      <strong>{{ .role }}</strong> —
-      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em></a>,
-      {{ .location }}, {{ .date }}
+      <strong>{{ .role }}:</strong>
+      <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em></a> — {{ .location }}, {{ .date }}
     </li>
     {{ end }}
   </ul>
@@ -140,10 +135,9 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      <strong>{{ .student }}</strong> —
+      <strong>{{ .student }}:</strong>
       <a href="{{ .url }}" target="_blank" rel="noopener"><em>{{ .title }}</em></a> —
-      {{ range $i, $adv := .advisors }}{{ if $i }}, {{ end }}{{ if eq $adv "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ $adv }}{{ end }}{{ end }}
-      — {{ .institution }}, {{ .year }}
+      {{ range $i, $adv := .advisors }}{{ if $i }}, {{ end }}{{ if eq $adv "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ $adv }}{{ end }}{{ end }}; {{ .institution }}, {{ .year }}
     </li>
     {{ end }}
   </ul>
