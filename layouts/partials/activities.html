@@ -98,6 +98,26 @@
 {{ end }}
 
 
+{{ with $a.research_projects }}
+<div class="activity-section">
+  <h3>Participation in Research Projects</h3>
+  <ul class="activity-list">
+    {{ range . }}
+    <li>
+      <strong>{{ .date }}</strong> — {{ .title }}, {{ .institution }}<br>
+      {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .project }}</a>{{ else }}{{ .project }}{{ end }}
+      {{ if or .funding .coordinator }}
+      <br><span style="color:var(--text-muted);">
+        {{ with .funding }}Funded by {{ . }}{{ end }}{{ if and .funding .coordinator }} · {{ end }}{{ with .coordinator }}Coordinated by {{ . }}{{ end }}
+      </span>
+      {{ end }}
+      {{ with .note }}<span style="color:var(--text-muted);">({{ . }})</span>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
 {{ with $a.chair }}
 <div class="activity-section">
   <h3>Special session organizer and chair</h3>
