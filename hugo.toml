@@ -18,7 +18,7 @@ paginate = 10
   addressNote = ""   # optional detail line shown below the address (e.g. "Room 3, 2nd floor")
   googleAnalytics = "G-V3BSP5QYMB"
 
-  bio = """Antonio P. Sberna is a Research Fellow of Structural Engineering at the University of Chieti-Pescara in Italy. His research activities mainly focus on **earthquake engineering**, with a specific focus on enhancing **seismic retrofitting design of existing structures**, **performance-based earthquake engineering**, and **structural optimization**."""
+  bio = """Antonio P. Sberna is a Research Fellow of Structural Engineering at the University of Chieti-Pescara in Italy. His research mainly focuses on **earthquake engineering**, with particular emphasis on **seismic retrofitting design of existing structures**, **performance-based earthquake engineering**, **reduced-order modelling of structures**, and **regional-scale seismic risk assessment**."""  
 
   # --- array-of-tables must come last within [params] ---
   [[params.emails]]
