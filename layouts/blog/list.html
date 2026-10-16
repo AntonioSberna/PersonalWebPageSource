@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>Blog</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</div>
+
+<div class="pub-full-list">
+  <div class="container">
+    <div class="blog-grid">
+      {{ range .Pages.ByDate.Reverse }}
+      {{ $img := .Resources.GetMatch "featured.*" }}
+      <a href="{{ .RelPermalink }}" class="blog-card">
+        {{ with $img }}
+        <div class="blog-card__img">
+          {{ $thumb := .Fill "640x360 Center" }}
+          <img src="{{ $thumb.RelPermalink }}" alt="" loading="lazy">
+        </div>
+        {{ end }}
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            {{ .Date.Format "2 January 2006" }}{{ with .Params.place }} · {{ . }}{{ end }}
+          </div>
+          <div class="blog-card__title">{{ .Title }}</div>
+          {{ with .Params.subtitle }}<div class="blog-card__subtitle">{{ . | markdownify }}</div>{{ end }}
+          <p class="blog-card__desc">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

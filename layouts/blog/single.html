@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0.5rem">
+      <a href="/blog/">← Blog</a>
+    </div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="blog-post__subtitle">{{ . | markdownify }}</p>{{ end }}
+    <div class="blog-post__meta">
+      <span>{{ .Date.Format "2 January 2006" }}</span>
+      {{ with .Params.place }}<span>{{ . }}</span>{{ end }}
+    </div>
+  </div>
+</div>
+
+<div class="pub-full-list">
+  <div class="container">
+    <article class="blog-post">
+      {{ with .Resources.GetMatch "featured.*" }}
+      <div class="blog-post__img">
+        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+      </div>
+      {{ end }}
+      <div class="teaching-content blog-post__content">
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
+</div>
+{{ end }}

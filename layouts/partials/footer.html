@@ -1,4 +1,7 @@
 <footer class="footer">
+  {{ if .IsHome }}
+  <a href="/blog/" class="footer__blog">Some random thoughts</a>
+  {{ end }}
   <p>
     &copy; {{ now.Year }}
     <a href="https://mastodon.uno/@antoniosberna" rel="me" target="_blank">Antonio P. Sberna</a>
