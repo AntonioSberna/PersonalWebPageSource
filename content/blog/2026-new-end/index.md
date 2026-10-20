@@ -27,7 +27,7 @@ What does tomorrow hold? A lot of uncertainty, surely. But also many good things
 
 
 
-<br><br>
+<br><br><br>
 A side note on this blog: it was part of the site's structure from the beginning, but I only started using it last month, and I have no idea how long the enthusiasm will last. It is mostly for me, a way to tidy up notes scribbled across notebook pages that could have served a far nobler purpose. In my defence, the last time I walked into a Staples the notebooks were 50 cents each, and I flew back to Italy with a backpack full of them. A fine waste of jet fuel :)
 
 
