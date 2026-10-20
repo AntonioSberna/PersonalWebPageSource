@@ -2,13 +2,11 @@
 {{- $pos := .Get "pos" | default "right" -}}
 {{- $width := .Get "width" | default "40%" -}}
 {{- $caption := .Get "caption" -}}
+{{- $link := .Get "link" -}}
 {{- with .Page.Resources.GetMatch $src }}{{ $src = .RelPermalink }}{{ end -}}
 <figure class="side-img side-img--{{ $pos }}" style="--side-width: {{ $width }}">
+  {{- if $link }}<a href="{{ $link }}" target="_blank" rel="noopener">{{ end -}}
   <img src="{{ $src }}" alt="{{ .Get "alt" | default $caption }}" loading="lazy">
+  {{- if $link }}</a>{{ end -}}
   {{- with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
 </figure>
-
-
-{{ with .Get "link" }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-<img src="{{ .Get "src" }}" alt="{{ .Get "caption" }}">
-{{ with .Get "link" }}</a>{{ end }}
