@@ -1,7 +1,7 @@
 ---
 title: "Who Else Read My Proposal?"
 subtitle: "LLMs, grant proposals and the privacy we quietly gave away"
-date: 2026-10-18
+date: 2026-10-04
 place: "Pescara, Italy"
 draft: false
 description: "Almost every grant proposal this year has probably passed through an LLM running on someone else's server. Three loosely connected thoughts on what that means."
