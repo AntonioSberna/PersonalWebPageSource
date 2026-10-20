@@ -56,7 +56,7 @@ I notice it in small ways. I get impatient with software that requires me to cli
 
 ## No way back
 
-Is this good? I honestly do not know. There is something lost in no longer struggling with the machine: the struggle taught us how things work underneath, and I suspect a generation that has never debugged by hand will understand its tools in a different, perhaps thinner way. There is also something gained: time, reach, and the possibility of building in weeks what would once have taken years.
+Is this good? I honestly do not know. There is something lost in no longer struggling with the machine: the struggle taught us how things work underneath, [la frase che ho cancellato è paternalistica e non la voglio, continua con qualcosa tipo che ti spingeva a leggere e capire come funziona, io personalmente ho imparato tanto così, forse per colmare le mie lacune di conoscenze di base sull'argomento che mi sono d'ostacolo a capire a fondo la materia] There is also something gained: time, reach, and the possibility of building in weeks what would once have taken years. [aggiungi battuta sul fatto che le giornate e settimane ormai sono scandite dal limite dei token]
 
 But whether it is good is almost beside the point. Nobody goes back to the road map once they have used a navigator, even those who complain that we have lost our sense of direction. The same will happen here. We will not return to typing every line, nor to the search box with its carefully chosen keywords.
 
