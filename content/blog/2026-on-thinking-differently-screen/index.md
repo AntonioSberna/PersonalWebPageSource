@@ -70,4 +70,8 @@ Perhaps the professor's remark is the best summary of where we are. After decade
 
 
 
-<p class="post-credits">Illustrations not otherwise credited were generated with Gemini 3 from prompts I wrote and Claude Opus 5.5 optimized (none of them comes close to [xkcd](https://xkcd.com/), who has been drawing stick figures smarter than most of us for twenty years; and yes, sooner or later a post illustrated with [PHD Comics](https://phdcomics.com/) strips will come too). The ideas and the text are mine; the English style and grammar were polished by Claude Opus 5.5.</p>
+<div class="post-credits">
+
+Illustrations not otherwise credited were generated with Gemini 3 from prompts I wrote and Claude Opus 5.5 optimized (none of them comes close to [xkcd](https://xkcd.com/), who has been drawing stick figures smarter than most of us for twenty years; and yes, sooner or later a post illustrated with [PHD Comics](https://phdcomics.com/) strips will come too). The ideas and the text are mine; the English style and grammar were polished by Claude Opus 5.5.
+
+</div>
