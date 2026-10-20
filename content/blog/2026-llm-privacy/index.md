@@ -42,7 +42,9 @@ Purpose-built hardware would solve the problem, and for a research group it may 
 
 The third question is the one that bothers me most, and it connects directly to what I wrote after ECEE. The MSCA Postdoctoral Fellowship is, in essence, a bet on a person and an idea: an individual researcher with an original, innovative but feasible project, to be carried out largely on their own in two years. For a long time the idea was the scarce resource. You got there by reading paper after paper, noticing what was missing, discarding what had already been done or could not be done with the time and means available, until you found a gap that was both worth filling and actually fillable.
 
-{{< side src="agent_ideas.jpeg" pos="left" width="48%"  caption="Ideas, now available in bulk. Judgement sold separately." >}}
+{{< side src="agent_ideas.jpeg" pos="right" width="50%"  caption="Ideas, now available in bulk. Judgement sold separately." >}}
+
+
 This is precisely the workflow agents are getting good at: scanning the literature, mapping open problems, judging feasibility, drafting a work plan. I did not use them for my proposal, but I have little doubt that others did, and that next year many more will. If an agent can produce a dozen credible project ideas in an afternoon, the idea stops being scarce. What remains? Perhaps the ability to choose among them, the judgement that recognizes which of the twelve deserves two years of one's life. Perhaps the execution. Perhaps simply the person, which is what the fellowship claims to fund anyway. Or perhaps a funding scheme built around the scarcity of good ideas will have to rethink what it is actually rewarding.
 
 <br><br>
