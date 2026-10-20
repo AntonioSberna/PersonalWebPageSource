@@ -6,7 +6,7 @@ authors:
   - admin
   - Jianga Liming
   - Usmani Asif
-date: 2026-11-01
+date: 2026-10-01
 publication_types: ["2"]
 publication: "Composite Structures"
 publication_short: "Com Str"
