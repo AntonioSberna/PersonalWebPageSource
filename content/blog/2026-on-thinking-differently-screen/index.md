@@ -15,11 +15,13 @@ It took me a moment to realise that his remark described not just the file, but 
 
 ## Code without typing
 
-{{< side src="xkcd_378_real_programmers.png" pos="right" width="40%" caption="Real programmers, before they started talking. For the record, I was team Emacs, then VSCodium, and now Claude Code. [xkcd #378](https://xkcd.com/378/) by Randall Munroe, CC BY-NC 2.5." >}}
+
 
 I no longer write code. Not in the sense I was taught, at least. I describe what I want, I discuss the data flow, I argue about units and sign conventions, I review what comes back, and I ask for corrections. In words. The keyboard is still there, but it has become a microphone with buttons.
 
 This is not laziness, or not only. The hard part of scientific programming was never the syntax: it was knowing what the code should do, and whether what it does is physically meaningful. That part has not gone anywhere. If anything, it is now the whole job. What has gone is the long, silent negotiation with the interpreter, the traceback read line by line until it finally made sense, the hour spent on a misplaced index, the small pleasure of a loop that finally runs.
+
+{{< side src="xkcd_378_real_programmers.png" pos="right" width="65%" link="https://xkcd.com/378/" caption="Real programmers, before they started talking. For the record, I was team Emacs, then VSCodium, and now Claude Code. [xkcd #378](https://xkcd.com/378/) by Randall Munroe, CC BY-NC 2.5." >}}
 
 In January 2023, [Andrej Karpathy](https://en.wikipedia.org/wiki/Andrej_Karpathy) (his biography is worth a read) [tweeted](https://twitter.com/karpathy/status/1617979122625712128) that the hottest new programming language is English. At the time it sounded like a provocation. Almost four years later, in my daily work it has become a plain description.
 
@@ -27,7 +29,6 @@ The idea itself is much older than the tweet. There is a whole field called [nat
 
 ## My agent's thinking
 
-{{< side src="xkcd_303_compiling.png" pos="left" width="40%" caption="The original excuse. [xkcd #303](https://xkcd.com/303/) by Randall Munroe, CC BY-NC 2.5." >}}
 
 Every programmer of a certain age knows this strip by heart. My older brother had it pinned on the wall of his room in the years he was studying computer science at university. It might still be there; I should ask my father to check.
 
@@ -35,21 +36,23 @@ The joke was about time. Compiling was dead time, legitimate and unchangeable, t
 
 Today the strip would need a new line. "Get back to work!" "My agent's thinking!" And yet it does not quite work, because those minutes are no longer empty. While the agent writes, I read what it wrote five minutes ago, I check the units, I prepare the next request. The waiting has not disappeared, it has changed nature: from idle time to review time. There is no corridor and no sword-fight.
 
+{{< side src="xkcd_303_compiling.png" pos="left" width="45%" link="https://xkcd.com/303/" caption="The original excuse. [xkcd #303](https://xkcd.com/303/) by Randall Munroe, CC BY-NC 2.5." >}}
+
 What has almost disappeared is debugging, at least as I knew it. No more staring at a stack trace late at night, no more print statements scattered through the code to find where a variable goes wrong. I describe the symptom, and the fix comes back. And this has a side effect that, I suspect, has not received the attention it deserves.
 
 The Catholic Church has already taken up the subject of AI: in May, Pope Leo XIV published [*Magnifica Humanitas*](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html), his first encyclical, devoted to the human person in the age of artificial intelligence. My fiancee is reading it these days and keeps praising how beautifully it is written. My first thought was that whoever drafted it must be the same guy who “ghostwrote the Pope’s last one” (perhaps only a few Italians will get the reference to [Smetto quando voglio](https://letterboxd.com/film/i-can-quit-whenever-i-want/), a movie I quote far too often, and a great one). I have not read it yet, so I cannot say whether it addresses the aspect I find most relevant. But I am confident that, once the general public grasps what agents can do, religious leaders all over the world will endorse them, if only for the dramatic drop in blasphemy and swearing among people debugging code. In Italy alone, the effect on the national balance of sins should be measurable.
 
 ## The search box is empty
 
-{{< side src="xkcd_979_wisdom_of_the_ancients.png" pos="right" width="40%" caption="How we used to look for answers. [xkcd #979](https://xkcd.com/979/) by Randall Munroe, CC BY-NC 2.5." >}}
-
 The same thing happened, more quietly, with search. I do not remember the last time I opened Google to look for something technical. I ask. In full sentences, with context, with follow-up questions, and I expect an answer rather than ten blue links to open, skim and compare.
+
+{{< side src="xkcd_979_wisdom_of_the_ancients.png" pos="right" width="40%" link="https://xkcd.com/979/" caption="How we used to look for answers. [xkcd #979](https://xkcd.com/979/) by Randall Munroe, CC BY-NC 2.5." >}}
 
 For a millennial, this is not a small thing. My generation grew up learning how to google. It was a skill, and its core principle was to distill a problem into the few words most likely to appear on the page that held the answer. Choosing the right keywords, stripping a question down to its essential nouns, adding quotes, excluding terms, knowing which forum would have the answer. We spoke to search engines in a strange, telegraphic dialect, and we were good at it. Now it works the other way around: the more context you give, the better the answer. That dialect is becoming useless, like knowing how to fold a road map.
 
 ## A second migration
 
-People of my generation have already migrated once, which, I realise, is exactly how the best old-timer lectures begin. When I was in elementary school, in the middle of Sicily, school research was done on books and encyclopedias. Then came encyclopedias on CD-ROM (I can still picture the Encarta box on the shelf; the disc must be somewhere at my father's place, though I would have nothing left to run it on :) ), then the browser. We adapted, and we were proud to be the generation that bridged the analogue and the digital worlds.
+People of my generation have already migrated once, which, I realise, is exactly how the best old-timer lectures begin. When I was in elementary school, in the middle of Sicily, school research was done on books and encyclopedias. Then came encyclopedias on CD-ROM (I can still picture the [Encarta](https://en.wikipedia.org/wiki/Encarta) box on the shelf; the disc must be somewhere at my father's place, though I would have nothing left to run it on :) ), then the browser. We adapted, and we were proud to be the generation that bridged the analogue and the digital worlds.
 
 Now we are migrating again, and this time the change is less visible but, in my opinion, deeper. It is not the tool that has changed; it is the way the brain approaches the screen. In front of a computer I no longer think in commands, keywords and syntax. I think in intentions, questions and explanations. I think as if someone were listening, because someone, or something, is.
 
