@@ -5,9 +5,13 @@ draft: false
 
 Unless otherwise noted, the text and original photographs on this site are © Antonio P. Sberna and licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0). You are free to share and adapt them, for any purpose, as long as you give appropriate credit and link back to the original post.
 
+## Material from my scientific papers
+
+Some part of this website include figures, abstracts or short extracts from papers I have authored or co-authored, whether published, under review or at other editorial stages. This material is not covered by the license above. Published work remains subject to the copyright and license terms of the respective publisher, and work not yet published may become so once it is. If you wish to reuse it, please cite the original paper and refer to its publisher's terms.
+
 ## Third-party material
 
-Some posts include material by other authors, like [here](./blog/2026-on-thinking-differently-screen/). This material is not covered by the license above and remains under its own terms, stated in the caption next to it.
+Some posts of my blog include material by other authors, like [here](./blog/2026-on-thinking-differently-screen/). This material is not covered by the license above and remains under its own terms, stated in the caption next to it.
 
 ## AI-generated images
 

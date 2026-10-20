@@ -1,7 +1,7 @@
 ---
 title: "These Are All English Words"
 subtitle: "On thinking differently in front of a screen"
-date: 2026-10-20
+date: 2026-10-17
 place: "Pescara, Italy"
 draft: false
 description: "I no longer write code with my hands, and I no longer google. Notes from a millennial on a shift that will not be reversed."
