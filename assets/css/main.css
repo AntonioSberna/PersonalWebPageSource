@@ -867,3 +867,19 @@ code.pgp-fingerprint {
   transition: border-color 0.2s, color 0.2s;
 }
 .footer a.footer__blog:hover { border-color: rgba(255,255,255,0.8); color: #fff; text-decoration: none; }
+
+
+/* Blockquote nei post (disclaimer, citazioni) */
+main blockquote {
+  margin: 1.75rem 0;
+  padding: 0.9rem 1.25rem;
+  border-left: 4px solid currentColor;
+  border-radius: 0 6px 6px 0;
+  background: color-mix(in srgb, currentColor 6%, transparent);
+  font-style: italic;
+  opacity: 0.9;
+}
+
+main blockquote p:last-child {
+  margin-bottom: 0;
+}
