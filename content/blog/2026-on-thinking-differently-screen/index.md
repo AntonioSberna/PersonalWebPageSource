@@ -21,7 +21,7 @@ I no longer write code. Not in the sense I was taught, at least. I describe what
 
 This is not laziness, or not only. The hard part of scientific programming was never the syntax: it was knowing what the code should do, and whether what it does is physically meaningful. That part has not gone anywhere. If anything, it is now the whole job. What has gone is the long, silent negotiation with the interpreter, the traceback read line by line until it finally made sense, the hour spent on a misplaced index, the small pleasure of a loop that finally runs.
 
-{{< side src="xkcd_378_real_programmers.png" pos="right" width="65%" link="https://xkcd.com/378/" caption="Real programmers, before they started talking. For the record, I was team Emacs, then VSCodium, and now Claude Code. [xkcd #378](https://xkcd.com/378/) by Randall Munroe, CC BY-NC 2.5." >}}
+{{< side src="xkcd_378_real_programmers.png" pos="right" width="65%" link="https://xkcd.com/378/" caption="Real programmers, before they started talking. (For the record, I was team Emacs, then VSCodium, and now Claude Code.) [xkcd #378](https://xkcd.com/378/) by Randall Munroe, CC BY-NC 2.5." >}}
 
 In January 2023, [Andrej Karpathy](https://en.wikipedia.org/wiki/Andrej_Karpathy) (his biography is worth a read) [tweeted](https://twitter.com/karpathy/status/1617979122625712128) that the hottest new programming language is English. At the time it sounded like a provocation. Almost four years later, in my daily work it has become a plain description.
 
@@ -36,7 +36,7 @@ The joke was about time. Compiling was dead time, legitimate and unchangeable, t
 
 Today the strip would need a new line. "Get back to work!" "My agent's thinking!" And yet it does not quite work, because those minutes are no longer empty. While the agent writes, I read what it wrote five minutes ago, I check the units, I prepare the next request. The waiting has not disappeared, it has changed nature: from idle time to review time. There is no corridor and no sword-fight.
 
-{{< side src="xkcd_303_compiling.png" pos="left" width="45%" link="https://xkcd.com/303/" caption="The original excuse. [xkcd #303](https://xkcd.com/303/) by Randall Munroe, CC BY-NC 2.5." >}}
+{{< side src="xkcd_303_compiling.png" pos="left" width="40%" link="https://xkcd.com/303/" caption="The original excuse. [xkcd #303](https://xkcd.com/303/) by Randall Munroe, CC BY-NC 2.5." >}}
 
 What has almost disappeared is debugging, at least as I knew it. No more staring at a stack trace late at night, no more print statements scattered through the code to find where a variable goes wrong. I describe the symptom, and the fix comes back. And this has a side effect that, I suspect, has not received the attention it deserves.
 
@@ -46,7 +46,7 @@ The Catholic Church has already taken up the subject of AI: in May, Pope Leo XIV
 
 The same thing happened, more quietly, with search. I do not remember the last time I opened Google to look for something technical. I ask. In full sentences, with context, with follow-up questions, and I expect an answer rather than ten blue links to open, skim and compare.
 
-{{< side src="xkcd_979_wisdom_of_the_ancients.png" pos="right" width="40%" link="https://xkcd.com/979/" caption="How we used to look for answers. [xkcd #979](https://xkcd.com/979/) by Randall Munroe, CC BY-NC 2.5." >}}
+{{< side src="xkcd_979_wisdom_of_the_ancients.png" pos="right" width="45%" link="https://xkcd.com/979/" caption="How we used to look for answers. [xkcd #979](https://xkcd.com/979/) by Randall Munroe, CC BY-NC 2.5." >}}
 
 For a millennial, this is not a small thing. My generation grew up learning how to google. It was a skill, and its core principle was to distill a problem into the few words most likely to appear on the page that held the answer. Choosing the right keywords, stripping a question down to its essential nouns, adding quotes, excluding terms, knowing which forum would have the answer. We spoke to search engines in a strange, telegraphic dialect, and we were good at it. Now it works the other way around: the more context you give, the better the answer. That dialect is becoming useless, like knowing how to fold a road map.
 
@@ -70,4 +70,4 @@ Perhaps the professor's remark is the best summary of where we are. After decade
 
 
 
-<p class="post-credits">Illustrations not otherwise credited were generated with Gemini 3 from prompts I wrote and Claude Opus 5.5 optimized. The ideas and the text are mine; the English style and grammar were polished by Claude Opus 5.5.</p>
+<p class="post-credits">Illustrations not otherwise credited were generated with Gemini 3 from prompts I wrote and Claude Opus 5.5 optimized (none of them comes close to [xkcd](https://xkcd.com/), who has been drawing stick figures smarter than most of us for twenty years; and yes, sooner or later a post illustrated with [PHD Comics](https://phdcomics.com/) strips will come too). The ideas and the text are mine; the English style and grammar were polished by Claude Opus 5.5.</p>
