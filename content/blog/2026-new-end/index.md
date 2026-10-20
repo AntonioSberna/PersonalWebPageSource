@@ -7,7 +7,7 @@ draft: false
 description: "Why I am leaving academia, and why I regret nothing."
 ---
 
-Research is one of those things that never had a clear beginning for me. I have thought about it ever since I understood what a university was and what academia meant. With ups and downs on that idea, I did my bachelor's, then my master's, and one evening (Easter 2020) I was offered a PhD. Reality collapsed. The rest of the story is on the main page of this site, which is why the site was born in the first place: to host a CV. What that page does not say is how the story ends: I am leaving academia. Hence this post.
+Research is one of those things that never had a clear beginning for me. I have thought about it ever since I understood what a university was and what academia meant. With ups and downs on that idea, I did my bachelor's, then my master's, and one evening (Easter 2020) I was offered a PhD. Reality collapsed. The rest of the story is on the main page of this site, which is why the site was born in the first place: to host a CV. What that page does not say is how this part of the story ends: I am leaving academia. Hence this post.
 
 Writing here, for me, is a way to line up ideas that have been spinning in my head for a long time. Making them public, even if nobody reads them, makes them real. Even though reality has already happened: the possibilities have collapsed into the single reality of the tangent universe.
 
