@@ -26,3 +26,7 @@ Element Modeling (FEM)", "Compressive behavior", "SHPB."]
 * Quasi-static and dynamic compressive behavior.
 * FEM and experiments validate auxetic behaviors.
 * Novel designs optimize protective performance.
+
+# Publication history
+* Submitted: September 2026
+* First review: October 2026

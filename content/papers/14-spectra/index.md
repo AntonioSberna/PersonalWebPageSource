@@ -24,3 +24,7 @@ tags: ["Local Seismic Response", "artificial accelerograms", "fully non-stationa
 * Hybrid motions reproduce the surface PGA and its record-to-record variability more closely than scaled natural records, which require large scaling factors (mean 2.19).
 * Ductility-demand spectra for three hysteretic SDOF models show that spectral compatibility alone does not guarantee equivalent nonlinear demand, especially for pinching systems and high behaviour factors.
 * Nonlinear time-history analyses of two six-storey RC buildings show that hybrid inputs closely match the benchmark interstory drift and torsional response, while scaled records overestimate it.
+
+
+# Publication history
+* Submitted: October 2026
