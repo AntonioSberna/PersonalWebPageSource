@@ -883,3 +883,11 @@ main blockquote {
 main blockquote p:last-child {
   margin-bottom: 0;
 }
+
+
+main .post-credits {
+  margin-top: 3rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  opacity: 0.6;
+}
