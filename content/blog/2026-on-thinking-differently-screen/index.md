@@ -52,7 +52,7 @@ Those of us born in the late eighties have already migrated once. We remember th
 
 Now we are migrating again, and this time the change is less visible but deeper. It is not the tool that has changed; it is the way the brain approaches the screen. In front of a computer I no longer think in commands, keywords and syntax. I think in intentions, questions and explanations. I think as if someone were listening, because someone, or something, is.
 
-I notice it in small ways. I get impatient with software that requires me to click through menus. I phrase my own notes as if they were prompts. When something does not work, my first instinct is no longer to search for the error message, but to explain the problem.
+I notice it in small ways. I get impatient with software that requires me to click through menus. I phrase my own notes as if they were prompts. When something does not work, my first instinct is no longer to search for the error message, but to explain the problem to a llm.
 
 ## No way back
 
