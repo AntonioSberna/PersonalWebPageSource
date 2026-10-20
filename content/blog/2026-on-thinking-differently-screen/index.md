@@ -67,3 +67,4 @@ Perhaps the professor's remark is the best summary of where we are. After decade
 
 
 
+<p class="post-credits">Illustrations not otherwise credited were generated with Gemini 3 from prompts I wrote and Claude Opus 5.5 optimized. The ideas and the text are mine; the English style and grammar were polished by Claude Opus 5.5.</p>
