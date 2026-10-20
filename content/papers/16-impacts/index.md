@@ -6,7 +6,7 @@ authors:
   - admin
   - Jiang Liming
   - Usmani Asif
-date: 2026-10-01
+date: 2025-04-09
 publication_types: ["2"]
 publication: "Composite Structures"
 publication_short: "Com Str"
@@ -26,6 +26,6 @@ tags: ["Arrowhead structures", "Auxetic metamaterials", "Selective Laser Melting
 * FEM and experiments validate auxetic behaviors.
 * Novel designs optimize protective performance.
 
-## Publication history
+### Publication history
 * Submitted: September 2026
 * First review: October 2026

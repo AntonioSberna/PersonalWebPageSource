@@ -26,5 +26,5 @@ tags: ["Local Seismic Response", "artificial accelerograms", "fully non-stationa
 * Nonlinear time-history analyses of two six-storey RC buildings show that hybrid inputs closely match the benchmark interstory drift and torsional response, while scaled records overestimate it.
 
 
-# Publication history
+### Publication history
 * Submitted: October 2026

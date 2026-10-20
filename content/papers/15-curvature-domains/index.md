@@ -25,5 +25,5 @@ tags: ["Reinforced concrete cross-sections", "Biaxial ductility", "Curvature dom
 * The model is more accurate than existing formulations. Mean errors drop from 7.8% to 1.2% as the axial load ratio increases. This makes the model suitable for displacement-based design and for calibrating lumped-plasticity models of RC columns.
 
 
-# Publication history
+### Publication history
 * Submitted: September 2026
