@@ -23,7 +23,7 @@ That observation opens three questions, related but distinct. Before getting to 
 
 The current rules are asymmetric. Applicants to Horizon Europe may use generative AI to prepare their proposals, provided they disclose it and take full responsibility for the content. Expert evaluators, on the other hand, must not delegate the evaluation to AI tools, and the Commission warns them that feeding proposals into online tools may breach the confidentiality requirements of their contract. The reasoning is sound. It is also slightly ironic, since in many cases the confidential text has already been read by a model long before any human evaluator opens it.
 
-{{< side src="msca_pf_2026_numbers.jpg" pos="right" width="60%" link="https://marie-sklodowska-curie-actions.ec.europa.eu/whats-new/news/postdoctoral-fellowships-2026-call-results" caption="MSCA Postdoctoral Fellowships 2026 in numbers" >}}
+{{< side src="proposal_evaluation.jpeg" pos="left" width="48%"  caption="Human bias in plain sight, machine bias under lock and key." >}}
 So let me ask the provocative question. If proposals are written with the help of a machine, why not have them scored by one? Peer review carries well-known biases: towards prestigious institutions, familiar names, fashionable topics, and the reviewer's own line of research. A model applied to every proposal with the same instructions would at least be consistent. It would not be tired by the fortieth proposal, it would not be a competitor of the applicant, and it would not be in a bad mood because its own grant was rejected the week before.
 
 The obvious objection is that we do not know how a language model "thinks". Its judgement is opaque, sensitive to phrasing, and hard to predict. All true. But are we really sure we know how a human reviewer thinks? Anyone who has received three reports on the same manuscript, one enthusiastic, one lukewarm and one openly hostile, knows that human judgement is not exactly a transparent process either. We tolerate its opacity because it is familiar, and because there is a name attached to the responsibility. Perhaps the real question is not which evaluator is more objective, but which kind of unpredictability we are willing to accept.
@@ -42,9 +42,14 @@ Purpose-built hardware would solve the problem, and for a research group it may 
 
 The third question is the one that bothers me most, and it connects directly to what I wrote after ECEE. The MSCA Postdoctoral Fellowship is, in essence, a bet on a person and an idea: an individual researcher with an original, innovative but feasible project, to be carried out largely on their own in two years. For a long time the idea was the scarce resource. You got there by reading paper after paper, noticing what was missing, discarding what had already been done or could not be done with the time and means available, until you found a gap that was both worth filling and actually fillable.
 
+{{< side src="agent_ideas.jpeg" pos="left" width="48%"  caption="Ideas, now available in bulk. Judgement sold separately." >}}
 This is precisely the workflow agents are getting good at: scanning the literature, mapping open problems, judging feasibility, drafting a work plan. I did not use them for my proposal, but I have little doubt that others did, and that next year many more will. If an agent can produce a dozen credible project ideas in an afternoon, the idea stops being scarce. What remains? Perhaps the ability to choose among them, the judgement that recognizes which of the twelve deserves two years of one's life. Perhaps the execution. Perhaps simply the person, which is what the fellowship claims to fund anyway. Or perhaps a funding scheme built around the scarcity of good ideas will have to rethink what it is actually rewarding.
 
 <br><br>
 Put together, these three thoughts describe a strange situation. We have handed our ideas, and the very process by which we form them, to a handful of companies, while forbidding evaluators from doing the same for the sake of confidentiality. We could keep those ideas at home, but only by buying hardware that a postdoc cannot afford. And the ideas themselves are getting cheaper to produce every month.
 
 I do not have a solution, and I am not even sure these are the right questions. But it would be nice if the academic community as a whole, from funding agencies to universities and journals, had guidance on this written by someone who actually knows what they are talking about. Until then, I will keep playing with local models, and keep using the server-based ones for the real work. The latter are changing the way I think in front of a computer, but that is material for another post coming soon.
+
+
+
+
