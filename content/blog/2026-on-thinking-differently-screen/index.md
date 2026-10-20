@@ -48,9 +48,9 @@ For a millennial, this is not a small thing. My generation grew up learning how 
 
 ## A second migration
 
-Those of us born in the late eighties have already migrated once. We remember the encyclopedia on the shelf, then the one on CD-ROM, then the browser. We adapted, and we were proud to be the generation that bridged the analogue and the digital worlds.
+Those of us born in the late eighties [togli il riferimento temporale, metti qualcosa di generico e alla fine della frase una battuta sul fatto che sembra una premessa delle migliori paternali da vecchio] have already migrated once. We remember the encyclopedia on the shelf [togli questo e metti le ricerche fatte sui libri e enciclopedie insegnate a scuola eleemntare, si sono di quell'epoca lì, nel centro della sicilia le ricerche ai tempi in cui ero alle scuole elementari si facevano nei libri], then the one on CD-ROM [mi ritorna ancora in mente lo scaffale di encarta, dovrei cercare il cd a casa di mio padre, ma non avrei dove farlo girare faccina], then the browser. We adapted, and we were proud to be the generation that bridged the analogue and the digital worlds.
 
-Now we are migrating again, and this time the change is less visible but deeper. It is not the tool that has changed; it is the way the brain approaches the screen. In front of a computer I no longer think in commands, keywords and syntax. I think in intentions, questions and explanations. I think as if someone were listening, because someone, or something, is.
+Now we are migrating again, and this time the change is less visible but deeper, in my opinion. It is not the tool that has changed; it is the way the brain approaches the screen. In front of a computer I no longer think in commands, keywords and syntax. I think in intentions, questions and explanations. I think as if someone were listening, because someone, or something, is.
 
 I notice it in small ways. I get impatient with software that requires me to click through menus. I phrase my own notes as if they were prompts. When something does not work, my first instinct is no longer to search for the error message, but to explain the problem to a llm.
 
