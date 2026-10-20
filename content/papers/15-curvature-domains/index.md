@@ -7,12 +7,14 @@ date: 2026-10-01
 publication_types: ["2"]
 publication: "Engineering Structures"
 publication_short: "Eng Str"
-abstract: "Seismic microzonation aims to characterize the Local Seismic Response (LSR) of a territory by accounting for the effects of local geological and geotechnical conditions on filtering the seismic motion at the bedrock. The reliability of the resulting microzonation therefore depends not only on the geotechnical model but also on how the seismic input at the bedrock is defined. Current practice generally relies on selecting natural accelerograms from available databases to match a target response spectrum. Although effective in the spectral domain, this approach may not adequately reproduce the time-dependent characteristics of the seismic motion expected at the site. This study investigates the influence of bedrock input-motion modelling on seismic microzonation results. Fully non-stationary artificial accelerograms are generated from the target response spectrum and from records obtained in the neighborhood of the site. Their effects on the LSR are evaluated through one-dimensional linear-equivalent site response analyses and compared with those obtained using or conventionally selected natural accelerograms, or using accelerograms recorded directly at the site. The study also highlights the extent to which the representation of the bedrock seismic input can affect, after the evaluation of LSR, the estimated nonlinear response of regular and irregular multi-story reinforced concrete frames."
-summary: "Engineered design frameworks for seismic retrofitting: state-of-the-art methodologies, emerging trends, and future research directions."
-tags: ["Local Seismic Response", "artificial accelerograms", "fully non-stationary", "bedrock seismic action", "R.C. frame nonlinear response"]
-url_pdf: "https://link.springer.com/content/pdf/10.1007/s10518-025-02213-x.pdf"
-doi: "https://doi.org/10.1007/s10518-025-02213-x"
-url_source: "https://link.springer.com/article/10.1007/s10518-025-02213-x"
+abstract: "The accurate yet practical assessment of deformation capacity of reinforced concrete (RC)
+members under axial load and biaxial bending is a key challenge in performance-based seismic engineering. This study develops a new set of closed-form analytical expressions for the analytical approximation of the biaxial elastic curvature, ultimate curvature and curvature ductility domains of rectangular RC cross-sections. An extensive parametric dataset of curvature domains is generated, spanning a wide range of geometrical configurations, reinforcement ratios, and axial load levels. The resulting directional capacity data are then approximated using a super-ellipse equation with the shape exponents calibrated via symbolic regression using a multi-population genetic programming (GP) algorithm. The resulting closed-form equations accurately capture the complex direction-dependent nature of the domains, showing superior accuracy and generality when compared to existing formulations. The proposed model successfully balances high fidelity while maintaining computational efficiency of a closed-form solution, ensuring compactness and ease of integration into structural analysis and design tools. The results will show that the model can balance accuracy and usability for performance-based assessment, displacement-based design, and the calibration of lumped-plasticity nonlinear models of RC columns."
+summary: "Closed-form super-ellipse expressions, calibrated via symbolic regression, for biaxial curvature and ductility domains of rectangular RC sections."
+tags: ["Reinforced concrete cross-sections, "Biaxial ductility, "Curvature domain, "Ductility domain,
+"Symbolic regression, "Machine Leaning, "Optimization"]
+# url_pdf: "https://link.springer.com/content/pdf/10.1007/s10518-025-02213-x.pdf"
+# doi: "https://doi.org/10.1007/s10518-025-02213-x"
+# url_source: "https://link.springer.com/article/10.1007/s10518-025-02213-x"
 ---
 
 ## Highlights
@@ -21,3 +23,6 @@ url_source: "https://link.springer.com/article/10.1007/s10518-025-02213-x"
 * Applications of Multi-Criteria Decision-Making and Optimization frameworks are described in detail
 * Pro and cons of MCDM Optimization frameworks are compared across extensive literature review
 * It is highlighted the need for standardized methodologies to enhance sustainable design
+
+
+# Editorial history 
