@@ -9,7 +9,7 @@ description: "Almost every grant proposal this year has probably passed through 
 
 It is no secret that this year I resubmitted my MSCA Postdoctoral Fellowship proposal. Unfortunately, it does not reflect what is happening in the world right now, something I touched on briefly [in my previous post](../2026-ecee-science-w-agents/) and plan to come back to here soon. Still, the resubmission left me with a thought I cannot shake off.
 
-[![MSCA Postdoctoral Fellowships 2026 in numbers](msca_pf_2026_numbers.jpg)](LINK-MSCA-NUMBERS)
+[![MSCA Postdoctoral Fellowships 2026 in numbers](msca_pf_2026_numbers.jpg)](https://marie-sklodowska-curie-actions.ec.europa.eu/whats-new/news/postdoctoral-fellowships-2026-call-results)
 
 I am fairly confident that almost every proposal submitted this year went through a large language model at some point. Not a model running quietly on the applicant's laptop, but one running on someone else's servers. If that is true, the companies operating those servers hold something no funding agency has ever had: the complete library of proposals for one of Europe's most competitive research programmes, and probably for every other grant call open in the same months.
 
