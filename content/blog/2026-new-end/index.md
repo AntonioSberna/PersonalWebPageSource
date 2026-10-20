@@ -33,6 +33,6 @@ A side note on this blog: it was part of the site's structure from the beginning
 
 <div class="post-credits">
 
-Ideas and text are mine, English Claude Opus 5.5 optimized. The illustration is AI-generated from my prompt.
+Ideas and text are mine, English Claude Opus 5.5 optimized.
 
 </div>
