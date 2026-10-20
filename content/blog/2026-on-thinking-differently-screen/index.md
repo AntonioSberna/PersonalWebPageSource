@@ -7,7 +7,7 @@ draft: false
 description: "I no longer write code with my hands, and I no longer google. Notes from a millennial on a shift that will not be reversed."
 ---
 
-A few weeks ago I showed a professor the latest developments of the framework we are building together. Among them was something I was rather proud of: an MCP server, a layer that lets a language model use the framework directly, building models, running analyses, reading results. He scrolled through the code for a while, frowned, and said: "But these are all English words."
+A few weeks ago I showed a professor the latest developments of the framework we are building together. Among them was something I was rather proud of: an MCP server, a layer that lets a language model use the framework directly, building models, running analyses, reading results[aggiungi qualcosa che sul come ho scoperto l'mcp e la mia esperienza sarà tema di uno specifico post]. He scrolled through the code for a while, frowned, and said: "But these are all English words."
 
 He was right. Most of what makes an MCP server work is not code in the traditional sense. It is descriptions: what each tool does, when to use it, what the inputs mean, what can go wrong. Sentences written for a reader that happens to be a machine. To a structural engineer trained on Fortran and loops, it must have looked like documentation that had swallowed the program.
 
