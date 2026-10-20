@@ -1,9 +1,9 @@
 ---
 title: "Collapsed Possibilities"
 subtitle: "A new end"
-date: 2026-10-01
+date: 2026-10-19
 place: "Pescara, Italy"
-draft: true
+draft: false
 description: "Why I am leaving academia, and why I regret nothing."
 ---
 
