@@ -7,3 +7,8 @@
   <img src="{{ $src }}" alt="{{ .Get "alt" | default $caption }}" loading="lazy">
   {{- with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
 </figure>
+
+
+{{ with .Get "link" }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+<img src="{{ .Get "src" }}" alt="{{ .Get "caption" }}">
+{{ with .Get "link" }}</a>{{ end }}
