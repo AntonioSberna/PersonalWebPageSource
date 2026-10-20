@@ -9,7 +9,7 @@ description: "I no longer write code with my hands, and I no longer google. Note
 
 A few weeks ago I showed a professor the latest developments of the framework we are building together. Among them was something I was rather proud of: an MCP server, a layer that lets a language model use the framework directly, building models, running analyses, reading results[aggiungi qualcosa che sul come ho scoperto l'mcp e la mia esperienza sarà tema di uno specifico post]. He scrolled through the code for a while, frowned, and said: "But these are all English words."
 
-He was right. Most of what makes an MCP server work is not code in the traditional sense. It is descriptions: what each tool does, when to use it, what the inputs mean, what can go wrong. Sentences written for a reader that happens to be a machine. To a structural engineer trained on Fortran and loops, it must have looked like documentation that had swallowed the program.
+He was right. Most of what makes an MCP server work is not code in the traditional sense. It is descriptions: what each tool does, when to use it, what the inputs mean, what can go wrong. Sentences written for a reader that happens to be a machine. To a structural engineer trained on Fortran and loops[togli fortran e metti che il primo corso di informatica il primo anno del bachelor era su C], it must have looked like documentation that had swallowed the program.
 
 It took me a moment to realise that his remark described not just the file, but me.
 
@@ -19,9 +19,9 @@ It took me a moment to realise that his remark described not just the file, but 
 
 I no longer write code. Not in the sense I was taught, at least. I describe what I want, I discuss the data flow, I argue about units and sign conventions, I review what comes back, and I ask for corrections. In words. The keyboard is still there, but it has become a microphone with buttons.
 
-This is not laziness, or not only. The hard part of scientific programming was never the syntax: it was knowing what the code should do, and whether what it does is physically meaningful. That part has not gone anywhere. If anything, it is now the whole job. What has gone is the long, silent negotiation with the compiler, the hour spent on a misplaced index, the small pleasure of a loop that finally runs.
+This is not laziness, or not only. The hard part of scientific programming was never the syntax: it was knowing what the code should do, and whether what it does is physically meaningful. That part has not gone anywhere. If anything, it is now the whole job. What has gone is the long, silent negotiation with the compiler [al posto del compilatore metti qualcosa riguardo gli interpretati, qualcosa sugli errori], the hour spent on a misplaced index, the small pleasure of a loop that finally runs.
 
-In January 2023, Andrej Karpathy [tweeted](https://twitter.com/karpathy/status/1617979122625712128) that the hottest new programming language is English. At the time it sounded like a provocation. In my daily work it has become a plain description.
+In January 2023, Andrej Karpathy[commento tra parentesi di leggere la biografia] [tweeted](https://twitter.com/karpathy/status/1617979122625712128) that the hottest new programming language is English. At the time it sounded like a provocation. Two years later, in my daily work it has become a plain description.
 
 The idea itself is much older than the tweet. There is a whole field called [natural language programming](https://en.wikipedia.org/wiki/Natural_language_programming), where programs are written as structured English sentences that map, one by one and without ambiguity, onto procedures in a conventional language. Back in 1979 Dijkstra had already dismissed the whole ambition in a short essay with a title that leaves little room for doubt, *On the foolishness of "natural language programming"*. I will be honest: I understand very little of this literature, and I am in no position to say whether what I do every day counts as its fulfilment or as exactly the foolishness Dijkstra warned about. Probably a bit of both.
 
