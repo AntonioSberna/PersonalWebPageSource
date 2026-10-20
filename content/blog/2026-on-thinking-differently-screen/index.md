@@ -44,7 +44,7 @@ The Catholic Church has already taken up the subject of AI: in May, Pope Leo XIV
 
 ## The search box is empty
 
-The same thing happened, more quietly, with search. I do not remember the last time I opened Google to look for something technical. I ask. In full sentences, with context, with follow-up questions, and I expect an answer rather than ten blue links to open, skim and compare.
+The same thing happened, more quietly, with search. I do not remember the last time I opened Google to look for something technical. I ask. In full sentences, with context (a lot of context, which raises questions of its own), with follow-up questions, and I expect an answer rather than ten blue links to open, skim and compare.
 
 {{< side src="xkcd_979_wisdom_of_the_ancients.png" pos="right" width="45%" link="https://xkcd.com/979/" caption="How we used to look for answers. [xkcd #979](https://xkcd.com/979/) by Randall Munroe, CC BY-NC 2.5." >}}
 
