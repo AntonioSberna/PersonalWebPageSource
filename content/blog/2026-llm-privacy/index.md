@@ -1,7 +1,7 @@
 ---
 title: "Who Else Read My Proposal?"
 subtitle: "LLMs, grant proposals and the privacy we quietly gave away"
-date: 2026-10-20
+date: 2026-10-18
 place: "Pescara, Italy"
 draft: false
 description: "Almost every grant proposal this year has probably passed through an LLM running on someone else's server. Three loosely connected thoughts on what that means."
@@ -9,9 +9,9 @@ description: "Almost every grant proposal this year has probably passed through 
 
 It is no secret that this year I resubmitted my MSCA Postdoctoral Fellowship proposal. Unfortunately, it does not reflect what is happening in the world right now, something I touched on briefly [in my previous post](../2026-ecee-science-w-agents/) and plan to come back to here soon. Still, the resubmission left me with a thought I cannot shake off.
 
-[![MSCA Postdoctoral Fellowships 2026 in numbers](msca_pf_2026_numbers.jpg)](https://marie-sklodowska-curie-actions.ec.europa.eu/whats-new/news/postdoctoral-fellowships-2026-call-results)
 
-I am fairly confident that almost every proposal submitted this year went through a large language model at some point. Not a model running quietly on the applicant's laptop, but one running on someone else's servers. If that is true, the companies operating those servers hold something no funding agency has ever had: the complete library of proposals for one of Europe's most competitive research programmes, and probably for every other grant call open in the same months.
+I am fairly confident that almost every proposal submitted this year went through a large language model at some point. Not a model running quietly on the applicant's laptop, but one running on someone else's servers. If that is true, the companies operating those servers hold something no funding agency has ever had: the complete library of proposals for one of Europe's most competitive research programmes, and probably for every other grant call open in the last period.
+{{< side src="msca_pf_2026_numbers.jpg" pos="right" width="60%" link="https://marie-sklodowska-curie-actions.ec.europa.eu/whats-new/news/postdoctoral-fellowships-2026-call-results" caption="MSCA Postdoctoral Fellowships 2026 in numbers" >}}
 
 While rewriting my own proposal (and no, I did not let agents loose on it), I was struck by how much these tools had changed in a single year. Part of it is surely me: I am more fluent with them, I know what to ask and when to stop trusting the answer. But the difference was too large to be explained by my learning curve alone. The models themselves are simply much better than they were twelve months ago.
 
