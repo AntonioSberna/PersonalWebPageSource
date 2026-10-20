@@ -33,6 +33,6 @@ A side note on this blog: it was part of the site's structure from the beginning
 
 <div class="post-credits">
 
-Ideas and text are mine, English Claude Opus 5.5 optimized. For fellow matplotlib addicts, the code to create the figure is [here](./featured.py).
+Ideas and text are (obviously) mine, English Claude Opus 5.5 optimized. For fellow matplotlib addicts, the code to create the figure is [here](./featured.py).
 
 </div>
