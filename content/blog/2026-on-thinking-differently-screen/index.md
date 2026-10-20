@@ -35,6 +35,7 @@ The joke was about time. Compiling was dead time, legitimate and untouchable [ca
 
 Today the strip would need a new line. "Get back to work!" "My agent's thinking!" And yet it does not quite work, because those minutes are no longer empty. While the agent writes, I read what it wrote five minutes ago, I check the units, I prepare the next request. The waiting has not disappeared, it has changed nature: from idle time to review time. There is no corridor and no sword-fight. Only a slightly different kind of tiredness. [togli la parte di tiredness]
 
+[deve essere collegato meglio, un'introduzione sulla storia che non si fa più debug]
 Some things, however, have improved without a doubt. The Catholic Church has already taken up the subject: in May, Pope Leo XIV published [*Magnifica Humanitas*](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html), his first encyclical, devoted to the human person in the age of artificial intelligence. My girlfriend is reading it these days and keeps praising how beautifully it is written. I have not read it yet, so I cannot say whether it addresses the aspect I find most relevant. But I am confident that, once the general public grasps what agents can do, religious leaders all over the world will endorse them, if only for the dramatic drop in blasphemy and swearing among people debugging code. In Italy alone, the effect on the national balance of sins should be measurable.
 
 ## The search box is empty
@@ -43,7 +44,7 @@ Some things, however, have improved without a doubt. The Catholic Church has alr
 
 The same thing happened, more quietly, with search. I do not remember the last time I opened Google to look for something technical. I ask. In full sentences, with context, with follow-up questions, and I expect an answer rather than ten blue links to open, skim and compare.
 
-For a millennial, this is not a small thing. My generation grew up learning how to google. It was a skill: choosing the right keywords, stripping a question down to its essential nouns, adding quotes, excluding terms, knowing which forum would have the answer. We spoke to search engines in a strange, telegraphic dialect, and we were good at it. That dialect is becoming useless, like knowing how to fold a road map.
+For a millennial, this is not a small thing. My generation grew up learning how to google. It was a skill: choosing the right keywords, [aggiungi che il principio era distillare il problema in poche parole pensando quelle che potessero essere presenti nella pagina, ora no è più così] stripping a question down to its essential nouns, adding quotes, excluding terms, knowing which forum would have the answer. We spoke to search engines in a strange, telegraphic dialect, and we were good at it. That dialect is becoming useless, like knowing how to fold a road map.
 
 ## A second migration
 
