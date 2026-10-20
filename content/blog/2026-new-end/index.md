@@ -15,9 +15,10 @@ I consider myself a hedonist. I will not go into what I think about life, or I w
 
 Straight to the point: this way of being is what led me to research. Civil engineering came in sideways, along a path shaped by other things, and the two converged at the same point in space-time. Now, after a PhD and three years as a postdoc, things have taken a different direction.
 
-Some will call it selfish. But in the end, society is an emergent property of a set of individuals, each moving forward for their own survival. Through the magic of complex systems, society comes out of it, with all its altruism and everything else. The reasons start from people's characteristics, but at the bottom there is always individual survival. I will not wade any deeper into complex systems or philosophy, which I could not untangle properly. I am an engineer, after all (stereotype included).
+Some will call it selfish. But in the end, society is an emergent property of a set of individuals, each moving forward for their own survival. Through the magic of complex systems, society comes out of it, with all its altruism and everything else. The reasons start from people's characteristics, but at the bottom there is always individual survival. I will not wade any deeper into complex systems or philosophy, which I could not untangle properly. I am an engineer, after all (stereotype included :-) ).
 
-So, on the verge of turning 33, my path has taken a different direction. I regret nothing: not what I did, not what I did not do [cambia con le opportunità che ho lasciato andare], not the choices I made. I am deeply grateful for all the opportunities I have had in my life, and not only in academia. This is not the place to thank everyone who, in one way or another, for a moment short or long, has been beside me in whatever role. As I write this, they are all passing through my mind, and I am struck by how many there are.
+
+So, on the verge of turning 33, my path is turning elsewhere. I regret nothing: not what I did, not the opportunities I let go, not the choices I made. I am deeply grateful for all the opportunities I have had in my life, and not only in academia. This is not the place to thank everyone who, in one way or another, for a moment short or long, has been beside me in whatever role. As I write this, they are all passing through my mind, and I am struck by how many there are.
 
 For now, I think this phase has come to an end. It happens. It has happened to many people better than me (unfortunately). now it is happening to me.
 
@@ -33,6 +34,6 @@ A side note on this blog: it was part of the site's structure from the beginning
 
 <div class="post-credits">
 
-Ideas and text are (obviously) mine, English Claude Opus 5.5 optimized. For fellow matplotlib addicts, the code to create the figure is [here](./featured.py).
+Ideas and text are (obviously) mine, English optimized by Claude Opus 5.5. For fellow matplotlib addicts, the code to create the figure is [here](./featured.py).
 
 </div>
