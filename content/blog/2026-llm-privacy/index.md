@@ -7,7 +7,7 @@ draft: false
 description: "Almost every grant proposal this year has probably passed through an LLM running on someone else's server. Three loosely connected thoughts on what that means."
 ---
 
-It is no secret that this year I resubmitted my MSCA Postdoctoral Fellowship proposal. Unfortunately, it does not reflect what is happening in the world right now, something I touched on briefly [in my previous post](LINK-TO-ECEE-POST) and plan to come back to here soon. Still, the resubmission left me with a thought I cannot shake off.
+It is no secret that this year I resubmitted my MSCA Postdoctoral Fellowship proposal. Unfortunately, it does not reflect what is happening in the world right now, something I touched on briefly [in my previous post](../2026-ecee-science-w-agents/) and plan to come back to here soon. Still, the resubmission left me with a thought I cannot shake off.
 
 I am fairly confident that almost every proposal submitted this year went through a large language model at some point. Not a model running quietly on the applicant's laptop, but one running on someone else's servers. If that is true, the companies operating those servers hold something no funding agency has ever had: the complete library of proposals for one of Europe's most competitive research programmes, and probably for every other grant call open in the same months.
 
@@ -23,7 +23,7 @@ The current rules are asymmetric. Applicants to Horizon Europe may use generativ
 
 So let me ask the provocative question. If proposals are written with the help of a machine, why not have them scored by one? Peer review carries well-known biases: towards prestigious institutions, familiar names, fashionable topics, and the reviewer's own line of research. A model applied to every proposal with the same instructions would at least be consistent. It would not be tired by the fortieth proposal, it would not be a competitor of the applicant, and it would not be in a bad mood because its own grant was rejected the week before.
 
-The obvious objection is that we do not know how a language model "thinks". Its judgement is opaque, sensitive to phrasing, and hard to predict. All true. But are we really sure we know how a human reviewer thinks? Anyone who has received three reports on the same proposal, one enthusiastic, one lukewarm and one openly hostile, knows that human judgement is not exactly a transparent process either. We tolerate its opacity because it is familiar, and because there is a name attached to the responsibility. Perhaps the real question is not which evaluator is more objective, but which kind of unpredictability we are willing to accept.
+The obvious objection is that we do not know how a language model "thinks". Its judgement is opaque, sensitive to phrasing, and hard to predict. All true. But are we really sure we know how a human reviewer thinks? Anyone who has received three reports on the manuscript, one enthusiastic, one lukewarm and one openly hostile, knows that human judgement is not exactly a transparent process either. We tolerate its opacity because it is familiar, and because there is a name attached to the responsibility. Perhaps the real question is not which evaluator is more objective, but which kind of unpredictability we are willing to accept.
 
 ## 2. Who else read my proposal?
 
