@@ -15,7 +15,7 @@ It took me a moment to realise that his remark described not just the file, but 
 
 ## Code without typing
 
-{{< side src="xkcd_378_real_programmers.png" pos="right" width="40%" caption="Real programmers, before they started talking. [xkcd #378](https://xkcd.com/378/) by Randall Munroe, CC BY-NC 2.5." >}}
+{{< side src="xkcd_378_real_programmers.png" pos="right" width="40%" caption="Real programmers, before they started talking.[aggiungi un breve commento che io ero team emacs, prima di passare a vscodium, e infine a claude code] [xkcd #378](https://xkcd.com/378/) by Randall Munroe, CC BY-NC 2.5." >}}
 
 I no longer write code. Not in the sense I was taught, at least. I describe what I want, I discuss the data flow, I argue about units and sign conventions, I review what comes back, and I ask for corrections. In words. The keyboard is still there, but it has become a microphone with buttons.
 
@@ -29,7 +29,7 @@ The idea itself is much older than the tweet. There is a whole field called [nat
 
 {{< side src="xkcd_303_compiling.png" pos="left" width="40%" caption="The original excuse. [xkcd #303](https://xkcd.com/303/) by Randall Munroe, CC BY-NC 2.5." >}}
 
-There is an old xkcd strip that every programmer of a certain age knows by heart. Two developers are sword-fighting on office chairs in the corridor, the boss shouts at them to get back to work, and they answer: "Compiling!" The boss: "Oh. Carry on." My older brother had it pinned on the wall of his room in the years he was studying computer science at university. It might still be there; I should ask my father to check.
+There is an old xkcd strip: two developers are sword-fighting on office chairs in the corridor, the boss shouts at them to get back to work, and they answer: "Compiling!" The boss: "Oh. Carry on." [non serve questa descrizione, c'è nel blog, la gente la vede, mettiamo un commento veloce] My older brother had it pinned on the wall of his room in the years he was studying computer science at university. It might still be there; I should ask my father to check.
 
 The joke was about time. Compiling was dead time, legitimate and untouchable, the only moment in which a programmer could do nothing without feeling guilty.
 
