@@ -58,3 +58,4 @@ P.S. A few weeks later came the confirmation: [OpenAI is giving mathematics a th
 More to read about it: [Is AI the end of math as we know it?](https://www.quantamagazine.org/is-ai-the-end-of-math-as-we-know-it-20261005/)
 
 
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/1KwRO8MPsAFMzKrMMvRVqh/video?utm_source=generator&si=29996c7022094d70" width="496" height="279" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
