@@ -87,4 +87,3 @@ fig.text(0.99, 0.01, "Indicative orders of magnitude", fontsize=6.5,
 
 fig.tight_layout()
 fig.savefig("decision_times.png", dpi=300, facecolor="white")
-fig.savefig("decision_times.svg", facecolor="white")
