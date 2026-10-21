@@ -67,4 +67,10 @@ More to read about it: [Is AI the end of math as we know it?](https://www.quanta
 
 ---
 October 21st 2026
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/1KwRO8MPsAFMzKrMMvRVqh/video?utm_source=generator&si=29996c7022094d70" width="496" height="279" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+Just today I listened to the new episode of The Rest Is Science. Even a podcast, hardly the slowest of formats, struggles to keep pace with what is happening, which says a lot about how disruptive this is. (That is my comment no. 1.)
+
+A side note: the episode is ___ (candidates may insert their favourite positive adjective here; I have run out of words). I usually listen to podcasts on my commute to the university, but this time I got completely lost in it. My brain proceed on the street with the autopilot on. I hope I did not cross on some red lights :-).
+
+Unsolicited comment no. 2:
+{{< spotify id="1KwRO8MPsAFMzKrMMvRVqh" video="true" >}}

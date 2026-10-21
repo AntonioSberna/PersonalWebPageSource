@@ -1,0 +1,9 @@
+{{- $id := .Get "id" -}}
+{{- $type := .Get "type" | default "episode" -}}
+{{- $video := eq (.Get "video") "true" -}}
+<div style="max-width:640px;margin:1.5rem auto;">
+  <iframe src="https://open.spotify.com/embed/{{ $type }}/{{ $id }}{{ if $video }}/video{{ end }}"
+          style="display:block;width:100%;border:0;border-radius:12px;{{ if $video }}aspect-ratio:16/9;{{ else }}height:152px;{{ end }}"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          allowfullscreen loading="lazy"></iframe>
+</div>
