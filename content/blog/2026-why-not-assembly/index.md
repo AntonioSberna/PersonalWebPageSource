@@ -1,13 +1,13 @@
 ---
 title: "Why Not Straight to Assembly?"
-subtitle: "One question, and an answer that is not mine"
+subtitle: "Just a question, and an answer that is not mine"
 date: 2026-10-21
 place: "Pescara, Italy"
 draft: false
 description: "Ask an LLM for something computational and you get Python back. Why not something closer to the metal? I asked one."
 ---
 
-I was thinking, just a question. Whenever I ask an LLM for something computational, I get Python back. I tried with the ones I use (ChatGPT, Claude, Gemini and [Lumo](https://lumo.proton.me/), Proton's assistant, which runs on open models, Mistral's among them), and the answer is always the same. Wouldn't it be better to get something lower level, say assembly directly? I am no expert on the subject, and the question was already lurking at the end of [another post](../2026-on-thinking-differently-screen/).
+I was thinking, just a question. Whenever I ask an LLM for something computational, I get Python back. I tried with the ones I use (ChatGPT, [Claude](https://claude.ai/), [Gemini](https://gemini.google.com/) and [Lumo](https://lumo.proton.me/), Proton's assistant, which runs on open models, Mistral's among them), and the answer is always the same. Wouldn't it be better to get something lower level, say assembly directly? I am no expert on the subject, and the question was already lurking at the end of [another post](../2026-on-thinking-differently-screen/).
 
 So I asked Claude Opus 5.5, and this is its answer:
 
