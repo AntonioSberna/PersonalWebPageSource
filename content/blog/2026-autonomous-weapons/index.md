@@ -1,7 +1,7 @@
 ---
 title: "Nobody at the Trigger"
 subtitle: "My two cents on autonomous weapons, from well outside the field"
-date: 2026-10-21
+date: 2026-10-18
 place: "Pescara, Italy"
 draft: false
 description: "War is probably here to stay. Some ways of fighting it do not have to be. A citizen's plea to ban autonomous weapons, a month before the CCW Review Conference in Geneva."
@@ -88,7 +88,7 @@ Meanwhile, the line is being drawn somewhere else. Earlier this year, the Pentag
 
 ## Not a manifesto
 
-This post is not a manifesto. It is not an expert opinion, nor a petition, nor a verdict on those who are defending themselves today with whatever works against an enemy that will not wait for Geneva. It is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I opened by saying that I know nothing about this subject, and that is precisely the point. You should not need to be an expert to have a say on who, or what, is allowed to decide to kill.
+This post is not a manifesto. It is not an expert opinion, nor a petition, nor a verdict on those who are defending themselves today with whatever works against an enemy that will not wait for Geneva. It is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I opened by saying that I know nothing about this subject, and that is precisely the point. You should not need to be an expert to have a say on who, or what, is allowed to decide to kill. [mettere che ho solo lavorato per ricerca scientifica per alcuni algoritmi e sto vedendo un po' le potenzialità, da questo nasce questa riflessione, stavo pensando a cosa potesse essere usato questo genere di strumenti, del blackjack poi ne parliamo :-)]
 
 I no longer believe, as Gino Strada did, that we will abolish war. But I still believe we can decide how it may be fought: that behind every death there will be someone who decided it, who could have said no, and who will have to answer for it. Even Luv, between one coat of nail polish and the next, had to give the order herself. Let us keep at least that.
 
