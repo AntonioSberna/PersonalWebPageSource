@@ -54,5 +54,6 @@ I do not have a solution, and I am not even sure these are the right questions. 
 
 
 
+---
 
 <p class="post-credits">Illustrations generated with Gemini 3 from my own prompts, refined with Claude Opus 5.5.</p>
