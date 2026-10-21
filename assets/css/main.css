@@ -891,3 +891,16 @@ main .post-credits {
   font-style: italic;
   opacity: 0.6;
 }
+
+
+.side-img figcaption {
+  /* regole esistenti, non toccarle */
+}
+
+.side-img--full {
+  float: none;
+  clear: both;
+  width: var(--side-width, 100%);
+  max-width: 100%;
+  margin: 1.5rem auto;
+}
