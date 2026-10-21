@@ -11,7 +11,7 @@ Some part of this website include figures, abstracts or short extracts from pape
 
 ## Third-party material
 
-Some posts of my blog include material by other authors, like [here](./blog/2026-on-thinking-differently-screen/). This material is not covered by the license above and remains under its own terms, stated in the caption next to it.
+Some posts of my blog include material by other authors, like [here](../blog/2026-on-thinking-differently-screen/). This material is not covered by the license above and remains under its own terms, stated in the caption next to it.
 
 ## AI-generated images
 
