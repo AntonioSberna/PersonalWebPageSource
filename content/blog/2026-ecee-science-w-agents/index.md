@@ -56,6 +56,7 @@ Maybe at the next ECEE the elephant will get its own session. It will probably h
 
 ---
 October 7th 2026
+
 P.S. A few weeks later came the confirmation: [OpenAI is giving mathematics a thorough beating](https://www.theguardian.com/technology/2026/oct/07/openai-mathematical-findings-concerns). [The queen of the sciences](https://en.wikiquote.org/wiki/Carl_Friedrich_Gauss#:~:text=Mathematics%20is%20the%20queen%20of%20the%20sciences), as Gauss called it, falls first, perhaps precisely because she is the more rigouros: no laboratories, no construction sites, only symbols and a proof checker that drink too much coffee. Next come the disciplines further down the ladder of abstraction: physics, chemistry, mechanics... and structural engineering? When will our turn come? Or, more honestly: are we sure it has not come already, and we are simply waiting for the next shock to notice?
 
 More to read about it: [Is AI the end of math as we know it?](https://www.quantamagazine.org/is-ai-the-end-of-math-as-we-know-it-20261005/)
