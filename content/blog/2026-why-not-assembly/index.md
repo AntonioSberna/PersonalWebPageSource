@@ -37,6 +37,6 @@ So, why not straight to assembly? Because your code already gets there, a few la
 
 <div class="post-credits">
 
-*The cover image was generated with Gemini 3 from a prompt written by Claude Opus 5.5, and is inspired by the cover illustrations of [Real Python](https://realpython.com/). The question is mine, with the English optimized by Claude Opus 5.5; the answer is Claude Opus 5.5's own, reproduced as it came, links included (for once, it did more than polish my English).*
+*The cover image was generated with Gemini 3 from a prompt written by Claude Opus 5.5, and is freely inspired by the cover illustrations of [Real Python](https://realpython.com/). The question is mine, with the English optimized by Claude Opus 5.5; the answer is Claude Opus 5.5's own, reproduced as it came, links included (for once, it did more than polish my English).*
 
 </div>
