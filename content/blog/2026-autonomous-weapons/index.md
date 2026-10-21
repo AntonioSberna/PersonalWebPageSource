@@ -7,7 +7,9 @@ draft: false
 description: "War is probably here to stay. Some ways of fighting it do not have to be. A citizen's plea to ban autonomous weapons, a month before the CCW Review Conference in Geneva."
 ---
 
-> This time I really do not know what I am talking about. I do not understand the subject, I do not understand the technology behind it, and I do not work anywhere near the sector. Most posts on this blog grow out of what I deal with in my research, the things I work on and read about every day, and more of those are coming (a few are already lined up). This one is different. It touches subjects I do not handle, so I leave the facts to the sources I link, to the reading list at the end, and to the many others you can find out there. What follows is just what I have managed to extract from thoughts that have been circling in my head for a while: some reasonably structured, others still scattered and fragmented. If my usual rants belong at the bar, this one belongs at closing time.
+
+[aggiungi una frase dica: prima di iniziare questo che finora è il blog che mi è costato più tempo e energie per leggere e capire il problema voglio fare un disclaimer che per piacere si deve sempre tenere a mente durante la lettura]
+> This time I really do not know what I am talking about. I do not understand the subject, I do not understand the technology behind it, and I do not work anywhere near the sector. Most posts on this blog grow out of what I deal with in my research, the things I work on and read about every day, and more of those are coming (a few are already lined up). This one is different. It touches subjects I do not handle, so I leave the facts to the sources I link, to the reading list at the end, and to the many others you can find out there. What follows is just what I have managed to extract from thoughts that have been circling in my head for a while: some reasonably structured, others still scattered and fragmented. If my usual rants belong at the bar, this one belongs at closing time. [non mi piace questa chiusura, devo essere serio e cinconciso in questo disclaimer iniziale]
 
 That said, here are my two cents.
 
