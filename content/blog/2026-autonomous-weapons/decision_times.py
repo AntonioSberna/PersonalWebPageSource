@@ -1,8 +1,3 @@
-"""Decision timescales: machines, humans and treaties on one logarithmic axis.
-
-Indicative orders of magnitude for the blog post "Nobody at the Trigger".
-"""
-
 import matplotlib.pyplot as plt
 from matplotlib.ticker import LogLocator, NullFormatter
 
