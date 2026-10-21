@@ -56,7 +56,7 @@ Autonomous weapons have none of these properties. They are cheap, and software c
 
 There is no stable equilibrium here, only a race in which every player has good reasons to take people out of the loop. In this game, the one who does not win is humanity, on every side.
 
-### No jihad, please
+### No butlerian jihad, please
 
 [questa parte è troppo descrittiva e plain, deve essere più enganging e clever, mi piace il contenuto, deve cambiare la forma]
 Herbert imagined the end of this story sixty years ago. In the background of [Dune](https://en.wikipedia.org/wiki/Dune_(novel)) lies the Butlerian Jihad, the crusade in which humanity destroyed its thinking machines and left behind a single commandment: "Thou shalt not make a machine in the likeness of a human mind." In Frank Herbert's original, the danger was subtler, and it sounds very familiar: people handed their thinking over to machines in the hope of being set free, and this only allowed other people, the ones who owned the machines, to enslave them. An army that never refuses an order is exactly that.
@@ -65,12 +65,17 @@ I do not want us to get there. I use the same family of technology every day, th
 
 ### The strongest objection
 
-The strongest objection I have read is that machines might be more precise than tired, frightened and angry soldiers, and that fewer civilians might die. If you want the best version of that side of the argument, there is a whole [Oxford University Press volume](https://www.oupcanada.com/catalog/9780197546048.html) whose authors set out to rebalance a debate they see as dominated by science-fiction framings. Maybe they are right about precision. But precision was never the problem: the drones I mentioned at the beginning are already frighteningly precise. The problem is who decides, who answers, and how many decisions per second we are willing to take out of human hands. Nor am I talking about the defensive systems that dozens of countries have used for years, [under human supervision](https://foreignpolicy.com/2018/09/12/a-million-mistakes-a-second-future-of-war), to shoot down incoming missiles and drones. I am talking about machines that choose whom to kill.
+The strongest objection I have read is that machines might be more precise than tired, frightened and angry soldiers, and that fewer civilians might die. If you want the best version of that side of the argument, there is a whole [Oxford University Press volume](https://www.oupcanada.com/catalog/9780197546048.html) whose authors set out to rebalance a debate they see as dominated by science-fiction framings. Maybe they are right about precision. But precision was never the problem: the problem is who decides, who answers, and how many decisions per second we are willing to take out of human hands. Nor am I talking about the defensive systems that dozens of countries have used for years, [under human supervision](https://foreignpolicy.com/2018/09/12/a-million-mistakes-a-second-future-of-war), to shoot down incoming missiles and drones. I am talking about machines that choose whom to kill.
 
-Verification will be hard, as [the negotiators themselves admit](https://www.janes.com/defence-intelligence-insights/defence-news/air/special-report-autonomous-weapons-talks-advance-but-verification-obstacles-remain). Chemical weapons are banned and have been used anyway. But whoever uses them knows they have crossed a line the whole world can see. A norm does not stop everyone; it makes those who break it visible.
+Verification will be hard, chemical weapons are banned and maybe have been used anyway. But whoever uses them knows they have crossed a line the whole world can see. A norm does not stop everyone; it makes those who break it visible.
+
+
+
 
 ## A month from now, in Geneva
 
+
+[meno descrittiva e storica, più grandi linee e dritta al punto, molto più breve]
 There is a story I like a lot, and it belongs to the Red Cross. In the late 1980s, lasers designed to blind soldiers were getting ready to move from the laboratory to the production line. The issue was first raised at the International Conference of the Red Cross in 1986, with little success. Between 1989 and 1991 the ICRC convened a series of expert meetings to understand whether such weapons would really be built and whether a specific treaty was needed. In 1994 it went public, lobbying governments together with the National Societies, medical associations and organisations such as Human Rights Watch. On 13 October 1995, in Vienna, the first Review Conference of the Convention on Certain Conventional Weapons adopted Protocol IV, which prohibits lasers designed to cause permanent blindness. Louise Doswald-Beck, a former head of the ICRC's legal division, [told the whole story](https://www.icrc.org/eng/resources/documents/article/other/57jn4y.htm) in the International Review of the Red Cross a few months later, and [looking back in 2022](https://disarmament.unoda.org/update/experts-reflect-on-the-origin-relevance-and-future-of-ccw-protocol-iv-on-blinding-laser-weapons/) she recalled that momentum for a ban grew precisely as industry was getting close to mass production. A weapon was taken off the table [before its use became widespread](https://www.icrc.org/en/article/advocacy-paper-key-opportunity-prevent-development-unacceptable-autonomous-weapons).
 
 Same convention, same kind of meeting. From 16 to 20 November, the states parties meet in Geneva for the Seventh Review Conference, which will decide whether to [launch negotiations on a legally binding instrument](https://dig.watch/processes/gge-laws) on autonomous weapons. The first Review Conference banned a weapon before it spread. The seventh can do it again.
@@ -83,21 +88,24 @@ Meanwhile, the line is being drawn somewhere else. Earlier this year, the Pentag
 
 ## Not a manifesto
 
-This post is not a manifesto. It is not an expert opinion, nor a petition, nor a verdict on those who, like Ukraine, are defending themselves today with whatever works against an enemy that will not wait for Geneva. It is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I opened by saying that I know nothing about this subject, and that is precisely the point. You should not need to be an expert to have a say on who, or what, is allowed to decide to kill.
+This post is not a manifesto. It is not an expert opinion, nor a petition, nor a verdict on those who are defending themselves today with whatever works against an enemy that will not wait for Geneva. It is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I opened by saying that I know nothing about this subject, and that is precisely the point. You should not need to be an expert to have a say on who, or what, is allowed to decide to kill.
 
 I no longer believe, as Gino Strada did, that we will abolish war. But I still believe we can decide how it may be fought: that behind every death there will be someone who decided it, who could have said no, and who will have to answer for it. Even Luv, between one coat of nail polish and the next, had to give the order herself. Let us keep at least that.
 
+
+
+
 ## Further reading
 
-For anyone who wants to go further than my two cents, here is where I would start, roughly grouped by who wrote what.
+For anyone who wants to go further than my two cents [spingendomi fuori dal mio campo e sicuramente non esaustivo, di mestiere faccio altro], here I started, roughly grouped by who wrote what.
 
 **The international process**
 
+- ICRC, https://www.icrc.org/en/article/faq-autonomous-weapon-systems [ sistema questo]
 - ICRC, [Position on autonomous weapon systems](https://www.icrc.org/en/document/icrc-position-autonomous-weapon-systems) (2021). The Red Cross proposal in a few pages: what to prohibit and what to regulate.
 - ICRC, [A key opportunity to prevent the development of unacceptable autonomous weapons](https://www.icrc.org/en/article/advocacy-paper-key-opportunity-prevent-development-unacceptable-autonomous-weapons) (2026). The advocacy paper ahead of the Review Conference.
 - UN Secretary-General and ICRC President, [Joint call on autonomous weapon systems](https://disarmament.unoda.org/en/spotlights/united-nations-secretary-general-and-president-international-committee-red-cross-call) (2023), with the [UN News coverage](https://news.un.org/en/story/2023/10/1141922).
-- C. Heyns, [Report of the Special Rapporteur on extrajudicial, summary or arbitrary executions](https://digitallibrary.un.org/record/755741), A/HRC/23/47 (2013). The report that brought the issue to the UN.
-- Digital Watch, [GGE on lethal autonomous weapons systems](https://dig.watch/processes/gge-laws). A timeline of the CCW process, updated as it goes.
+
 
 **Research institutes**
 
@@ -111,25 +119,8 @@ For anyone who wants to go further than my two cents, here is where I would star
 - R. Sparrow, [Killer Robots](https://robsparrow.com/wp-content/uploads/Killer-robots.pdf), Journal of Applied Philosophy (2007). The classic paper on the responsibility gap.
 - M. Taddeo, [The Ethics of Artificial Intelligence in Defence](https://academic.oup.com/book/58663), Oxford University Press (2024). An ethical framework for AI in defence, from the Oxford Internet Institute, with autonomous weapons among the case studies.
 - [Lethal Autonomous Weapons: Re-Examining the Law and Ethics of Robotic Warfare](https://www.oupcanada.com/catalog/9780197546048.html), Oxford University Press (2021). An edited volume that deliberately pushes back on the dominant narrative: the best place to read the other side.
-- L. Doswald-Beck, [New Protocol on Blinding Laser Weapons](https://www.icrc.org/eng/resources/documents/article/other/57jn4y.htm), International Review of the Red Cross (1996). The Red Cross story, told by someone who was there.
 
-**Advocacy and commentary**
 
-- Human Rights Watch and Harvard Law School, [Mind the Gap: The Lack of Accountability for Killer Robots](https://www.hrw.org/news/2015/04/08/killer-robots-accountability-gap) (2015).
-- Human Rights Watch, [UN Talks on Killer Robots End with Calls for Negotiations Growing](https://www.hrw.org/news/2026/09/07/un-talks-on-killer-robots-ends-with-calls-for-negotiations-growing) (2026).
-- [Stop Killer Robots](https://www.stopkillerrobots.org/), the coalition campaigning for a treaty.
-- T. Malinowski, [Responds on Autonomous Lethal Systems](https://www.lawfaremedia.org/article/tom-malinowski-responds-autonomous-lethal-systems), Lawfare.
-
-**The drone war in Ukraine**
-
-- Atlantic Council, [Ukraine's robot army will be crucial in 2026 but drones can't replace infantry](https://www.atlanticcouncil.org/blogs/ukrainealert/ukraines-robot-army-will-be-crucial-in-2026-but-drones-cant-replace-infantry/) (2026).
-- Defense News, [Ukraine to field 25,000 ground robots in push to replace soldiers for frontline logistics](https://www.defensenews.com/unmanned/2026/04/24/ukraine-to-field-25000-ground-robots-in-push-to-replace-soldiers-for-frontline-logistics/) (2026).
-- IMechE, [What will come next in Ukraine's drone war?](https://www.imeche.org/news/news-article/what-will-come-next-in-ukraine-s-drone-war)
-
-**Fiction, for the evenings**
-
-- F. Herbert, [Dune](https://en.wikipedia.org/wiki/Dune_(novel)) (1965).
-- [Blade Runner 2049](https://letterboxd.com/film/blade-runner-2049/) (2017) and [WarGames](https://letterboxd.com/film/wargames/) (1983).
 
 ---
 
