@@ -1,7 +1,7 @@
 ---
 title: "A Gym for Theory"
 subtitle: "On conductors, human computers and gymnasia"
-date: 2026-10-21
+date: 2026-10-22
 place: "Pescara"
 draft: false
 description: "If agents are becoming the workforce of intellectual professions, what remains is theory, and the question of where to train it."
