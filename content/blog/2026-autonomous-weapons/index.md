@@ -67,7 +67,7 @@ There is no stable equilibrium here, only a race in which every player has good 
 
 _"Thou shalt not make a machine in the likeness of a human mind."_ It could pass for a line from some AI governance guideline, but it is the only commandment humanity kept after the Butlerian Jihad, the holy war in which, in the background of [Dune](https://en.wikipedia.org/wiki/Dune_(novel)), it destroyed every thinking machine it had. Frank Herbert imagined it sixty years ago, and the interesting part is not the war but its cause. The machines never rebelled: no uprising, no red eyes glowing in the dark. People simply handed their thinking over to machines, hoping to be set free, and in doing so allowed the few who owned the machines to enslave everyone else. Not killer robots, then, but a perfectly efficient chain of command with nobody left in it who could say no. An army that never refuses an order, sixty years early.
 
-I do not want us to get there. I use the same family of technology every day, [the agents I have written about before](../2026-ecee-science-w-agents/), I find it extraordinary, and we are only at the beginning. Which is exactly why I would rather draw a thin line now, in a treaty, than wait for the day when the only line left to draw is a jihad.
+I do not want us to get there. I use the same family of technology every day, [the agents I have written about before](../2026-ecee-science-w-agents/) (a scientific paper on them is coming soon, you will find it on the main page), I find it extraordinary, and we are only at the beginning. Which is exactly why I would rather draw a thin line now, in a treaty, than wait for the day when the only line left to draw is a butlerian jihad.
 
 ### The strongest objection
 
@@ -75,6 +75,9 @@ The strongest objection I have read is that machines might be more precise than 
 
 Verification will be hard. Chemical weapons are banned, and they [have been used anyway](https://www.armscontrol.org/blog/2020-04-13/opcw-investigation-confirms-syria-responsible-three-chemical-attacks-2017). But whoever uses them knows they have crossed a line the whole world can see. A norm does not stop everyone; it makes those who break it visible.
 
+
+
+<br><br>
 ## A month from now, in Geneva
 
 The story I like most belongs to the Red Cross. In the late 1980s, lasers designed to blind soldiers were about to leave the laboratory. The ICRC spent years gathering experts and lobbying governments, and in 1995 the first Review Conference of the Convention on Certain Conventional Weapons [banned them](https://www.icrc.org/eng/resources/documents/article/other/57jn4y.htm) before their use [became widespread](https://www.icrc.org/en/article/advocacy-paper-key-opportunity-prevent-development-unacceptable-autonomous-weapons). From 16 to 20 November, the same convention holds its Seventh Review Conference in Geneva, and it will decide whether to [start negotiating a treaty on autonomous weapons](https://dig.watch/processes/gge-laws). The first one banned a weapon before it spread. The seventh can do it again.
