@@ -39,11 +39,14 @@ LLMs may be the best gym for theory ever built. Every exchange forces you to say
 
 But a gym is full of machines, and none of them lifts the weights for you. The tool that can train your theory can just as easily spare you the effort, and it will, if you let it.
 
-There is a subtler problem. Theory has always grown out of practice. Most conductors started on an instrument, and structural engineering has been here before. For some thirty years frames were analysed with Hardy Cross's [moment distribution](https://cee.illinois.edu/about/history/history-excellence/hardy-cross) (the 1932 paper ran eight pages and drew 144 pages of discussion): by hand, balancing one joint after another until the moments settled, and learning along the way where moments want to go. The engineers trained that way went on to supervise the first finite element codes, and could spot a wrong moment diagram at a glance. In 1983 Bainbridge described the same pattern among the [ironies of automation](https://doi.org/10.1016/0005-1098(83)90046-8): automated plants monitored by former manual operators, _"riding on their skills, which later generations of operators cannot be expected to have."_ Today it is our turn: we learned our trade doing ourselves what agents now do for us. Once the practice is gone, theory no longer comes as a by-product of work. It has to be trained on purpose, like muscles in an office job.
+There is a subtler problem. Theory has always grown out of practice. Most conductors started on an instrument, and structural engineering has been here before. For some thirty years frames were analysed with Hardy Cross's [moment distribution](https://cee.illinois.edu/about/history/history-excellence/hardy-cross) (the 1932 paper ran eight pages and drew 144 pages of discussion): by hand, balancing one joint after another until the moments settled, and learning along the way where moments want to go. The engineers trained that way went on to supervise the first finite element codes, and could spot a wrong moment diagram at a glance. 
+
+In the far 1983, Bainbridge described the same pattern among the [ironies of automation](https://doi.org/10.1016/0005-1098(83)90046-8): automated plants monitored by former manual operators, _"riding on their skills, which later generations of operators cannot be expected to have."_ Today it is our turn: we learned our trade doing ourselves what agents now do for us. Once the practice is gone, theory no longer comes as a by-product of work. It has to be trained on purpose, like muscles in an office job.
+
+p.s.: I came across this article last Friday afternoon, after I’d run out of my weekly token and couldn’t continue working on my research project. I want to explore the topic in more detail in a future post, as I’m currently reading several papers on the subject.
 
 
-
-<br>
+<br> <br>
 
 Plato taught in a gymnasium, the [Academy](https://iep.utm.edu/plato-academy/), just outside the walls of Athens; Aristotle chose another, the [Lyceum](https://iep.utm.edu/lyceum/). Both lent their names to schools (in Italy and Germany, the gymnasium itself became one), and for twenty-four centuries we have used those words for buildings full of classrooms. Now that agents are taking the work out of our hands, perhaps it is time to go back to the gym.
 
