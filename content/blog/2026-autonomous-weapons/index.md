@@ -26,7 +26,7 @@ For many years I held an idea borrowed from [an Italian surgeon](https://en.emer
 
 
 
-I believed it for years, and I kept building and rebuilding on it. Then, hopefully not just because I am getting older, I started to see the differences. Slavery is a human institution. {{< side src="ants.jpg" pos="right" width="30%" link="https://biology.ucsd.edu/about/news/article_113006.html" caption="Border skirmish, southern California. Photo by Marc Dantzker, from [UC San Diego](https://biology.ucsd.edu/about/news/article_113006.html)." >}} Violent conflict within the same species is not: it shows up all over the animal kingdom. The latest case I read about involves [ant colonies close to San Diego](https://biology.ucsd.edu/about/news/article_113006.html), where rival supercolonies have been fighting along their borders for generations, and skirmishes around a single colony killed at least fifteen million of them in six months (the same San Diego, incidentally, that Blade Runner 2049 turns into a landfill). As for why, I have not read enough to know what science has to say about it.
+I believed it for years, and I kept building and rebuilding on it. Then, hopefully not just because I am getting older, I started to see the differences. Slavery is a human institution. {{< side src="ants.jpg" pos="left" width="27%" link="https://biology.ucsd.edu/about/news/article_113006.html" caption="Border skirmish, southern California. Photo by Marc Dantzker, from [UC San Diego](https://biology.ucsd.edu/about/news/article_113006.html)." >}} Violent conflict within the same species is not: it shows up all over the animal kingdom. The latest case I read about involves [ant colonies close to San Diego](https://biology.ucsd.edu/about/news/article_113006.html), where rival supercolonies have been fighting along their borders for generations, and skirmishes around a single colony killed at least fifteen million of them in six months (the same San Diego, incidentally, that Blade Runner 2049 turns into a landfill). As for why, I have not read enough to know what science has to say about it.
 
 
 Either way, I no longer think we will stop waging war as a species. War has changed enormously from the American Civil War to today, and it will keep changing, but it seems it is here to stay.
@@ -38,9 +38,10 @@ These are the reasons that convinced me. Two came from reading around, two had b
 
 ### Nobody left to say no
 
+{{< side src="petrov.jpg" pos="right" width="30%" link="https://en.wikipedia.org/wiki/Stanislav_Petrov" caption="Stanislav Petrov, the man who waited, in 2016." >}}
 At the end of September 1983, while my parents were getting married, the Soviet warning system reported a missile launched from the United States, then several more. The duty officer, [Stanislav Petrov](https://www.aps.org/apsnews/2026/09/1983-averting-potential-nuclear-war), judged it a false alarm and waited for a confirmation that never came. The cause turned out to be sunlight reflected by high-altitude clouds straight into the satellite's sensors. [Wikipedia](https://en.wikipedia.org/wiki/Stanislav_Petrov) adds that it took a rare alignment between the sun, the clouds above North Dakota and the Molniya orbits of the satellites, which I am copying here in all honesty without the faintest idea of how it works. A system doing exactly what it was designed to do would have passed the alarm up the chain. A man with a bad feeling in his gut did not.
 
-{{< side src="petrov.jpg" pos="left" width="30%" link="https://en.wikipedia.org/wiki/Stanislav_Petrov" caption="Stanislav Petrov, the man who waited, in 2016." >}}
+
 
 That is the first thing autonomy removes, the possibility that someone, at the last moment, says no. It is not only about false alarms. Even the worst dictator has to wonder whether his soldiers will actually fire on the crowd, and more than one regime has fallen on the day they did not. As [Human Rights Watch argued](https://www.lawfaremedia.org/article/tom-malinowski-responds-autonomous-lethal-systems) years ago, autonomous weapons would give tyrants something none of their predecessors ever had: an army that never refuses an order.
 
