@@ -81,3 +81,5 @@ A side note: the episode is ___ (candidates may insert their favourite positive 
 **Comment no. 5 (the last one, I swear).** More of a request. The part where Hannah Fry talks about abstraction really stuck with me. I am in this world to learn, not to confirm what I already think, so reading suggestions on the topic are very welcome. Accessible ones, please: I am not equipped for highly abstract philosophy (someone has always talked me out of buying the *Tractatus Logico-Philosophicus* (thank you, Andrea)).
 
 {{< spotify id="1KwRO8MPsAFMzKrMMvRVqh" video="true" >}}
+
+_p.s. to the p.s.: the metaphor in the title is brilliant, and it carries a whole chain of interesting thoughts._
