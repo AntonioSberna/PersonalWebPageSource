@@ -48,7 +48,7 @@ p.s.: I came across this article last Friday afternoon, after I’d run out of m
 
 <br> <br>
 
-Plato taught in a gymnasium, the [Academy](https://iep.utm.edu/plato-academy/), just outside the walls of Athens; Aristotle chose another, the [Lyceum](https://iep.utm.edu/lyceum/). Both lent their names to schools (in Italy and Germany, the gymnasium itself became one), and for twenty-four centuries we have used those words for buildings full of classrooms. Now that agents are taking the work out of our hands, perhaps it is time to go back to the gym.
+Plato taught in a gymnasium, the [Academy](https://iep.utm.edu/plato-academy/), just outside the walls of Athens; Aristotle chose another, the [Lyceum](https://iep.utm.edu/lyceum/). Both lent their names to schools (in Italy, the gymnasium itself became the name for a type of high school), and for all these centuries we have used those words for buildings full of classrooms. Now that agents are taking the work out of our hands, perhaps it is time to go back to the gym.
 
 ---
 
