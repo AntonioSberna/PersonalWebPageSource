@@ -2,6 +2,7 @@ baseURL = 'https://AntonioSberna.github.io/'
 locale = 'en-us'
 title = 'Antonio P. Sberna'
 
+enableGitInfo = true
 enableRobotsTXT = true
 enableEmoji = true
 summaryLength = 30
