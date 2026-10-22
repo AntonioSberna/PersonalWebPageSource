@@ -73,7 +73,7 @@ I do not want us to get there. I use the same family of technology every day, [t
 
 The strongest objection I have read is that machines might be more precise than tired, frightened and angry soldiers, and that fewer civilians might die. If you want the best version of that side of the argument, there is a whole [Oxford University Press volume](https://www.oupcanada.com/catalog/9780197546048.html) whose authors set out to rebalance a debate they see as dominated by science-fiction framings. Maybe they are right about precision. But precision was never the problem: the problem is who decides, who answers, and how many decisions per second we are willing to take out of human hands. Nor am I talking about the defensive systems that dozens of countries have used for years, [under human supervision](https://foreignpolicy.com/2018/09/12/a-million-mistakes-a-second-future-of-war), to shoot down incoming missiles and drones. I am talking about machines that choose whom to kill.
 
-Verification will be hard. Chemical weapons are banned, and they [have been used anyway](https://www.armscontrol.org/blog/2020-04-13/opcw-investigation-confirms-syria-responsible-three-chemical-attacks-2017). But whoever uses them knows they have crossed a line the whole world can see. A norm does not stop everyone; it makes those who break it visible.
+Verification will be hard. Chemical weapons are banned, and they [have been used anyway](https://en.wikipedia.org/wiki/Chemical_weapon#History). But whoever uses them knows they have crossed a line the whole world can see. A norm does not stop everyone; it makes those who break it visible.
 
 
 
