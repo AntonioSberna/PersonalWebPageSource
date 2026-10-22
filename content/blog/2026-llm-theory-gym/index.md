@@ -15,13 +15,13 @@ I have been thinking about this because something similar seems to be happening 
 
 In a [previous post](../2026-ecee-science-w-agents/) I ended with a weaver who adapted to the power loom and still knew what cloth was for. Every wave of mechanisation has worked like that: it took over the hands of a trade and left standing whoever understood what the trade was for. The power loom took the hands of the weavers, the steam engine the muscles of men and horses, the electronic computer the pencils of the human computers. (*Computer* was a job title long before it was a machine. *Agent* seems to be going the same way.)
 
-The human computers deserve a moment. During the First World War, while serving with an ambulance unit on the Western Front, [Lewis Fry Richardson](https://en.wikipedia.org/wiki/Lewis_Fry_Richardson) spent the best part of six weeks computing by hand a six-hour weather forecast for a single point in central Europe. He then imagined how to compute faster than the weather itself: a hall like a theatre, 64,000 people with pencils and slide rules, and in the middle a man keeping them all in step, like the conductor of ["an orchestra in which the instruments are slide-rules and calculating machines."](https://www.emetsoc.org/resources/rff/) The theatre was never built. In 1950 the first computer forecast ran on ENIAC, and the 64,000 players were no longer needed.
+The human computers deserve a moment. During the First World War, while serving with an ambulance unit on the Western Front, [Lewis Fry Richardson](https://en.wikipedia.org/wiki/Lewis_Fry_Richardson) spent the best part of six weeks computing by hand a six-hour weather forecast for a single point in central Europe. He then imagined how to compute faster than the weather itself: a hall like a theatre, 64,000 people with pencils and slide rules, and in the middle a man keeping them all in step, like the conductor of [_"an orchestra in which the instruments are slide-rules and calculating machines."_](https://www.emetsoc.org/resources/rff/) The theatre was never built. In 1950 the first computer forecast ran on ENIAC, and the 64,000 players were no longer needed.
 
 Today that theatre is being rebuilt, this time filled with agents. In that same post I mentioned 10,000 of them working in parallel on Navier-Stokes. They read the literature, write the code, run the analyses and draft the papers. If they are becoming the workforce of the intellectual professions, what is left for us is the job of the man in the middle.
 
 ## What the conductor knows
 
-In 1843 Ada Lovelace wrote that Babbage's Analytical Engine, which borrowed its punched cards from the Jacquard loom, ["has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform."](https://blogs.bodleian.ox.ac.uk/adalovelace/2018/07/26/ada-lovelace-and-the-analytical-engine/) The first half has aged badly (Turing was already [arguing with it](https://doi.org/10.1093/mind/LIX.236.433) in 1950, under the heading *Lady Lovelace's Objection*). The second half has become a job description.
+In 1843 Ada Lovelace wrote that Babbage's Analytical Engine, which borrowed its punched cards from the Jacquard loom, [_"has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform."_](https://blogs.bodleian.ox.ac.uk/adalovelace/2018/07/26/ada-lovelace-and-the-analytical-engine/) The first half has aged badly (Turing was already [arguing with it](https://doi.org/10.1093/mind/LIX.236.433) in 1950, under the heading *Lady Lovelace's Objection*). The second half has become a job description.
 
 A conductor does not need to know how to play the oboe. He needs to know what the oboe can do: its range, how long it can sustain a phrase before running out of breath, how it blends with the clarinets, and that the whole orchestra tunes to its A. He does not know the fingerings; he knows the score, and he hears when something is off. This is what I mean by theory. Not the production of new theorems, which agents now seem able to manage on their own, but having in one's head the model that tells a plausible result from a wrong one.
 
@@ -47,6 +47,6 @@ Plato taught in a gymnasium, the [Academy](https://iep.utm.edu/plato-academy/), 
 
 <div class="post-credits">
 
-*The ideas and the text are mine, with the English optimized by Claude Opus 5.5. Illustrations was generated with Gemini 3 from prompts I wrote and Claude Opus 5.5 optimized.*
+*The ideas and the text are mine, with the English optimized by Claude Opus 5.5. Illustration has been generated with _Gemini 3_ from prompts I wrote and Claude Opus 5.5 optimized.*
 
 </div>
