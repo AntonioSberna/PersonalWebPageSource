@@ -41,7 +41,7 @@ These are the reasons that convinced me. Two came from reading around, two had b
 
 ### Nobody left to say no
 
-{{< side src="petrov.jpg" pos="right" width="30%" link="https://en.wikipedia.org/wiki/Stanislav_Petrov" caption="Stanislav Petrov, the man who waited, in 2016." >}}
+{{< side src="petrov.jpg" pos="right" width="30%" link="https://en.wikipedia.org/wiki/Stanislav_Petrov" caption="Stanislav Petrov, the man who waited, in 2016 ([source](https://commons.wikimedia.org/wiki/File:Stanislaw-jewgrafowitsch-petrow-2016.jpg))." >}}
 At the end of September 1983, while my parents were getting married, the Soviet warning system reported a missile launched from the United States, then several more. The duty officer, [Stanislav Petrov](https://www.aps.org/apsnews/2026/09/1983-averting-potential-nuclear-war), judged it a false alarm and waited for a confirmation that never came. The cause turned out to be sunlight reflected by high-altitude clouds straight into the satellite's sensors. [Wikipedia](https://en.wikipedia.org/wiki/Stanislav_Petrov) adds that it took a rare alignment between the sun, the clouds above North Dakota and the Molniya orbits of the satellites, which I am copying here in all honesty without the faintest idea of how it works. A system doing exactly what it was designed to do would have passed the alarm up the chain. A man with a bad feeling in his gut did not.
 
 
@@ -91,7 +91,7 @@ The story I like most belongs to the Red Cross. In the late 1980s, lasers design
 
 Just outside the Palais des Nations, a wooden chair twelve metres tall has been standing on three legs since 1997, a reminder of what landmines leave behind. The chairs I worry about are of a different kind: intact, comfortable, and empty.
 
-{{< side src="broken_chair.jpg" pos="right" width="35%" link="https://en.wikipedia.org/wiki/Broken_Chair" caption="Broken Chair, Place des Nations, Geneva." >}}
+{{< side src="broken_chair.jpg" pos="right" width="35%" link="https://en.wikipedia.org/wiki/Broken_Chair" caption="Broken Chair, Place des Nations, Geneva ([source](https://commons.wikimedia.org/wiki/File:BrokenChair.jpg))." >}}
 
 The Red Cross knows [exactly what it wants](https://www.icrc.org/en/document/icrc-position-autonomous-weapon-systems): prohibit autonomous weapons that are unpredictable or designed to target people, and strictly regulate all the others. In 2023, together with the UN Secretary-General, it [asked states to conclude a treaty by 2026](https://news.un.org/en/story/2023/10/1141922). I know, lately the UN seems to count for very little, between vetoes, wars it cannot stop and _a budget_ [_racing towards bankruptcy_](https://www.ungeneva.org/en/news-media/news/2025/10/111909/un-faces-race-bankruptcy-guterres-unveils-sharply-reduced-2026). But this is exactly the job it was built for: a table where even rivals can agree on what nobody should be allowed to do. The homework [has been done](https://www.sipri.org/media/press-release/2020/new-sipri-and-icrc-report-identifies-necessary-controls-autonomous-weapons), and more than seventy states are [ready to negotiate](https://futureoflife.org/ai-policy/government-leaders-call-for-treaty-negotiations-on-autonomous-weapons-for-the-first-time/).
 
@@ -136,6 +136,6 @@ For anyone who wants to go further than my two cents, here is where I started. I
 
 <div class="post-credits">
 
-*Illustrations not otherwise credited were generated with Gemini 3 from prompts I wrote and Claude Opus 5.5 optimized. The ideas and the text are mine; the English was optimized by Claude Opus 5.5 (whose maker, as you have just read, has its own part in this story), and the title came out of a brainstorming session with it. The decision-times figure was made with matplotlib, and [the code](decision_times.py) is there for fellow matplotlib addicts.*
+*Illustrations not otherwise credited were generated with Gemini 3 from prompts I wrote and Claude Opus 5.5 optimized. The ideas and the text are mine; the English was optimized by Claude Opus 5.5, and the title came out of a brainstorming session with it. The decision-times figure was made with matplotlib, and [the code](decision_times.py) is there for fellow matplotlib addicts.*
 
 </div>
