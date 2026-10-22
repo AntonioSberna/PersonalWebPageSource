@@ -99,15 +99,17 @@ Meanwhile, the line is being drawn somewhere else. Earlier this year, the Pentag
 ## Not a manifesto
 
 
-This post is not meant to be a manifesto (I would not know how to write one). It is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I know nothing about this subject, and that is precisely the point: you should not need to be an expert to have a say on who, or what, is allowed to decide to kill. My only contact with these tools comes from research, working with a few algorithms, glimpsing what they can do and wondering what else they could be used for (blackjack included). None of this makes me an enemy of technocracy. I believe in it, just not in the version you read about everywhere. But that is a story for another post, and it involves fish.
+This post is not meant to be a manifesto (I would not be able to write one), it is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I know nothing about this subject, and that is precisely the point: you should not need to be an expert to have a say on who, or what, is allowed to decide to kill. My only contact with these tools comes from research, working with a few algorithms, glimpsing what they can do and wondering what else they could be used for (blackjack included). None of this makes me an enemy of technocracy. I believe in it, just not in the version you read about everywhere (but that is a story for another post, and it involves fish metaphor I developed some years ago).
 
-This post doesn't want to be a manifesto, it is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I opened by saying that I knoide to kill. My only contact with these tools has been through scientific research, working with a few algorithms and starting to glimpse what w nothing about this subject, and that is precisely the point. You should not need to be an expert to have a say on who, or what, is allowed to decthey can do. This reflection was born there, while wondering what else tools like these could be used for (blackjack included, but that is a story for another post).
 
-Unlike Gino Strada, who never stopped believing it, I have lost the illusion that we will abolish war. But I still believe we can decide how it may be fought: that behind every death there will be someone who decided it, who could have said no, and who will have to answer for it. Let us keep at least that: somebody in the chair, with a finger on the trigger.
+<br>
+Unlike Gino Strada, who never stopped believing it, I have lost the illusion that we will abolish war. But I still believe we can decide how it may be fought: that behind every death there will be someone who decided it, who could have said no, and who will have to answer for it. **Let us keep at least that: somebody in the chair, with a finger on the trigger.**
 
+
+<br><br>
 ## Further reading
 
-For anyone who wants to go further than my two cents, here is where I started. It is a list put together by someone pushing well outside his own field, so it is certainly not exhaustive: for a living, I do something else. Roughly grouped by who wrote what.
+For anyone who wants to go further than my two cents, here is where I started. It is a list put together by someone pushing well outside his own field, so it is certainly not exhaustive: for a living, I do something else. Roughly grouped (by claude) by who wrote what.
 
 **The international process**
 
