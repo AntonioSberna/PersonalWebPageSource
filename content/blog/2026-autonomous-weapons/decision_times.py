@@ -1,8 +1,3 @@
-"""Decision timescales: institutions, people and machines on one logarithmic axis.
-
-Indicative orders of magnitude for the blog post "Nobody at the Trigger".
-"""
-
 import matplotlib.pyplot as plt
 from matplotlib.ticker import LogLocator, NullFormatter
 
@@ -77,8 +72,8 @@ for x0, x1, label, fill, colour in bands:
     x_mid = (x0 * x1) ** 0.5  # geometric mean = visual centre on a log axis
     ax.text(x_mid, (BAND_Y0 + BAND_Y1) / 2, label, color=colour, fontsize=6.5,
             ha="center", va="center", fontweight="bold")
-ax.text(X_LONG / 1.4, BAND_Y1 + 0.03, "Who decides", color=GREY, fontsize=7,
-        style="italic", ha="left", va="bottom")
+# ax.text(X_LONG / 1.4, BAND_Y1 + 0.03, "Who decides", color=GREY, fontsize=7,
+#         style="italic", ha="left", va="bottom")
 
 # Bottom axis in seconds
 ax.set_xlabel("Time (s)")
