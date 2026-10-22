@@ -22,6 +22,7 @@ We are already there. People on the other side of the world wage war with a joys
 But this is not what this post is about. Behind each of those drones there is still a person who decides, in a dugout or on another continent, potentially getting a manicure. Call it the boundary condition of this post: I am talking about the next step, a machine that chooses on its own whom, where, when and maybe why to strike.
 
 <br>
+
 For many years I held an idea borrowed from [an Italian surgeon](https://en.emergency.it/blog/gino-strada/to-gino-strada-in-loving-memory/) who spent his life bringing remarkable medical care to the victims of war. I heard it from him in person, at a conference during my first years of high school: war can be abolished, the way slavery was. The argument is simple and powerful. For centuries humanity practised slavery, and it seemed normal, almost part of human nature at the time. Then, not without resistance, it disappeared, at least in the forms we knew (the ILO still counts [some fifty million people in modern slavery](https://www.ilo.org/resource/news/50-million-people-worldwide-modern-slavery-0), which is another story, and not a reassuring one).
 
 
@@ -99,7 +100,7 @@ Meanwhile, the line is being drawn somewhere else. Earlier this year, the Pentag
 ## Not a manifesto
 
 
-This post is not meant to be a manifesto (I would not be able to write one), it is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I know nothing about this subject, and that is precisely the point: you should not need to be an expert to have a say on who, or what, is allowed to decide to kill. My only contact with these tools comes from research, working with a few algorithms, glimpsing what they can do and wondering what else they could be used for (blackjack included). None of this makes me an enemy of technocracy. I believe in it, just not in the version you read about everywhere (but that is a story for another post, and it involves fish metaphor I developed some years ago).
+This post is not meant to be a manifesto (I would not be able to write one), it is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I know nothing about this subject, and that is precisely the point: you should not need to be an expert to have a say on who, or what, is allowed to decide to kill. My only contact with these tools comes from research, working with a few algorithms, glimpsing what they can do and wondering what else they could be used for. None of this makes me an enemy of technocracy. I believe in it, just not in the version you read about everywhere (but that is a story for another post, and it involves fish metaphor I developed some years ago).
 
 
 <br>
