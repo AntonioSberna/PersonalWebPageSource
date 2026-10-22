@@ -15,7 +15,7 @@ That said, here are my two cents.
 
 **Please, ban autonomous weapons.** Ban their development and any project that works on them, whether they run on agents, on whatever comes after agents, or on something that does not have a name yet.
 
-There is a scene in [Blade Runner 2049](https://letterboxd.com/film/blade-runner-2049/) that stayed with me. Luv, the replicant who does the dirty work for her maker, directs a drone strike on a group of scavengers while a manicurist paints her nails. When I first saw it, it looked like the kind of detail a director puts on screen to tell you how deep into dystopia you are. Today it looks more like a documentary.
+There is a scene in [Blade Runner 2049](https://letterboxd.com/film/blade-runner-2049/) that stayed with me. Luv, the replicant who does the dirty work for her maker, directs a drone strike on a group of scavengers while [doing her nails](https://youtu.be/yWUMWChI6MM?si=f-3cHztzPVX0NBhd). When I first saw it, it looked like the kind of detail a director puts on screen to tell you how deep into dystopia you are. Today it looks more like a documentary.
 
 We are already there. People on the other side of the world wage war with a joystick, flying drones so high that nobody on the ground can see them, and those drones kill with frightening precision. I will leave the news of the last few years, from more than one front, to you. In Ukraine alone, unmanned systems now operate [at sea](https://www.bostonglobe.com/2024/03/05/world/ukraine-sea-drones/), [on land](https://www.cbsnews.com/amp/news/ukraine-robot-rescues-soldier-trapped-russian-occupied-territory-ground-drone) and [in the air](https://www.npr.org/2026/10/05/nx-s1-5925803/drones-buzz-overhead-troops-hunker-underground-in-ukraines-hellish-kill-zone).
 
