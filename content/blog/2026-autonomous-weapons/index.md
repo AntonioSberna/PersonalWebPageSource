@@ -21,7 +21,7 @@ We are already there. People on the other side of the world wage war with a joys
 
 But this is not what this post is about. Behind each of those drones there is still a person who decides, in a dugout or on another continent, potentially getting a manicure. Call it the boundary condition of this post: I am talking about the next step, a machine that chooses on its own whom, where, when and maybe why to strike.
 
-<br><br>
+<br>
 For many years I held an idea borrowed from [an Italian surgeon](https://en.emergency.it/blog/gino-strada/to-gino-strada-in-loving-memory/) who spent his life bringing remarkable medical care to the victims of war. I heard it from him in person, at a conference during my first years of high school: war can be abolished, the way slavery was. The argument is simple and powerful. For centuries humanity practised slavery, and it seemed normal, almost part of human nature at the time. Then, not without resistance, it disappeared, at least in the forms we knew (the ILO still counts [some fifty million people in modern slavery](https://www.ilo.org/resource/news/50-million-people-worldwide-modern-slavery-0), which is another story, and not a reassuring one).
 
 
@@ -32,6 +32,8 @@ I believed it for years, and I kept building and rebuilding on it. Then, hopeful
 Either way, I no longer think we will stop waging war as a species. War has changed enormously from the American Civil War to today, and it will keep changing, but it seems it is here to stay.
 If anything, this makes the question of *how* more important, not less. War stays, but some ways of fighting it can be taken off the table, and we have done it before: chemical weapons, anti-personnel mines, cluster munitions. Once, we even managed to do it in advance, and that story deserves a section of its own further down.
 
+
+<br><br>
 ## Why not this one
 
 These are the reasons that convinced me. Two came from reading around, two had been in my head for a while. None of them is new, by the way: UNIDIR has produced [fifteen in-depth studies](https://unidir.org/publication/unidir-on-lethal-autonomous-weapons) on autonomous weapons since 2013, and the academic debate is older than that.
@@ -77,6 +79,10 @@ Verification will be hard. Chemical weapons are banned, and they [have been used
 
 
 
+
+
+
+
 <br><br>
 ## A month from now, in Geneva
 
@@ -91,6 +97,9 @@ The Red Cross knows [exactly what it wants](https://www.icrc.org/en/document/icr
 Meanwhile, the line is being drawn somewhere else. Earlier this year, the Pentagon labelled Anthropic [a supply chain risk](https://www.npr.org/2026/03/06/g-s1-112713/pentagon-labels-ai-company-anthropic-a-supply-chain-risk) after the company refused to drop its restrictions on fully autonomous weapons and mass domestic surveillance, while OpenAI [signed a deal](https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/) for all lawful purposes, with a contract that reportedly rules out using its systems to direct autonomous weapons [only where law or policy requires human control](https://www.wilpf.org/ccw-report-vol-14-no-2-the-final-stretch-before-the-finishing-line/). Even the corporate red line points back to the law. Today the boundary depends on a usage policy, a contract clause and the resolve of a single CEO: far too important to be left to any of them.
 
 ## Not a manifesto
+
+
+This post is not meant to be a manifesto (I would not know how to write one). It is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I know nothing about this subject, and that is precisely the point: you should not need to be an expert to have a say on who, or what, is allowed to decide to kill. My only contact with these tools comes from research, working with a few algorithms, glimpsing what they can do and wondering what else they could be used for (blackjack included). None of this makes me an enemy of technocracy. I believe in it, just not in the version you read about everywhere. But that is a story for another post, and it involves fish.
 
 This post doesn't want to be a manifesto, it is simply a political act, in the oldest sense of the word: a citizen saying what he thinks about something that concerns the society he lives in. I opened by saying that I knoide to kill. My only contact with these tools has been through scientific research, working with a few algorithms and starting to glimpse what w nothing about this subject, and that is precisely the point. You should not need to be an expert to have a say on who, or what, is allowed to decthey can do. This reflection was born there, while wondering what else tools like these could be used for (blackjack included, but that is a story for another post).
 
