@@ -62,3 +62,24 @@ P.S. A few weeks later came the confirmation: [OpenAI is giving mathematics a th
 More to read about it: [Is AI the end of math as we know it?](https://www.quantamagazine.org/is-ai-the-end-of-math-as-we-know-it-20261005/)
 
 
+
+<br><br>
+
+---
+**October 21st, 2026**
+
+Just today I listened to the new episode of *The Rest Is Science*. Even a podcast, hardly the slowest of formats, struggles to keep pace with what is happening, which says a lot about how disruptive this is. (That is my comment no. 1.)
+
+A side note: the episode is ___ (candidates may insert their favourite positive adjective here; I have run out of words). I usually listen to podcasts on my commute to the university, but this time I got completely lost in it, and my brain walked me down the street on autopilot. I hope I did not cross on a red light :-). Hannah Fry's explanation of the problem itself is remarkable, accessible to an almost unfair degree. I will leave that part alone, though. The last time I looked at the Navier-Stokes equations was ten years ago, when my hydraulics professor, after a couple of weeks spent setting up the problem, finally wrote them on the board and said something like: "This is how it works. But we cannot solve them, which is why you are here. This is where my course begins." My comments are about the second part.
+
+**Unsolicited comment no. 2.** It starts from a brief, almost throwaway remark by Michael Stevens about a superorganism. That is more or less the feeling I tried to describe some aspects in [this post](../2026-on-thinking-differently-screen/): intellectual work is changing shape, and with it the question of who gets credit for what. I plan to develop this properly in a post in two weeks, if the plan holds. Stay tuned.
+
+**Comment no. 3.** At some point they argue that those building these systems do not care about the problems themselves, only about impressing investors. Entirely reasonable, and they make the case far better than I could (they are there, I am here, there must be a reason). But let me push it one step further, as a question: should we care? Everyone pursues their own interests. These companies are not nonprofit (one of them was born as a it, but *pecunia non olet*), yet whatever they find stays with the rest of us. Nobody reheating last night's rice cares that the microwave oven came out of [wartime radar research](https://en.wikipedia.org/wiki/Microwave_oven#History). Nobody asking their phone for directions cares that GPS was built for the [military](https://en.wikipedia.org/wiki/Global_Positioning_System#History). Motives far less innocent than pleasing investors have given us tools we now take for granted.
+
+**Comment no. 4.** On the interpretability of results (the part on _abc conjecture_ and [Mochizuki's claimed proof](https://en.wikipedia.org/wiki/Abc_conjecture#Claimed_proofs), which I read about when it came out (I think I was still in high school)). There is a thread here I have yet to untangle: why do we keep writing for humans? Why not separate the knowledge meant for agents (something like the MCP servers I am starting to use for my research since this year) from the message meant for humans who want to learn? The paper sits awkwardly in between. Split it: on one side, condensed knowledge for agents (credited and valued like a paper), on the other, books or short teaching texts, 20, 30, 50 pages of pure theory, written for a human to understand. (A link to a separate post on this will appear here in the next few weeks)
+
+**Comment no. 5 (the last one, I swear).** More of a request. The part where Hannah Fry talks about abstraction really stuck with me. I am in this world to learn, not to confirm what I already think, so reading suggestions on the topic are very welcome. Accessible ones, please: I am not equipped for highly abstract philosophy (someone has always talked me out of buying the *Tractatus Logico-Philosophicus* (thank you, Andrea)).
+
+{{< spotify id="1KwRO8MPsAFMzKrMMvRVqh" video="true" >}}
+
+_p.s. to the p.s.: the metaphor in the title is brilliant, and it carries a whole chain of interesting thoughts._
