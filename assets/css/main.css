@@ -942,3 +942,37 @@ main .post-credits {
     padding: 0.75rem 1rem 0.25rem;
   }
 }
+
+/* Blog status counter (numbers in data/blog_status.yaml) */
+.blog-status { max-width: 340px; margin-top: 1.1rem; }
+.blog-status__bar {
+  display: flex; gap: 2px; height: 6px;
+  border-radius: 999px; overflow: hidden;
+}
+.blog-status__seg { display: block; min-width: 4px; transition: flex-grow 0.6s ease; }
+.blog-status__legend {
+  display: grid; grid-template-columns: repeat(4, auto); justify-content: start;
+  column-gap: 1.1rem; row-gap: 0.25rem;
+  margin-top: 0.55rem; font-size: 0.75rem; color: var(--text-muted);
+}
+.blog-status__legend li { display: flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
+.blog-status__legend strong { color: var(--text); font-weight: 600; }
+.blog-status__dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+
+/* Flow: ideas (faint) -> writing -> review -> published (full accent) */
+.blog-status--published.blog-status__seg, .blog-status--published .blog-status__dot { background: var(--accent); }
+.blog-status--review.blog-status__seg,    .blog-status--review .blog-status__dot    { background: var(--accent); opacity: 0.6; }
+.blog-status--writing.blog-status__seg,   .blog-status--writing .blog-status__dot   { background: var(--accent); opacity: 0.35; }
+.blog-status--ideas.blog-status__seg,     .blog-status--ideas .blog-status__dot     { background: transparent; box-shadow: inset 0 0 0 1px var(--accent); opacity: 0.6; }
+.blog-status--ideas.blog-status__seg { background-image: repeating-linear-gradient(90deg, var(--accent) 0 2px, transparent 2px 5px); box-shadow: none; opacity: 0.35; }
+
+@media (max-width: 480px) {
+  .blog-status { max-width: none; }
+  .blog-status__legend { grid-template-columns: repeat(2, auto); }
+}
+.blog-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem 2.5rem; flex-wrap: wrap; }
+.blog-header .blog-status { margin-top: 0; width: 340px; }
+@media (max-width: 640px) {
+  .blog-header { display: block; }
+  .blog-header .blog-status { margin-top: 1.1rem; width: auto; }
+}

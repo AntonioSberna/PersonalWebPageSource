@@ -1,0 +1,25 @@
+{{- $s := site.Data.blog_status -}}
+{{- with $s -}}
+{{- $published := .published | default (len (where $.Pages "Draft" false)) -}}
+{{- $items := slice
+  (dict "key" "ideas"     "label" "ideas"     "n" (.ideas   | default 0))
+  (dict "key" "writing"   "label" "writing"   "n" (.writing | default 0))
+  (dict "key" "review"    "label" "in review" "n" (.review  | default 0))
+  (dict "key" "published" "label" "published" "n" $published)
+-}}
+{{- $total := 0 -}}{{- range $items }}{{ $total = add $total .n }}{{ end -}}
+{{- if gt $total 0 -}}
+<div class="blog-status" aria-label="Blog status">
+  <div class="blog-status__bar">
+    {{- range $items }}{{ if gt .n 0 }}
+    <span class="blog-status__seg blog-status--{{ .key }}" style="flex-grow: {{ .n }}" title="{{ .n }} {{ .label }}"></span>
+    {{- end }}{{ end }}
+  </div>
+  <ul class="blog-status__legend">
+    {{- range $items }}
+    <li class="blog-status--{{ .key }}"><span class="blog-status__dot"></span><strong>{{ .n }}</strong> {{ .label }}</li>
+    {{- end }}
+  </ul>
+</div>
+{{- end -}}
+{{- end -}}
