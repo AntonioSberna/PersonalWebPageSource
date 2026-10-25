@@ -1,7 +1,4 @@
 # Blog status counter shown on the /blog/ page.
-# Update the numbers by hand. A value of 0 hides that segment;
-# if all are 0 the counter disappears.
-# If "published" is removed, the number of published posts is counted automatically.
 review: 1
 writing: 2
 ideas: 6
