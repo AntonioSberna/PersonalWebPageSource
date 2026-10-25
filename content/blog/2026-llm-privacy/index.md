@@ -11,7 +11,7 @@ It is no secret that this year I resubmitted my MSCA Postdoctoral Fellowship pro
 
 
 I am fairly confident that almost every proposal submitted this year went through a large language model at some point. Not a model running quietly on the applicant's laptop, but one running on someone else's servers. If that is true, the companies operating those servers hold something no funding agency has ever had: the complete library of proposals for one of Europe's most competitive research programmes, and probably for every other grant call open in the last period.
-{{< side src="msca_pf_2026_numbers.jpg" pos="right" width="60%" link="https://marie-sklodowska-curie-actions.ec.europa.eu/whats-new/news/postdoctoral-fellowships-2026-call-results" caption="MSCA Postdoctoral Fellowships 2026 in numbers" >}}
+{{< side src="https://webgate.ec.europa.eu/sedia/iop/fileapi/news/40064/v1/2026_MSCA_PF_FT_02.jpg" pos="right" width="60%" link="https://marie-sklodowska-curie-actions.ec.europa.eu/whats-new/news/postdoctoral-fellowships-2026-call-results" caption="MSCA Postdoctoral Fellowships 2026 in numbers" >}}
 
 While rewriting my own proposal (and no, I did not let agents loose on it), I was struck by how much these tools had changed in a single year. Part of it is surely me: I am more fluent with them, I know what to ask and when to stop trusting the answer. But the difference was too large to be explained by my learning curve alone. The models themselves are simply much better than they were twelve months ago.
 
