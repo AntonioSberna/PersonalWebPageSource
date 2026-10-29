@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e
 
+echo "Cleaning public/ (keeping its .git)..."
+if [ ! -d public/.git ]; then
+  echo "public/.git not found, aborting so the GitHub Pages repo is not lost"; exit 1
+fi
+find public -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+
 echo "Building site..."
 ./hugo --minify
 

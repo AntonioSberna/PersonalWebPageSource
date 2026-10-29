@@ -8,6 +8,10 @@ enableEmoji = true
 summaryLength = 30
 paginate = 10
 
+# static_legacy/ keeps old files online at their previous URLs (possibly shared
+# in emails or with students). Delete a file there when its old URL is no longer needed.
+staticDir = ['static', 'static_legacy']
+
 [params]
   description = "Personal webpage of Antonio P. Sberna - Research Fellow in Structural Engineering"
   author = "Antonio P. Sberna"
