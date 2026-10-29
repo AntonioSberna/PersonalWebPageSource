@@ -2,7 +2,7 @@
 {{- with $items -}}
 <div class="news-box">
   <div class="news-box__head">
-    <h2 class="news-box__title">Latest news</h2>
+    <h2 class="news-box__title"><a href="/news/">Latest news</a></h2>
     {{- if gt (len .) 3 }}<a href="/news/" class="news-box__all">All news &rarr;</a>{{ end }}
   </div>
   {{ partial "news-list.html" (dict "items" . "limit" 3) }}

@@ -9,7 +9,7 @@
     {{- with .type }}<span class="news-item__type">{{ . }}</span>{{ end }}
     <span class="news-item__text" title="{{ .text | markdownify | plainify }}">
       {{- if .url -}}
-      <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .text | markdownify }} <span aria-hidden="true">&rarr;</span></a>
+      <a href="{{ .url }}" target="_blank" rel="noopener">{{ .text | markdownify }} <span aria-hidden="true">&rarr;</span></a>
       {{- else -}}
       {{ .text | markdownify }}
       {{- end -}}

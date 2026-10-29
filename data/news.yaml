@@ -5,6 +5,7 @@
 #   type: short label (e.g. preprint, paper, conference, organizer, talk, teaching, book)
 #   text: one or two lines, Markdown allowed (*italic*, **bold**, [link](url))
 #   url:  optional, makes the whole item clickable with a "→"
+#         (a page, a PDF or a photo, e.g. /blog/<folder>/featured.jpg)
 # EXAMPLE ITEMS: check and replace them with your own.
 items:
   - date: 2026-12-25
@@ -25,3 +26,4 @@ items:
   - date: 2026-09-07
     type: conference
     text: "Presenting at ECEE 2026, the European Conference on Earthquake Engineering, Berlin"
+    url: "/blog/2026-ecee-science-w-agents/featured.jpg"

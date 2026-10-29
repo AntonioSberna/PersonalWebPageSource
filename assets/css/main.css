@@ -1043,3 +1043,5 @@ main .post-credits {
   .news-item { grid-template-columns: auto 1fr; }
   .news-item__text { grid-column: 1 / -1; }
 }
+.news-box__title a { color: inherit; }
+.news-box__title a:hover { color: var(--accent); text-decoration: none; }
