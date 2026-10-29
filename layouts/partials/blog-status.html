@@ -1,4 +1,4 @@
-{{- $s := site.Data.blog_status -}}
+{{- $s := hugo.Data.blog_status -}}
 {{- with $s -}}
 {{- $published := .published | default (len (where $.Pages "Draft" false)) -}}
 {{- $items := slice
