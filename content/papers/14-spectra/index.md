@@ -14,7 +14,7 @@ summary: "How bedrock input-motion modelling affects local seismic response and 
 tags: ["Local Seismic Response", "artificial accelerograms", "fully non-stationary", "bedrock seismic action", "R.C. frame nonlinear response"]
 # url_pdf: "https://link.springer.com/content/pdf/10.1007/s10518-025-02213-x.pdf"
 # doi: "https://doi.org/10.1007/s10518-025-02213-x"
-# url_source: "https://link.springer.com/article/10.1007/s10518-025-02213-x"
+url_source: "https://www.preprints.org/manuscript/202610.2967/v1"
 ---
 
 ## Highlights
