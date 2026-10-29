@@ -6,15 +6,15 @@
 #   url:  optional, makes the whole item clickable with a "→"
 # EXAMPLE ITEMS: check and replace them with your own.
 items:
+  - date: 2026-12-25
+    type: book
+    text: "Released: chapter on *Optimal retrofitting design* in *Sustainable Retrofitting Toward Resilient Buildings & Infrastructures* (World Scientific)"
+    url: "https://amzn.eu/d/0ecc8Ajc"
+
   - date: 2026-10-27
     type: preprint
     text: "Preprint available: *Influence of Bedrock Seismic Action Modelling on Microzonation*"
     url: "https://www.preprints.org/manuscript/202610.2967/v1"
-
-  - date: 2026-10-25
-    type: book
-    text: "Released: chapter on *Optimal retrofitting design* in *Sustainable Retrofitting Toward Resilient Buildings & Infrastructures* (World Scientific)"
-    url: "https://amzn.eu/d/0ecc8Ajc"
 
   - date: 2026-09-21
     type: organizer
