@@ -2,25 +2,39 @@
 //  Theme toggle (light / dark)
 // ============================================================
 (function () {
-  const STORAGE_KEY = 'theme';
+  // Theme: follows the system (prefers-color-scheme) unless the visitor picks one
+  // with the toggle. Picking the same theme as the system goes back to "auto".
+  const STORAGE_KEY = 'theme-choice';
   const root = document.documentElement;
+  const media = window.matchMedia('(prefers-color-scheme: light)');
 
-  function getPreferred() {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) return saved;
-    // Default: dark
-    return 'dark';
+  function systemTheme() { return media.matches ? 'light' : 'dark'; }
+  function savedTheme() {
+    try { const t = localStorage.getItem(STORAGE_KEY); return (t === 'light' || t === 'dark') ? t : null; }
+    catch (e) { return null; }
   }
+  function getPreferred() { return savedTheme() || systemTheme(); }
 
   function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
-    localStorage.setItem(STORAGE_KEY, theme);
     const btn = document.getElementById('theme-toggle');
     if (btn) btn.textContent = theme === 'dark' ? '☀ Light' : '☾ Dark';
   }
 
-  // Apply theme immediately (before paint) to avoid flash
+  function chooseTheme(theme) {
+    try {
+      if (theme === systemTheme()) localStorage.removeItem(STORAGE_KEY);
+      else localStorage.setItem(STORAGE_KEY, theme);
+    } catch (e) {}
+    applyTheme(theme);
+  }
+
   applyTheme(getPreferred());
+  // Old key: the previous version saved 'dark' for every visitor, so it is not a real choice
+  try { localStorage.removeItem('theme'); } catch (e) {}
+
+  // Live update when the system theme changes (only if no explicit choice)
+  media.addEventListener('change', function () { if (!savedTheme()) applyTheme(systemTheme()); });
 
   document.addEventListener('DOMContentLoaded', function () {
     applyTheme(getPreferred());
@@ -29,7 +43,7 @@
     if (btn) {
       btn.addEventListener('click', function () {
         const current = root.getAttribute('data-theme');
-        applyTheme(current === 'dark' ? 'light' : 'dark');
+        chooseTheme(current === 'dark' ? 'light' : 'dark');
       });
     }
 

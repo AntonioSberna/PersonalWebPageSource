@@ -46,9 +46,13 @@
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 <!-- Inline theme initialisation — must run before body renders to prevent flash -->
+<!-- Theme: the visitor's explicit choice if any, otherwise the system preference -->
+<meta name="color-scheme" content="dark light">
 <script>
   (function(){
-    var t=localStorage.getItem('theme')||'dark';
+    var t=null;
+    try { t=localStorage.getItem('theme-choice'); } catch(e){}
+    if (t!=='light' && t!=='dark') t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
     document.documentElement.setAttribute('data-theme',t);
   })();
 </script>

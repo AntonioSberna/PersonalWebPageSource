@@ -1,10 +1,198 @@
 {{ define "main" }}
-<div class="container" style="text-align:center; padding:5rem 1.5rem">
-  <h1 style="font-size:4rem; color:var(--accent)">404</h1>
-  <h2>Page not found</h2>
-  <p style="color:var(--text-muted); margin:1rem 0 2rem">
-    The page you are looking for does not exist.
-  </p>
-  <a href="/" class="about__cv-link">← Back to Home</a>
+<div class="e404" id="e404">
+  <div class="e404__code" id="e404-code" aria-hidden="true">404</div>
+
+  <canvas class="e404__stage" id="e404-stage" aria-hidden="true"></canvas>
+
+  <div class="e404__readout" id="e404-readout" aria-hidden="true">
+    <span>PGA <b id="e404-pga">0.00</b> g</span>
+    <span>roof drift <b id="e404-drift">0.00</b> %</span>
+    <span>peak <b id="e404-peak">0.00</b> %</span>
+  </div>
+
+  <h1 class="e404__title">Page not found</h1>
+  <p class="e404__text">This page did not make it through the shaking &mdash; or it was never built.</p>
+  <p class="e404__hint" id="e404-hint">Move the cursor to shake the ground</p>
+
+  <nav class="e404__links" aria-label="Back to the site">
+    <a href="/" class="about__cv-link">&larr; Back to home</a>
+    <span><a href="/papers/">Papers</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="/news/">News</a></span>
+  </nav>
 </div>
+
+<script>
+(function () {
+  var canvas = document.getElementById('e404-stage');
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext('2d');
+  var wrap = document.getElementById('e404');
+  var code = document.getElementById('e404-code');
+  var hint = document.getElementById('e404-hint');
+  var outPga = document.getElementById('e404-pga');
+  var outDrift = document.getElementById('e404-drift');
+  var outPeak = document.getElementById('e404-peak');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('ontouchstart' in window) hint.textContent = 'Drag to shake the ground';
+
+  // ---- colours from the site theme (re-read when the theme changes)
+  var col = {};
+  function readColours() {
+    var cs = getComputedStyle(document.documentElement);
+    col.line = cs.getPropertyValue('--text-muted').trim() || '#8892a4';
+    col.text = cs.getPropertyValue('--text').trim() || '#e2e8f0';
+    col.accent = cs.getPropertyValue('--accent').trim() || '#7c9bdf';
+    col.border = cs.getPropertyValue('--border').trim() || '#2a3654';
+  }
+  readColours();
+  new MutationObserver(readColours).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  // ---- canvas size (sharp on HiDPI)
+  var W = 0, H = 0;
+  function resize() {
+    var r = canvas.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+    W = r.width; H = r.height;
+    canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resize();
+  window.addEventListener('resize', function () { resize(); if (reduced) draw(); });
+
+  // ---- model: 6-storey shear frame, first two modes of a shear beam
+  var N = 6, BAYS = 3;
+  var w1 = 2 * Math.PI * 0.85, w2 = 3 * w1, zeta = 0.1;
+  var G1 = 4 / Math.PI, G2 = -4 / (3 * Math.PI);          // modal participation factors
+  var q1 = 0, v1 = 0, q2 = 0, v2 = 0;                       // modal coordinates
+  function phi1(i) { return Math.sin(Math.PI / 2 * i / N); }
+  function phi2(i) { return Math.sin(3 * Math.PI / 2 * i / N); }
+
+  // ground (shake table) follows the pointer through a stiff spring
+  var target = 0, xg = 0, vg = 0, ag = 0;
+  var PX_PER_G = 9000;                                      // px/s^2 shown as 1 g
+  var peak = 0, moved = false;
+
+  function pointer(clientX) {
+    var r = wrap.getBoundingClientRect();
+    var rel = (clientX - (r.left + r.width / 2)) / (r.width / 2);   // -1 .. 1
+    target = Math.max(-1, Math.min(1, rel)) * Math.min(90, W * 0.12);
+    if (!moved) { moved = true; hint.classList.add('is-hidden'); }
+  }
+  window.addEventListener('mousemove', function (e) { pointer(e.clientX); });
+  window.addEventListener('touchmove', function (e) { if (e.touches[0]) pointer(e.touches[0].clientX); }, { passive: true });
+  window.addEventListener('touchend', function () { target = 0; });
+  document.addEventListener('mouseleave', function () { target = 0; });
+
+  // a short "welcome" quake on load
+  var t0 = performance.now();
+  function intro(t) {
+    var s = (t - t0) / 1000;
+    if (reduced || moved || s > 3.2) return null;
+    return 34 * Math.sin(2 * Math.PI * 1.6 * s) * Math.exp(-s / 1.1) * Math.min(1, s * 3);
+  }
+
+  // seismograph tape
+  var TAPE = 260, tape = new Array(TAPE).fill(0);
+
+  function step(dt) {
+    var tg = target;
+    var k = 420, c = 2 * 0.9 * Math.sqrt(k);                // ground follower: stiff, near-critical
+    var a = k * (tg - xg) - c * vg;
+    vg += a * dt; xg += vg * dt; ag = a;
+    var a1 = -G1 * ag - 2 * zeta * w1 * v1 - w1 * w1 * q1;
+    var a2 = -G2 * ag - 2 * zeta * w2 * v2 - w2 * w2 * q2;
+    v1 += a1 * dt; q1 += v1 * dt;
+    v2 += a2 * dt; q2 += v2 * dt;
+  }
+
+  function disp(i) { return q1 * phi1(i) + q2 * phi2(i); }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    var groundY = Math.round(H - 64);
+    var storey = Math.min(26, groundY / (N + 1.2));
+    var bw = Math.min(46, W / 12), bx = W / 2 - (BAYS * bw) / 2;
+    var gx = xg;
+
+    // ground line + hatching (moves with the table)
+    ctx.lineWidth = 1; ctx.strokeStyle = col.line; ctx.globalAlpha = 0.55;
+    ctx.beginPath(); ctx.moveTo(0, groundY + 0.5); ctx.lineTo(W, groundY + 0.5); ctx.stroke();
+    ctx.globalAlpha = 0.25; ctx.beginPath();
+    var off = ((gx % 10) + 10) % 10;
+    for (var hx = -10 + off; hx < W; hx += 10) { ctx.moveTo(hx, groundY + 9); ctx.lineTo(hx + 7, groundY + 2); }
+    ctx.stroke(); ctx.globalAlpha = 1;
+
+    // frame: columns as double-curvature curves, beams straight
+    var xs = [];
+    for (var i = 0; i <= N; i++) xs.push(gx + disp(i));
+    ctx.strokeStyle = col.line; ctx.lineWidth = 1.2; ctx.globalAlpha = 0.9;
+    ctx.beginPath();
+    for (var j = 0; j <= BAYS; j++) {
+      var cx = bx + j * bw;
+      for (var s = 1; s <= N; s++) {
+        var y0 = groundY - (s - 1) * storey, y1 = groundY - s * storey;
+        ctx.moveTo(cx + xs[s - 1], y0);
+        ctx.bezierCurveTo(cx + xs[s - 1], y0 - storey / 2, cx + xs[s], y1 + storey / 2, cx + xs[s], y1);
+      }
+    }
+    ctx.stroke();
+    ctx.lineWidth = 1.6; ctx.strokeStyle = col.text; ctx.globalAlpha = 0.75;
+    ctx.beginPath();
+    for (var f = 1; f <= N; f++) {
+      var y = groundY - f * storey;
+      ctx.moveTo(bx + xs[f] - 3, y); ctx.lineTo(bx + BAYS * bw + xs[f] + 3, y);
+    }
+    ctx.stroke(); ctx.globalAlpha = 1;
+    // roof marker
+    ctx.fillStyle = col.accent;
+    ctx.beginPath(); ctx.arc(bx + BAYS * bw + xs[N] + 8, groundY - N * storey, 2.6, 0, 2 * Math.PI); ctx.fill();
+
+    // seismograph: pen at centre, tape runs to the left and fades
+    var tapeY = groundY + 40, amp = 22, penX = W / 2, dx = Math.max(1.4, (W / 2) / TAPE);
+    ctx.strokeStyle = col.border; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(0, tapeY + 0.5); ctx.lineTo(W, tapeY + 0.5); ctx.stroke();
+    for (var p = 1; p < TAPE; p++) {
+      var xA = penX - (p - 1) * dx, xB = penX - p * dx;
+      if (xB < 0) break;
+      ctx.globalAlpha = Math.max(0, 1 - p / TAPE);
+      ctx.strokeStyle = col.accent; ctx.lineWidth = 1.3;
+      ctx.beginPath();
+      ctx.moveTo(xA, tapeY - tape[TAPE - p] * amp);
+      ctx.lineTo(xB, tapeY - tape[TAPE - p - 1 < 0 ? 0 : TAPE - p - 1] * amp);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1; ctx.fillStyle = col.accent;
+    ctx.beginPath(); ctx.arc(penX, tapeY - tape[TAPE - 1] * amp, 3, 0, 2 * Math.PI); ctx.fill();
+
+    // "404" sways a little with the roof (parallax)
+    code.style.transform = 'translateX(' + (-xg * 0.15 + disp(N) * 0.35).toFixed(2) + 'px)';
+    return storey;
+  }
+
+  var last = performance.now(), acc = 0, frame = 0;
+  function loop(now) {
+    var dt = Math.min(0.05, (now - last) / 1000); last = now; acc += dt;
+    var it = intro(now);
+    if (it !== null) target = it;
+    var h = 1 / 240;
+    while (acc >= h) { step(h); acc -= h; }
+
+    var pga = Math.min(1.5, Math.abs(ag) / PX_PER_G);
+    var noise = (Math.random() - 0.5) * 0.02;
+    tape.push(Math.max(-1.2, Math.min(1.2, ag / PX_PER_G / 0.8)) + noise);
+    tape.shift();
+
+    var storey = draw();
+    var drift = Math.abs(disp(N)) / (N * storey) * 100 * 0.08;  // scaled to plausible values
+    if (drift > peak) peak = drift;
+    if (++frame % 4 === 0) {
+      outPga.textContent = pga.toFixed(2);
+      outDrift.textContent = drift.toFixed(2);
+      outPeak.textContent = peak.toFixed(2);
+    }
+    requestAnimationFrame(loop);
+  }
+
+  if (reduced) { draw(); hint.classList.add('is-hidden'); }
+  else requestAnimationFrame(loop);
+})();
+</script>
 {{ end }}
