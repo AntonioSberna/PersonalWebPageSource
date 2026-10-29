@@ -1,0 +1,50 @@
+{{- /* Link previews (LinkedIn, Mastodon, WhatsApp, X...): Open Graph + Twitter card.
+       Image: the page's featured.* (blog photos cropped to 1200x630, paper figures
+       letterboxed on white), otherwise static/images/social-card.png
+       (regenerate it with tools/make_social_card.py). */ -}}
+{{- $title := .Title -}}
+{{- $desc := "" -}}
+{{- with .Description }}{{ $desc = . }}{{ else }}{{ with .Params.subtitle }}{{ $desc = . }}{{ else }}{{ with .Params.summary }}{{ $desc = . }}{{ else }}{{ if .IsPage }}{{ $desc = .Summary }}{{ else }}{{ $desc = site.Params.description }}{{ end }}{{ end }}{{ end }}{{ end -}}
+{{- $desc = $desc | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 200 -}}
+
+{{- $img := dict "url" ("images/social-card.png" | absURL) "w" 1200 "h" 630 "alt" (printf "%s, %s" site.Params.author site.Params.role) -}}
+{{- with .Resources.GetMatch "featured.*" -}}
+  {{- if in (slice "jpeg" "png" "webp" "gif") .MediaType.SubType -}}
+    {{- $r := . -}}
+    {{- if eq $.Section "blog" -}}
+      {{- $r = .Fill "1200x630 Smart q85" -}}
+    {{- else -}}
+      {{- /* figures: fit in 1200x630 and pad with white, nothing gets cropped */ -}}
+      {{- $f := .Fit "1140x590" -}}
+      {{- $px := div (sub 1200 $f.Width) 2 -}}{{- $py := div (sub 630 $f.Height) 2 -}}
+      {{- $r = $f.Filter (images.Padding $py (sub 1200 (add $f.Width $px)) (sub 630 (add $f.Height $py)) $px "#ffffff") -}}
+    {{- end -}}
+    {{- $img = dict "url" $r.Permalink "w" $r.Width "h" $r.Height "alt" $.Title -}}
+  {{- end -}}
+{{- end }}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="{{ $img.url }}">
+<meta property="og:image:width" content="{{ $img.w }}">
+<meta property="og:image:height" content="{{ $img.h }}">
+<meta property="og:image:alt" content="{{ $img.alt }}">
+{{- if and .IsPage (in (slice "blog" "papers" "proceedings") .Section) }}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:author" content="{{ site.Params.author }}">
+{{- else }}
+<meta property="og:type" content="{{ cond .IsHome "profile" "website" }}">
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $img.url }}">
+<meta name="twitter:image:alt" content="{{ $img.alt }}">
+{{- with site.Params.social.mastodon }}
+{{- /* Mastodon shows "More from @user" under the preview */ -}}
+{{- $u := urls.Parse . }}
+<meta name="fediverse:creator" content="{{ strings.TrimPrefix "/" $u.Path }}@{{ $u.Host }}">
+{{- end }}

@@ -1,0 +1,42 @@
+{{- /* Returns the BibTeX entry of a paper or proceeding page (context: the page). */ -}}
+{{- $p := . -}}
+{{- $map := hugo.Data.authors | default dict -}}
+{{- $authors := slice -}}
+{{- range $p.Params.authors -}}
+  {{- $n := index $map . -}}
+  {{- if not $n }}{{ warnf "BibTeX: author %q (%s) missing in data/authors.yaml" . $p.File.Path }}{{ $n = printf "{%s}" . }}{{ end -}}
+  {{- $authors = $authors | append $n -}}
+{{- end -}}
+{{- $isConf := in ($p.Params.publication_types | default slice) "1" -}}
+{{- $year := $p.Date.Format "2006" -}}
+{{- /* key: first author surname + year + first long word of the title */ -}}
+{{- $first := index $authors 0 | default "anon" -}}
+{{- $sur := index (split $first ",") 0 | replaceRE `[^A-Za-z]` "" -}}
+{{- $word := "" -}}
+{{- range split (lower $p.Title) " " }}{{ if and (not $word) (ge (len .) 5) }}{{ $word = replaceRE `[^a-z]` "" . }}{{ end }}{{ end -}}
+{{- $key := printf "%s%s%s" $sur $year $word -}}
+{{- $doi := $p.Params.doi | default "" | replaceRE `^https?://(dx\.)?doi\.org/` "" -}}
+{{- $url := or $p.Params.url_source $p.Params.url_preprint $p.Params.url_pdf -}}
+{{- $lines := slice
+  (printf "  author    = {%s}" (delimit $authors " and "))
+  (printf "  title     = {{%s}}" (replace $p.Title "&" "\\&")) -}}
+{{- /* preprint without DOI: @misc "submitted to", becomes @article once a DOI is added */ -}}
+{{- $isPreprint := and (not $doi) $p.Params.url_preprint (not $isConf) -}}
+{{- with $p.Params.publication -}}
+  {{- $pub := replace (. | plainify) "&" "\\&" -}}
+  {{- if $isPreprint -}}
+    {{- $lines = $lines | append "  howpublished = {Preprint}" | append (printf "  note      = {Submitted to %s}" $pub) -}}
+  {{- else if $isConf -}}
+    {{- /* "Conference name, dates | Place (Country)" -> booktitle + address */ -}}
+    {{- $parts := split $pub " | " -}}
+    {{- $lines = $lines | append (printf "  booktitle = {%s}" (trim (index $parts 0) " ")) -}}
+    {{- if gt (len $parts) 1 }}{{ $lines = $lines | append (printf "  address   = {%s}" (trim (index $parts 1) " ")) }}{{ end -}}
+  {{- else -}}
+    {{- $lines = $lines | append (printf "  journal   = {%s}" $pub) -}}
+  {{- end -}}
+{{- end -}}
+{{- $lines = $lines | append (printf "  year      = {%s}" $year) -}}
+{{- with $doi }}{{ $lines = $lines | append (printf "  doi       = {%s}" .) }}{{ end -}}
+{{- with $url }}{{ $lines = $lines | append (printf "  url       = {%s}" .) }}{{ end -}}
+{{- $type := cond $isConf "inproceedings" (cond $isPreprint "misc" "article") -}}
+{{- return printf "@%s{%s,\n%s\n}" $type $key (delimit $lines ",\n") -}}

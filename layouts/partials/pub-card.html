@@ -23,7 +23,7 @@
   <div class="pub-card__meta">
     {{ with .Params.publication }}{{ . | safeHTML }}{{ end }}
     {{ with .Date }} &mdash; {{ .Format "2006" }}{{ end }}
-    {{ with .Params.doi }} &mdash; <a href="https://doi.org/{{ . | strings.TrimPrefix "https://doi.org/" }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+    {{ with .Params.doi }} &mdash; <a href="https://doi.org/{{ . | strings.TrimPrefix "https://doi.org/" }}" target="_blank" rel="noopener" data-copy-doi title="Copy DOI (Ctrl+click to open)">DOI</a>{{ end }}
   </div>
   {{ with .Params.summary }}
   <div class="pub-card__summary">{{ . }}</div>
@@ -38,8 +38,9 @@
     {{ with .Params.url_preprint }}
     <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link">Preprint</a>
     {{ end }}
+    {{ partial "cite-button.html" (dict "page" . "class" "pub-link") }}
     {{ with .Params.doi }}
-    <a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="pub-link">DOI</a>
+    <a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="pub-link" data-copy-doi title="Copy DOI (Ctrl+click to open)">DOI</a>
     {{ end }}
     {{ with .Params.url_video }}
     <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link">Video</a>

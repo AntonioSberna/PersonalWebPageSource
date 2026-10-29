@@ -1,0 +1,2 @@
+{{- /* Cite button. Context: dict "page" (paper/proceeding page), "class" (button class) */ -}}
+<button type="button" class="{{ .class }} cite-btn" data-bibtex="{{ partial "bibtex.html" .page }}" data-title="{{ .page.Title }}">Cite</button>

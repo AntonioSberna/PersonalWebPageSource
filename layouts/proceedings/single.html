@@ -21,9 +21,10 @@
   <!-- Links -->
   <div class="btn-links" style="margin-bottom:1.5rem">
     {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub btn-pub--primary">PDF</a>{{ end }}
-    {{ with .Params.doi }}<a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="btn-pub">DOI</a>{{ end }}
+    {{ with .Params.doi }}<a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="btn-pub" data-copy-doi title="Copy DOI (Ctrl+click to open)">DOI</a>{{ end }}
     {{ with .Params.url_source }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Source</a>{{ end }}
     {{ with .Params.url_preprint }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Preprint</a>{{ end }}
+    {{ partial "cite-button.html" (dict "page" . "class" "btn-pub") }}
     {{ with .Params.url_video }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Video</a>{{ end }}
     {{ with .Params.url_code }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Code</a>{{ end }}
     {{ with .Params.url_dataset }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Dataset</a>{{ end }}

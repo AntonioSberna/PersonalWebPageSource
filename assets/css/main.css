@@ -1078,3 +1078,38 @@ main .post-credits {
   .e404 { padding-top: 2rem; }
   .e404__stage { height: 230px; }
 }
+
+/* ============================================================
+   Cite dialog (BibTeX)
+   ============================================================ */
+button.btn-pub, button.pub-link { font: inherit; font-size: 0.75rem; font-weight: 500; line-height: inherit; }
+button.pub-link { background: none; border: none; padding: 0; color: var(--accent); cursor: pointer; }
+button.pub-link:hover { text-decoration: underline; }
+.cite-dialog {
+  width: min(640px, calc(100vw - 2rem));
+  margin: auto; padding: 1.2rem 1.4rem 1.3rem;
+  background: var(--bg-card); color: var(--text);
+  border: 1px solid var(--border); border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+.cite-dialog::backdrop { background: rgba(5, 8, 15, 0.55); backdrop-filter: blur(2px); }
+.cite-dialog[open] { animation: cite-in 0.18s ease-out; }
+@keyframes cite-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.cite-dialog__head { display: flex; align-items: center; justify-content: space-between; }
+.cite-dialog__head h2 {
+  font-family: 'Roboto', sans-serif; font-size: 0.75rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin: 0;
+}
+.cite-dialog__close { background: none; border: none; color: var(--text-muted); font-size: 1.4rem; line-height: 1; cursor: pointer; padding: 0 0.2rem; }
+.cite-dialog__close:hover { color: var(--text); }
+.cite-dialog__title { font-family: 'Lora', Georgia, serif; font-size: 0.98rem; margin: 0.4rem 0 0.8rem; color: var(--text); }
+.cite-dialog__bib {
+  font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  font-size: 0.76rem; line-height: 1.55;
+  background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px;
+  padding: 0.8rem 0.9rem; margin: 0;
+  white-space: pre; max-height: 50vh; overflow: auto;
+}
+.cite-dialog__actions { display: flex; gap: 0.6rem; margin-top: 0.9rem; }
+.cite-dialog__actions .btn-pub { font-size: 0.8rem; padding: 0.3rem 0.8rem; white-space: nowrap; }
+a[data-copy-doi].is-copied { color: var(--accent); border-color: var(--accent); }

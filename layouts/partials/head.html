@@ -4,8 +4,8 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <meta name="author" content="{{ site.Params.author }}">
 
-<!-- Open Graph (Hugo embedded template: og:url, og:image from featured.*, article dates) -->
-{{ partial "opengraph.html" . }}
+<!-- Link previews: Open Graph, Twitter card, Mastodon author -->
+{{ partial "social.html" . }}
 
 <!-- Structured data (JSON-LD), blog posts only -->
 {{ if and .IsPage (eq .Section "blog") }}
