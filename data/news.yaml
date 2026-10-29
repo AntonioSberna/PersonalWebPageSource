@@ -1,5 +1,6 @@
 # News shown in the home page (latest 3) and in the full archive at /news/.
 # Order does not matter: items are sorted by date, newest first.
+# Items with a future date stay hidden and appear with the first build on/after that day.
 #   date: YYYY-MM-DD (shown as "Oct 2026")
 #   type: short label (e.g. preprint, paper, conference, organizer, talk, teaching, book)
 #   text: one or two lines, Markdown allowed (*italic*, **bold**, [link](url))

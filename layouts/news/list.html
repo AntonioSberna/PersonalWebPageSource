@@ -8,11 +8,11 @@
 
 <div class="pub-full-list">
   <div class="container">
-    {{ with hugo.Data.news }}{{ with .items }}
+    {{ with partial "news-published.html" . }}
     <div class="news-archive">
       {{ partial "news-list.html" (dict "items" . "limit" 0) }}
     </div>
-    {{ end }}{{ end }}
+    {{ end }}
   </div>
 </div>
 {{ end }}

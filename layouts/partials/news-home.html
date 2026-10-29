@@ -1,4 +1,5 @@
-{{- with hugo.Data.news -}}{{- with .items -}}
+{{- $items := partial "news-published.html" . -}}
+{{- with $items -}}
 <div class="news-box">
   <div class="news-box__head">
     <h2 class="news-box__title">Latest news</h2>
@@ -6,4 +7,4 @@
   </div>
   {{ partial "news-list.html" (dict "items" . "limit" 3) }}
 </div>
-{{- end -}}{{- end -}}
+{{- end -}}

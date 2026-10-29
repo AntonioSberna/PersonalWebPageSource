@@ -1,0 +1,7 @@
+{{- /* Returns news items dated today or earlier, newest first.
+       Future items stay hidden until a build on/after their date (like future posts). */ -}}
+{{- $out := slice -}}
+{{- with hugo.Data.news -}}{{- range .items -}}
+  {{- if le (time.AsTime .date).Unix now.Unix }}{{ $out = $out | append . }}{{ end -}}
+{{- end -}}{{- end -}}
+{{- return (sort $out "date" "desc") -}}

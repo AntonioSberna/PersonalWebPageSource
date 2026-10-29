@@ -1,5 +1,5 @@
-{{- /* Renders news items. Context: dict "items" (slice), "limit" (int, 0 = all) */ -}}
-{{- $items := sort .items "date" "desc" -}}
+{{- /* Renders news items (already filtered and sorted). Context: dict "items", "limit" (0 = all) */ -}}
+{{- $items := .items -}}
 {{- if gt .limit 0 }}{{ $items = first .limit $items }}{{ end -}}
 <ul class="news-list">
   {{- range $items }}
