@@ -15,7 +15,7 @@ tags: ["Local Seismic Response", "artificial accelerograms", "fully non-stationa
 # url_pdf: ""
 # doi: ""
 # url_source: ""
-url_preprint: "https://www.preprints.org/manuscript/202610.2967/v1"
+# url_preprint: "https://www.preprints.org/manuscript/202610.2967/v1"
 ---
 
 ## Highlights
