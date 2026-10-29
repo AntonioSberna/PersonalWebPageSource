@@ -1,0 +1,19 @@
+{{- /* Renders news items. Context: dict "items" (slice), "limit" (int, 0 = all) */ -}}
+{{- $items := sort .items "date" "desc" -}}
+{{- if gt .limit 0 }}{{ $items = first .limit $items }}{{ end -}}
+<ul class="news-list">
+  {{- range $items }}
+  <li class="news-item">
+    {{- $date := time.AsTime .date -}}
+    <time class="news-item__date" datetime="{{ $date.Format "2006-01-02" }}">{{ $date.Format "Jan 2006" }}</time>
+    {{- with .type }}<span class="news-item__type">{{ . }}</span>{{ end }}
+    <span class="news-item__text" title="{{ .text | markdownify | plainify }}">
+      {{- if .url -}}
+      <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .text | markdownify }} <span aria-hidden="true">&rarr;</span></a>
+      {{- else -}}
+      {{ .text | markdownify }}
+      {{- end -}}
+    </span>
+  </li>
+  {{- end }}
+</ul>

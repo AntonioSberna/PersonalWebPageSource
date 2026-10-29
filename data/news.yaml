@@ -1,0 +1,26 @@
+# News shown in the home page (latest 3) and in the full archive at /news/.
+# Order does not matter: items are sorted by date, newest first.
+#   date: YYYY-MM-DD (shown as "Oct 2026")
+#   type: short label (e.g. preprint, paper, conference, organizer, talk, teaching, book)
+#   text: one or two lines, Markdown allowed (*italic*, **bold**, [link](url))
+#   url:  optional, makes the whole item clickable with a "→"
+# EXAMPLE ITEMS: check and replace them with your own.
+items:
+  - date: 2026-10-27
+    type: preprint
+    text: "Preprint available: *Influence of Bedrock Seismic Action Modelling on Microzonation*"
+    url: "https://www.preprints.org/manuscript/202610.2967/v1"
+
+  - date: 2026-10-25
+    type: book
+    text: "Released: chapter on *Optimal retrofitting design* in *Sustainable Retrofitting Toward Resilient Buildings & Infrastructures* (World Scientific)"
+    url: "https://amzn.eu/d/0ecc8Ajc"
+
+  - date: 2026-09-21
+    type: organizer
+    text: "Co-organizing a minisymposium at COMPDYN 2027: abstract submission is open"
+    url: "/uploads/compdyn2027_rom_surrog_minisymp/flyer.pdf"
+
+  - date: 2026-09-07
+    type: conference
+    text: "Presenting at ECEE 2026, the European Conference on Earthquake Engineering, Berlin"
