@@ -35,6 +35,9 @@
     {{ with .Params.url_source }}
     <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link">Source</a>
     {{ end }}
+    {{ with .Params.url_preprint }}
+    <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link">Preprint</a>
+    {{ end }}
     {{ with .Params.doi }}
     <a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="pub-link">DOI</a>
     {{ end }}

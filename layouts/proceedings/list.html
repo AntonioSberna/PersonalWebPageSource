@@ -32,6 +32,7 @@
           <div class="btn-links" style="margin-top:0.4rem">
             {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub btn-pub--primary">PDF</a>{{ end }}
             {{ with .Params.url_source }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Source</a>{{ end }}
+            {{ with .Params.url_preprint }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Preprint</a>{{ end }}
             {{ with .Params.doi }}<a href="{{ if strings.HasPrefix . "http" }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener" class="btn-pub">DOI</a>{{ end }}
             {{ with .Params.url_video }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Video</a>{{ end }}
             <a href="{{ .RelPermalink }}" class="btn-pub">Details</a>
