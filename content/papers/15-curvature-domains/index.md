@@ -5,6 +5,7 @@ authors:
   - Di Trapani Fabio
 date: 2026-10-01
 publication_types: ["2"]
+status: "under review"
 publication: "Engineering Structures"
 publication_short: "Eng Str"
 abstract: "The accurate yet practical assessment of deformation capacity of reinforced concrete (RC)

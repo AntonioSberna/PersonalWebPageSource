@@ -20,12 +20,13 @@
 {{- $lines := slice
   (printf "  author    = {%s}" (delimit $authors " and "))
   (printf "  title     = {{%s}}" (replace $p.Title "&" "\\&")) -}}
-{{- /* preprint without DOI: @misc "submitted to", becomes @article once a DOI is added */ -}}
-{{- $isPreprint := and (not $doi) $p.Params.url_preprint (not $isConf) -}}
+{{- /* under review or preprint without DOI: @misc "submitted to", becomes @article when published */ -}}
+{{- $isPreprint := and (not $isConf) (or (eq $p.Params.status "under review") (and (not $doi) $p.Params.url_preprint)) -}}
 {{- with $p.Params.publication -}}
   {{- $pub := replace (. | plainify) "&" "\\&" -}}
   {{- if $isPreprint -}}
-    {{- $lines = $lines | append "  howpublished = {Preprint}" | append (printf "  note      = {Submitted to %s}" $pub) -}}
+    {{- if $p.Params.url_preprint }}{{ $lines = $lines | append "  howpublished = {Preprint}" }}{{ end -}}
+    {{- $lines = $lines | append (printf "  note      = {Submitted to %s}" $pub) -}}
   {{- else if $isConf -}}
     {{- /* "Conference name, dates | Place (Country)" -> booktitle + address */ -}}
     {{- $parts := split $pub " | " -}}

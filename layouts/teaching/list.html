@@ -1,4 +1,22 @@
 {{ define "main" }}
+{{- /* Built from "teaching" in data/activities.yaml. A course page in content/teaching/
+       is shown by pointing the "url" of its entry to it. */ -}}
+{{- $seasons := dict "Winter" "1" "Spring" "2" "Summer" "3" "Fall" "4" "Autumn" "4" -}}
+{{- $rows := slice -}}
+{{- range hugo.Data.activities.teaching -}}
+  {{- $p := split .date " " -}}
+  {{- $year := index $p (sub (len $p) 1) -}}
+  {{- $url := .url | default "" | replaceRE `^\./` "/" -}}
+  {{- $rows = $rows | append (merge . (dict "url" $url "year" $year "key" (printf "%s%s" $year (index $seasons (index $p 0) | default "0")))) -}}
+{{- end -}}
+{{- $rows = sort $rows "key" "desc" -}}
+{{- $countries := slice -}}
+{{- range $rows }}{{ $c := trim (index (last 1 (split .institution ",")) 0) " " }}{{ if not (in $countries $c) }}{{ $countries = $countries | append $c }}{{ end }}{{ end -}}
+{{- range .Pages -}}
+  {{- $path := strings.TrimSuffix "/" .RelPermalink -}}
+  {{- $found := false -}}{{- range $rows }}{{ if eq (strings.TrimSuffix "/" .url) $path }}{{ $found = true }}{{ end }}{{ end -}}
+  {{- if not $found }}{{ warnf "teaching page %s is not linked from data/activities.yaml" .File.Path }}{{ end -}}
+{{- end -}}
 <div class="page-header">
   <div class="container">
     <h1>Teaching</h1>
@@ -8,16 +26,28 @@
 
 <div class="pub-full-list">
   <div class="container">
-    <div class="teaching-grid">
-      {{ range .Pages.ByParam "year" }}
-      <a href="{{ .RelPermalink }}" class="teaching-card">
-        <div class="teaching-card__year">{{ .Params.year }}</div>
-        <div class="teaching-card__title">{{ .Title }}</div>
-        {{ with .Params.institution }}<div class="teaching-card__inst">{{ . }}</div>{{ end }}
-        {{ with .Params.role }}<div class="teaching-card__role">{{ . }}</div>{{ end }}
-        {{ with .Description }}<p class="teaching-card__desc">{{ . }}</p>{{ end }}
-      </a>
+    <p class="topic-count">{{ len $rows }} courses in {{ len $countries }} countries</p>
+    <div class="talks">
+      {{- $cur := "" -}}
+      {{ range $rows }}
+      {{ if ne .year $cur }}{{ if $cur }}</ul></div>{{ end }}{{ $cur = .year }}
+      <div class="talks__year"><h2>{{ .year }}</h2><ul>
       {{ end }}
+        {{- $internal := strings.HasPrefix .url "/" }}
+        <li class="talk{{ if $internal }} talk--invited{{ end }}">
+          <div class="talk__meta">
+            <span class="news-item__type">{{ .role }}</span>
+            <span class="talk__when">{{ .date }} · {{ .institution }}</span>
+          </div>
+          <div class="talk__title">
+            {{ if .url }}<a href="{{ .url }}"{{ if not $internal }} target="_blank" rel="noopener"{{ end }}>{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+          </div>
+          {{ if $internal }}
+          <div class="btn-links talk__links"><a href="{{ .url }}" class="btn-pub btn-pub--primary">Course page</a></div>
+          {{ end }}
+        </li>
+      {{ end }}
+      {{ if $cur }}</ul></div>{{ end }}
     </div>
   </div>
 </div>

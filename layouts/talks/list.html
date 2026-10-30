@@ -1,0 +1,63 @@
+{{ define "main" }}
+{{- /* Built from "invited" and "presentations" in data/activities.yaml.
+       Optional extra fields for each entry: talk (title of the talk), slides, video,
+       papers (list of pages, e.g. proceedings/2022-cst-ga_masonry), paper (any link), post. */ -}}
+{{- $months := dict "Jan" "01" "Feb" "02" "Mar" "03" "Apr" "04" "May" "05" "Jun" "06" "Jul" "07" "Aug" "08" "Sep" "09" "Sept" "09" "Oct" "10" "Nov" "11" "Dec" "12" -}}
+{{- $a := hugo.Data.activities -}}
+{{- $all := slice -}}
+{{- range $a.invited -}}{{- $all = $all | append (merge . (dict "kind" (.role | default "Invited talk") "invited" true)) -}}{{- end -}}
+{{- range $a.presentations -}}{{- $all = $all | append (merge . (dict "kind" "Conference" "invited" false)) -}}{{- end -}}
+{{- $rows := slice -}}
+{{- range $all -}}
+  {{- $p := split .date " " -}}
+  {{- $year := index $p (sub (len $p) 1) -}}
+  {{- $key := printf "%s%s%d" $year (index $months (index $p 0) | default "00") (cond .invited 1 0) -}}
+  {{- $rows = $rows | append (merge . (dict "key" $key "year" $year "ym" (printf "%s-%s" $year (index $months (index $p 0) | default "00")))) -}}
+{{- end -}}
+{{- $rows = sort $rows "key" "desc" -}}
+{{- $nowYM := now.Format "2006-01" -}}
+{{- $countries := slice -}}
+{{- range $rows }}{{ $c := trim (index (last 1 (split .location ",")) 0) " " }}{{ if not (in $countries $c) }}{{ $countries = $countries | append $c }}{{ end }}{{ end -}}
+<div class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</div>
+
+<div class="pub-full-list">
+  <div class="container">
+    <p class="topic-count">{{ len $rows }} talks in {{ len $countries }} countries</p>
+    <div class="talks">
+      {{- $cur := "" -}}
+      {{ range $rows }}
+      {{ if ne .year $cur }}{{ if $cur }}</ul></div>{{ end }}{{ $cur = .year }}
+      <div class="talks__year"><h2>{{ .year }}</h2><ul>
+      {{ end }}
+        <li class="talk{{ if .invited }} talk--invited{{ end }}" id="{{ partial "talk-id.html" . }}">
+          <div class="talk__meta">
+            <span class="news-item__type">{{ .kind }}</span>
+            {{ if gt .ym $nowYM }}<span class="talk__soon">Upcoming</span>{{ end }}
+            <span class="talk__when">{{ .date }} · {{ .location }}</span>
+          </div>
+          {{ with .talk }}<div class="talk__title">{{ . | markdownify }}</div>{{ end }}
+          <div class="{{ if .talk }}talk__event{{ else }}talk__title{{ end }}">
+            {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+          </div>
+          {{ if or .slides .video .paper .post .papers }}
+          <div class="btn-links talk__links">
+            {{ with .slides }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub btn-pub--primary">Slides</a>{{ end }}
+            {{ with .video }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Video</a>{{ end }}
+            {{ with .paper }}<a href="{{ . }}" class="btn-pub">Paper</a>{{ end }}
+            {{ $many := gt (len (.papers | default slice)) 1 }}
+            {{ range $i, $path := .papers }}{{ with site.GetPage $path }}<a href="{{ .RelPermalink }}" class="btn-pub" title="{{ .Title }}">Paper{{ if $many }} {{ add $i 1 }}{{ end }}</a>{{ else }}{{ warnf "talks: page %q not found" $path }}{{ end }}{{ end }}
+            {{ with .post }}<a href="{{ . }}" class="btn-pub">Blog post</a>{{ end }}
+          </div>
+          {{ end }}
+        </li>
+      {{ end }}
+      {{ if $cur }}</ul></div>{{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -29,7 +29,7 @@
           </div>
           <div class="blog-card__title">{{ .Title }}</div>
           {{ with .Params.subtitle }}<div class="blog-card__subtitle">{{ . | markdownify }}</div>{{ end }}
-          <p class="blog-card__desc">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}</p>
+          <p class="blog-card__desc">{{ with .Description }}{{ . }}{{ else }}{{ partial "post-summary.html" . | truncate 160 }}{{ end }}</p>
         </div>
       </a>
       {{ end }}

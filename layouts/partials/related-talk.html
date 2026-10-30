@@ -1,0 +1,18 @@
+{{- /* "Related talk" line on a paper, proceeding or blog post, found from data/activities.yaml. */ -}}
+{{- $page := . -}}
+{{- $a := hugo.Data.activities -}}
+{{- $found := slice -}}
+{{- range ($a.invited | default slice) | append ($a.presentations | default slice) -}}
+  {{- $t := . -}}
+  {{- $hit := eq (.post | default "") $page.RelPermalink -}}
+  {{- range .papers }}{{ with site.GetPage . }}{{ if eq .RelPermalink $page.RelPermalink }}{{ $hit = true }}{{ end }}{{ end }}{{ end -}}
+  {{- if $hit }}{{ $found = $found | append $t }}{{ end -}}
+{{- end -}}
+{{- with $found -}}
+<p class="related-talk">
+  {{- range $i, $t := . -}}
+  {{- if $i }} · {{ end -}}
+  <span class="related-talk__label">Related talk</span> <a href="/talks/#{{ partial "talk-id.html" $t }}">{{ $t.title }}</a>, {{ $t.date }}
+  {{- end -}}
+</p>
+{{- end -}}

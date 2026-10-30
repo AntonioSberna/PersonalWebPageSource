@@ -1,0 +1,2 @@
+{{- /* Anchor of a talk on the /talks/ page (context: the talk entry). */ -}}
+{{- return printf "talk-%s" (urlize (printf "%s %s" .date .title)) -}}

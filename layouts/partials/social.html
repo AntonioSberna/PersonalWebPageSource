@@ -4,7 +4,7 @@
        (regenerate it with tools/make_social_card.py). */ -}}
 {{- $title := .Title -}}
 {{- $desc := "" -}}
-{{- with .Description }}{{ $desc = . }}{{ else }}{{ with .Params.subtitle }}{{ $desc = . }}{{ else }}{{ with .Params.summary }}{{ $desc = . }}{{ else }}{{ if .IsPage }}{{ $desc = .Summary }}{{ else }}{{ $desc = site.Params.description }}{{ end }}{{ end }}{{ end }}{{ end -}}
+{{- with .Description }}{{ $desc = . }}{{ else }}{{ with .Params.subtitle }}{{ $desc = . }}{{ else }}{{ with .Params.summary }}{{ $desc = . }}{{ else }}{{ if .IsPage }}{{ $desc = partial "post-summary.html" . }}{{ else }}{{ $desc = site.Params.description }}{{ end }}{{ end }}{{ end }}{{ end -}}
 {{- $desc = $desc | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 200 -}}
 
 {{- $img := dict "url" ("images/social-card.png" | absURL) "w" 1200 "h" 630 "alt" (printf "%s, %s" site.Params.author site.Params.role) -}}

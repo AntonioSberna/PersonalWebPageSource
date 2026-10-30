@@ -1,0 +1,6 @@
+{{- /* Margin note. Usage, right after a word in the text:
+       word{{< note >}}Note text, *Markdown* and [links](https://...) allowed.{{< /note >}} next word
+       Desktop: in the right margin, aligned with its line. Narrow screens: opens on tap. */ -}}
+{{- $id := printf "sn-%d" .Ordinal -}}
+<input type="checkbox" id="{{ $id }}" class="sn-toggle" aria-label="Show note"><label for="{{ $id }}" class="sn-ref"></label><span class="sidenote">{{ .Inner | markdownify }}</span><span class="sn-end"></span>
+{{- "" -}}

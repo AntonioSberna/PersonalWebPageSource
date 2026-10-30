@@ -1,0 +1,9 @@
+{{- /* Returns the topic slugs of a paper (see data/paper_topics.yaml). */ -}}
+{{- $tags := lower (delimit (.Params.tags | default slice) " | ") -}}
+{{- $out := slice -}}
+{{- range hugo.Data.paper_topics.topics -}}
+  {{- $slug := urlize .label -}}
+  {{- range .keywords -}}{{- if and (strings.Contains $tags (lower .)) (not (in $out $slug)) }}{{ $out = $out | append $slug }}{{ end -}}{{- end -}}
+{{- end -}}
+{{- if not $out }}{{ warnf "paper %s matches no topic in data/paper_topics.yaml" .File.Path }}{{ end -}}
+{{- return $out -}}

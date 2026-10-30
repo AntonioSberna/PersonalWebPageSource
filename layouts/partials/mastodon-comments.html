@@ -1,0 +1,16 @@
+{{- /* Comments = replies to a Mastodon post. In the post front matter:
+       mastodon: "https://mastodon.uno/@antoniosberna/123456789"
+       Nothing is requested from Mastodon until the visitor clicks. */ -}}
+{{- with .Params.mastodon -}}
+{{- $u := urls.Parse . -}}
+{{- $id := path.Base $u.Path -}}
+<div class="mc" id="mastodon-comments" role="region" data-host="{{ $u.Host }}" data-id="{{ $id }}" aria-label="Comments">
+  <h2 class="mc__title">Comments</h2>
+  <p class="mc__intro">Comments live on Mastodon: <a href="{{ . }}" target="_blank" rel="noopener">reply to this post</a> from your account and your reply will appear here.</p>
+  <div class="mc__stats" aria-live="polite"></div>
+  <button type="button" class="btn-pub mc__load">Load comments</button>
+  <small class="mc__privacy">Loads text and avatars from {{ $u.Host }}.</small>
+  <p class="mc__status" aria-live="polite"></p>
+  <ul class="mc__list"></ul>
+</div>
+{{- end -}}

@@ -1,0 +1,27 @@
+{{- /* Hidden labels read by Google Scholar, on paper and proceeding pages only.
+       Under-review papers do not declare a journal; a PDF is declared only if hosted on this site. */ -}}
+{{- if and .IsPage (in (slice "papers" "proceedings") .Section) -}}
+{{- $map := hugo.Data.authors | default dict }}
+<meta name="citation_title" content="{{ .Title }}">
+{{- range .Params.authors }}
+<meta name="citation_author" content="{{ index $map . | default . }}">
+{{- end }}
+<meta name="citation_publication_date" content="{{ .Date.Format "2006/01/02" }}">
+{{- with .Params.publication -}}
+  {{- $pub := . | plainify | htmlUnescape -}}
+  {{- if eq $.Section "proceedings" -}}
+    {{- /* "Conference name, 11th-15th September 2022 | Turin (Italy)" -> "Conference name" */ -}}
+    {{- $name := index (split $pub " | ") 0 | replaceRE `,\s*\d.*$` "" }}
+<meta name="citation_conference_title" content="{{ trim $name " " }}">
+  {{- else if ne $.Params.status "under review" }}
+<meta name="citation_journal_title" content="{{ $pub }}">
+  {{- end -}}
+{{- end -}}
+{{- with .Params.doi }}
+<meta name="citation_doi" content="{{ replaceRE `^https?://(dx\.)?doi\.org/` "" . }}">
+{{- end -}}
+{{- with .Params.url_pdf }}{{ if not (strings.HasPrefix . "http") }}
+<meta name="citation_pdf_url" content="{{ . | absURL }}">
+{{- end }}{{ end }}
+<meta name="citation_abstract_html_url" content="{{ .Permalink }}">
+{{- end -}}

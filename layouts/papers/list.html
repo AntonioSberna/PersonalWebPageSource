@@ -11,14 +11,28 @@
 
     {{ $journals := (where site.RegularPages "Section" "papers").ByDate.Reverse }}
 
-    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.5rem">
-      {{ len $journals }} publications
+    {{- /* topic chips: label + number of papers */ -}}
+    {{ $counts := dict }}
+    {{ range $journals }}{{ range partial "paper-topics.html" . }}{{ $counts = merge $counts (dict . (add (index $counts . | default 0) 1)) }}{{ end }}{{ end }}
+    <div class="topic-filter" id="topic-filter" role="group" aria-label="Filter papers by topic" hidden>
+      <button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span>{{ len $journals }}</span></button>
+      {{ range hugo.Data.paper_topics.topics }}
+      {{ $slug := urlize .label }}
+      {{ with index $counts $slug }}<button type="button" class="topic-chip" data-topic="{{ $slug }}" aria-pressed="false">{{ end }}{{ if index $counts $slug }}{{ .label }} <span>{{ index $counts $slug }}</span></button>{{ end }}
+      {{ end }}
+    </div>
+
+    {{ partial "papers-charts.html" $journals }}
+
+    {{ $review := len (where $journals "Params.status" "under review") }}
+    <p class="topic-count" id="topic-count" aria-live="polite">
+      {{ sub (len $journals) $review }} publications{{ if $review }} · {{ $review }} under review{{ end }}
     </p>
 
     <div class="showcase-list">
       {{ range $i, $p := $journals }}
       {{ $img := $p.Resources.GetMatch "featured.*" }}
-      <div class="showcase-item{{ if eq (mod $i 2) 1 }} showcase-item--reverse{{ end }}">
+      <div class="showcase-item{{ if eq (mod $i 2) 1 }} showcase-item--reverse{{ end }}" data-topics="{{ delimit (partial "paper-topics.html" $p) " " }}"{{ with $p.Params.status }} data-status="{{ . }}"{{ end }}>
 
         {{ if $img }}
         <div class="showcase-item__img">
@@ -34,12 +48,13 @@
           <div style="font-size:0.72rem; color:var(--accent); font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem">
             {{ with $p.Params.publication_short }}{{ . }}{{ else }}{{ with $p.Params.publication }}{{ . | safeHTML | truncate 60 }}{{ end }}{{ end }}
             {{ with $p.Date }} · {{ .Format "2006" }}{{ end }}
+            {{ partial "paper-status.html" $p }}
           </div>
           <div class="showcase-item__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></div>
           <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.4rem">
             {{ range $i, $a := $p.Params.authors }}
             {{- if $i }}, {{ end }}
-            {{- if eq $a "admin" }}<strong style="color:var(--accent)">Sberna A.P.</strong>{{ else }}{{ $a }}{{ end }}
+            {{- if eq $a "admin" }}<strong style="color:var(--accent)">Sberna A.P.</strong>{{ else }}{{ partial "author-name.html" $a }}{{ end }}
             {{- end }}
           </div>
           {{ with $p.Params.summary }}<p class="showcase-item__summary">{{ . }}</p>{{ end }}

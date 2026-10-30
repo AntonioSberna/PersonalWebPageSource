@@ -10,6 +10,7 @@
       <span>{{ .Date.Format "2 January 2006" }}</span>
       {{ with .Params.place }}<span>{{ . }}</span>{{ end }}
     </div>
+    <div class="blog-post__reading">{{ .ReadingTime }} min read</div>
   </div>
 </div>
 
@@ -24,6 +25,8 @@
       <div class="teaching-content blog-post__content">
         {{ .Content }}
       </div>
+      {{ partial "related-talk.html" . }}
+      {{ partial "mastodon-comments.html" . }}
     </article>
   </div>
 </div>

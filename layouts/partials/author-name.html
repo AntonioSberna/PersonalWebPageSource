@@ -1,0 +1,12 @@
+{{- /* Author name as "Surname G.N.", from data/authors.yaml; unknown names stay as written. */ -}}
+{{- $out := . -}}
+{{- with index (hugo.Data.authors | default dict) . -}}
+  {{- $parts := split . ", " -}}
+  {{- $out = index $parts 0 -}}
+  {{- if gt (len $parts) 1 -}}
+    {{- $ini := "" -}}
+    {{- range split (index $parts 1) " " }}{{ $ini = printf "%s%s." $ini (substr . 0 1) }}{{ end -}}
+    {{- $out = printf "%s %s" $out $ini -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

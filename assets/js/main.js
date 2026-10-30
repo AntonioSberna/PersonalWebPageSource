@@ -108,6 +108,164 @@
       walk(document.getElementById('main-content') || document.body);
     })();
 
+    // Papers: filter by topic (the link keeps the choice, e.g. /papers/#masonry-infills)
+    const topicBox = document.getElementById('topic-filter');
+    if (topicBox) {
+      const chips = topicBox.querySelectorAll('.topic-chip');
+      const items = document.querySelectorAll('.showcase-item[data-topics]');
+      const count = document.getElementById('topic-count');
+      const apply = function (topic) {
+        let n = 0, review = 0;
+        items.forEach(function (it) {
+          const show = !topic || it.dataset.topics.split(' ').includes(topic);
+          it.hidden = !show;
+          if (show) {
+            it.classList.toggle('showcase-item--reverse', n % 2 === 1);
+            n++;
+            if (it.dataset.status) review++;
+          }
+        });
+        chips.forEach(function (c) {
+          const on = c.dataset.topic === topic;
+          c.classList.toggle('is-active', on);
+          c.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+        const pub = n - review;
+        count.textContent = pub + (pub === 1 ? ' publication' : ' publications') + (review ? ' \u00b7 ' + review + ' under review' : '');
+        document.querySelectorAll('#topic-matrix [data-row]').forEach(function (el) {
+          el.classList.toggle('is-faded', !!topic && el.dataset.row !== topic);
+          el.classList.toggle('is-active', el.dataset.row === topic);
+        });
+      };
+      chips.forEach(function (c) {
+        c.addEventListener('click', function () {
+          apply(c.dataset.topic);
+          history.replaceState(null, '', c.dataset.topic ? '#' + c.dataset.topic : location.pathname);
+        });
+      });
+      // Topic names in the charts act as the matching chip
+      document.querySelectorAll('button[data-chart-topic]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          const chip = topicBox.querySelector('[data-topic="' + CSS.escape(b.dataset.chartTopic) + '"]');
+          if (chip) { chip.click(); topicBox.scrollIntoView({ block: 'nearest' }); }
+        });
+      });
+      topicBox.hidden = false;
+      const fromHash = location.hash.slice(1);
+      if (fromHash && topicBox.querySelector('[data-topic="' + CSS.escape(fromHash) + '"]')) apply(fromHash);
+    }
+
+    // Blog: comments are the replies to a Mastodon post, loaded only on request
+    const mc = document.getElementById('mastodon-comments');
+    if (mc) {
+      const api = 'https://' + mc.dataset.host + '/api/v1/statuses/' + mc.dataset.id;
+      const list = mc.querySelector('.mc__list');
+      const btn = mc.querySelector('.mc__load');
+      const stats = mc.querySelector('.mc__stats');
+      const status = mc.querySelector('.mc__status');
+      const OK_TAGS = ['P', 'BR', 'A', 'SPAN', 'EM', 'STRONG', 'B', 'I', 'UL', 'OL', 'LI', 'BLOCKQUOTE', 'CODE', 'PRE'];
+      // Replies are written by strangers on other servers: keep only harmless tags and http(s) links
+      const clean = function (html) {
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        const walk = function (node) {
+          Array.from(node.children).forEach(function (el) {
+            walk(el);
+            if (!OK_TAGS.includes(el.tagName)) { el.replaceWith(document.createTextNode(el.textContent)); return; }
+            const href = el.getAttribute('href');
+            Array.from(el.attributes).forEach(function (a) { el.removeAttribute(a.name); });
+            if (el.tagName === 'A') {
+              if (href && /^https?:\/\//i.test(href)) {
+                el.setAttribute('href', href);
+                el.setAttribute('target', '_blank');
+                el.setAttribute('rel', 'nofollow noopener ugc');
+              }
+            }
+          });
+        };
+        walk(doc.body);
+        return doc.body;
+      };
+      const httpUrl = function (u) { return /^https:\/\//i.test(u || '') ? u : ''; };
+      const render = function (ctx) {
+        const depth = {};
+        depth[mc.dataset.id] = 0;
+        ctx.descendants.forEach(function (s) {
+          const d = (depth[s.in_reply_to_id] === undefined ? 0 : depth[s.in_reply_to_id]) + 1;
+          depth[s.id] = d;
+          const li = document.createElement('li');
+          li.className = 'mc__item';
+          li.style.setProperty('--depth', Math.min(d - 1, 3));
+          const head = document.createElement('div');
+          head.className = 'mc__head';
+          const av = document.createElement('img');
+          av.className = 'mc__avatar'; av.alt = ''; av.loading = 'lazy';
+          av.src = httpUrl(s.account.avatar_static);
+          const who = document.createElement('a');
+          who.className = 'mc__who'; who.target = '_blank'; who.rel = 'nofollow noopener ugc';
+          who.href = httpUrl(s.account.url) || '#';
+          who.textContent = s.account.display_name || s.account.username;
+          const handle = document.createElement('span');
+          handle.className = 'mc__handle';
+          handle.textContent = '@' + s.account.acct;
+          const when = document.createElement('a');
+          when.className = 'mc__when'; when.target = '_blank'; when.rel = 'nofollow noopener ugc';
+          when.href = httpUrl(s.url) || '#';
+          when.textContent = new Date(s.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+          head.append(av, who, handle, when);
+          const body = document.createElement('div');
+          body.className = 'mc__body';
+          if (s.spoiler_text) {
+            const details = document.createElement('details');
+            const sum = document.createElement('summary');
+            sum.textContent = s.spoiler_text;
+            details.append(sum, ...clean(s.content).childNodes);
+            body.append(details);
+          } else {
+            body.append(...clean(s.content).childNodes);
+          }
+          li.append(head, body);
+          list.append(li);
+        });
+        status.textContent = ctx.descendants.length ? '' : 'No replies yet: be the first.';
+      };
+      btn.addEventListener('click', function () {
+        btn.disabled = true;
+        status.textContent = 'Loading\u2026';
+        Promise.all([fetch(api), fetch(api + '/context')]).then(function (rs) {
+          if (!rs[0].ok || !rs[1].ok) throw new Error('HTTP');
+          return Promise.all(rs.map(function (r) { return r.json(); }));
+        }).then(function (d) {
+          stats.textContent = '\u2665 ' + d[0].favourites_count + '  \u00b7  \u21bb ' + d[0].reblogs_count + '  \u00b7  ' + d[0].replies_count + (d[0].replies_count === 1 ? ' reply' : ' replies');
+          btn.remove();
+          render(d[1]);
+        }).catch(function () {
+          btn.disabled = false;
+          status.textContent = 'Could not load the replies. Try again, or read them on Mastodon.';
+        });
+      });
+    }
+
+    // Margin notes: push a note down if it would overlap the previous one
+    const notes = document.querySelectorAll('.blog-post__content .sidenote');
+    if (notes.length) {
+      const wide = window.matchMedia('(min-width: 1120px)');
+      const layoutNotes = function () {
+        let bottom = -Infinity;
+        notes.forEach(function (n) {
+          n.style.marginTop = '';
+          if (!wide.matches) return;
+          const r = n.getBoundingClientRect();
+          const shift = Math.max(0, bottom + 14 - r.top);
+          if (shift) n.style.marginTop = shift + 'px';
+          bottom = r.bottom + shift;
+        });
+      };
+      layoutNotes();
+      window.addEventListener('load', layoutNotes);
+      window.addEventListener('resize', layoutNotes);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutNotes);
+    }
+
     // DOI buttons copy the DOI (as https://doi.org/... link) instead of opening it.
     // Ctrl/Cmd/middle click still open it in a new tab.
     function legacyCopy(text) {

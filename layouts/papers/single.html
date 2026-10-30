@@ -2,14 +2,14 @@
 <div class="pub-full">
   <a href="/papers/" class="back-link">← Back to Papers</a>
 
-  <div class="pub-full__type">Journal Article</div>
+  <div class="pub-full__type">Journal Article {{ partial "paper-status.html" . }}</div>
 
   <h1 class="pub-full__title">{{ .Title }}</h1>
 
   <div class="pub-full__authors">
     {{ range $i, $a := .Params.authors }}
     {{- if $i }}, {{ end }}
-    {{- if eq $a "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ $a }}{{ end }}
+    {{- if eq $a "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ partial "author-name.html" $a }}{{ end }}
     {{- end }}
   </div>
 
@@ -29,6 +29,8 @@
     {{ with .Params.url_code }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Code</a>{{ end }}
     {{ with .Params.url_dataset }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Dataset</a>{{ end }}
   </div>
+
+  {{ partial "related-talk.html" . }}
 
   <!-- Featured image -->
   {{ $img := .Resources.GetMatch "featured.*" }}

@@ -152,6 +152,7 @@ presentations:
     title: "18th European Conference on Earthquake Engineering"
     url: "https://ecee2026.eu/"
     location: "Berlin, Germany"
+    post: "/blog/2026-ecee-science-w-agents/"
   - date: "Jul 2026"
     title: "7th Eurasian Conference on OpenSees"
     url: "https://www.eurasianopensees.com/eos-conferences/lausanne-2026/"
@@ -160,10 +161,15 @@ presentations:
     title: "4th fib Symposium on Concrete and Concrete Structures"
     url: "https://www.cte-eventi.com/fibyoungsymposium/"
     location: "Naples, Italy"
+    papers:
+      - "proceedings/2025-fib_young-ga_gwp"
   - date: "Sep 2025"
     title: "XX ANIDIS Conference - Italian Conference of Earthquake Engineering"
     url: "https://convegno.anidis.it/index.php/anidis/2025"
     location: "Assisi, Italy"
+    papers:
+      - "proceedings/2025-anidis-biaxial_ductility"
+      - "proceedings/2025-anidis-fragility_volta"
   - date: "Jun 2025"
     title: "14th International Conference on Structural Safety and Reliability — ICOSSAR'25"
     url: "https://www.icossar2025.org/"
@@ -172,6 +178,9 @@ presentations:
     title: "6th Eurasian Conference on OpenSees"
     url: "https://www.eurasianopensees.com/beijing-2024/"
     location: "Beijing, China"
+    papers:
+      - "proceedings/2024-eosd-dapped_end"
+      - "proceedings/2024-eosd-masonry_aggregates"
   - date: "Jul 2024"
     title: "18th World Conference of Earthquake Engineering 2024"
     url: "https://www.wcee2024.it/"
@@ -184,26 +193,41 @@ presentations:
     title: "19th Italian Conference on Earthquake Engineering"
     url: "http://convegno.anidis.it/index.php/anidis/2022"
     location: "Turin, Italy"
+    papers:
+      - "proceedings/2022-anidis-ga_eal"
+      - "proceedings/2022-anidis-ga_muratura"
   - date: "Sep 2022"
     title: "3rd European Conference on Earthquake Engineering & Seismology"
     url: "https://3ecees.ro/"
     location: "Bucharest, Romania"
+    papers:
+      - "proceedings/2022-ecees-ga_masonry"
+      - "proceedings/2022-ecees-oop_infill"
   - date: "Aug 2022"
     title: "14th Computational Structures Technology"
     url: "https://www.cstconference.com/"
     location: "Montpellier, France"
+    papers:
+      - "proceedings/2022-cst-ga_masonry"
   - date: "Jul 2022"
     title: "2nd EOS Eurasian Conference on OpenSees"
     url: "https://eosd2022.weebly.com/"
     location: "Turin, Italy"
+    papers:
+      - "proceedings/2022-eosd-shear_infill"
   - date: "Nov 2021"
     title: "2nd FIB Symposium on Concrete and Concrete Structures"
     url: "http://fibitaliayoung.it/index.php/symposium-2021-english-version/"
     location: "Rome, Italy"
+    papers:
+      - "proceedings/2021-fib_young-ga_eal"
   - date: "Jun 2021"
     title: "8th International Conference on Computational Methods in Structural Dynamics and Earthquake Engineering"
     url: "https://2021.compdyn.org/"
     location: "Athens, Greece"
+    papers:
+      - "proceedings/2021-compdyn-ga_eal"
+      - "proceedings/2021-compdyn-ga_shear_critical"
 
 organizing:
   - role: "Organizing committee"

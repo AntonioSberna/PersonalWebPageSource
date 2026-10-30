@@ -18,7 +18,7 @@
 
 {{ with $a.teaching }}
 <div class="activity-section">
-  <h3><a href="/teaching/">Teaching activities</a></h3>
+  <h3><a href="/teaching/" class="activity-section__link">Teaching activities <span aria-hidden="true">&rarr;</span></a></h3>
   <ul class="activity-list">
     {{ range . }}
     <li>
@@ -34,7 +34,7 @@
 
 {{ with $a.presentations }}
 <div class="activity-section">
-  <h3>Presentations in conferences</h3>
+  <h3><a href="/talks/" class="activity-section__link">Presentations in conferences <span aria-hidden="true">&rarr;</span></a></h3>
   <ul class="activity-list">
     {{ range . }}
     <li>
@@ -64,7 +64,7 @@
 
 {{ with $a.invited }}
 <div class="activity-section">
-  <h3>Invited Talks &amp; Keynotes</h3>
+  <h3><a href="/talks/" class="activity-section__link">Invited Talks &amp; Keynotes <span aria-hidden="true">&rarr;</span></a></h3>
   <ul class="activity-list">
     {{ range . }}
     <li>

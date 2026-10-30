@@ -1,0 +1,2 @@
+{{- /* Returns the given HTML without its margin notes (shortcode "note"). */ -}}
+{{- return (replaceRE `(?s)<input type="checkbox"[^>]*class="sn-toggle".*?<span class="sn-end"></span>` "" .) -}}

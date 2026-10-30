@@ -7,6 +7,9 @@
 <!-- Link previews: Open Graph, Twitter card, Mastodon author -->
 {{ partial "social.html" . }}
 
+<!-- Google Scholar metadata (papers and proceedings) -->
+{{ partial "scholar-meta.html" . }}
+
 <!-- Structured data (JSON-LD), blog posts only -->
 {{ if and .IsPage (eq .Section "blog") }}
 <script type="application/ld+json">
@@ -14,7 +17,7 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": {{ .Title }},
-  "description": {{ or .Description (.Summary | plainify | htmlUnescape) }},
+  "description": {{ or .Description (partial "post-summary.html" .) }},
   "url": {{ .Permalink }},
   "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
   "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
@@ -31,13 +34,9 @@
 </script>
 {{ end }}
 
-<!-- Preconnect to Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- Font Awesome 6 Free -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<!-- Font Awesome 6 Free (self-hosted) -->
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
 
 <!-- Main CSS (Hugo pipes) — includes Academicons + site styles -->
 {{ $academicons := resources.Get "css/academicons.css" | minify }}

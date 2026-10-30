@@ -1,0 +1,2 @@
+{{- /* Plain-text summary of a post, without the text of its margin notes. */ -}}
+{{- return (partial "strip-notes.html" .Summary | plainify | htmlUnescape) -}}

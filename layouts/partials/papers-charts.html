@@ -1,0 +1,30 @@
+{{- /* Summary charts of the papers (context: the list of paper pages). Topics per year. */ -}}
+{{- $c := newScratch -}}
+{{- $minY := 9999 -}}{{- $maxY := 0 -}}
+{{- range . -}}
+  {{- $y := .Date.Year -}}
+  {{- if lt $y $minY }}{{ $minY = $y }}{{ end -}}{{- if gt $y $maxY }}{{ $maxY = $y }}{{ end -}}
+  {{- range partial "paper-topics.html" . }}{{ $c.Add (printf "%s/%d" . $y) 1 }}{{ end -}}
+{{- end -}}
+{{- $years := seq $minY $maxY -}}
+{{- $nY := len $years -}}
+<div class="pc-charts">
+
+  <div class="pc-card">
+    <div class="pc-matrix" id="topic-matrix" role="group" aria-label="Number of papers per topic and year" style="--years: {{ $nY }}">
+      <div></div>
+      {{- range $years }}<div class="pc-matrix__y">{{ . }}</div>{{ end }}
+      {{- range hugo.Data.paper_topics.topics }}
+      {{- $label := .label }}{{- $slug := urlize .label }}
+      <button type="button" class="pc-matrix__topic" data-row="{{ $slug }}" data-chart-topic="{{ $slug }}">{{ $label }}</button>
+      {{- range $years }}
+      {{- $n := $c.Get (printf "%s/%d" $slug .) | default 0 }}
+      <div class="pc-matrix__cell" data-row="{{ $slug }}"{{ if $n }} tabindex="0" data-tip="{{ $label }}, {{ . }}: {{ $n }} {{ cond (eq $n 1) "paper" "papers" }}"{{ end }}>
+        {{- if $n }}<span class="pc-dot" style="--d: {{ mul 8 (math.Sqrt $n) }}px"></span>{{ else }}<span class="pc-dot pc-dot--none"></span>{{ end -}}
+      </div>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+
+</div>

@@ -129,7 +129,7 @@
         {{ end }}
 
         <div class="showcase-item__body">
-          <div class="showcase-item__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></div>
+          <div class="showcase-item__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a> {{ partial "paper-status.html" $p }}</div>
           {{ with $p.Params.summary }}<p class="showcase-item__summary">{{ . }}</p>{{ end }}
           <div class="btn-links">
             {{ with $p.Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub btn-pub--primary">PDF</a>{{ end }}
@@ -168,7 +168,7 @@
           <div class="citation-item__authors">
             {{ range $i, $a := .Params.authors }}
             {{- if $i }}, {{ end }}
-            {{- if eq $a "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ $a }}{{ end }}
+            {{- if eq $a "admin" }}<strong>Sberna A.P.</strong>{{ else }}{{ partial "author-name.html" $a }}{{ end }}
             {{- end }}
             ({{ .Date.Format "2006" }}).
           </div>

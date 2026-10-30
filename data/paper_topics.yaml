@@ -1,0 +1,16 @@
+# Filter chips on the /papers/ page. A paper belongs to a topic when one of its tags
+# contains one of the keywords (case-insensitive). A paper can have several topics.
+# Rename, add or remove topics freely: a paper matching none gives a build warning.
+topics:
+  - label: "Seismic retrofitting"
+    keywords: ["retrofit"]
+  - label: "Optimization & AI"
+    keywords: ["optimization", "genetic algorithm", "metaheuristic", "machine lean", "symbolic regression"]
+  - label: "Reinforced concrete"
+    keywords: ["concrete structures", "reinforced concrete", "non-ductile"]
+  - label: "Masonry & infills"
+    keywords: ["masonry", "infill"]
+  - label: "Site response"
+    keywords: ["site response", "local seismic response", "accelerogram"]
+  - label: "Innovative materials"
+    keywords: ["auxetic", "foamed", "bamboo"]
