@@ -8,7 +8,7 @@ authors:
   - Wang Junsong
   - admin
   - Y. Xiao
-date: 2026-04-09
+date: 2025-04-09
 publication_types: ["2"]
 status: "under review"
 publication: "Engineering Structures"
