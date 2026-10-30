@@ -1,6 +1,7 @@
 {{- /* Hidden labels read by Google Scholar, on paper and proceeding pages only.
-       Under-review papers do not declare a journal; a PDF is declared only if hosted on this site. */ -}}
-{{- if and .IsPage (in (slice "papers" "proceedings") .Section) -}}
+       Papers with status "under review" get none: they appear once the status is removed.
+       A PDF is declared only if hosted on this site. */ -}}
+{{- if and .IsPage (in (slice "papers" "proceedings") .Section) (ne .Params.status "under review") -}}
 {{- $map := hugo.Data.authors | default dict }}
 <meta name="citation_title" content="{{ .Title }}">
 {{- range .Params.authors }}
@@ -13,7 +14,7 @@
     {{- /* "Conference name, 11th-15th September 2022 | Turin (Italy)" -> "Conference name" */ -}}
     {{- $name := index (split $pub " | ") 0 | replaceRE `,\s*\d.*$` "" }}
 <meta name="citation_conference_title" content="{{ trim $name " " }}">
-  {{- else if ne $.Params.status "under review" }}
+  {{- else }}
 <meta name="citation_journal_title" content="{{ $pub }}">
   {{- end -}}
 {{- end -}}

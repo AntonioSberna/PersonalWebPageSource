@@ -5,7 +5,10 @@
   {{- $out = index $parts 0 -}}
   {{- if gt (len $parts) 1 -}}
     {{- $ini := "" -}}
-    {{- range split (index $parts 1) " " }}{{ $ini = printf "%s%s." $ini (substr . 0 1) }}{{ end -}}
+    {{- range split (index $parts 1) " " -}}
+      {{- /* tokens that are already initials ("C.", "J.J.") stay as they are */ -}}
+      {{- if strings.Contains . "." }}{{ $ini = printf "%s%s" $ini . }}{{ else }}{{ $ini = printf "%s%s." $ini (substr . 0 1) }}{{ end -}}
+    {{- end -}}
     {{- $out = printf "%s %s" $out $ini -}}
   {{- end -}}
 {{- end -}}

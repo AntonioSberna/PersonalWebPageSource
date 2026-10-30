@@ -114,7 +114,9 @@
     {{ $journals := (where site.RegularPages "Section" "papers").ByDate.Reverse }}
 
     <div class="showcase-list">
-      {{ range $i, $p := first 3 $journals }}
+      {{- /* "homepage: false" in a paper keeps it off this list, without touching its date */ -}}
+      {{ $shown := slice }}{{ range $journals }}{{ if ne .Params.homepage false }}{{ $shown = $shown | append . }}{{ end }}{{ end }}
+      {{ range $i, $p := first 3 $shown }}
       {{ $img := $p.Resources.GetMatch "featured.*" }}
       <div class="showcase-item{{ if eq (mod $i 2) 1 }} showcase-item--reverse{{ end }}">
 
