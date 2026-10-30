@@ -1,5 +1,5 @@
 ---
-title: "Enhanced Compressive Performance and Energy Absorption in SLM-Fabricated 316L Arrowhead Auxetics via Tendon and Stuffer Geometry Modification"
+title: "Near-Base Lateral Impact Response of Circular Concrete-Filled Steel Tube Bridge-Pier Columns: Experimental Comparison of Cantilever and Propped-Cantilever Boundary Conditions"
 authors:
   - Wang Junsong
   - Demartino Cristoforo
