@@ -4,6 +4,7 @@ subtitle: "Some notes from ECEE 2026"
 date: 2026-09-26
 place: "Berlin, Germany"
 draft: false
+mastodon: "https://mastodon.uno/@antoniosberna/117530509520232679"
 #description: "test test"
 ---
 
