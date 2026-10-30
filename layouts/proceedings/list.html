@@ -29,6 +29,7 @@
           </div>
           <div class="citation-item__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a>.</div>
           <div class="citation-item__venue">{{ .Params.publication | safeHTML }}</div>
+          {{ partial "paper-links.html" . }}
           <div class="btn-links" style="margin-top:0.4rem">
             {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub btn-pub--primary">PDF</a>{{ end }}
             {{ with .Params.url_source }}<a href="{{ . }}" target="_blank" rel="noopener" class="btn-pub">Source</a>{{ end }}

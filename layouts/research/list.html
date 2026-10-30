@@ -1,0 +1,47 @@
+{{ define "main" }}
+{{- /* Plain-language page: the "in_short" of the papers grouped by data/research_plain.yaml,
+       then the text of content/research/_index.md. */ -}}
+{{- $listed := slice -}}
+<div class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>What I study, explained without the jargon</p>
+  </div>
+</div>
+
+<div class="pub-full-list">
+  <div class="container research">
+    {{ with .Params.intro }}<p class="research__intro">{{ . }}</p>{{ end }}
+
+    {{ range hugo.Data.research_plain.themes }}
+    {{- $papers := slice -}}
+    {{- range .papers -}}
+      {{- $path := . -}}
+      {{- with site.GetPage . -}}{{- $papers = $papers | append . -}}{{- $listed = $listed | append .RelPermalink -}}
+      {{- else -}}{{- warnf "research_plain.yaml: page %s not found" $path -}}{{- end -}}
+    {{- end }}
+    <div class="research__theme">
+      <h2>{{ .title }}</h2>
+      <p class="research__text">{{ .text }}</p>
+      {{ range sort $papers "Date" "desc" }}
+      <div class="research__item">
+        <p>{{ .Params.in_short }}</p>
+        <a href="{{ .RelPermalink }}">{{ .Params.publication | plainify }}, {{ if .Params.status }}{{ .Params.status }}{{ else }}{{ .Date.Format "2006" }}{{ end }} &rarr;</a>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{- range where site.RegularPages "Section" "papers" -}}
+      {{- if and .Params.in_short (not (in $listed .RelPermalink)) }}{{ warnf "paper %s has in_short but no theme in data/research_plain.yaml" .File.Path }}{{ end -}}
+    {{- end }}
+
+    {{ with .Content }}
+    <div class="research__now">
+      {{ . }}
+      {{ with $.Params.updated }}<p class="research__updated">Last updated: {{ . }}</p>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

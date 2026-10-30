@@ -10,6 +10,7 @@ date: 2021-08-29
 cv_doi: "10.1007/978-3-030-91877-4_125"
 publication_types: ["1"]
 publication: "EUROSTRUCT 2021 – 1st Conference of the European Association on Quality Control of Bridges and Structures, 29th August–1st September 2021 | Padua (Italy)"
+extended_in: "/papers/05-prog-collapse-infill"
 abstract: "The paper investigates the role of infilled frames in the dynamic response of a 2D frame subject to an instantaneous column removal case."
 tags: ["progressive collapse", "masonry infills", "concrete structures", "OpenSees", "non-linear dynamic analysis"]
 url_source: "https://eurostruct.org/wp-content/uploads/2021/08/EuroStruct_TechProgramme_Final.pdf"

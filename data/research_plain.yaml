@@ -1,0 +1,34 @@
+# Themes of the /research/ page. Each paper shows its "in_short" text: list it under one theme.
+# Inside a theme papers are sorted by date; a paper with in_short and no theme gives a build warning.
+themes:
+  - title: "Making older buildings safer, at a sensible cost"
+    text: "Most buildings in use today were built before modern earthquake rules. Strengthening all of them is not possible, so the question becomes where to act and how, to get the most safety from every euro spent."
+    papers:
+      - /papers/01-ga-sj
+      - /papers/02-ga-scdc
+      - /papers/04-ga-eal
+      - /papers/06-ga-masonry
+      - /papers/12-pbsd-retrofit
+      - /papers/13-rew-eng-frameworks
+
+  - title: "How structures behave, and how to watch over them"
+    text: "To protect a structure, you first need to understand how it reacts when things go wrong: strong shaking, a lost column, a collision. Part of this work also looks at how to notice damage as it happens."
+    papers:
+      - /papers/03-infill-oop
+      - /papers/05-prog-collapse-infill
+      - /papers/07-masonry-sensors-fibers
+      - /papers/11-infill-interaction
+      - /papers/15-curvature-domains
+      - /papers/16-impacts
+
+  - title: "What happens in the ground"
+    text: "An earthquake starts deep underground, and the soil it crosses changes what reaches the surface. Places close to each other can shake very differently."
+    papers:
+      - /papers/08-geotech-ident
+      - /papers/14-spectra
+
+  - title: "New materials and structures"
+    text: "Some of my work with colleagues goes beyond traditional construction, from concrete made with recycled bamboo to 3D-printed metal lattices."
+    papers:
+      - /papers/09-biobased-concr
+      - /papers/10-arrowhead-auxetics

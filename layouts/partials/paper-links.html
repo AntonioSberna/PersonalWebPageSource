@@ -1,0 +1,24 @@
+{{- /* Links a proceeding to the journal paper that extends it ("extended_in" in its front matter)
+       and a paper back to its conference versions. */ -}}
+{{- $page := . -}}
+{{- with .Params.extended_in -}}
+  {{- with site.GetPage . -}}
+<p class="related-talk"><span class="related-talk__label">Extended in</span> <a href="{{ .RelPermalink }}">{{ .Params.publication | plainify }}, {{ if .Params.status }}{{ .Params.status }}{{ else }}{{ .Date.Format "2006" }}{{ end }}</a></p>
+  {{- else -}}
+    {{- warnf "extended_in of %s: page not found" $page.File.Path -}}
+  {{- end -}}
+{{- end -}}
+{{- $versions := slice -}}
+{{- range (where site.RegularPages "Section" "proceedings").ByDate -}}
+  {{- $p := . -}}
+  {{- with .Params.extended_in }}{{ with site.GetPage . }}{{ if eq .RelPermalink $page.RelPermalink }}{{ $versions = $versions | append $p }}{{ end }}{{ end }}{{ end -}}
+{{- end -}}
+{{- with $versions -}}
+<p class="related-talk"><span class="related-talk__label">Conference versions</span>
+  {{- range $i, $p := . -}}
+  {{- if $i }} · {{ end -}}
+  {{- $short := replaceRE `^(.*?)( – |, ).*$` "$1" ($p.Params.publication | plainify) -}}
+  {{- $year := $p.Date.Format "2006" }} <a href="{{ $p.RelPermalink }}">{{ $short }}{{ if not (findRE `\d{4}` $short) }} {{ $year }}{{ end }}</a>
+  {{- end -}}
+</p>
+{{- end -}}
