@@ -37,7 +37,7 @@
         {{ if $img }}
         <div class="showcase-item__img">
           <a href="{{ $p.RelPermalink }}">
-            <img src="{{ $img.RelPermalink }}" alt="{{ $p.Title }}" loading="lazy">
+            <img src="{{ partial "web-image.html" (dict "img" $img "width" 900) }}" alt="{{ $p.Title }}" loading="lazy">
           </a>
         </div>
         {{ else }}

@@ -1,0 +1,14 @@
+{{- /* Returns the URL of a lighter copy of an image, for display on the site.
+       Context: dict "img" (image resource), "width" (largest width needed, in pixels).
+       The copy is a WebP no wider than "width"; if it is not smaller, the original is used.
+       The original stays published too, so direct links to it keep working. */ -}}
+{{- $orig := .img -}}
+{{- $url := $orig.RelPermalink -}}
+{{- if in (slice "jpeg" "png") $orig.MediaType.SubType -}}
+  {{- $w := cond (gt $orig.Width .width) .width $orig.Width -}}
+  {{- /* photos and figures with text need different settings */ -}}
+  {{- $opts := cond (eq $orig.MediaType.SubType "png") "webp q88 drawing" "webp q80 photo" -}}
+  {{- $small := $orig.Resize (printf "%dx %s" $w $opts) -}}
+  {{- if lt (len $small.Content) (len $orig.Content) }}{{ $url = $small.RelPermalink }}{{ end -}}
+{{- end -}}
+{{- return $url -}}

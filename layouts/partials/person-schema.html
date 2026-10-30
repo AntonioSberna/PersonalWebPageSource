@@ -1,0 +1,29 @@
+{{- /* Hidden card for search engines: who the site is about, and the profiles that are also this person.
+       Built from [params] in hugo.toml, so it needs no separate updates. */ -}}
+{{- $p := site.Params -}}
+{{- $same := slice -}}
+{{- range slice "orcid" "scholar" "scopus" "wos" "researchgate" "linkedin" "github" "mastodon" -}}
+  {{- with index $p.social . }}{{ $same = $same | append . }}{{ end -}}
+{{- end -}}
+{{- $topics := slice -}}{{- range $p.interests }}{{ $topics = $topics | append .name }}{{ end -}}
+{{- $schools := slice -}}{{- $seen := slice -}}
+{{- range $p.education -}}
+  {{- if and (findRE `^(Ph\.D|M\.Sc|B\.Sc)` .title) (not (in $seen .institution)) -}}
+    {{- $seen = $seen | append .institution -}}
+    {{- $schools = $schools | append (dict "@type" "CollegeOrUniversity" "name" .institution "url" .institutionURL) -}}
+  {{- end -}}
+{{- end -}}
+{{- $photo := (resources.Get "images/avatar.jpeg").Resize "500x webp q80 photo" -}}
+{{- $d := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $p.author
+  "url" site.Home.Permalink
+  "image" $photo.Permalink
+  "jobTitle" $p.role
+  "worksFor" (dict "@type" "CollegeOrUniversity" "name" $p.organization "url" $p.organizationURL)
+  "alumniOf" $schools
+  "knowsAbout" $topics
+  "sameAs" $same
+-}}
+<script type="application/ld+json">{{ $d | jsonify | safeJS }}</script>

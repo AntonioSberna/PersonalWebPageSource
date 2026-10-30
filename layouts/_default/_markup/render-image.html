@@ -1,0 +1,4 @@
+{{- /* Markdown images: lighter copy for files in the post folder, external links unchanged. */ -}}
+{{- $src := .Destination -}}
+{{- with .PageInner.Resources.GetMatch .Destination }}{{ $src = partial "web-image.html" (dict "img" . "width" 1440) }}{{ end -}}
+<img src="{{ $src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">

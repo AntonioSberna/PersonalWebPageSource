@@ -10,6 +10,8 @@
 <!-- Google Scholar metadata (papers and proceedings) -->
 {{ partial "scholar-meta.html" . }}
 
+{{ if .IsHome }}{{ partial "person-schema.html" . }}{{ end }}
+
 <!-- Structured data (JSON-LD), blog posts only -->
 {{ if and .IsPage (eq .Section "blog") }}
 <script type="application/ld+json">

@@ -36,7 +36,7 @@
   {{ $img := .Resources.GetMatch "featured.*" }}
   {{ if $img }}
   <div class="pub-full__img">
-    <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
+    <img src="{{ partial "web-image.html" (dict "img" $img "width" 1400) }}" alt="{{ .Title }}" loading="lazy">
   </div>
   {{ end }}
 

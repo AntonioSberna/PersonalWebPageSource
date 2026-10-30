@@ -47,7 +47,7 @@ d.ellipse([pen[0] - 5 * S, pen[1] - 5 * S, pen[0] + 5 * S, pen[1] + 5 * S], fill
 
 # avatar (circle with thin ring)
 av_size, ax, ay = 250 * S, 90 * S, 120 * S
-av = Image.open(ROOT / "static/images/avatar.jpeg").convert("RGB")
+av = Image.open(ROOT / "assets/images/avatar.jpeg").convert("RGB")
 side = min(av.size); av = av.crop(((av.width - side) // 2, (av.height - side) // 2,
                                     (av.width + side) // 2, (av.height + side) // 2))
 av = av.resize((av_size, av_size), Image.LANCZOS)

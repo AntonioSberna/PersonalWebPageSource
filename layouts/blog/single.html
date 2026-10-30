@@ -19,7 +19,7 @@
     <article class="blog-post">
       {{ with .Resources.GetMatch "featured.*" }}
       <div class="blog-post__img">
-        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+        <img src="{{ partial "web-image.html" (dict "img" . "width" 1440) }}" alt="{{ $.Title }}">
       </div>
       {{ end }}
       <div class="teaching-content blog-post__content">
