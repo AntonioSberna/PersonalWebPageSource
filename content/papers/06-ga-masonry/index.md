@@ -20,3 +20,11 @@ url_source: "https://rdcu.be/dHSqk"
 ---
 
 Published in **Bulletin of Earthquake Engineering**, Vol. 22.
+
+## Highlights
+
+* A genetic algorithm framework minimizes seismic retrofitting costs of existing unreinforced masonry buildings.
+* Topology optimization locates the reinforced plasters needed in the walls to satisfy seismic safety checks.
+* The algorithm, developed in MATLAB, controls a 3D equivalent frame model built in OpenSees.
+* Each candidate solution is assessed through in-plane shear and flexural safety checks of the walls.
+* A case study with average-quality and poor-quality masonry shows effective cost minimization.

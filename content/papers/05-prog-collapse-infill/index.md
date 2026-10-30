@@ -21,3 +21,9 @@ url_pdf: "https://www.sciencedirect.com/science/article/pii/S2352012423005817?vi
 ---
 
 Published in **Structures**, Vol. 54.
+
+## Highlights
+
+* RC frame structures undergoing instantaneous column losses are investigated.
+* The influence of masonry infills on the progressive collapse response is assessed.
+* The response is studied under dynamic load demands through non-linear dynamic analyses in OpenSees.
