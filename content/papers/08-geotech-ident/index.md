@@ -8,6 +8,7 @@ authors:
 date: 2026-01-01
 cv_citation: "2026; 200:109773"
 publication_types: ["2"]
+homepage: false
 publication: "Soil Dynamics and Earthquake Engineering"
 publication_short: "Soil Dyn Earthq Eng"
 abstract: "This study employs deterministic genetic and probabilistic Bayesian algorithms to enhance seismic site response simulations through refined characterization of soil properties using downhole array data."

@@ -9,6 +9,7 @@ authors:
 date: 2025-12-01
 cv_citation: "2025; 374:119710"
 publication_types: ["2"]
+homepage: false
 publication: "Composite Structures"
 publication_short: "Compos Struct"
 abstract: "This study investigates how geometric modifications in double-arrowhead auxetic lattice structures affect compressive behavior and energy absorption. Lattices were fabricated in 316L stainless steel using Selective Laser Melting (SLM) at relative densities of 5%, 10%, and 15%."

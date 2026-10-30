@@ -8,6 +8,7 @@ authors:
 date: 2025-12-01
 cv_citation: "2025; 151(12):04025208"
 publication_types: ["2"]
+homepage: false
 publication: "Journal of Structural Engineering"
 publication_short: "J Struct Eng"
 abstract: "The paper presents a practice-oriented analytical formulation to evaluate the additional and total shear demand due to frame-infill interaction under seismic loads. The model leverages the simple equivalent strut approach to model the infilled frame while estimating the actual shear demand with a straightforward analytical correction."
