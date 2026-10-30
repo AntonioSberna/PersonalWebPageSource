@@ -11,6 +11,7 @@ publication_types: ["2"]
 publication: "Engineering Structures"
 abstract: "A new specific optimization framework addressing the minimization of seismic retrofitting-related costs is developed and presented. A new genetic algorithm routine is defined by developing modified genetic operators capable of addressing retrofitting optimization both for RC structures with ductility-critical and shear-critical RC columns."
 summary: "A new framework to optimize retrofitting interventions for RC structures with shear and ductility lacks."
+in_short: "Old concrete columns can fail in an earthquake in different ways, some more sudden than others. This study improves a computer method that finds the cheapest way to strengthen them with steel, whichever kind of weakness they have."
 tags: ["structural optimization", "existing structures", "seismic retrofitting", "genetic algorithms", "concrete structures", "steel jacketing", "OpenSees"]
 url_pdf: "https://www.sciencedirect.com/science/article/pii/S0141029621008348"
 ---

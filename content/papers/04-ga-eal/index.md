@@ -11,6 +11,7 @@ publication_types: ["2"]
 publication: "Computers and Structures"
 abstract: "This paper proposes a novel framework for the optimized seismic retrofitting design of reinforced concrete frame structures, to minimize retrofitting-related costs and simultaneously controlling the expected annual loss (EAL). The framework makes use of artificial intelligence techniques, adopting a genetic algorithm-based optimization algorithm."
 summary: "New advancement on the computer-aided design of seismic retrofitting intervention based on the evaluation of EAL."
+in_short: "Strengthening a building costs money today, but earthquake damage costs money in the future too. This study uses artificial intelligence to find strengthening solutions that are cheap to build and also keep the expected yearly cost of damage under control."
 tags: ["structural optimization", "existing structures", "seismic retrofitting", "Expected Annual Losses", "genetic algorithms", "concrete structures", "FRP", "steel braces", "OpenSees"]
 url_pdf: "https://authors.elsevier.com/c/1fTYoAQPs3lC6"
 ---

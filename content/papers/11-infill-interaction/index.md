@@ -12,6 +12,7 @@ publication: "Journal of Structural Engineering"
 publication_short: "J Struct Eng"
 abstract: "The paper presents a practice-oriented analytical formulation to evaluate the additional and total shear demand due to frame-infill interaction under seismic loads. The model leverages the simple equivalent strut approach to model the infilled frame while estimating the actual shear demand with a straightforward analytical correction."
 summary: "Proposing an analytical model that accurately predicts additional shear demand due to frame-infill interaction under seismic loads."
+in_short: "During an earthquake, the masonry walls inside a concrete frame push against the columns and add extra force at their ends. This study provides a straightforward correction that lets engineers estimate this force while still using simple building models."
 tags: ["Infilled Frames", "Masonry", "Reinforced Concrete", "Micro-model", "Macro-model", "Additional shear demand", "OpenSees", "STKO"]
 url_pdf: "https://ascelibrary.org/doi/epdf/10.1061/JSENDH.STENG-14684"
 doi: "https://doi.org/10.1061/JSENDH.STENG-14684"

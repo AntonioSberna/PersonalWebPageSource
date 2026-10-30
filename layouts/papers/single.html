@@ -32,6 +32,14 @@
 
   {{ partial "related-talk.html" . }}
 
+  <!-- Plain-language summary -->
+  {{ with .Params.in_short }}
+  <div class="pub-full__short">
+    <h3>In short</h3>
+    <p>{{ . }}</p>
+  </div>
+  {{ end }}
+
   <!-- Featured image -->
   {{ $img := .Resources.GetMatch "featured.*" }}
   {{ if $img }}

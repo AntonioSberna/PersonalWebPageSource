@@ -15,6 +15,7 @@ publication: "Materials and Structures"
 publication_short: "Materials Struct"
 abstract: "This study investigates bamboo-based foamed concrete as an eco-friendly alternative to conventional foamed concrete, aiming to evaluate its feasibility and performance across thermal, acoustic, mechanical, and environmental dimensions."
 summary: "Sustainable bamboo foamed concrete for structural applications; mechanical, thermal, acoustic, and environmental analyses."
+in_short: "Can waste from bamboo manufacturing make concrete greener? This study replaces part of the sand in a lightweight foamed concrete with recycled bamboo, and tests its strength, its heat and sound performance, and its environmental impact. The result is a promising low-density material that insulates better against heat."
 tags: ["Foamed concrete", "Bamboo aggregates", "Thermal insulation", "Acoustic properties", "Mechanical performance"]
 url_pdf: "https://link.springer.com/article/10.1617/s11527-026-03024-5"
 doi: "https://doi.org/10.1617/s11527-026-03024-5"

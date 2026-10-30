@@ -12,6 +12,7 @@ publication_types: ["2"]
 publication: "Construction and Building Materials"
 abstract: "The paper presents an experimental and numerical study investigating the effectiveness of two innovative stress sensors (piezoelectric and capacitive) installed within mortar bed-joints for Structural Health Monitoring (SHM)."
 summary: "Investigates innovative stress sensors for Structural Health Monitoring in masonry structures."
+in_short: "Can a masonry building tell us when it is getting damaged? Small sensors were placed in the mortar of test walls, which were then deliberately damaged in the laboratory, to develop an approach for monitoring a structure's health in real time."
 tags: ["masonry structures", "sensors", "SHM", "OpenSees", "non-linear static analyses"]
 url_pdf: "https://authors.elsevier.com/c/1jq0o3O1E1YJt5"
 url_source: "https://www.sciencedirect.com/science/article/pii/S0950061824032197"
