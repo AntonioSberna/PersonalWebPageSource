@@ -1,10 +1,11 @@
 ---
-title: "Engineered Design Frameworks for Seismic Retrofitting: A State-of-the-Art Review"
+title: "Engineered frameworks for sustainable seismic retrofitting design: a state-of-the-art review"
 authors:
   - admin
   - Di Benedetto Marilisa
   - Di Trapani Fabio
-date: 2025-04-10
+date: 2025-09-01
+cv_citation: "2025; 23:4683--4718"
 publication_types: ["2"]
 publication: "Bulletin of Earthquake Engineering"
 publication_short: "Bull Earthquake Eng"

@@ -5,7 +5,8 @@ authors:
   - admin
   - Fabio Di Trapani
   - Cristoforo Demartino
-date: 2024-11-21
+date: 2026-01-01
+cv_citation: "2026; 200:109773"
 publication_types: ["2"]
 publication: "Soil Dynamics and Earthquake Engineering"
 publication_short: "Soil Dyn Earthq Eng"

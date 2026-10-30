@@ -100,13 +100,7 @@
   <ul class="activity-list">
     {{ range . }}
     <li>
-      <strong>{{ .date }}:</strong> {{ .title }}, {{ .institution }}<br>
-      {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .project }}</a>{{ else }}{{ .project }}{{ end }}
-      {{ if or .funding .coordinator }}
-      <br><span style="color:var(--text-muted);">
-        {{ with .funding }}Funded by {{ . }}{{ end }}{{ if and .funding .coordinator }} · {{ end }}{{ with .coordinator }}Coordinated by {{ . }}{{ end }}
-      </span>
-      {{ end }}
+      {{ with .date }}<strong>{{ . }}:</strong> {{ end }}{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .project }}</a>{{ else }}{{ .project }}{{ end }} — {{ .title }}
       {{ with .note }}<span style="color:var(--text-muted);">({{ . }})</span>{{ end }}
     </li>
     {{ end }}

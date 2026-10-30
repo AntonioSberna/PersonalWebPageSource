@@ -6,7 +6,8 @@ authors:
   - admin
   - Jiang Liming
   - Usmani Asif
-date: 2025-01-08
+date: 2025-12-01
+cv_citation: "2025; 374:119710"
 publication_types: ["2"]
 publication: "Composite Structures"
 publication_short: "Compos Struct"

@@ -6,6 +6,7 @@ authors:
   - admin
   - Marano Giuseppe C
 date: 2020-06-25
+cv_url: "https://sites.google.com/view/iwss/iwss2020"
 publication_types: ["1"]
 publication: "IWSS 2020 – 1st Italian Workshop on Shell and Spatial Structures, 25th–26th June 2020 | Turin (Italy)"
 abstract: "A new optimization framework for obtaining cost minimization by optimizing the position and amount of steel jacketing retrofitting, applied to a 3D RC frame handled within a genetic algorithm optimization framework."

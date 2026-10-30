@@ -1,12 +1,13 @@
 ---
-title: "Cost-effective topology optimization of existing masonry structure seismic reinforcements by a new genetic algorithm-based framework"
+title: "Cost-effective topology optimization of masonry structure reinforcements by a linear static analysis-based GA framework"
 authors:
   - admin
   - Cristoforo Demartino
   - Ivo Vanzi
   - Giuseppe C. Marano
   - Fabio Di Trapani
-date: 2024-02-01
+date: 2024-06-01
+cv_citation: "2024; 22:4143--4167"
 doi: "10.1007/s10518-024-01900-5"
 publication_types: ["2"]
 publication: "Bulletin of Earthquake Engineering"

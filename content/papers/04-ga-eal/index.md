@@ -1,10 +1,11 @@
 ---
-title: "AI-based optimization framework for the design of seismic retrofitting of reinforced concrete frame structures based on direct costs and EAL"
+title: "A genetic algorithm-based framework for seismic retrofitting cost and expected annual loss optimization of non-conforming reinforced concrete frame structures"
 authors:
   - Di Trapani Fabio
   - admin
   - Giuseppe C. Marano
-date: 2022-08-02
+date: 2022-10-01
+cv_citation: "2022; 271:106855"
 doi: "10.1016/j.compstruc.2022.106855"
 publication_types: ["2"]
 publication: "Computers and Structures"

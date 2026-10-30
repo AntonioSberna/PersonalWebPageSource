@@ -8,6 +8,7 @@ authors:
   - Demartino Cristoforo
   - Marano Giuseppe C
 date: 2023-08-01
+cv_citation: "2023; 54:1336--1349"
 doi: "10.1016/j.istruc.2023.04.108"
 publication_types: ["2"]
 publication: "Structures"

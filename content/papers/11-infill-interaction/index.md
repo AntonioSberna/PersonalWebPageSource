@@ -1,11 +1,12 @@
 ---
-title: "Local shear demand correction model for the analysis of reinforced concrete infilled frames with equivalent struts"
+title: "Local Shear Demand Correction Model for the Analysis of Infilled Frames Using Equivalent Struts"
 authors:
   - Di Trapani Fabio
   - Marilisa Di Benedetto
   - admin
   - Camata Guido
-date: 2025-02-26
+date: 2025-12-01
+cv_citation: "2025; 151(12):04025208"
 publication_types: ["2"]
 publication: "Journal of Structural Engineering"
 publication_short: "J Struct Eng"

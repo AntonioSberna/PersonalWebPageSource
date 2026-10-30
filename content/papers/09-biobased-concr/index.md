@@ -8,7 +8,8 @@ authors:
   - admin
   - Xiao Yan
   - Demartino Cristoforo
-date: 2025-01-07
+date: 2026-04-01
+cv_citation: "2026; 59:145"
 publication_types: ["2"]
 publication: "Materials and Structures"
 publication_short: "Materials Struct"

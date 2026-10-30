@@ -4,7 +4,8 @@ authors:
   - Di Trapani Fabio
   - admin
   - Marano Giuseppe C
-date: 2021-06-03
+date: 2021-09-01
+cv_citation: "2021; 243:112684"
 doi: "10.1016/j.engstruct.2021.112684"
 publication_types: ["2"]
 publication: "Engineering Structures"

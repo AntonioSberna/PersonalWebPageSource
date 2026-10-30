@@ -8,6 +8,7 @@ authors:
   - Petracca Massimo
   - Camata Guido
 date: 2022-07-07
+cv_citation: "Published in *Lecture Notes in Civil Engineering*, 2023; 326:1--13."
 doi: "10.1007/978-3-031-30125-4_1"
 publication_types: ["1"]
 publication: "EOSD 2022 – 2nd Eurasian Conference on OpenSees Days, 7th–8th July 2022 | Turin (Italy)"

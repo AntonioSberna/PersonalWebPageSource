@@ -1,11 +1,13 @@
 ---
-title: "Structural health monitoring of masonry structure by stress sensors: Experimental induced damage tests and proposed numerical approach for real time monitoring"
+title: "Structural health monitoring of masonry structures using stress sensors: Experimental induced damage tests and proposed approach for real-time monitoring"
 authors:
   - Di Trapani Fabio
   - Maria Concetta Oddo
   - admin
   - Lidia La Mendola
 date: 2024-10-25
+cv_citation: "2024; 449:138077"
+doi: "10.1016/j.conbuildmat.2024.138077"
 publication_types: ["2"]
 publication: "Construction and Building Materials"
 abstract: "The paper presents an experimental and numerical study investigating the effectiveness of two innovative stress sensors (piezoelectric and capacitive) installed within mortar bed-joints for Structural Health Monitoring (SHM)."

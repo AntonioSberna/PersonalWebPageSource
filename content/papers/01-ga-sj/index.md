@@ -6,7 +6,8 @@ authors:
   - Marano Giuseppe C
   - admin
   - Greco Rita
-date: 2020-05-25
+date: 2020-09-01
+cv_citation: "2020; 219:110864"
 doi: "10.1016/j.engstruct.2020.110864"
 publication_types: ["2"]
 publication: "Engineering Structures"

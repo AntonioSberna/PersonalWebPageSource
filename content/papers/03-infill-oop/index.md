@@ -1,12 +1,13 @@
 ---
-title: "A new empirical formulation for the out-of-plane resistance of infilled reinforced concrete frames without prior in-plane loading"
+title: "A new empirical formulation for the out-of-plane resistance of masonry infills in reinforced concrete frames"
 authors:
   - Di Trapani Fabio
   - Alessandro Vizzino
   - Giovanni Tomaselli
   - admin
   - Gabriele Bertagnoli
-date: 2022-08-01
+date: 2022-09-01
+cv_citation: "2022; 266:114422"
 doi: "10.1016/j.engstruct.2022.114422"
 publication_types: ["2"]
 publication: "Engineering Structures"

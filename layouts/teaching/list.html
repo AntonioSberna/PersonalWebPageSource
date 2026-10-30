@@ -1,13 +1,13 @@
 {{ define "main" }}
 {{- /* Built from "teaching" in data/activities.yaml. A course page in content/teaching/
        is shown by pointing the "url" of its entry to it. */ -}}
-{{- $seasons := dict "Winter" "1" "Spring" "2" "Summer" "3" "Fall" "4" "Autumn" "4" -}}
+{{- $seasons := dict "Winter" "01" "Jan" "01" "Feb" "02" "Mar" "03" "Spring" "04" "Apr" "04" "May" "05" "Jun" "06" "Summer" "07" "Jul" "07" "Aug" "08" "Sep" "09" "Fall" "10" "Autumn" "10" "Oct" "10" "Nov" "11" "Dec" "12" -}}
 {{- $rows := slice -}}
 {{- range hugo.Data.activities.teaching -}}
   {{- $p := split .date " " -}}
   {{- $year := index $p (sub (len $p) 1) -}}
   {{- $url := .url | default "" | replaceRE `^\./` "/" -}}
-  {{- $rows = $rows | append (merge . (dict "url" $url "year" $year "key" (printf "%s%s" $year (index $seasons (index $p 0) | default "0")))) -}}
+  {{- $rows = $rows | append (merge . (dict "url" $url "year" $year "key" (printf "%s%s" $year (index $seasons (index $p 0) | default "00")))) -}}
 {{- end -}}
 {{- $rows = sort $rows "key" "desc" -}}
 {{- $countries := slice -}}
