@@ -996,8 +996,13 @@ main .post-credits {
 .blog-status__legend li { display: flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
 .blog-status__legend strong { color: var(--text); font-weight: 600; }
 .blog-status__dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
-.blog-status__discarded { margin: 0.35rem 0 0; font-size: 0.72rem; color: var(--text-muted); opacity: 0.8; }
+/* a div, not a p: ".page-header p" would make the text bigger than the legend */
+.blog-status__discarded { position: relative; display: inline-block; margin-top: 0.35rem; font-size: 0.75rem; color: var(--text-muted); cursor: help; } /* tooltip: [data-tip] */
 .blog-status__discarded strong { font-weight: 600; }
+/* discarded as a bar segment: grey, set apart from the flow by a wider gap */
+.blog-status--discarded.blog-status__seg { background: var(--text-muted); opacity: 0.3; margin-left: 4px; }
+.blog-status--discarded .blog-status__dot { background: var(--text-muted); opacity: 0.5; }
+.blog-status__legend s { text-decoration-thickness: 1px; }
 .blog-status__discarded s { text-decoration-thickness: 1px; }
 
 /* Flow: ideas (faint) -> writing -> review -> published (full accent) */

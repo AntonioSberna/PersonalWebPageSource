@@ -7,6 +7,9 @@
   (dict "key" "review"    "label" "in review" "n" (.review  | default 0))
   (dict "key" "published" "label" "published" "n" $published)
 -}}
+{{- /* discarded posts: a last segment of the bar (discarded_in_bar: true) or a line below it */ -}}
+{{- $inBar := and .discarded .discarded_in_bar -}}
+{{- if $inBar }}{{ $items = $items | append (dict "key" "discarded" "label" "discarded" "n" .discarded) }}{{ end -}}
 {{- $total := 0 -}}{{- range $items }}{{ $total = add $total .n }}{{ end -}}
 {{- if gt $total 0 -}}
 <div class="blog-status" aria-label="Blog status">
@@ -17,12 +20,12 @@
   </div>
   <ul class="blog-status__legend">
     {{- range $items }}
-    <li class="blog-status--{{ .key }}"><span class="blog-status__dot"></span><strong>{{ .n }}</strong> {{ .label }}</li>
+    <li class="blog-status--{{ .key }}"><span class="blog-status__dot"></span><strong>{{ .n }}</strong> {{ if eq .key "discarded" }}<s>{{ .label }}</s>{{ else }}{{ .label }}{{ end }}</li>
     {{- end }}
   </ul>
-  {{- with .discarded }}
-  <p class="blog-status__discarded" title="Posts started and then dropped: not part of the flow above"><strong>{{ . }}</strong> <s>discarded</s> along the way</p>
-  {{- end }}
+  {{- if and .discarded (not $inBar) }}{{ with .discarded }}
+  <div class="blog-status__discarded" tabindex="0" data-tip="Posts started, then dropped"><strong>{{ . }}</strong> <s>discarded</s> along the way</div>
+  {{- end }}{{ end }}
 </div>
 {{- end -}}
 {{- end -}}
