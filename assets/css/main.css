@@ -999,10 +999,13 @@ main .post-credits {
 /* a div, not a p: ".page-header p" would make the text bigger than the legend */
 .blog-status__discarded { position: relative; display: inline-block; margin-top: 0.35rem; font-size: 0.75rem; color: var(--text-muted); cursor: help; } /* tooltip: [data-tip] */
 .blog-status__discarded strong { font-weight: 600; }
-/* discarded as a bar segment: grey, set apart from the flow by a wider gap */
-.blog-status--discarded.blog-status__seg { background: var(--text-muted); opacity: 0.3; margin-left: 4px; }
-.blog-status--discarded .blog-status__dot { background: var(--text-muted); opacity: 0.5; }
-.blog-status__legend s { text-decoration-thickness: 1px; }
+/* discarded as crosses at the end of the bar, dropped off the flow */
+.blog-status__row { display: flex; align-items: center; gap: 0.45rem; }
+.blog-status__row .blog-status__bar { flex: 1; }
+.blog-status__marks { font-size: 0.9rem; line-height: 1; letter-spacing: 0.08em; color: var(--text-muted); opacity: 0.7; cursor: help; }
+.blog-status__marks:hover, .blog-status__marks:focus-visible { opacity: 1; }
+/* at the right edge of the page: open the tooltip leftwards, not centred */
+.blog-status__marks[data-tip]:hover::after, .blog-status__marks[data-tip]:focus-visible::after { left: auto; right: 0; transform: none; }
 .blog-status__discarded s { text-decoration-thickness: 1px; }
 
 /* Flow: ideas (faint) -> writing -> review -> published (full accent) */

@@ -2,7 +2,7 @@
 review: 2
 writing: 2
 ideas: 5
-# Posts dropped along the way (0 hides them): a line below the bar, or the last
-# segment of the bar with discarded_in_bar: true.
+# Posts dropped along the way (0 hides them): a line below the bar, or small
+# crosses at the end of the bar with discarded_marks: true.
 discarded: 2
-discarded_in_bar: true
+discarded_marks: true
