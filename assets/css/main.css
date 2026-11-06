@@ -1308,9 +1308,10 @@ a[data-copy-doi].is-copied { color: var(--accent); border-color: var(--accent); 
   content: attr(data-tip);
   position: absolute; bottom: calc(100% + 5px); left: 50%; transform: translateX(-50%);
   z-index: 5; white-space: nowrap; pointer-events: none;
-  padding: 0.15rem 0.45rem; border-radius: 4px;
+  padding: 0.3rem 0.6rem; border-radius: 6px;
   font-size: 0.72rem; font-weight: 500; line-height: 1.4;
-  color: var(--bg); background: var(--text);
+  color: var(--text); background: var(--bg-card);
+  border: 1px solid var(--border); box-shadow: var(--shadow);
 }
 [data-tip]:focus { outline: none; }
 
