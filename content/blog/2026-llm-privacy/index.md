@@ -5,6 +5,7 @@ date: 2026-10-04
 place: "Pescara, Italy"
 draft: false
 description: "Almost every grant proposal this year has probably passed through an LLM running on someone else's server. Three loosely connected thoughts on what that means."
+mastodon: "https://mastodon.uno/@antoniosberna/117569335548261279"
 ---
 
 It is no secret that this year I resubmitted my MSCA Postdoctoral Fellowship proposal. Unfortunately, it does not reflect what is happening in the world right now, something I touched on briefly [in my previous post](../2026-ecee-science-w-agents/) and plan to come back to here soon. Still, the resubmission left me with a thought I cannot shake off.
