@@ -2,7 +2,7 @@
 review: 2
 writing: 2
 ideas: 5
-# Posts dropped along the way (0 hides them): a line below the bar, or small
-# crosses at the end of the bar with discarded_marks: true.
+# Posts dropped along the way (0 hides them). discarded_style at the end of the bar:
+# "crosses", "fragments", "bin", "minus" or "rings"; without it, a line below the bar.
 discarded: 2
-discarded_marks: true
+discarded_style: "bin"
