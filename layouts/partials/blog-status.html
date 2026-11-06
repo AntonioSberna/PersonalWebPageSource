@@ -20,6 +20,9 @@
     <li class="blog-status--{{ .key }}"><span class="blog-status__dot"></span><strong>{{ .n }}</strong> {{ .label }}</li>
     {{- end }}
   </ul>
+  {{- with .discarded }}
+  <p class="blog-status__discarded" title="Posts started and then dropped: not part of the flow above"><strong>{{ . }}</strong> <s>discarded</s> along the way</p>
+  {{- end }}
 </div>
 {{- end -}}
 {{- end -}}

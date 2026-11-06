@@ -2,3 +2,5 @@
 review: 2
 writing: 2
 ideas: 5
+# Posts dropped along the way: shown below the bar, not in it (0 hides the line).
+discarded: 0
