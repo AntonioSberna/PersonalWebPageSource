@@ -7,10 +7,10 @@
   (dict "key" "review"    "label" "in review" "n" (.review  | default 0))
   (dict "key" "published" "label" "published" "n" $published)
 -}}
-{{- /* discarded posts, by discarded_style: "crosses", "fragments", "bin", "minus" or "rings"
-       at the end of the bar, anything else a line below it */ -}}
+{{- /* discarded posts, by discarded_style: "bin" or "crosses" at the end of the bar,
+       anything else a line below it */ -}}
 {{- $style := .discarded_style | default "line" -}}
-{{- $marks := and .discarded (in (slice "crosses" "fragments" "bin" "minus" "rings") $style) -}}
+{{- $marks := and .discarded (in (slice "bin" "crosses") $style) -}}
 {{- $total := 0 -}}{{- range $items }}{{ $total = add $total .n }}{{ end -}}
 {{- if gt $total 0 -}}
 <div class="blog-status" aria-label="Blog status">
@@ -22,12 +22,7 @@
   </div>
   {{- if $marks }}
   <span class="blog-status__marks blog-status__marks--{{ $style }}" tabindex="0" data-tip="{{ .discarded }} discarded along the way" aria-label="{{ .discarded }} discarded">
-    {{- if eq $style "fragments" -}}
-      {{- range seq (cond (le .discarded 5) .discarded 5) }}<i style="--i: {{ . }}"></i>{{ end -}}
-    {{- else if eq $style "bin" }}<i class="fa-regular fa-trash-can" aria-hidden="true"></i> {{ .discarded -}}
-    {{- else if eq $style "minus" }}&minus;{{ .discarded -}}
-    {{- else if eq $style "rings" -}}
-      {{- range seq (cond (le .discarded 5) .discarded 5) }}<i></i>{{ end -}}
+    {{- if eq $style "bin" }}<i class="fa-regular fa-trash-can" aria-hidden="true"></i> {{ .discarded -}}
     {{- else if le .discarded 5 }}{{ strings.Repeat .discarded "×" }}{{ else }}×{{ .discarded }}{{ end -}}
   </span>
   {{- end }}
