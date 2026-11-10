@@ -457,6 +457,8 @@ reviewer:
         url: "https://www.mdpi.com/journal/modelling"
       - name: "Infrastructure"
         url: "https://www.mdpi.com/journal/infrastructures"
+      - name: "Archives of Computational Methods in Engineering"
+        url: "https://link.springer.com/journal/11831"
       - name: "Structures and Buildings"
         cv_name: "Structures and Buildings (Proceedings of ICE)"
         url: "https://www.icevirtuallibrary.com/toc/jstbu/current"
