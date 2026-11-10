@@ -480,8 +480,6 @@ reviewer:
         url: "https://www.tandfonline.com/journals/tstr20"
       - name: "Advances in Structural Engineering"
         url: "https://onlinelibrary.wiley.com/journal/7074"
-      - name: "Archives of Computational Methods in Engineering"
-        url: "https://link.springer.com/journal/11831"
 
   - category: "Algorithms & AI"
     journals:
