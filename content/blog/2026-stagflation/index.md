@@ -35,7 +35,8 @@ So what is a researcher for? The image that keeps coming back to me is a farmer 
 {QUESTO PARAGRAFO NON SERVE A NIENTE, NON AGGIUNGE NIENTE ALLA DISCUSSIONE, TOGLIAMOLO }
 The image is older than it looks, and it hangs in the same sky this post started from. What Americans call the Big Dipper and the British the Plough, the Romans called *septentriones*, the seven plough oxen, and from them they named the north itself.{{< note >}}Varro and Aulus Gellius describe a yoked pair of oxen as a triangle, without saying where the third vertex is. [García Hernández](https://openpolar.no/Record/ftrecyt:oai:recyt.fecyt.es:article%2F96917) suggests it is the ploughman.{{< /note >}} Beside them stands Boötes, the ox-driver. Even up there, the oxen point north without getting anywhere by themselves: someone drives them, and someone fits the harness that turns their strength into a furrow. (Those who work with agents use the same word for the scaffolding of tools, instructions and checks built around a model. Farmers just got there first, by a few millennia.)
 
-**The work of research must shift from producing to directing.** And if the producing is no longer done by the researcher, measuring researchers by how much they produce is, at best, an anachronism.
+{DOBBIAMO COLLEGARE BENE LA STORIA DI DIRIGERE I BUOI (AI) E/O INVECE LANCIARSI IN SPECULAZIONI E LAVORI DI PURA CREATIVITÀ RANDOMICA E SCONCLUSIONATA}
+**The work of research must shift from producing to directing {USING THE HARNESS}.** And if the producing is no longer done by the researcher, measuring researchers by how much they produce is, at best, an anachronism.
 
 ## Fewer papers, other readers
 
