@@ -1,10 +1,10 @@
 ---
-title: "Publish or Plough"
+title: "Where the Paper Trail Ends"
 subtitle: "On the stagflation of academic currency"
 date: 2026-11-11
 place: "Pescara, Italy"
 draft: false
-description: "Papers and ideas are losing value as fast as we produce them. What is left for a researcher to do?"
+description: "Papers and ideas are losing value as fast as we produce them. What is left for a researcher to do, and where could they go?"
 ---
 
 In the last addendum to [the elephant post](../2026-ecee-science-w-agents/) I compared the scientific literature to a night sky turning into a Milky Way, so crowded with stars that the constellations can no longer be read.{{< note >}}This should be the last post on the subject, unless the situation changes again or new thoughts on it come to me (both not unlikely). After this I move on: a few other ideas are waiting to take shape.{{< /note >}} That image was about finding one's way. But it hides a second problem, one an economist would spot before an astronomer: if stars can be produced at will, what is each of them worth? This post follows that question from the sky to the purse, asking what happens to the value of a paper, and of an idea, when we print them faster than anyone can read them.
@@ -16,7 +16,6 @@ Economists have a word for a currency that keeps losing value while the economy 
 {{< side src="paid-in-papers.jpeg" pos="right" width="50%" caption="Paid in papers, change given in impact factor." >}}
 
 Between 2016 and 2022, [Hanson and colleagues](https://direct.mit.edu/qss/article/5/4/823/124269/The-strain-on-scientific-publishing) counted about 47% more articles per year in Scopus and Web of Science, from roughly 1.9 to 2.8 million, while the number of practising scientists grew little, if at all. Among their metrics there is one they call, fittingly, *impact inflation*: impact factors rising across publishers, faster than any plausible rise in quality. Reading their paper, I found that the reason underneath has a name: Goodhart's law, when a measure becomes a target, it ceases to be a good measure.{{< note >}}Goodhart [formulated it in 1975](https://doi.org/10.1007/978-1-349-17295-5) about monetary targets, which suits this post rather well. The wording quoted here is [Marilyn Strathern's (1997)](https://doi.org/10.1017/S1062798700002660), and she was writing about British universities.{{< /note >}} Nobody needs to behave badly for this to happen. It is enough that everybody behaves rationally.
-
 
 (I am part of the statistics. As I write, I am a breath away from 300 citations, with an h-index close to ten. [Hirsch](https://www.pnas.org/doi/10.1073/pnas.0507655102) suggested that an h-index growing by about one point per year of activity marks a successful scientist,{{< note >}}His scale was calibrated on physicists: about one point per year for a successful scientist.{{< /note >}} so by his own yardstick I am an anomaly. In some corridors, though, I have been read as an anomaly in the other direction, and over the years I have collected every kind of encouragement to publish more, from the most academic to the most prosaic.)
 
@@ -30,19 +29,15 @@ More currency, the same goods, fewer buyers.
 
 Project the trend a few years forward. Agents will take care of papers from start to finish, from finding the topic to running the analyses to writing the text, as recent cases have already shown.{{< note >}}I wrote about one of them [from Berlin](../2026-ecee-science-w-agents/).{{< /note >}} Ideas will come the same way: give a language model a literature review, which by now it can compile on its own, and a handful of hints, perhaps the only human contribution left so far, steering it through a brainstorm, and it returns research directions that read well enough to be funded. The question then is what is left to read in a proposal, or in a paper. If a published paper no longer tells us much about the researcher who signs it, and neither does the idea behind it, the one that raised the funding through a grant, then counting papers, citations and h-indices to hire, promote or fund someone measures the wrong thing. The sooner we retire this kind of bibliometric evaluation, the better.
 
-
 So what is a researcher for? The image that keeps coming back to me is a farmer before the industrial revolution, walking behind a plough pulled by oxen. The oxen supply the force: without them he could not move the ploughshare an inch, and would spend weeks sweating over the same field with a hand hoe. But they do not know which field to break, how deep the furrow should go, or when the soil is ready. He does, and he is the one who fits the *harness* that turns their strength into a furrow.
 
 I would like to take one more step. Perhaps even the choice of the field will not stay with him for long. A swarm of agents could map the gaps in the literature, estimate the feasibility of each research path, and weigh the expected result against the resources needed to pursue it (the number of tokens required), accounting honestly for the chance that nothing new comes out. At that point, why write grants at all? We could let agents pick the lines of research that promise the greatest benefit for humanity at the lowest cost. The field would be ploughed by tractors (perhaps self-driving ones).
 
 {{< side src="beyond-the-field.png" pos="right" width="45%" caption="Some fields are not for oxen." >}}
 
-And the farmer, freed from the field, could do what farmers' sons and grandsons have always done when the land no longer needed them: leave. Set sail, climb the peaks, cross the polar ice, go to space.{{< note >}}get a Ph.D{{< /note >}}
-{AGGIUNGI: QUALCOSA RIGUARDO A SPINGERSI OLTRE LA MAPPA, QUALCUNO CHE VADA A VEDERE SE CI SONO DAVVERO I LEONI (HIC SUNT LEONEM)} In research, that would mean keeping for humans the improbable and the impossible bets, the work of pure creativity. Not blue-sky research, which still has a horizon, but the dark space beyond it: endless, cold, and frightening.
+And the farmer, freed from the field, could do what farmers' sons and grandsons have always done when the land no longer needed them: leave. Set sail, climb the peaks, cross the polar ice, go to space.{{< note >}}Or, more modestly, get a PhD.{{< /note >}} Old maps, so the story goes, marked the unexplored edges with *hic sunt leones*, here be lions. Someone has to go and see whether the lions are really there. In research, that would mean keeping for humans the improbable and the impossible bets, the work of pure creativity. Not blue-sky research, which still has a horizon, but the dark space beyond it: endless, cold, and frightening.
 
-
-
-**The work of research must shift from producing to directing, harness in hand, and from directing to exploring, where no harness reaches.** Those places are not for oxen. You go in person, with your own hands and the little you can carry. Asked why he wanted to climb Everest, George Mallory answered: _"Because it's there."_{{< note >}}A warmly recommended listen: [this one](https://open.spotify.com/track/4qGo89LUvcGKU30GrrD4Nn?si=4315a773511d44e9).{{< /note >}} Nobody ever judged a climber by the number of steps it took to reach the summit. In the same way, whether the researcher drives the oxen or leaves them behind, if the producing is no longer done by the researcher, measuring researchers by how much they produce is, at best, an anachronism.
+**The work of research must shift from producing to directing, harness in hand, and from directing to exploring, where no harness reaches.** Those places are not for oxen. You go in person, with your own hands and the little you can carry. Asked why he wanted to climb Everest, George Mallory answered: *"Because it's there."*{{< note >}}A warmly recommended listen: [this one](https://open.spotify.com/track/4qGo89LUvcGKU30GrrD4Nn?si=4315a773511d44e9).{{< /note >}} Nobody ever judged a climber by the number of steps it took to reach the summit. In the same way, whether the researcher drives the oxen or leaves them behind, if the producing is no longer done by the researcher, measuring researchers by how much they produce is, at best, an anachronism.
 
 ## Fewer papers, other readers
 
@@ -56,7 +51,7 @@ The sooner we make these changes, the better. The alternative is to be swept alo
 
 For decades the rule was *publish or perish*. The numbers say that the currency it relied on is inflating: more papers than anyone can read, more proposals than anyone can fund, while money, people and referees stand still. Language models will only speed this up, because they make both the paper and the idea cheap to produce, and a measure of how much we produce stops measuring us. What they do not make cheap is direction: choosing the field, the depth of the furrow, the season. Nor do they make cheap the free time to get bored, pack a backpack or rig the sails, and set off along a road that today looks crazy. That should be the direction of the researcher's work, and that is what evaluation should look at, while papers go back to being written for people and a separate set of products is built for machines.
 
-Hanson and colleagues close by recommending CVs that highlight researchers' best work over total volume. It is a good start, and the choice ahead looks less like publish or perish and more like publish or plough. But ploughing may turn out to be only the first half of the job. Something will still have to drive the oxen, and someone, free at last from counting stars, will have to look past the last one, into the dark part of the sky that no map has charted yet.
+Hanson and colleagues close by recommending CVs that highlight researchers' best work over total volume. It is a good start, and the choice ahead looks less like publish or perish and more like publish or plough. But ploughing may turn out to be only the first half of the job. Something will still have to drive the oxen, and someone, free at last from counting stars, will have to follow the paper trail to where it ends, and keep walking into the dark part of the sky that no map has charted yet.
 
 <div class="post-credits">
 
