@@ -7,7 +7,7 @@ draft: false
 description: "Not an introduction, not popular science, not a forum: a few notes on why this blog exists and how its posts come to be."
 ---
 
-This is not an introduction. The homepage already contains more than enough self-celebration for one website, and I see no reason to add to it. It is rather an attempt to answer a question I ask myself every time I open the editor: why this blog?
+This is not an introduction. The [homepage](https://antoniosberna.github.io/) already contains more than enough self-celebration for one website {AGGIUNGI SIDE NOTE: FORSE NON PER UNO ACCADEMICO, FACCINA}, and I see no reason to add to it. It is rather an attempt to answer a question I ask myself every time I open the editor: why this blog?
 
 Not because my ideas are particularly clever. This is not a TED talk, and nobody is waiting for my take on anything. Not because of the audience either: who reads blogs anymore? The honest answer is more modest. Over the last couple of years I have found myself reading far more than I used to. Not books{{< note >}}My [StoryGraph](https://www.thestorygraph.com/) statistics are merciless on this point: no trend whatsoever.{{< /note >}}, but papers, preprints, documentation and reports, all work-related. The world, and my small corner of it, is changing fast enough that this reading cannot just pile up. It has to go somewhere, and writing seems to be its natural outlet. An editorial in *Nature Reviews Bioengineering* put it well: writing is not only a way to report results but a way to [think in a structured manner](https://doi.org/10.1038/s44222-025-00323-4), instead of letting the mind wander as it usually does.
 
