@@ -31,6 +31,6 @@ Perhaps, then, this is not a blog at all, but a landfill of thoughts that I make
 
 <div class="post-credits">
 
-Ideas and text are my own; the English was Claude Opus 5.5 optimized. The cover image was generated with Gemini from my prompt.
+Ideas and text are my own, the English was Claude Opus 5.5 optimized. The cover image was generated with Gemini 3 from my prompt.
 
 </div>
