@@ -1192,7 +1192,7 @@ a[data-copy-doi].is-copied { color: var(--accent); border-color: var(--accent); 
   font-size: 0.85rem; line-height: 1.55; color: var(--text-muted);
   background: var(--bg-card); border-left: 2px solid var(--accent); border-radius: 0 4px 4px 0;
 }
-.sn-toggle:checked ~ .sidenote { display: block; animation: sn-open 0.2s ease-out; }
+.sn-toggle:checked + .sn-ref + .sidenote { display: block; animation: sn-open 0.2s ease-out; }
 @keyframes sn-open { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
 .sidenote::before {
   content: counter(sn); margin-right: 0.45em;
@@ -1203,7 +1203,7 @@ a[data-copy-doi].is-copied { color: var(--accent); border-color: var(--accent); 
 @media (min-width: 1120px) {
   .blog-post__content .sn-ref { cursor: default; }
   .blog-post__content .sidenote,
-  .blog-post__content .sn-toggle:checked ~ .sidenote {
+  .blog-post__content .sn-toggle:checked + .sn-ref + .sidenote {
     /* inline (not block), so an absolute box stays on the line of its number */
     display: inline; position: absolute; left: calc(100% + 2rem); width: 15rem;
     margin: 0.35rem 0 0; padding: 0 0 0 0.8rem;
@@ -1212,10 +1212,11 @@ a[data-copy-doi].is-copied { color: var(--accent); border-color: var(--accent); 
     animation: none;
     transition: border-color 0.2s, color 0.2s;
   }
-  /* hovering the number lights up its note, and vice versa */
-  .blog-post__content .sn-ref:hover ~ .sidenote,
+  /* hovering the number lights up its note, and vice versa: only the adjacent pair
+     ("~" would also match the other notes of the same paragraph) */
+  .blog-post__content .sn-ref:hover + .sidenote,
   .blog-post__content .sidenote:hover { border-left-color: var(--accent); color: var(--text); }
-  .blog-post__content .sn-toggle:has(~ .sidenote:hover) + .sn-ref { background: var(--accent); color: var(--bg); }
+  .blog-post__content .sn-toggle:has(+ .sn-ref + .sidenote:hover) + .sn-ref { background: var(--accent); color: var(--bg); }
 }
 @media print {
   .sidenote { display: block !important; position: static !important; width: auto !important; }
