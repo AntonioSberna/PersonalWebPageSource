@@ -41,7 +41,7 @@ And the farmer, freed from the field, could do what farmers' sons have always do
 
 
 
-**The work of research must shift from producing to directing, harness in hand, and from directing to exploring, where no harness reaches.** Those places are not for oxen. You go in person, with your own hands and the little you can carry. Asked why he wanted to climb Everest, George Mallory answered: "Because it's there."{{< note >}}A listening recommendation for the climb: [this one](https://open.spotify.com/track/4qGo89LUvcGKU30GrrD4Nn?si=4315a773511d44e9).{{< /note >}} Nobody ever judged a climber by the number of steps it took to reach the summit. In the same way, whether the researcher drives the oxen or leaves them behind, if the producing is no longer done by the researcher, measuring researchers by how much they produce is, at best, an anachronism.
+**The work of research must shift from producing to directing, harness in hand, and from directing to exploring, where no harness reaches.** Those places are not for oxen. You go in person, with your own hands and the little you can carry. Asked why he wanted to climb Everest, George Mallory answered: _"Because it's there."_{{< note >}}A warmly recommended listen: [this one](https://open.spotify.com/track/4qGo89LUvcGKU30GrrD4Nn?si=4315a773511d44e9).{{< /note >}} Nobody ever judged a climber by the number of steps it took to reach the summit. In the same way, whether the researcher drives the oxen or leaves them behind, if the producing is no longer done by the researcher, measuring researchers by how much they produce is, at best, an anachronism.
 
 ## Fewer papers, other readers
 
