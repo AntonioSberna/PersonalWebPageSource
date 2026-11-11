@@ -37,7 +37,7 @@ I would like to take one more step. Perhaps even the choice of the field will no
 
 {{< side src="beyond-the-field.png" pos="right" width="45%" caption="Some fields are not for oxen." >}}
 
-And the farmer, freed from the field, could do what farmers' sons and grand have always done when the land no longer needed them: leave. Set sail, climb the peaks, cross the polar ice, go to space. In research, that would mean keeping for humans the improbable and the impossible bets, the work of pure creativity. Not blue-sky research, which still has a horizon, but the dark space beyond it: endless, cold, and frightening.
+And the farmer, freed from the field, could do what farmers' sons and grandsons have always done when the land no longer needed them: leave. Set sail, climb the peaks, cross the polar ice, go to space.{{< note >}}get a Ph.D{{< /note >}} In research, that would mean keeping for humans the improbable and the impossible bets, the work of pure creativity. Not blue-sky research, which still has a horizon, but the dark space beyond it: endless, cold, and frightening.
 
 
 
