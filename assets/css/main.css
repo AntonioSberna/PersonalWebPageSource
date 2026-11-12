@@ -1866,3 +1866,19 @@ button.blog-status__marks { font: inherit; color: inherit; background: none; bor
 }
 .bp-note__close:hover, .bp-note__close:focus-visible { color: var(--text); background: var(--accent-light); }
 .bp-note__close:focus-visible { outline: 1px solid var(--text); }
+
+/* Blog counter: hovering a part of the bar or an item of the legend keeps that one in full
+   colour and dims the others, in the bar and in the legend (key set by main.js) */
+/* a filter, not opacity: the parts already use opacity for their shade, which stays as it is */
+.blog-status__seg { transition: flex-grow 0.6s ease, filter 0.2s ease; }
+.blog-status__legend li { transition: filter 0.2s ease; }
+.blog-status[data-focus] .blog-status__seg, .blog-status[data-focus] .blog-status__legend li { filter: opacity(0.25); }
+.blog-status[data-focus="ideas"] .blog-status__seg.blog-status--ideas,
+.blog-status[data-focus="ideas"] .blog-status__legend li.blog-status--ideas,
+.blog-status[data-focus="writing"] .blog-status__seg.blog-status--writing,
+.blog-status[data-focus="writing"] .blog-status__legend li.blog-status--writing,
+.blog-status[data-focus="review"] .blog-status__seg.blog-status--review,
+.blog-status[data-focus="review"] .blog-status__legend li.blog-status--review,
+.blog-status[data-focus="published"] .blog-status__seg.blog-status--published,
+.blog-status[data-focus="published"] .blog-status__legend li.blog-status--published { filter: none; }
+.blog-status__legend li[data-key] { cursor: default; }

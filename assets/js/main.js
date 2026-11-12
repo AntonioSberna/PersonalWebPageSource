@@ -718,12 +718,13 @@
     let ticking = false, doneShown = false;
     const update = function () {
       ticking = false;
-      // read = how much of the text has passed the reading line (80% of the screen height);
-      // at the very bottom of the page it is always 1, even if the text cannot scroll that far
+      // 0 at the top of the page, 1 when the end of the text reaches 80% of the screen height
+      // (or at the bottom of the page, if the text cannot scroll that far)
       const r = content.getBoundingClientRect();
       const vh = window.innerHeight;
-      const atBottom = window.scrollY + vh >= document.documentElement.scrollHeight - 4;
-      const p = atBottom ? 1 : Math.min(1, Math.max(0, (vh * 0.8 - r.top) / r.height));
+      const maxScroll = document.documentElement.scrollHeight - vh;
+      const end = Math.min(maxScroll, window.scrollY + r.bottom - vh * 0.8);
+      const p = end > 0 ? Math.min(1, Math.max(0, window.scrollY / end)) : 1;
       const total = r.height;
       bar.style.transform = 'scaleX(' + p + ')';
       // easter egg: a small check when the end is reached (once per visit of the page)
@@ -946,7 +947,11 @@
     let tick = false;
     const draw = function () {
       tick = false;
-      const line = window.innerHeight * 0.6;
+      // the reading line is at 60% of the screen; in the last part of the page it slides down to
+      // the bottom of the screen, so at the end of the page the whole timeline is filled
+      const vh = window.innerHeight;
+      const remaining = document.documentElement.scrollHeight - vh - window.scrollY;
+      const line = vh * 0.6 + Math.max(0, vh * 0.4 - Math.max(0, remaining));
       updates.forEach(function (u) {
         const r = u.getBoundingClientRect();
         const p = Math.max(0, Math.min(1, (line - r.top) / r.height));
@@ -997,4 +1002,16 @@
     '%c                      %cFor humans    /humans.txt\n\n' +
     '%c  P.S. The theme button has a secret. Try being impatient with it.',
     a, b, c, a, c, a, c, a, c, a, c, a, c, a, c, c);
+})();
+
+// ============================================================
+//  Blog counter: link each part of the bar with its item in the legend
+// ============================================================
+(function () {
+  const box = document.querySelector('.blog-status');
+  if (!box) return;
+  box.querySelectorAll('[data-key]').forEach(function (el) {
+    el.addEventListener('mouseenter', function () { box.dataset.focus = el.dataset.key; });
+    el.addEventListener('mouseleave', function () { delete box.dataset.focus; });
+  });
 })();

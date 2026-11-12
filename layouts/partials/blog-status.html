@@ -17,7 +17,7 @@
   <div class="blog-status__row">
   <div class="blog-status__bar" aria-hidden="true">
     {{- range $items }}{{ if gt .n 0 }}
-    <span class="blog-status__seg blog-status--{{ .key }}" style="flex-grow: {{ .n }}" title="{{ .n }} {{ .label }}"></span>
+    <span class="blog-status__seg blog-status--{{ .key }}" data-key="{{ .key }}" style="flex-grow: {{ .n }}"></span>
     {{- end }}{{ end }}
   </div>
   {{- if $marks }}
@@ -42,7 +42,7 @@
   </div>
   <ul class="blog-status__legend">
     {{- range $items }}
-    <li class="blog-status--{{ .key }}"><span class="blog-status__dot"></span><strong>{{ .n }}</strong> {{ .label }}</li>
+    <li class="blog-status--{{ .key }}" data-key="{{ .key }}"><span class="blog-status__dot"></span><strong>{{ .n }}</strong> {{ .label }}</li>
     {{- end }}
   </ul>
   {{- if and .discarded (not $marks) }}{{ with .discarded }}
