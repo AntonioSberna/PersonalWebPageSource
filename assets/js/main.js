@@ -245,6 +245,11 @@
       });
     }
 
+    // Margin notes: tell screen readers which note each number opens
+    document.querySelectorAll('.blog-post__content').forEach(function (box) {
+      box.querySelectorAll('.sn-toggle').forEach(function (t, i) { t.setAttribute('aria-label', 'Note ' + (i + 1)); });
+    });
+
     // Margin notes: push a note down if it would overlap the previous one
     const notes = document.querySelectorAll('.blog-post__content .sidenote');
     if (notes.length) {
@@ -718,7 +723,7 @@
 
   // --- previews of internal links (mouse only)
   if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches || !window.fetch) return;
-  let data = null, card = null, showTimer = 0, current = null;
+  let data = null, card = null, showTimer = 0, hideTimer = 0, current = null, byKeyboard = false;
   function load() {
     if (!data) data = fetch('/previews.json').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; });
     return data;
@@ -747,7 +752,13 @@
     card.style.top = (top + window.scrollY) + 'px';
   }
   function show(a, info, y) {
-    if (!card) { card = document.createElement('div'); card.className = 'link-preview'; card.setAttribute('aria-hidden', 'true'); document.body.appendChild(card); }
+    if (!card) {
+      card = document.createElement('div'); card.className = 'link-preview'; card.setAttribute('aria-hidden', 'true');
+      // the card stays open while the mouse is on it (WCAG 1.4.13)
+      card.addEventListener('mouseenter', function () { clearTimeout(hideTimer); });
+      card.addEventListener('mouseleave', hide);
+      document.body.appendChild(card);
+    }
     card.innerHTML =
       (info.img ? '<img class="link-preview__img" src="' + esc(info.img) + '" alt="">' : '') +
       '<div class="link-preview__body">' +
@@ -760,9 +771,12 @@
     requestAnimationFrame(function () { card.classList.add('is-visible'); });
   }
   function hide() {
-    clearTimeout(showTimer); current = null;
+    clearTimeout(showTimer); clearTimeout(hideTimer); current = null;
     if (card) card.classList.remove('is-visible');
   }
+  function hideSoon() { clearTimeout(showTimer); clearTimeout(hideTimer); hideTimer = setTimeout(hide, 180); }
+  // Esc closes the card without moving the mouse or the focus (WCAG 1.4.13)
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && card && card.classList.contains('is-visible')) hide(); });
   article.querySelectorAll('.blog-post__content a[href], .related-talk a[href]').forEach(function (a) {
     if (a.closest('.heading-anchor, .post-update__head, .post-toc')) return;
     const key = keyOf(a);
@@ -770,14 +784,26 @@
     let y = 0;
     a.addEventListener('mousemove', function (e) { y = e.clientY; });
     a.addEventListener('mouseenter', function (e) {
-      current = a; y = e.clientY; load();
-      clearTimeout(showTimer);
+      current = a; byKeyboard = false; y = e.clientY; load();
+      clearTimeout(showTimer); clearTimeout(hideTimer);
       showTimer = setTimeout(function () {
         load().then(function (d) { if (current === a && d[key]) show(a, d[key], y); });
       }, 300);
     });
-    a.addEventListener('mouseleave', hide);
+    a.addEventListener('mouseleave', hideSoon);
+    a.addEventListener('focus', function () {
+      current = a; byKeyboard = true;
+      // wait for the browser to scroll the link into view, then measure it
+      setTimeout(function () {
+        if (current !== a) return;
+        const r = a.getClientRects()[0]; y = r ? r.top + 1 : 0;
+        load().then(function (d) { if (current === a && d[key]) show(a, d[key], y); });
+      }, 60);
+    });
+    a.addEventListener('blur', hide);
     a.addEventListener('click', hide);
   });
-  window.addEventListener('scroll', function () { if (card && card.classList.contains('is-visible')) hide(); }, { passive: true });
+  // the card scrolls with the page; after a scroll the mouse is no longer on the link, so close it
+  // (not when it was opened from the keyboard: focusing a link scrolls the page itself)
+  window.addEventListener('scroll', function () { if (!byKeyboard && card && card.classList.contains('is-visible')) hide(); }, { passive: true });
 })();

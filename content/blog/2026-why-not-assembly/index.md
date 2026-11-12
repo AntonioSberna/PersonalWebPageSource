@@ -5,6 +5,7 @@ date: 2026-10-21
 place: "Pescara, Italy"
 draft: false
 description: "Ask an LLM for something computational and you get Python back. Why not something closer to the metal? I asked one."
+featured_alt: "Flat illustration: a person at a laptop asks a small robot a question; below them, a factory of conveyor belts, pipes and gears leads down to a glowing processor chip."
 ---
 
 I was thinking, just a question. Whenever I ask an LLM for something computational, I get Python back. I tried with the ones I use,{{< note >}}[ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com/) and [Lumo](https://lumo.proton.me/) that's [Mistral](https://mistral.ai/) basically.{{< /note >}} and the answer is always the same. Wouldn't it be better to get something lower level, say assembly directly? I am no expert on the subject at all, and the question was already lurking at the end of [another post](../2026-on-thinking-differently-screen/).

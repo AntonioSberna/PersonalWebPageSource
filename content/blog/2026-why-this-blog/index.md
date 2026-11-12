@@ -5,6 +5,7 @@ date: 2026-11-11
 place: "Pescara"
 draft: false
 description: "Not an introduction, not popular science, not a forum: a few notes on why this blog exists and how its posts come to be."
+featured_alt: "An old monitor in the dark, green text on black: a blog page titled Recursion contains a smaller copy of itself, again and again."
 ---
 
 This is not an introduction. The [homepage](https://antoniosberna.github.io/) already contains more than enough self-celebration for one website{{< note >}}Perhaps not for an academic's website :){{< /note >}}, and I see no reason to add to it. It is rather an attempt to answer a question I ask myself every time I open the editor: why this blog?

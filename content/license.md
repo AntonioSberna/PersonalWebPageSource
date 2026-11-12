@@ -11,8 +11,16 @@ Some part of this website include figures, abstracts or short extracts from pape
 
 ## Third-party material
 
-Some posts of my blog include material by other authors, like [here](../blog/2026-on-thinking-differently-screen/). This material is not covered by the license above and remains under its own terms, stated in the caption next to it.
+Some posts of my blog include material by other authors, like the xkcd comics in [These Are All English Words](../blog/2026-on-thinking-differently-screen/). This material is not covered by the license above and remains under its own terms, stated in the caption next to it.
 
 ## AI-generated images
 
 Some illustrations are generated with AI tools from my prompts, and each post says so. Their legal status is unclear. In Italy, where this blog is written, copyright protects works created with the help of AI only if they result from the author's own intellectual work, but the law does not define how much human contribution is enough ([an overview in English](https://legalblogs.wolterskluwer.com/copyright-blog/new-italian-law-on-ai-a-general-framework/)). The [US Copyright Office](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf) takes a similar view and considers prompts alone insufficient. These images may therefore not be protected by copyright at all. To the extent that they are, they are released under the same CC BY 4.0 license. I'm no expert on these matters, but some clarity would help, and they are already overdue.
+
+## Machines and AI agents
+
+This site is written for people and for the agents that read on their behalf. Every blog post also exists as clean Markdown (the same address followed by `index.md`), and [llms.txt](/llms.txt) maps the whole site. The license applies to them as it does to people: an agent that quotes or summarises a post should name me and link the original.
+
+I ask crawlers that collect data to train models to stay away, and I say so in [robots.txt](/robots.txt). It is a request, not a legal exception: CC BY 4.0 allows reuse for any purpose, and I do not try to carve training out of it. Whether such requests are honoured is up to those who run the crawlers.
+
+Text written by a language model is marked where it appears, as in [Why Not Straight to Assembly?](../blog/2026-why-not-assembly/), and is not my writing. The same doubts as for AI-generated images apply to it.

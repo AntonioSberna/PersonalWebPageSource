@@ -24,8 +24,9 @@
   <div class="container">
     <article class="blog-post">
       {{ with .Resources.GetMatch "featured.*" }}
+      {{- if not $.Params.featured_alt }}{{ warnf "Cover image without featured_alt in the front matter (describe what it shows): %s" $.File.Path }}{{ end }}
       <div class="blog-post__img">
-        <img src="{{ partial "web-image.html" (dict "img" . "width" 1440) }}" alt="{{ $.Title }}" data-full="{{ partial "web-image.html" (dict "img" . "width" 2560) }}">
+        <img src="{{ partial "web-image.html" (dict "img" . "width" 1440) }}" alt="{{ $.Params.featured_alt }}" data-full="{{ partial "web-image.html" (dict "img" . "width" 2560) }}">
       </div>
       {{ end }}
       {{- /* Contents: for posts with at least 3 sections, or with updates */ -}}
@@ -35,7 +36,8 @@
         <button type="button" class="post-toc__toggle" aria-expanded="false"><i class="fa-solid fa-list-ul" aria-hidden="true"></i> Contents</button>
         <div class="post-toc__list">
           <div class="post-toc__title">Contents</div>
-          {{ .TableOfContents }}
+          {{- /* Hugo wraps its list in a <nav>: a plain div here, the outer nav is enough */}}
+          {{ .TableOfContents | replaceRE `<nav id="TableOfContents">` `<div class="post-toc__sections">` | replaceRE `</nav>` `</div>` | safeHTML }}
           {{- with $updates }}
           <div class="post-toc__title post-toc__title--updates">Updates</div>
           <ul class="post-toc__updates">

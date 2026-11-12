@@ -19,7 +19,7 @@
       {{- $px := div (sub 1200 $f.Width) 2 -}}{{- $py := div (sub 630 $f.Height) 2 -}}
       {{- $r = $f.Filter (images.Padding $py (sub 1200 (add $f.Width $px)) (sub 630 (add $f.Height $py)) $px "#ffffff") -}}
     {{- end -}}
-    {{- $img = dict "url" $r.Permalink "w" $r.Width "h" $r.Height "alt" $.Title -}}
+    {{- $img = dict "url" $r.Permalink "w" $r.Width "h" $r.Height "alt" ($.Params.featured_alt | default $.Title) -}}
   {{- end -}}
 {{- end }}
 <meta property="og:site_name" content="{{ site.Title }}">

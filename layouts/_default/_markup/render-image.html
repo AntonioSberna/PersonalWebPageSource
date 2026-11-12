@@ -1,5 +1,6 @@
 {{- /* Markdown images: lighter copy for files in the post folder, external links unchanged.
        data-full: larger copy opened by the image viewer (assets/js/main.js; skipped if the image is inside a link). */ -}}
+{{- if not .Text }}{{ warnf "Image without alt text (describe it inside ![...]): %s in %s" .Destination .Page.File.Path }}{{ end -}}
 {{- $src := .Destination -}}
 {{- $full := .Destination -}}
 {{- with .PageInner.Resources.GetMatch .Destination }}{{ $src = partial "web-image.html" (dict "img" . "width" 1440) }}{{ $full = partial "web-image.html" (dict "img" . "width" 2560) }}{{ end -}}

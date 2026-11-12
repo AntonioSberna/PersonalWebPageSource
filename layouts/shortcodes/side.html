@@ -3,6 +3,9 @@
 {{- $width := .Get "width" | default "40%" -}}
 {{- $caption := .Get "caption" -}}
 {{- $link := .Get "link" -}}
+{{- /* alt: what the image shows, for people who cannot see it. The caption is not enough:
+       it is read right after the image, and it often says something else. */ -}}
+{{- if not (.Get "alt") }}{{ warnf "side image without alt=\"...\" (describe what it shows): %s in %s" (.Get "src") .Page.File.Path }}{{ end -}}
 {{- $full := $src -}}
 {{- with .Page.Resources.GetMatch $src }}{{ $src = partial "web-image.html" (dict "img" . "width" 1000) }}{{ $full = partial "web-image.html" (dict "img" . "width" 2560) }}{{ end -}}
 <figure class="side-img side-img--{{ $pos }}" style="--side-width: {{ $width }}">

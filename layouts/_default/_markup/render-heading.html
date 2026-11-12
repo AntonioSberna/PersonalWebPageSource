@@ -1,4 +1,7 @@
-{{- /* Headings. In blog posts they get a "#" link that copies the address of the section (assets/js/main.js). */ -}}
-<h{{ .Level }} id="{{ .Anchor }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>{{ .Text }}
-{{- if eq .Page.Section "blog" }}<a class="heading-anchor" href="#{{ .Anchor }}" aria-label="Link to this section" title="Copy link to this section">#</a>{{ end -}}
-</h{{ .Level }}>
+{{- /* Headings. In blog posts they get a "#" link that copies the address of the section (assets/js/main.js).
+       aria-labelledby keeps the heading's name to its text, so screen readers do not read "Link to this section" in every title. */ -}}
+{{- if eq .Page.Section "blog" -}}
+<h{{ .Level }} id="{{ .Anchor }}" aria-labelledby="{{ .Anchor }}-text"{{ with .Attributes.class }} class="{{ . }}"{{ end }}><span id="{{ .Anchor }}-text">{{ .Text }}</span><a class="heading-anchor" href="#{{ .Anchor }}" aria-label="Copy link to this section" title="Copy link to this section">#</a></h{{ .Level }}>
+{{- else -}}
+<h{{ .Level }} id="{{ .Anchor }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>{{ .Text }}</h{{ .Level }}>
+{{- end -}}

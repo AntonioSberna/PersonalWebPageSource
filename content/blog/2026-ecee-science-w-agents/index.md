@@ -6,6 +6,7 @@ place: "Berlin, Germany"
 draft: false
 mastodon: "https://mastodon.uno/@antoniosberna/117530509520232679"
 #description: "test test"
+featured_alt: "The author presenting at ECEE 2026 in a lecture hall at TU Berlin. The slide on the screen shows the FrameWright MCP server for territorial seismic vulnerability assessment; one listener sits in the front rows."
 ---
 
 Five days in Berlin for [ECEE 2026](https://ecee2026.eu/), and what lingers is not a talk but a feeling of unease.
@@ -29,7 +30,7 @@ Richard Hamming reminded us that *"the purpose of computing is insight, not numb
 
 
 ## First refuge: the laboratory
-{{< side src="ecee26_social_dinner_candies.jpg" pos="right" width="30%" caption="Completely off-topic: the candy trolley at the social dinner really appreciated. I want one at my wedding party." >}}
+{{< side src="ecee26_social_dinner_candies.jpg" alt="Selfie of the author, thumb up, next to a tall candy trolley lit by colourful bulbs at the conference dinner." pos="right" width="30%" caption="Completely off-topic: the candy trolley at the social dinner really appreciated. I want one at my wedding party." >}}
 The obvious answer is experimental work. Slow, expensive and unglamorous, it has been sidelined for years by an academic economy that rewards volume.{{< note >}}See for instance [this piece in *Nature*](https://doi.org/10.1038/d41586-025-03623-2).{{< /note >}} Perhaps it becomes our last stronghold.
 
 But the machine would design the experiment too. We would be left as the material executors of tests conceived elsewhere, producing data on how the world works so that it can be fed to something that understands it on our behalf. How would that differ from any production line? The product is no longer a car or a chair, but a measurement. In 1848 Marx described the worker who becomes <em>"an appendage of the machine."</em>{{< note >}}K. Marx, F. Engels, [*The Communist Manifesto*](https://thenewobjectivity.com/pdf/marx.pdf), 1848.{{< /note >}} He had textile mills in mind, not shake tables.
@@ -51,7 +52,7 @@ Perhaps. But those technologies extended our hands and accelerated our arithmeti
 In *The Leopard*, Tancredi warns: <em>"Things will have to change in order that they remain the same."</em>{{< note >}}G. Tomasi di Lampedusa, [*The Leopard*](https://en.wikipedia.org/wiki/The_Leopard), 1958 ([Wikiquote](https://en.wikiquote.org/wiki/The_Leopard#:~:text=Things%20will%20have%20to%20change%20in%20order%20that%20they%20remain%20the%20same)).{{< /note >}} Academia seems to have read the line backwards: everything is changing, and we keep presenting as if nothing had.
 Maybe at the next ECEE the elephant will get its own session. It will probably have written the abstract itself.
 
-![](tu_berlin.jpg)
+![The TU Berlin campus on a sunny day: old brick industrial halls on both sides of a cobbled street with tram rails, a cyclist in the distance.](tu_berlin.jpg)
 
 {{% update date="2026-10-07" %}}
 P.S. A few weeks later came the confirmation: [OpenAI is giving mathematics a thorough beating](https://www.theguardian.com/technology/2026/oct/07/openai-mathematical-findings-concerns). The queen of the sciences, as Gauss called it,{{< note >}}The full quote is [on Wikiquote](https://en.wikiquote.org/wiki/Carl_Friedrich_Gauss#:~:text=Mathematics%20is%20the%20queen%20of%20the%20sciences).{{< /note >}} falls first, perhaps precisely because she is the more rigouros: no laboratories, no construction sites, only symbols and a proof checker that drink too much coffee. Next come the disciplines further down the ladder of abstraction: physics, chemistry, mechanics... and structural engineering? When will our turn come? Or, more honestly: are we sure it has not come already, and we are simply waiting for the next shock to notice?
@@ -65,7 +66,7 @@ Just today I listened to the new episode of *The Rest Is Science*. Even a podcas
 
 A side note: the episode is ___ (candidates may insert their favourite positive adjective here; I have run out of words). I usually listen to podcasts on my commute to the university, but this time I got completely lost in it, and my brain walked me down the street on autopilot. I hope I did not cross on a red light :-). Hannah Fry's explanation of the problem itself is remarkable, accessible to an almost unfair degree. I will leave that part alone, though. The last time I looked at the Navier-Stokes equations was ten years ago, when my hydraulics professor, after a couple of weeks spent setting up the problem, finally wrote them on the board and said something like: *"This is how it works. But we cannot solve them, which is why you are here. This is where my course begins."* My comments are about the second part.
 
-**Unsolicited comment no. 2.** It starts from a brief, almost throwaway remark by Michael Stevens about a superorganism. That is more or less the feeling I tried to describe some aspects in [this post](../2026-on-thinking-differently-screen/): intellectual work is changing shape, and with it the question of who gets credit for what. I plan to develop this properly in a post in two weeks, if the plan holds. Stay tuned.
+**Unsolicited comment no. 2.** It starts from a brief, almost throwaway remark by Michael Stevens about a superorganism. That is more or less the feeling I tried to describe some aspects in [These Are All English Words](../2026-on-thinking-differently-screen/): intellectual work is changing shape, and with it the question of who gets credit for what. I plan to develop this properly in a post in two weeks, if the plan holds. Stay tuned.
 
 **Comment no. 3.** At some point they argue that those building these systems do not care about the problems themselves, only about impressing investors. Entirely reasonable, and they make the case far better than I could.{{< note >}}They are there, I am here, there must be a reason.{{< /note >}} But let me push it one step further, as a question: should we care? Everyone pursues their own interests. These companies are not nonprofit,{{< note >}}One of them was born as a it, but *pecunia non olet*.{{< /note >}} yet whatever they find stays with the rest of us. Nobody reheating last night's rice cares that the microwave oven came out of [wartime radar research](https://en.wikipedia.org/wiki/Microwave_oven#History). Nobody asking their phone for directions cares that GPS was built for the [military](https://en.wikipedia.org/wiki/Global_Positioning_System#History). Motives far less innocent than pleasing investors have given us tools we now take for granted.
 
@@ -87,6 +88,6 @@ The new batch of AI-written papers that OpenAI has just made [public](https://gi
 Science communicators, especially in fields closer to the public such as medicine, keep repeating that a single paper is not science. I like to think of the scientific literature as the night sky for a navigator. A single star means nothing to a navigator; on its own, it cannot be read, what you recognise is the pattern, the constellations of brighter and fainter stars that together let you find your way. Even Polaris is found by following the pointers of the Plough. Add a thousand, ten thousand faint stars, and the constellations still hold.
 
 
-But what about hundreds of thousands, packed so tightly that they blur into one another? How long will the brightest stars remain recognisable? The risk is a sky that turns into a Milky Way{{< note >}}Something like [this](https://apod.nasa.gov/apod/ap240718.html){{< /note >}}: luminous, beautiful, and useless for finding north.
+But what about hundreds of thousands, packed so tightly that they blur into one another? How long will the brightest stars remain recognisable? The risk is a sky that turns into a Milky Way{{< note >}}Something like [this NASA image of the Milky Way](https://apod.nasa.gov/apod/ap240718.html){{< /note >}}: luminous, beautiful, and useless for finding north.
 
 {{% /update %}}
