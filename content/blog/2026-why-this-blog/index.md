@@ -31,7 +31,7 @@ Then, the scattered notes of a post already in the pipeline{{< note >}}It will b
 
 Perhaps, then, this is not a blog at all, but a landfill of thoughts that I make the effort to sort, so that they do not stay vague and confused in my head. Which, now that I think about it, is what the subtitle has been saying from the start: scattered thoughts, loosely ordered.
 
----
+
 
 <div class="post-credits">
 

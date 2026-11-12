@@ -69,8 +69,6 @@ But whether it is good is almost beside the point. Nobody goes back to the road 
 Perhaps the professor's remark is the best summary of where we are. After decades of learning to speak the language of machines, we have finally taught them ours. The question is whether, in the process, we will forget how to speak theirs.
 
 
----
-
 <div class="post-credits">
 
 Illustrations not otherwise credited were generated with Gemini 3 from prompts I wrote and Claude Opus 5.5 optimized (it doesn't come close to [xkcd](https://xkcd.com/), who has been drawing smart stick figures smarter for twenty years; and yes, sooner or later a post illustrated with [PHD Comics](https://phdcomics.com/) strips will come too). The ideas and the text are mine; the English style and grammar were polished by Claude Opus 5.5.

@@ -47,7 +47,6 @@ In the far 1983, Bainbridge described the same pattern among the ironies of auto
 
 Plato taught in a gymnasium, the [Academy](https://iep.utm.edu/plato-academy/), just outside the walls of Athens; Aristotle chose another, the [Lyceum](https://iep.utm.edu/lyceum/). Both lent their names to schools,{{< note >}}In Italy, the gymnasium itself became the name for a type of high school.{{< /note >}} and for all these centuries we have used those words for buildings full of classrooms. Now that agents are taking the work out of our hands, perhaps it is time to go back to the gym.
 
----
 
 <div class="post-credits">
 

@@ -57,7 +57,6 @@ I do not have a solution, and I am not even sure these are the right questions. 
 Twenty days after this post{{< note >}} It is also the nudge I needed for a post I have been postponing for a while: why I started this blog, and why I keep writing it. Coming soon.{{< /note >}}, *Nature* published [an article](https://www.nature.com/articles/d41586-026-03476-3) on the flood of applications to the ERC Starting Grants: 7,710 proposals for the 2027 call, up from 4,807 the year before, a rise the article partly attributes to how easy AI tools have made writing them. Worth reading, starting from the question in its title. If ideas are no longer scarce, proposals certainly are not.
 {{% /update %}}
 
-<br><br>
 
 <p class="post-credits">Illustrations generated with Gemini 3 from my own prompts, refined with Claude Opus 5.5.</p>
 
