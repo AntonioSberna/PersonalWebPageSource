@@ -1472,7 +1472,8 @@ a[data-copy-doi].is-copied { color: var(--accent); border-color: var(--accent); 
    ============================================================ */
 
 /* Reading progress: thin bar on top of the page */
-.read-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 1001; pointer-events: none; }
+/* right under the sticky menu: on top of it the bar disappeared in the light theme (blue menu) */
+.read-progress { position: fixed; top: 3.5rem; left: 0; right: 0; height: 3px; z-index: 999; pointer-events: none; }
 .read-progress__bar {
   display: block; height: 100%; background: var(--accent);
   transform: scaleX(0); transform-origin: 0 50%;
@@ -1750,46 +1751,75 @@ a[data-copy-doi].is-fading { opacity: 0; }
    Easter eggs
    ============================================================ */
 
-/* Blueprint: a secret theme (7 quick clicks on the theme button). Blue drawing paper,
-   white lines, yellow pencil. Not saved: a reload brings the usual theme back. */
+/* Blueprint: a secret theme (3 quick clicks on the theme button). Deep blue drawing paper,
+   everything in white, as few fills and shadows as possible. Not saved: a reload brings the
+   usual theme back. */
 [data-theme="blueprint"] {
-  --bg:         #0e3a66;
-  --bg-alt:     #104272;
-  --bg-card:    #14497d;
-  --bg-card2:   #18528a;
-  --text:       #eef5ff;
-  --text-muted: #b4cbe8;
-  --accent:     #ffd97a;
-  --accent-hover: #ffe7a8;
-  --accent-light: #1c5590;
-  --border:     #3d6fa3;
-  --nav-bg:     #0b2f55;
-  --nav-text:   #eef5ff;
-  --nav-text-active: #ffd97a;
-  --shadow:     0 4px 16px rgba(0,0,0,0.35);
-  --shadow-card: 0 1px 6px rgba(0,0,0,0.3);
-  --timeline-line: #3d6fa3;
-  --badge-bg:   #1c5590;
-  --badge-text: #ffd97a;
-  --tag-bg:     #14497d;
-  --tag-text:   #b4cbe8;
-  --cv-btn-bg:  #1c5590;
-  --cv-btn-bg-hover: #23629f;
-  --on-accent:  #0e3a66;
+  --bg:         #0a1f3d;
+  --bg-alt:     #0a1f3d;
+  --bg-card:    transparent;
+  --bg-card2:   rgba(255,255,255,0.05);
+  --text:       #f4f7fb;
+  --text-muted: #aebfd6;
+  --accent:     #ffffff;
+  --accent-hover: #ffffff;
+  --accent-light: rgba(255,255,255,0.08);
+  --border:     rgba(255,255,255,0.28);
+  --nav-bg:     #0a1f3d;
+  --nav-text:   #f4f7fb;
+  --nav-text-active: #ffffff;
+  --shadow:     none;
+  --shadow-card: none;
+  --timeline-line: rgba(255,255,255,0.28);
+  --badge-bg:   transparent;
+  --badge-text: #ffffff;
+  --tag-bg:     transparent;
+  --tag-text:   #aebfd6;
+  --cv-btn-bg:  transparent;
+  --cv-btn-bg-hover: rgba(255,255,255,0.08);
+  --on-accent:  #0a1f3d;
   color-scheme: dark;
 }
 [data-theme="blueprint"] body {
   background-color: var(--bg);
-  /* the grid of the drawing paper: thin lines every 24px, a stronger one every 120px */
+  /* the grid of the drawing paper: thin white lines every 24px, a little stronger every 120px */
   background-image:
-    linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px),
-    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
   background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
 }
 [data-theme="blueprint"] section, [data-theme="blueprint"] #about, [data-theme="blueprint"] .page-header,
 [data-theme="blueprint"] section:nth-child(even), [data-theme="blueprint"] .pub-full-list { background: transparent; }
+/* the menu and the boxes become outlines on the paper */
+[data-theme="blueprint"] .nav { border-bottom: 1px solid var(--border); }
+[data-theme="blueprint"] .about__cv-link, [data-theme="blueprint"] .btn-pub--primary { border: 1px solid #fff; }
+/* the grid shows through every section of the home page and the footer */
+[data-theme="blueprint"] #education, [data-theme="blueprint"] #paper, [data-theme="blueprint"] #proceeding,
+[data-theme="blueprint"] #activity, [data-theme="blueprint"] #contact { background: transparent; }
+[data-theme="blueprint"] .footer { background: transparent; border-top: 1px solid var(--border); }
+/* every picture in black and white, embeds included */
+[data-theme="blueprint"] img, [data-theme="blueprint"] iframe, [data-theme="blueprint"] video,
+[data-theme="blueprint"] .exp-card__logo svg { filter: grayscale(1) contrast(1.05); }
+[data-theme="blueprint"] .exp-card__logo { border-color: var(--border) !important; }
+/* a still drawing: no animations, no transitions, no smooth scrolling */
+[data-theme="blueprint"], [data-theme="blueprint"] *, [data-theme="blueprint"] *::before, [data-theme="blueprint"] *::after {
+  animation: none !important; transition: none !important; scroll-behavior: auto !important;
+}
+[data-theme="blueprint"] .blog-card:hover .blog-card__img img, [data-theme="blueprint"] .blog-card:focus-visible .blog-card__img img,
+[data-theme="blueprint"] .network-icon li a:hover, [data-theme="blueprint"] .network-icon li a:focus-visible { transform: none; }
+[data-theme="blueprint"] .blog-post__content .sidenote { opacity: 1 !important; transform: none !important; }
+[data-theme="blueprint"] .section-header hr { width: 3rem !important; }
+[data-theme="blueprint"] .post-update::before { display: none; }
+[data-theme="blueprint"] .network-label__text.is-leaving, [data-theme="blueprint"] .network-label__text.is-entering { opacity: 1; transform: none; }
+/* links are white like the text here: a thin underline tells them apart (home included) */
+[data-theme="blueprint"] .about__bio a, [data-theme="blueprint"] .activity-list li a,
+[data-theme="blueprint"] .contact-item__value a, [data-theme="blueprint"] .about__org a,
+[data-theme="blueprint"] .news-item__text a {
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em;
+  text-decoration-color: rgba(255,255,255,0.45);
+}
 
 /* The bin of the blog counter opens on the posts that did not make it */
 .blog-bin { position: relative; display: inline-flex; }
@@ -1821,3 +1851,18 @@ button.blog-status__marks { font: inherit; color: inherit; background: none; bor
 }
 .read-progress.is-done .read-progress__done { opacity: 1; transform: none; }
 .read-progress.is-done.is-fading .read-progress__done { opacity: 0; transition-duration: 0.8s; }
+
+/* Message of the Blueprint theme: at the top, under the menu, with a close button */
+.bp-note {
+  position: fixed; top: 4.3rem; left: 50%; z-index: 1200; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 0.6rem; max-width: calc(100vw - 2rem);
+  padding: 0.45rem 0.5rem 0.45rem 0.9rem; font-size: 0.85rem; color: var(--text);
+  background: var(--bg); border: 1px solid var(--border); border-radius: 999px;
+}
+.bp-note i { font-size: 0.85rem; }
+.bp-note__close {
+  display: inline-flex; align-items: center; justify-content: center; width: 1.6rem; height: 1.6rem;
+  border: 0; border-radius: 50%; background: none; color: var(--text-muted); cursor: pointer; font-size: 0.8rem;
+}
+.bp-note__close:hover, .bp-note__close:focus-visible { color: var(--text); background: var(--accent-light); }
+.bp-note__close:focus-visible { outline: 1px solid var(--text); }

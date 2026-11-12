@@ -10,7 +10,7 @@
 
   function systemTheme() { return media.matches ? 'light' : 'dark'; }
   function savedTheme() {
-    try { const t = localStorage.getItem(STORAGE_KEY); return (t === 'light' || t === 'dark') ? t : null; }
+    try { const t = localStorage.getItem(STORAGE_KEY); return (t === 'light' || t === 'dark' || t === 'blueprint') ? t : null; }
     catch (e) { return null; }
   }
   function getPreferred() { return savedTheme() || systemTheme(); }
@@ -41,7 +41,8 @@
 
     const btn = document.getElementById('theme-toggle');
     if (btn) {
-      // Easter egg: seven quick clicks open a secret "Blueprint" theme (not saved).
+      // Easter egg: three quick clicks open a secret "Blueprint" theme. It stays (also after a
+      // reload) until the button is clicked again, which brings back the theme chosen before.
       // Quick clicks after the first do not switch the theme, so the page never flashes.
       let clicks = 0, last = 0, before = null;
       btn.addEventListener('click', function () {
@@ -49,19 +50,34 @@
         const quick = now - last < 500;
         last = now;
         const current = root.getAttribute('data-theme');
-        if (current === 'blueprint') { clicks = 0; applyTheme(getPreferred()); return; }
+        if (current === 'blueprint') {
+          clicks = 0;
+          let back = null; try { back = localStorage.getItem('theme-before-blueprint'); localStorage.removeItem('theme-before-blueprint'); } catch (e) {}
+          try { if (back) localStorage.setItem(STORAGE_KEY, back); else localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+          const n = document.querySelector('.bp-note'); if (n) n.remove();
+          applyTheme(getPreferred());
+          return;
+        }
         clicks = quick ? clicks + 1 : 1;
         // remember the choice before this burst of clicks, to give it back when leaving Blueprint
         if (clicks === 1) { try { before = localStorage.getItem(STORAGE_KEY); } catch (e) { before = null; } }
-        if (clicks >= 7) {
+        if (clicks >= 3) {
           clicks = 0;
-          try { if (before) localStorage.setItem(STORAGE_KEY, before); else localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+          try {
+            if (before) localStorage.setItem('theme-before-blueprint', before); else localStorage.removeItem('theme-before-blueprint');
+            localStorage.setItem(STORAGE_KEY, 'blueprint');
+          } catch (e) {}
           applyTheme('blueprint');
+          // a small note at the top, for about five seconds, with a button to close it
+          const old = document.querySelector('.bp-note'); if (old) old.remove();
           const t = document.createElement('div');
-          t.className = 'toast is-visible'; t.setAttribute('role', 'status');
-          t.innerHTML = '<i class="fa-solid fa-compass-drafting" aria-hidden="true"></i>Blueprint mode. Click the button again to leave.';
+          t.className = 'bp-note'; t.setAttribute('role', 'status');
+          t.innerHTML = '<i class="fa-solid fa-helmet-safety" aria-hidden="true"></i><span>Blueprint mode. Click the theme button again to leave.</span>' +
+            '<button type="button" class="bp-note__close" aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>';
           document.body.appendChild(t);
-          setTimeout(function () { t.classList.remove('is-visible'); setTimeout(function () { t.remove(); }, 400); }, 3200);
+          const close = function () { t.remove(); };
+          t.querySelector('.bp-note__close').addEventListener('click', close);
+          setTimeout(close, 5500);
           return;
         }
         if (!quick) chooseTheme(current === 'dark' ? 'light' : 'dark');
@@ -702,9 +718,13 @@
     let ticking = false, doneShown = false;
     const update = function () {
       ticking = false;
+      // read = how much of the text has passed the reading line (80% of the screen height);
+      // at the very bottom of the page it is always 1, even if the text cannot scroll that far
       const r = content.getBoundingClientRect();
-      const total = r.height - window.innerHeight * 0.6;
-      const p = total > 0 ? Math.min(1, Math.max(0, (-r.top + window.innerHeight * 0.25) / total)) : 1;
+      const vh = window.innerHeight;
+      const atBottom = window.scrollY + vh >= document.documentElement.scrollHeight - 4;
+      const p = atBottom ? 1 : Math.min(1, Math.max(0, (vh * 0.8 - r.top) / r.height));
+      const total = r.height;
       bar.style.transform = 'scaleX(' + p + ')';
       // easter egg: a small check when the end is reached (once per visit of the page)
       if (p >= 0.995 && !doneShown && total > window.innerHeight) {
@@ -731,7 +751,8 @@
     if (!target) return;
     const url = location.href.split('#')[0] + '#' + id;
     history.replaceState(null, '', '#' + id);
-    target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    const still = reduce || document.documentElement.dataset.theme === 'blueprint';
+    target.scrollIntoView({ behavior: still ? 'auto' : 'smooth', block: 'start' });
     flash(target);
     if (doCopy) copy(url).then(function () { say('<i class="fa-solid fa-link" aria-hidden="true"></i>Link copied'); }, function () {});
   }

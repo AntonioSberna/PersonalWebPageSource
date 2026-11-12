@@ -73,7 +73,7 @@
   (function(){
     var t=null;
     try { t=localStorage.getItem('theme-choice'); } catch(e){}
-    if (t!=='light' && t!=='dark') t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+    if (t!=='light' && t!=='dark' && t!=='blueprint') t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
     document.documentElement.setAttribute('data-theme',t);
     // small animations (main.css, end): enabled before the first paint, unless motion is reduced
     if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('anim');
