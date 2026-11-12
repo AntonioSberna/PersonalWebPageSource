@@ -17,7 +17,7 @@ abstract: "The response of reinforced concrete (RC) frame building structures to
 summary: "An analysis of the effect of masonry infills on progressive collapse of RC frame structures."
 in_short: "If a column of a concrete building is suddenly lost, can the rest of the structure hold, or does the collapse spread? This study looks at how the masonry walls inside the frame influence the outcome."
 tags: ["progressive collapse", "masonry infills", "concrete structures", "OpenSees", "non-linear dynamic analysis"]
-url_pdf: "https://www.sciencedirect.com/science/article/pii/S2352012423005817?via%3Dihub"
+url_source: "https://www.sciencedirect.com/science/article/pii/S2352012423005817?via%3Dihub"
 ---
 
 Published in **Structures**, Vol. 54.

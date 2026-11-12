@@ -16,6 +16,7 @@ abstract: "The paper presents a new empirical expression estimating the out-of-p
 summary: "Genetic algorithm application to determine an empirical formulation for OOP strength of infills from experimental and numerical results."
 in_short: "The masonry walls that fill the frames of concrete buildings can be pushed outwards by an earthquake. This study offers a simple formula, based on laboratory tests and computer simulations, to estimate how strong these walls are against that push."
 tags: ["masonry infills", "out-of-plane", "genetic algorithms", "non-linear data fitting", "multivariate analysis"]
+url_source: "https://www.sciencedirect.com/science/article/pii/S014102962200534X"
 ---
 
 ## Highlights
