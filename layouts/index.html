@@ -11,46 +11,48 @@
         <!-- Social icon links (below photo) -->
         <ul class="network-icon" aria-label="Social and academic profiles">
           <li>
-            <a href="{{ site.Params.social.email }}" title="Email">
-              <i class="fas fa-envelope"></i>
+            <a href="{{ site.Params.social.email }}" aria-label="Email" data-label="Email">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="{{ site.Params.social.orcid }}" target="_blank" rel="noopener" title="ORCID">
-              <i class="ai ai-orcid"></i>
+            <a href="{{ site.Params.social.orcid }}" target="_blank" rel="noopener" aria-label="ORCID" data-label="ORCID">
+              <i class="ai ai-orcid" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="{{ site.Params.social.scopus }}" target="_blank" rel="noopener" title="Scopus">
-              <i class="ai ai-scopus"></i>
+            <a href="{{ site.Params.social.scopus }}" target="_blank" rel="noopener" aria-label="Scopus" data-label="Scopus">
+              <i class="ai ai-scopus" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="{{ site.Params.social.researchgate }}" target="_blank" rel="noopener" title="ResearchGate">
-              <i class="ai ai-researchgate"></i>
+            <a href="{{ site.Params.social.researchgate }}" target="_blank" rel="noopener" aria-label="ResearchGate" data-label="ResearchGate">
+              <i class="ai ai-researchgate" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="{{ site.Params.social.wos }}" target="_blank" rel="noopener" title="Web of Science / Clarivate">
-              <i class="ai ai-clarivate"></i>
+            <a href="{{ site.Params.social.wos }}" target="_blank" rel="noopener" aria-label="Web of Science / Clarivate" data-label="Web of Science">
+              <i class="ai ai-clarivate" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="{{ site.Params.social.scholar }}" target="_blank" rel="noopener" title="Google Scholar">
-              <i class="ai ai-google-scholar"></i>
+            <a href="{{ site.Params.social.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar" data-label="Google Scholar">
+              <i class="ai ai-google-scholar" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="{{ site.Params.social.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
+            <a href="{{ site.Params.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" data-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="{{ site.Params.social.github }}" target="_blank" rel="noopener" title="GitHub">
-              <i class="fab fa-github"></i>
+            <a href="{{ site.Params.social.github }}" target="_blank" rel="noopener" aria-label="GitHub" data-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
             </a>
           </li>
         </ul>
+        <!-- name of the icon under the mouse (assets/js/main.js); screen readers use aria-label -->
+        <p class="network-label" aria-hidden="true"><span class="network-label__text">Profiles</span></p>
       </div>
 
       <div>
@@ -218,7 +220,7 @@
       <div class="contact-items">
         {{ with site.Params.emails }}
         <div class="contact-item">
-          <div class="contact-item__icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-item__icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
           <div>
             <div class="contact-item__label">Email</div>
             {{ range $i, $e := . }}
@@ -231,7 +233,7 @@
         </div>
         {{ end }}
         <div class="contact-item">
-          <div class="contact-item__icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-item__icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
           <div>
             <div class="contact-item__label">Address</div>
             <div class="contact-item__value">
@@ -244,7 +246,7 @@
         </div>
         {{ with site.Params.pgp }}
         <div class="contact-item">
-          <div class="contact-item__icon"><i class="fas fa-key"></i></div>
+          <div class="contact-item__icon"><i class="fas fa-key" aria-hidden="true"></i></div>
           <div>
             <div class="contact-item__label">PGP key</div>
             <div class="contact-item__value">

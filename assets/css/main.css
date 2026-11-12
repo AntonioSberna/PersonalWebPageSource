@@ -311,7 +311,7 @@ section:nth-child(even) { background: var(--bg-alt); }
   text-decoration: none;
 }
 
-.network-icon li a:hover {
+.network-icon li a:hover, .network-icon li a:focus-visible {
   background: var(--accent-light);
   border-color: var(--accent);
   color: var(--accent);
@@ -1653,3 +1653,29 @@ main:focus { outline: none; }
 /* long e-mail addresses wrap on very narrow screens (WCAG 1.4.10, reflow at 320px) */
 .contact-item > div { min-width: 0; }
 .contact-item__value a { overflow-wrap: anywhere; }
+
+/* Home: the name of the profile icon under the mouse, in a line below the icons */
+.network-label {
+  height: 1.3rem; margin: 0.6rem 0 0; overflow: hidden;
+  text-align: center; font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted);
+}
+.network-label__text {
+  display: inline-block; position: relative; padding-bottom: 0.2rem;
+  transition: opacity 0.16s ease, transform 0.16s ease, color 0.2s;
+}
+/* a short accent line grows under the name */
+.network-label__text::after {
+  content: ""; position: absolute; left: 50%; bottom: 0; height: 2px; width: 0;
+  background: var(--accent); border-radius: 2px; transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+.network-label.is-active .network-label__text { color: var(--accent); }
+.network-label.is-active .network-label__text::after { width: 1.4rem; }
+.network-label__text.is-leaving { opacity: 0; transform: translateY(-0.45rem); }
+.network-label__text.is-entering { opacity: 0; transform: translateY(0.45rem); transition: none; }
+@media (hover: none) { .network-label { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .network-label__text, .network-label__text::after { transition: none; }
+  .network-label__text.is-leaving, .network-label__text.is-entering { transform: none; }
+}

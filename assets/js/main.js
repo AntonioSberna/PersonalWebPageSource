@@ -817,3 +817,38 @@
   // (not when it was opened from the keyboard: focusing a link scrolls the page itself)
   window.addEventListener('scroll', function () { if (!byKeyboard && card && card.classList.contains('is-visible')) hide(); }, { passive: true });
 })();
+
+// ============================================================
+//  Home: show the name of the profile icon under the mouse (or keyboard focus)
+// ============================================================
+(function () {
+  const list = document.querySelector('.network-icon');
+  const line = document.querySelector('.network-label');
+  if (!list || !line) return;
+  const text = line.querySelector('.network-label__text');
+  const rest = text.textContent;
+  let current = rest, timer = 0, back = 0;
+  function set(label, active) {
+    clearTimeout(back);
+    line.classList.toggle('is-active', active);
+    if (label === current) return;
+    current = label;
+    clearTimeout(timer);
+    text.classList.add('is-leaving');
+    timer = setTimeout(function () {
+      text.textContent = label;
+      text.classList.remove('is-leaving');
+      text.classList.add('is-entering');
+      void text.offsetWidth;                       // restart from below
+      text.classList.remove('is-entering');
+    }, 140);
+  }
+  list.querySelectorAll('a[data-label]').forEach(function (a) {
+    const show = function () { set(a.dataset.label, true); };
+    a.addEventListener('mouseenter', show);
+    a.addEventListener('focus', show);
+  });
+  const reset = function () { back = setTimeout(function () { set(rest, false); }, 250); };
+  list.addEventListener('mouseleave', reset);
+  list.addEventListener('focusout', function (e) { if (!list.contains(e.relatedTarget)) reset(); });
+})();
