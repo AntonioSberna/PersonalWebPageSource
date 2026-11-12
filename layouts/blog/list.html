@@ -26,6 +26,7 @@
         <div class="blog-card__body">
           <div class="blog-card__meta">
             {{ .Date.Format "2 January 2006" }}{{ with .Params.place }} · {{ . }}{{ end }}
+            {{- with partial "post-updates.html" . }}{{ $last := index . (sub (len .) 1) }} <span class="blog-card__updated" title="Last update: {{ $last.Format "2 January 2006" }}">Updated</span>{{ end }}
           </div>
           <div class="blog-card__title">{{ .Title }}</div>
           {{ with .Params.subtitle }}<div class="blog-card__subtitle">{{ . | markdownify }}</div>{{ end }}

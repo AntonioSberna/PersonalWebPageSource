@@ -25,7 +25,7 @@ If agents can take on a Millennium Prize problem, what about us? Let us be hones
 * generating the data;
 * writing the paper.
 
-Richard Hamming reminded us that "the purpose of computing is insight, not numbers."{{< note >}}R. W. Hamming, *Numerical Methods for Scientists and Engineers*, 1962 ([Wikiquote](https://en.wikiquote.org/wiki/Richard_Hamming#:~:text=The%20purpose%20of%20computing%20is%20insight%2C%20not%20numbers)).{{< /note >}} The uncomfortable question is what remains for us when the machine delivers both.
+Richard Hamming reminded us that *"the purpose of computing is insight, not numbers."* {{< note >}}R. W. Hamming, *Numerical Methods for Scientists and Engineers*, 1962 ([Wikiquote](https://en.wikiquote.org/wiki/Richard_Hamming#:~:text=The%20purpose%20of%20computing%20is%20insight%2C%20not%20numbers)).{{< /note >}} The uncomfortable question is what remains for us when the machine delivers both.
 
 
 ## First refuge: the laboratory
@@ -53,22 +53,14 @@ Maybe at the next ECEE the elephant will get its own session. It will probably h
 
 ![](tu_berlin.jpg)
 
-<br><br><br><br>
-
----
-**October 7th 2026**
-
+{{% update date="2026-10-07" %}}
 P.S. A few weeks later came the confirmation: [OpenAI is giving mathematics a thorough beating](https://www.theguardian.com/technology/2026/oct/07/openai-mathematical-findings-concerns). The queen of the sciences, as Gauss called it,{{< note >}}The full quote is [on Wikiquote](https://en.wikiquote.org/wiki/Carl_Friedrich_Gauss#:~:text=Mathematics%20is%20the%20queen%20of%20the%20sciences).{{< /note >}} falls first, perhaps precisely because she is the more rigouros: no laboratories, no construction sites, only symbols and a proof checker that drink too much coffee. Next come the disciplines further down the ladder of abstraction: physics, chemistry, mechanics... and structural engineering? When will our turn come? Or, more honestly: are we sure it has not come already, and we are simply waiting for the next shock to notice?
 
 More to read about it: [Is AI the end of math as we know it?](https://www.quantamagazine.org/is-ai-the-end-of-math-as-we-know-it-20261005/)
 
+{{% /update %}}
 
-
-<br><br>
-
----
-**October 21st, 2026**
-
+{{% update date="2026-10-21" %}}
 Just today I listened to the new episode of *The Rest Is Science*. Even a podcast, hardly the slowest of formats, struggles to keep pace with what is happening, which says a lot about how disruptive this is. (That is my comment no. 1.)
 
 A side note: the episode is ___ (candidates may insert their favourite positive adjective here; I have run out of words). I usually listen to podcasts on my commute to the university, but this time I got completely lost in it, and my brain walked me down the street on autopilot. I hope I did not cross on a red light :-). Hannah Fry's explanation of the problem itself is remarkable, accessible to an almost unfair degree. I will leave that part alone, though. The last time I looked at the Navier-Stokes equations was ten years ago, when my hydraulics professor, after a couple of weeks spent setting up the problem, finally wrote them on the board and said something like: "This is how it works. But we cannot solve them, which is why you are here. This is where my course begins." My comments are about the second part.
@@ -85,12 +77,9 @@ A side note: the episode is ___ (candidates may insert their favourite positive 
 
 _p.s. to the p.s.: the metaphor in the title is brilliant, and it carries a whole chain of interesting thoughts._
 
+{{% /update %}}
 
-<br><br>
-
----
-**November 8th, 2026**
-
+{{% update date="2026-11-08" %}}
 This is the last addendum to this post, I promise. At this rate I should write a post made only of addenda, at least until the next release makes that one obsolete too.
 
 The new batch of AI-written papers that OpenAI has just made [public](https://github.com/openai/math/tree/main/preprints) shows something else. In my view it is the final blow to a sector that everyone already describes as a bubble: academic publishing. Driven by the bibliometric indicators that decide careers and in some way also grants, the number of scientific publications has exploded. In the twentieth century Erdos stunned everyone with around 30-ish papers a year. Today, take a stroll through the CVs on any university website and look at the numbers. I doubt everyone has become as brilliant (and as eccentric) as Erdos. For a few generations now, what counts in academia is no longer what, but how much. I have seen plenty of it in my short career. I will stop the rant here, or I will never finish.
@@ -99,3 +88,5 @@ Science communicators, especially in fields closer to the public such as medicin
 
 
 But what about hundreds of thousands, packed so tightly that they blur into one another? How long will the brightest stars remain recognisable? The risk is a sky that turns into a Milky Way{{< note >}}Something like [this](https://apod.nasa.gov/apod/ap240718.html){{< /note >}}: luminous, beautiful, and useless for finding north.
+
+{{% /update %}}

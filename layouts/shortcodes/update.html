@@ -1,0 +1,16 @@
+{{- /* Dated addendum to a post. Usage (note the % delimiters, so the text is Markdown):
+       {{% update date="2026-11-08" %}}
+       Text of the addendum...
+       {{% /update %}}
+       Each update gets an anchor (#update-2026-11-08), a place in the post's timeline,
+       a line in the contents and in the header ("Updated 3 times"). */ -}}
+{{- $d := time.AsTime (.Get "date") -}}
+{{- $id := printf "update-%s" ($d.Format "2006-01-02") -}}
+<div class="post-update" id="{{ $id }}">
+<div class="post-update__head"><span class="post-update__dot" aria-hidden="true"></span><span class="post-update__label">Update</span><a class="post-update__date" href="#{{ $id }}" title="Link to this update">{{ $d.Format "2 January 2006" }}</a></div>
+<div class="post-update__body">
+
+{{ .Inner }}
+
+</div>
+</div>

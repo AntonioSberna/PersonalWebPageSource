@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{- $updates := partial "post-updates.html" . -}}
+<div class="read-progress" aria-hidden="true"><span class="read-progress__bar"></span></div>
 <div class="page-header">
   <div class="container">
     <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0.5rem">
@@ -10,7 +12,11 @@
       <span>{{ .Date.Format "2 January 2006" }}</span>
       {{ with .Params.place }}<span>{{ . }}</span>{{ end }}
     </div>
-    <div class="blog-post__reading">{{ .ReadingTime }} min read</div>
+    <div class="blog-post__reading">{{ .ReadingTime }} min read
+      {{- with $updates }}{{ $last := index . (sub (len .) 1) }}
+      <span class="blog-post__updated"> · <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Updated {{ if eq (len .) 1 }}once{{ else }}{{ len . }} times{{ end }}, last on <a href="#update-{{ $last.Format "2006-01-02" }}">{{ $last.Format "2 January 2006" }}</a></span>
+      {{- end }}
+    </div>
   </div>
 </div>
 
@@ -19,9 +25,26 @@
     <article class="blog-post">
       {{ with .Resources.GetMatch "featured.*" }}
       <div class="blog-post__img">
-        <img src="{{ partial "web-image.html" (dict "img" . "width" 1440) }}" alt="{{ $.Title }}">
+        <img src="{{ partial "web-image.html" (dict "img" . "width" 1440) }}" alt="{{ $.Title }}" data-full="{{ partial "web-image.html" (dict "img" . "width" 2560) }}">
       </div>
       {{ end }}
+      {{- /* Contents: for posts with at least 3 sections, or with updates */ -}}
+      {{- $sections := len (findRE `(?m)^## ` .RawContent) -}}
+      {{- if or (ge $sections 3) (and $updates (ge $sections 1)) }}
+      <nav class="post-toc" aria-label="Contents">
+        <button type="button" class="post-toc__toggle" aria-expanded="false"><i class="fa-solid fa-list-ul" aria-hidden="true"></i> Contents</button>
+        <div class="post-toc__list">
+          <div class="post-toc__title">Contents</div>
+          {{ .TableOfContents }}
+          {{- with $updates }}
+          <div class="post-toc__title post-toc__title--updates">Updates</div>
+          <ul class="post-toc__updates">
+            {{- range . }}<li><a href="#update-{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</a></li>{{ end }}
+          </ul>
+          {{- end }}
+        </div>
+      </nav>
+      {{- end }}
       <div class="teaching-content blog-post__content">
         {{ .Content }}
       </div>

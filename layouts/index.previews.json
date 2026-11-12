@@ -1,0 +1,21 @@
+{{- /* Data for the hover previews of internal links (see hugo.toml, outputFormats.previews). */ -}}
+{{- $kinds := dict "blog" "Blog post" "papers" "Paper" "proceedings" "Conference paper" "research" "Research" "teaching" "Teaching" -}}
+{{- $out := dict -}}
+{{- range site.Pages -}}
+  {{- $type := index $kinds .Section -}}
+  {{- if and $type (not .Draft) (ne .Kind "taxonomy") (ne .Kind "term") -}}
+    {{- $text := "" -}}
+    {{- if eq .Section "blog" -}}
+      {{- $text = .Description | default (partial "post-summary.html" .) -}}
+    {{- else -}}
+      {{- $text = .Params.in_short | default .Description | default (.Params.summary | default "" | plainify) -}}
+    {{- end -}}
+    {{- $img := "" -}}
+    {{- with .Resources.GetMatch "featured.*" -}}{{- if in (slice "jpeg" "png" "webp") .MediaType.SubType -}}{{- $img = (.Fill "240x160 Center webp q75").RelPermalink -}}{{- end -}}{{- end -}}
+    {{- $date := "" -}}
+    {{- if and .IsPage (not .Date.IsZero) -}}{{- $date = .Date.Format "2 January 2006" -}}{{- end -}}
+    {{- if and (eq .Section "papers") .Params.publication -}}{{- $date = .Params.publication | plainify -}}{{- end -}}
+    {{- $out = merge $out (dict .RelPermalink (dict "type" (cond .IsPage $type "Section") "title" (.Title | plainify) "date" $date "text" (truncate 220 ($text | plainify | htmlUnescape)) "img" $img)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $out | jsonify -}}

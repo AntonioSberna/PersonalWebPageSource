@@ -1,0 +1,6 @@
+{{- /* Dates of the {{% update %}} blocks of a post, oldest first, as time values. */ -}}
+{{- $dates := slice -}}
+{{- range findRESubmatch `\{\{[<%]\s*update\s+date="(\d{4}-\d{2}-\d{2})"` .RawContent -}}
+  {{- $dates = $dates | append (time.AsTime (index . 1)) -}}
+{{- end -}}
+{{- return (sort $dates) -}}

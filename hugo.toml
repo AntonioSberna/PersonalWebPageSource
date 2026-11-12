@@ -116,6 +116,17 @@ If that all sounded like jargon, here is [my research in plain words](/research/
     mapURL = "https://www.openstreetmap.org/export/embed.html?bbox=14.1728%2C42.4013%2C14.2728%2C42.5013&layer=mapnik&marker=42.4513%2C14.2228"
     mapLink = "https://www.openstreetmap.org/node/12755384821"
 
+# previews.json: titles and short texts of posts, papers and pages, used by the
+# hover previews of internal links in blog posts (assets/js/main.js).
+[outputFormats.previews]
+  mediaType = "application/json"
+  baseName = "previews"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "previews"]
+
 [taxonomies]
   tag = "tags"
   category = "categories"

@@ -1,4 +1,6 @@
-{{- /* Markdown images: lighter copy for files in the post folder, external links unchanged. */ -}}
+{{- /* Markdown images: lighter copy for files in the post folder, external links unchanged.
+       data-full: larger copy opened by the image viewer (assets/js/main.js; skipped if the image is inside a link). */ -}}
 {{- $src := .Destination -}}
-{{- with .PageInner.Resources.GetMatch .Destination }}{{ $src = partial "web-image.html" (dict "img" . "width" 1440) }}{{ end -}}
-<img src="{{ $src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
+{{- $full := .Destination -}}
+{{- with .PageInner.Resources.GetMatch .Destination }}{{ $src = partial "web-image.html" (dict "img" . "width" 1440) }}{{ $full = partial "web-image.html" (dict "img" . "width" 2560) }}{{ end -}}
+<img src="{{ $src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" data-full="{{ $full }}">
