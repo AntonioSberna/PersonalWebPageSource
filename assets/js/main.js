@@ -198,7 +198,7 @@
           const head = document.createElement('div');
           head.className = 'mc__head';
           const av = document.createElement('img');
-          av.className = 'mc__avatar'; av.alt = ''; av.loading = 'lazy';
+          av.className = 'mc__avatar'; av.alt = ''; av.loading = 'lazy';   // decorative: the name follows
           av.src = httpUrl(s.account.avatar_static);
           const who = document.createElement('a');
           who.className = 'mc__who'; who.target = '_blank'; who.rel = 'nofollow noopener ugc';
@@ -223,10 +223,13 @@
           } else {
             body.append(...clean(s.content).childNodes);
           }
+          if (s.language) body.lang = s.language;   // screen readers use the right voice
           li.append(head, body);
           list.append(li);
         });
-        status.textContent = ctx.descendants.length ? '' : 'No replies yet: be the first.';
+        const n = ctx.descendants.length;
+        // the visible line stays empty when there are replies; screen readers hear how many arrived
+        status.innerHTML = n ? '<span class="sr-only">' + n + (n === 1 ? ' reply' : ' replies') + ' loaded.</span>' : 'No replies yet: be the first.';
       };
       btn.addEventListener('click', function () {
         btn.disabled = true;
@@ -235,9 +238,16 @@
           if (!rs[0].ok || !rs[1].ok) throw new Error('HTTP');
           return Promise.all(rs.map(function (r) { return r.json(); }));
         }).then(function (d) {
-          stats.textContent = '\u2665 ' + d[0].favourites_count + '  \u00b7  \u21bb ' + d[0].reblogs_count + '  \u00b7  ' + d[0].replies_count + (d[0].replies_count === 1 ? ' reply' : ' replies');
-          btn.remove();
+          const fav = d[0].favourites_count, boo = d[0].reblogs_count, rep = d[0].replies_count;
+          // symbols for the eye, words for screen readers
+          stats.innerHTML = '<span aria-hidden="true">\u2665 ' + fav + '  \u00b7  \u21bb ' + boo + '  \u00b7  </span>' +
+            '<span class="sr-only">' + fav + (fav === 1 ? ' favourite, ' : ' favourites, ') + boo + (boo === 1 ? ' boost, ' : ' boosts, ') + '</span>' +
+            rep + (rep === 1 ? ' reply' : ' replies');
           render(d[1]);
+          // the button disappears: move the focus to the comments, not to the top of the page
+          const title = mc.querySelector('.mc__title');
+          btn.remove();
+          if (title) title.focus({ preventScroll: true });
         }).catch(function () {
           btn.disabled = false;
           status.textContent = 'Could not load the replies. Try again, or read them on Mastodon.';

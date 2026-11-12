@@ -5,9 +5,9 @@
 {{- $u := urls.Parse . -}}
 {{- $id := path.Base $u.Path -}}
 <div class="mc" id="mastodon-comments" role="region" data-host="{{ $u.Host }}" data-id="{{ $id }}" aria-label="Comments">
-  <h2 class="mc__title">Comments</h2>
+  <h2 class="mc__title" tabindex="-1">Comments</h2>
   <p class="mc__intro">Comments live on Mastodon: <a href="{{ . }}" target="_blank" rel="noopener">reply to this post</a> from your account and your reply will appear here.</p>
-  <div class="mc__stats" aria-live="polite"></div>
+  <div class="mc__stats"></div>
   <button type="button" class="btn-pub mc__load">Load comments</button>
   <small class="mc__privacy">Loads text and avatars from {{ $u.Host }}.</small>
   <p class="mc__status" aria-live="polite"></p>

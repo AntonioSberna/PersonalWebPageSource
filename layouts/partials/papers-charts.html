@@ -12,15 +12,15 @@
 
   <div class="pc-card">
     <div class="pc-matrix" id="topic-matrix" role="group" aria-label="Number of papers per topic and year" style="--years: {{ $nY }}">
-      <div></div>
-      {{- range $years }}<div class="pc-matrix__y">{{ . }}</div>{{ end }}
+      <div aria-hidden="true"></div>
+      {{- range $years }}<div class="pc-matrix__y" aria-hidden="true">{{ . }}</div>{{ end }}
       {{- range hugo.Data.paper_topics.topics }}
       {{- $label := .label }}{{- $slug := urlize .label }}
       <button type="button" class="pc-matrix__topic" data-row="{{ $slug }}" data-chart-topic="{{ $slug }}">{{ $label }}</button>
       {{- range $years }}
       {{- $n := $c.Get (printf "%s/%d" $slug .) | default 0 }}
-      <div class="pc-matrix__cell" data-row="{{ $slug }}"{{ if $n }} tabindex="0" data-tip="{{ $label }}, {{ . }}: {{ $n }} {{ cond (eq $n 1) "paper" "papers" }}"{{ end }}>
-        {{- if $n }}<span class="pc-dot" style="--d: {{ mul 8 (math.Sqrt $n) }}px"></span>{{ else }}<span class="pc-dot pc-dot--none"></span>{{ end -}}
+      <div class="pc-matrix__cell" data-row="{{ $slug }}"{{ if $n }} tabindex="0" data-tip="{{ $label }}, {{ . }}: {{ $n }} {{ cond (eq $n 1) "paper" "papers" }}"{{ else }} aria-hidden="true"{{ end }}>
+        {{- if $n }}<span class="pc-dot" aria-hidden="true" style="--d: {{ mul 8 (math.Sqrt $n) }}px"></span><span class="sr-only">{{ $label }}, {{ . }}: {{ $n }} {{ cond (eq $n 1) "paper" "papers" }}</span>{{ else }}<span class="pc-dot pc-dot--none"></span>{{ end -}}
       </div>
       {{- end }}
       {{- end }}

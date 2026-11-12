@@ -36,6 +36,7 @@
 {{- end -}}
 {{- /* leftover HTML used for layout */ -}}
 {{- $c = replaceRE `<br\s*/?>` "" $c -}}
+{{- $c = replaceRE `<i lang="[^"]*">(.*?)</i>` "*$1*" $c -}}
 {{- $c = replaceRE `(?s)<p class="post-credits">(.*?)</p>` "$1" $c -}}
 {{- /* text written by a model: keep its boundaries explicit */ -}}
 {{- $c = replaceRE `(?s)<div class="llm-answer" data-model="([^"]*)">(.*?)</div>` "*[Beginning of the answer written by $1]*\n$2\n*[End of the answer written by $1]*" $c -}}

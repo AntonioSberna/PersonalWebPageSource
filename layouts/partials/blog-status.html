@@ -13,17 +13,19 @@
 {{- $marks := and .discarded (in (slice "bin" "crosses") $style) -}}
 {{- $total := 0 -}}{{- range $items }}{{ $total = add $total .n }}{{ end -}}
 {{- if gt $total 0 -}}
-<div class="blog-status" aria-label="Blog status">
+<div class="blog-status" role="group" aria-label="Blog status">
   <div class="blog-status__row">
-  <div class="blog-status__bar">
+  <div class="blog-status__bar" aria-hidden="true">
     {{- range $items }}{{ if gt .n 0 }}
     <span class="blog-status__seg blog-status--{{ .key }}" style="flex-grow: {{ .n }}" title="{{ .n }} {{ .label }}"></span>
     {{- end }}{{ end }}
   </div>
   {{- if $marks }}
-  <span class="blog-status__marks blog-status__marks--{{ $style }}" tabindex="0" data-tip="{{ .discarded }} discarded along the way" aria-label="{{ .discarded }} discarded">
-    {{- if eq $style "bin" }}<i class="fa-regular fa-trash-can" aria-hidden="true"></i> {{ .discarded -}}
+  <span class="blog-status__marks blog-status__marks--{{ $style }}" tabindex="0" data-tip="{{ .discarded }} discarded along the way">
+    <span aria-hidden="true">
+    {{- if eq $style "bin" }}<i class="fa-regular fa-trash-can"></i> {{ .discarded -}}
     {{- else if le .discarded 5 }}{{ strings.Repeat .discarded "×" }}{{ else }}×{{ .discarded }}{{ end -}}
+    </span><span class="sr-only">{{ .discarded }} {{ cond (eq .discarded 1) "post" "posts" }} discarded along the way</span>
   </span>
   {{- end }}
   </div>
@@ -33,7 +35,7 @@
     {{- end }}
   </ul>
   {{- if and .discarded (not $marks) }}{{ with .discarded }}
-  <div class="blog-status__discarded" tabindex="0" data-tip="Posts started, then dropped"><strong>{{ . }}</strong> <s>discarded</s> along the way</div>
+  <div class="blog-status__discarded" tabindex="0" data-tip="Posts started, then dropped"><strong>{{ . }}</strong> <s>discarded</s> along the way<span class="sr-only"> (posts started, then dropped)</span></div>
   {{- end }}{{ end }}
 </div>
 {{- end -}}
