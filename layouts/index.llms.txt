@@ -1,0 +1,38 @@
+{{- /* /llms.txt: a map of the site for language models (https://llmstxt.org). */ -}}
+{{- $base := strings.TrimSuffix "/" site.BaseURL -}}
+# {{ site.Title }}
+
+> {{ site.Params.role }} at the {{ site.Params.organization }} (Italy). Research on earthquake engineering: seismic retrofitting of existing structures, performance-based earthquake engineering, reduced-order modelling, regional-scale seismic risk; more recently, agentic workflows for structural engineering.
+
+Personal academic website: research, publications, activities and a blog of opinion essays on research in the age of AI agents. Blog posts are also available as clean Markdown (the links below), with margin notes as footnotes and later additions as dated "Update" sections.
+
+Agents reading this site on behalf of a person are welcome. Automated collection for training models is not permitted (see {{ $base }}/robots.txt). Texts and original images are licensed CC BY 4.0 ({{ "license/" | absURL }}): please attribute to {{ site.Params.author }} and link the page.
+
+## Blog posts
+
+{{ range (where site.RegularPages "Section" "blog").ByDate.Reverse -}}
+{{- $md := .OutputFormats.Get "markdown" -}}
+{{- $updates := partial "post-updates.html" . -}}
+- [{{ .Title }}]({{ with $md }}{{ .Permalink }}{{ else }}{{ $.Permalink }}{{ end }}): {{ with .Description }}{{ . }}{{ else }}{{ partial "post-summary.html" . | truncate 160 }}{{ end }} ({{ .Date.Format "2 January 2006" }}{{ with $updates }}{{ $last := index . (sub (len .) 1) }}; updated {{ $last.Format "2 January 2006" }}{{ end }})
+{{ end }}
+## Research
+
+{{ with site.GetPage "/research" -}}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
+{{ end -}}
+{{ range (where site.RegularPages "Section" "papers").ByDate.Reverse -}}
+- [{{ .Title | plainify }}]({{ .Permalink }}): {{ if .Params.status }}Manuscript {{ .Params.status }}{{ with .Params.publication }} ({{ . | plainify }}){{ end }}{{ else }}{{ with .Params.publication }}{{ . | plainify }}, {{ end }}{{ .Date.Year }}{{ end }}.{{ with .Params.in_short }} {{ . | plainify }}{{ end }}
+{{ end }}
+## About
+
+- [Home page]({{ site.Home.Permalink }}): short biography, education, activities and contacts
+- [Curriculum vitae (PDF)]({{ site.Params.social.cv | absURL }})
+- [ORCID]({{ site.Params.social.orcid }})
+- [Google Scholar]({{ site.Params.social.scholar }})
+- [Mastodon]({{ site.Params.social.mastodon }})
+- [GitHub]({{ site.Params.social.github }})
+
+## Optional
+
+- [Conference papers]({{ "proceedings/" | absURL }}): full list, with links to the extended journal versions
+- [RSS feed of the blog]({{ with site.GetPage "/blog" }}{{ with .OutputFormats.Get "rss" }}{{ .Permalink }}{{ end }}{{ end }})

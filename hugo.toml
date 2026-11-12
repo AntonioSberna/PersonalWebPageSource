@@ -124,8 +124,23 @@ If that all sounded like jargon, here is [my research in plain words](/research/
   isPlainText = true
   notAlternative = true
 
+# markdown: a clean Markdown copy of each blog post (…/post/index.md), for agents and
+# text tools; enabled for blog posts in content/blog/_index.md (cascade).
+[outputFormats.markdown]
+  mediaType = "text/markdown"
+  baseName = "index"
+  isPlainText = true
+  rel = "alternate"
+
+# llms: /llms.txt, a Markdown map of the site for language models (llmstxt.org).
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "previews"]
+  home = ["HTML", "RSS", "previews", "llms"]
 
 [taxonomies]
   tag = "tags"

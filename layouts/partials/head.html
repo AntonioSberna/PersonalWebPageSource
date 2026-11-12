@@ -14,26 +14,44 @@
 
 <!-- Structured data (JSON-LD), blog posts only -->
 {{ if and .IsPage (eq .Section "blog") }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ .Title }},
-  "description": {{ or .Description (partial "post-summary.html" .) }},
-  "url": {{ .Permalink }},
-  "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
-  {{- with .Resources.GetMatch "featured.*" }}
-  "image": {{ .Permalink }},
-  {{- end }}
-  "author": {
-    "@type": "Person",
-    "name": {{ site.Params.author }},
-    "url": {{ site.Home.Permalink }}
-  },
-  "license": {{ "license/" | absURL }}
-}
-</script>
+{{- $updates := partial "post-updates.html" . -}}
+{{- /* modified = last dated update (not the last commit, which also changes for typo fixes) */ -}}
+{{- $modified := .Date -}}
+{{- with $updates }}{{ $modified = index . (sub (len .) 1) }}{{ end -}}
+{{- $ld := dict
+    "@context" "https://schema.org"
+    "@type" "BlogPosting"
+    "headline" .Title
+    "description" (or .Description (partial "post-summary.html" .) | strings.TrimSpace)
+    "url" .Permalink
+    "mainEntityOfPage" .Permalink
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" ($modified.Format "2006-01-02T15:04:05Z07:00")
+    "inLanguage" "en"
+    "wordCount" .WordCount
+    "isAccessibleForFree" true
+    "license" ("license/" | absURL)
+    "author" (dict "@type" "Person" "name" site.Params.author "url" site.Home.Permalink
+                   "jobTitle" site.Params.role
+                   "affiliation" (dict "@type" "Organization" "name" site.Params.organization "url" site.Params.organizationURL)
+                   "sameAs" (slice site.Params.social.orcid site.Params.social.scholar site.Params.social.mastodon site.Params.social.github))
+-}}
+{{- with .Params.subtitle }}{{ $ld = merge $ld (dict "alternativeHeadline" (. | plainify)) }}{{ end -}}
+{{- with .Params.place }}{{ $ld = merge $ld (dict "locationCreated" (dict "@type" "Place" "name" .)) }}{{ end -}}
+{{- with .Resources.GetMatch "featured.*" }}{{ $ld = merge $ld (dict "image" .Permalink) }}{{ end -}}
+{{- with .Params.mastodon }}{{ $ld = merge $ld (dict "discussionUrl" .) }}{{ end -}}
+{{- with .OutputFormats.Get "markdown" }}{{ $ld = merge $ld (dict "encoding" (dict "@type" "MediaObject" "encodingFormat" "text/markdown" "contentUrl" .Permalink)) }}{{ end -}}
+{{- /* sources: the external links of the post (text and margin notes), each once */ -}}
+{{- $cites := slice -}}
+{{- range findRESubmatch `\]\((https?://[^)\s]+)\)` .RawContent -}}
+  {{- $u := index . 1 -}}
+  {{- if not (in (lower $u) "antoniosberna.github.io") }}{{ $cites = $cites | append $u }}{{ end -}}
+{{- end -}}
+{{- with uniq $cites }}{{ $c := slice }}{{ range . }}{{ $c = $c | append (dict "@type" "CreativeWork" "url" .) }}{{ end }}{{ $ld = merge $ld (dict "citation" $c) }}{{ end -}}
+<script type="application/ld+json">{{ $ld | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- with .OutputFormats.Get "markdown" }}
+<link rel="alternate" type="text/markdown" href="{{ .Permalink }}" title="Markdown version (for agents and text tools)">
+{{- end }}
 {{ end }}
 
 
