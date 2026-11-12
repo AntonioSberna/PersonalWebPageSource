@@ -21,11 +21,22 @@
     {{- end }}{{ end }}
   </div>
   {{- if $marks }}
-  <span class="blog-status__marks blog-status__marks--{{ $style }}" tabindex="0" data-tip="{{ .discarded }} discarded along the way">
+  <span class="blog-bin">
+  <button type="button" class="blog-status__marks blog-status__marks--{{ $style }}" aria-expanded="false" aria-controls="blog-bin-list" data-tip="{{ .discarded }} discarded along the way">
     <span aria-hidden="true">
     {{- if eq $style "bin" }}<i class="fa-regular fa-trash-can"></i> {{ .discarded -}}
     {{- else if le .discarded 5 }}{{ strings.Repeat .discarded "×" }}{{ else }}×{{ .discarded }}{{ end -}}
-    </span><span class="sr-only">{{ .discarded }} {{ cond (eq .discarded 1) "post" "posts" }} discarded along the way</span>
+    </span><span class="sr-only">{{ .discarded }} {{ cond (eq .discarded 1) "post" "posts" }} discarded along the way: show them</span>
+  </button>
+  {{- /* easter egg: the bin opens on the posts that did not make it (data/blog_status.yaml, discarded_titles) */}}
+  <span class="blog-bin__list" id="blog-bin-list" hidden>
+    <span class="blog-bin__head">From the bin</span>
+    {{- with .discarded_titles }}
+    {{- range . }}<span class="blog-bin__item"><s>{{ . }}</s></span>{{ end }}
+    {{- else }}
+    <span class="blog-bin__item blog-bin__item--none">The titles were thrown away too.</span>
+    {{- end }}
+  </span>
   </span>
   {{- end }}
   </div>

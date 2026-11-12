@@ -1499,7 +1499,7 @@ a[data-copy-doi].is-copied { color: var(--accent); border-color: var(--accent); 
 .blog-post__updated i { font-size: 0.85em; margin: 0 0.15em 0 0.1em; }
 
 /* Dated updates: a timeline at the end of the post */
-.post-update { margin: 3rem 0 0; padding: 0 0 0.2rem 1.6rem; border-left: 2px solid var(--border); clear: both; }
+.post-update { position: relative; margin: 3rem 0 0; padding: 0 0 0.2rem 1.6rem; border-left: 2px solid var(--border); clear: both; }
 .post-update + .post-update { margin-top: 0; padding-top: 2rem; }
 .post-update__head { position: relative; display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.7rem; }
 .post-update__dot {
@@ -1656,8 +1656,8 @@ main:focus { outline: none; }
 
 /* Home: the name of the profile icon under the mouse, in a line below the icons */
 .network-label {
-  height: 1.3rem; margin: 0.6rem 0 0; overflow: hidden;
-  text-align: center; font-size: 0.72rem; font-weight: 600;
+  height: 1.7rem; margin: 0.6rem 0 0; overflow: hidden;
+  text-align: center; font-size: 0.72rem; font-weight: 600; line-height: 1.4;
   letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted);
 }
 .network-label__text {
@@ -1679,3 +1679,145 @@ main:focus { outline: none; }
   .network-label__text, .network-label__text::after { transition: none; }
   .network-label__text.is-leaving, .network-label__text.is-entering { transform: none; }
 }
+
+/* ============================================================
+   Small animations: they answer to what the reader does, and stop
+   with "reduce motion". .anim is set on <html> by main.js, so without
+   JavaScript everything is simply shown.
+   ============================================================ */
+
+/* 1. Home: the accent line under the section titles grows when the title comes into view */
+.anim .section-header hr { width: 0; transition: width 0.7s cubic-bezier(.2,.8,.2,1) 0.1s; }
+.anim .section-header hr.is-drawn { width: 3rem; }
+
+/* 2. Blog cards: the cover zooms in a little inside its frame, the title turns blue */
+.blog-card__img img { transition: transform 0.6s cubic-bezier(.2,.8,.2,1); }
+.blog-card:hover .blog-card__img img, .blog-card:focus-visible .blog-card__img img { transform: scale(1.035); }
+.blog-card__title { transition: color 0.2s; }
+.blog-card:hover .blog-card__title, .blog-card:focus-visible .blog-card__title { color: var(--accent); }
+
+/* 3. DOI buttons: "DOI" and "Copied ✓" cross-fade, while the width follows smoothly (set by main.js) */
+a[data-copy-doi] { display: inline-block; text-align: center; white-space: nowrap; overflow: hidden; vertical-align: bottom;
+  transition: opacity 0.18s ease, width 0.3s cubic-bezier(.2,.8,.2,1), color 0.25s, border-color 0.25s; }
+a[data-copy-doi].is-fading { opacity: 0; }
+
+/* 4. Margin notes: a small pop of the number when a note opens (phones),
+      a gentle fade-in when the line of a note comes into view (wide screens) */
+@keyframes sn-pop { 0% { transform: scale(1); } 45% { transform: scale(1.35); } 100% { transform: scale(1); } }
+.sn-toggle:checked + .sn-ref { animation: sn-pop 0.32s ease-out; }
+@media (min-width: 1120px) {
+  .anim .blog-post__content .sidenote { opacity: 0; transform: translateX(6px); transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.2s, color 0.2s; }
+  .anim .blog-post__content .sidenote.is-seen { opacity: 1; transform: none; }
+}
+
+/* 5. Updates: the timeline line fills with the accent as you read, each dot fills when reached */
+.post-update::before {
+  content: ""; position: absolute; left: -2px; top: 0; bottom: 0; width: 2px;
+  background: var(--accent); transform-origin: top; transform: scaleY(var(--p, 0));
+  pointer-events: none;
+}
+.post-update.is-reached .post-update__dot { background: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim .section-header hr { width: 3rem; transition: none; }
+  .blog-card__img img { transition: none; }
+  .blog-card:hover .blog-card__img img, .blog-card:focus-visible .blog-card__img img { transform: none; }
+  a[data-copy-doi], a[data-copy-doi].is-fading { opacity: 1; transition: none; }
+  .sn-toggle:checked + .sn-ref { animation: none; }
+  .anim .blog-post__content .sidenote { opacity: 1; transform: none; transition: none; }
+  .post-update::before { display: none; }
+}
+@media print {
+  .anim .blog-post__content .sidenote { opacity: 1; transform: none; }
+  .anim .section-header hr { width: 3rem; }
+  .post-update::before { display: none; }
+}
+
+/* Reduce motion: a last safety net over the rules above. Every transition and animation of the
+   site ends at once, smooth scrolling stops (also for anything added in the future). */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Easter eggs
+   ============================================================ */
+
+/* Blueprint: a secret theme (7 quick clicks on the theme button). Blue drawing paper,
+   white lines, yellow pencil. Not saved: a reload brings the usual theme back. */
+[data-theme="blueprint"] {
+  --bg:         #0e3a66;
+  --bg-alt:     #104272;
+  --bg-card:    #14497d;
+  --bg-card2:   #18528a;
+  --text:       #eef5ff;
+  --text-muted: #b4cbe8;
+  --accent:     #ffd97a;
+  --accent-hover: #ffe7a8;
+  --accent-light: #1c5590;
+  --border:     #3d6fa3;
+  --nav-bg:     #0b2f55;
+  --nav-text:   #eef5ff;
+  --nav-text-active: #ffd97a;
+  --shadow:     0 4px 16px rgba(0,0,0,0.35);
+  --shadow-card: 0 1px 6px rgba(0,0,0,0.3);
+  --timeline-line: #3d6fa3;
+  --badge-bg:   #1c5590;
+  --badge-text: #ffd97a;
+  --tag-bg:     #14497d;
+  --tag-text:   #b4cbe8;
+  --cv-btn-bg:  #1c5590;
+  --cv-btn-bg-hover: #23629f;
+  --on-accent:  #0e3a66;
+  color-scheme: dark;
+}
+[data-theme="blueprint"] body {
+  background-color: var(--bg);
+  /* the grid of the drawing paper: thin lines every 24px, a stronger one every 120px */
+  background-image:
+    linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+}
+[data-theme="blueprint"] section, [data-theme="blueprint"] .page-header,
+[data-theme="blueprint"] section:nth-child(even) { background: transparent; }
+
+/* The bin of the blog counter opens on the posts that did not make it */
+.blog-bin { position: relative; display: inline-flex; }
+button.blog-status__marks { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.blog-bin__list {
+  position: absolute; top: calc(100% + 0.5rem); right: 0; z-index: 20;
+  display: flex; flex-direction: column; gap: 0.25rem; min-width: 13rem; max-width: 18rem;
+  padding: 0.6rem 0.8rem; text-align: left;
+  font-size: 0.8rem; line-height: 1.35; color: var(--text-muted);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; box-shadow: var(--shadow);
+  animation: bin-open 0.18s ease-out;
+}
+.blog-bin__list[hidden] { display: none; }
+.blog-bin__head { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.1rem; }
+.blog-bin__item s { text-decoration-thickness: 1px; }
+.blog-bin__item--none { font-style: italic; }
+@keyframes bin-open { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+/* while the list is open the tooltip is not needed */
+.blog-status__marks[aria-expanded="true"][data-tip]::after { display: none; }
+
+/* End of reading: when the progress bar reaches the end, a small check appears and fades */
+.read-progress__done {
+  position: absolute; right: 0.6rem; top: 0.45rem;
+  width: 1.3rem; height: 1.3rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; color: var(--on-accent); background: var(--accent);
+  box-shadow: var(--shadow); opacity: 0; transform: scale(0.6);
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(.3,1.6,.5,1);
+}
+.read-progress.is-done .read-progress__done { opacity: 1; transform: none; }
+.read-progress.is-done.is-fading .read-progress__done { opacity: 0; transition-duration: 0.8s; }

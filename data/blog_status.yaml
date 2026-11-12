@@ -4,3 +4,8 @@ writing: 1
 ideas: 6
 discarded: 2
 discarded_style: "bin"
+
+# Titles of the posts started and then dropped: shown, struck through, when the bin is clicked
+# on /blog/. Leave the list empty to show only the number.
+discarded_titles:
+  # - "Title of a post I never finished"

@@ -1,0 +1,24 @@
+{{- /* /humans.txt: the people (and tools) behind the site, https://humanstxt.org */ -}}
+/* TEAM */
+  Author, writer, engineer: {{ site.Params.author }}
+  Role: {{ site.Params.role }}, {{ site.Params.organization }}
+  From: Pescara, Italy
+  Mastodon: {{ site.Params.social.mastodon }}
+  ORCID: {{ site.Params.social.orcid }}
+
+/* THANKS */
+  Claude Opus 5.5: code of this site, and the English of the posts (the ideas are mine)
+  Gemini 3: the illustrations of the blog, from prompts I wrote
+  Randall Munroe (xkcd): for twenty years of smarter stick figures
+  Everyone who reads a post to the end
+
+/* SITE */
+  Last update: {{ now.Format "2006/01/02" }}
+  Language: English
+  Doctype: HTML5
+  Standards: WCAG 2.2 AA, PDF/UA-2 (CV), schema.org, llms.txt
+  Components: Hugo, Font Awesome, Academicons
+  Fonts: Lora, Roboto (site); TeX Gyre Pagella and Heros (CV)
+  Software: Hugo, LaTeX, Python, a text editor and too much coffee
+  Source: {{ site.Params.social.github }}/PersonalWebPageSource
+  For agents: {{ "llms.txt" | absURL }}

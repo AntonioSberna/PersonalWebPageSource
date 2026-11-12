@@ -18,7 +18,7 @@
   function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
     const btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀ Light' : '☾ Dark';
+    if (btn) btn.textContent = theme === 'blueprint' ? '\u270e Blueprint' : (theme === 'dark' ? '☀ Light' : '☾ Dark');
   }
 
   function chooseTheme(theme) {
@@ -41,9 +41,27 @@
 
     const btn = document.getElementById('theme-toggle');
     if (btn) {
+      // Easter egg: seven quick clicks open a secret "Blueprint" theme (not saved).
+      // Quick clicks after the first do not switch the theme, so the page never flashes.
+      let clicks = 0, last = 0;
       btn.addEventListener('click', function () {
+        const now = Date.now();
+        const quick = now - last < 500;
+        last = now;
         const current = root.getAttribute('data-theme');
-        chooseTheme(current === 'dark' ? 'light' : 'dark');
+        if (current === 'blueprint') { clicks = 0; applyTheme(getPreferred()); return; }
+        clicks = quick ? clicks + 1 : 1;
+        if (clicks >= 7) {
+          clicks = 0;
+          applyTheme('blueprint');
+          const t = document.createElement('div');
+          t.className = 'toast is-visible'; t.setAttribute('role', 'status');
+          t.innerHTML = '<i class="fa-solid fa-compass-drafting" aria-hidden="true"></i>Blueprint mode. Click the button again to leave.';
+          document.body.appendChild(t);
+          setTimeout(function () { t.classList.remove('is-visible'); setTimeout(function () { t.remove(); }, 400); }, 3200);
+          return;
+        }
+        if (!quick) chooseTheme(current === 'dark' ? 'light' : 'dark');
       });
     }
 
@@ -297,10 +315,29 @@
         const doi = 'https://doi.org/' + a.href.replace(/^https?:\/\/(dx\.)?doi\.org\//, '');
         function done() {
           if (a.dataset.label === undefined) a.dataset.label = a.textContent;
-          a.textContent = 'Copied \u2713';
-          a.classList.add('is-copied');
+          // widths of the two texts, measured once; the width then changes smoothly
+          if (!a._w) {
+            const w0 = a.getBoundingClientRect().width;
+            a.textContent = 'Copied \u2713';
+            const w1 = a.getBoundingClientRect().width;
+            a.textContent = a.dataset.label;
+            a._w = { label: w0, copied: w1 };
+            a.style.width = w0 + 'px';
+            void a.offsetWidth;
+          }
+          // cross-fade: fade out (while the width follows), change the text, fade in
+          const swap = function (text, copied) {
+            a.style.width = (copied ? a._w.copied : a._w.label) + 'px';
+            a.classList.add('is-fading');
+            setTimeout(function () {
+              a.textContent = text;
+              a.classList.toggle('is-copied', copied);
+              a.classList.remove('is-fading');
+            }, 180);
+          };
           clearTimeout(a._t);
-          a._t = setTimeout(function () { a.textContent = a.dataset.label; a.classList.remove('is-copied'); }, 1500);
+          swap('Copied \u2713', true);
+          a._t = setTimeout(function () { swap(a.dataset.label, false); }, 1700);
         }
         function fallback() { if (legacyCopy(doi)) done(); else window.prompt('Copy the DOI:', doi); }
         if (navigator.clipboard) navigator.clipboard.writeText(doi).then(done, fallback);
@@ -659,13 +696,20 @@
   // --- reading progress
   const bar = document.querySelector('.read-progress__bar');
   if (bar) {
-    let ticking = false;
+    let ticking = false, doneShown = false;
     const update = function () {
       ticking = false;
       const r = content.getBoundingClientRect();
       const total = r.height - window.innerHeight * 0.6;
       const p = total > 0 ? Math.min(1, Math.max(0, (-r.top + window.innerHeight * 0.25) / total)) : 1;
       bar.style.transform = 'scaleX(' + p + ')';
+      // easter egg: a small check when the end is reached (once per visit of the page)
+      if (p >= 0.995 && !doneShown && total > window.innerHeight) {
+        doneShown = true;
+        const box = bar.parentElement;
+        box.classList.add('is-done');
+        setTimeout(function () { box.classList.add('is-fading'); }, 1800);
+      }
     };
     const ask = function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
     window.addEventListener('scroll', ask, { passive: true });
@@ -851,4 +895,82 @@
   const reset = function () { back = setTimeout(function () { set(rest, false); }, 250); };
   list.addEventListener('mouseleave', reset);
   list.addEventListener('focusout', function (e) { if (!list.contains(e.relatedTarget)) reset(); });
+})();
+
+// ============================================================
+//  Small animations (see the end of main.css). Nothing runs with "reduce motion".
+// ============================================================
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('anim');
+
+  // 1. accent lines under the home section titles, and 4. margin notes on wide screens:
+  //    shown once, when they come into view
+  const once = function (els, cls, margin) {
+    if (!els.length) return;
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add(cls); io.unobserve(e.target); } });
+    }, { rootMargin: margin });
+    els.forEach(function (el) { io.observe(el); });
+  };
+  once(document.querySelectorAll('.section-header hr'), 'is-drawn', '0px 0px -12% 0px');
+  once(document.querySelectorAll('.blog-post__content .sidenote'), 'is-seen', '0px 0px -8% 0px');
+
+  // 5. timeline of the updates: the line fills as the reading line (60% of the screen) goes down
+  const updates = Array.prototype.slice.call(document.querySelectorAll('.post-update'));
+  if (updates.length) {
+    let tick = false;
+    const draw = function () {
+      tick = false;
+      const line = window.innerHeight * 0.6;
+      updates.forEach(function (u) {
+        const r = u.getBoundingClientRect();
+        const p = Math.max(0, Math.min(1, (line - r.top) / r.height));
+        u.style.setProperty('--p', p.toFixed(3));
+        const dot = u.querySelector('.post-update__dot');
+        if (dot) u.classList.toggle('is-reached', dot.getBoundingClientRect().top < line);
+      });
+    };
+    const ask = function () { if (!tick) { tick = true; requestAnimationFrame(draw); } };
+    window.addEventListener('scroll', ask, { passive: true });
+    window.addEventListener('resize', ask);
+    draw();
+  }
+})();
+
+// ============================================================
+//  Easter egg: the bin of the blog counter opens on the posts that did not make it
+// ============================================================
+(function () {
+  const btn = document.querySelector('.blog-bin .blog-status__marks');
+  const list = document.getElementById('blog-bin-list');
+  if (!btn || !list) return;
+  const set = function (open) { list.hidden = !open; btn.setAttribute('aria-expanded', open ? 'true' : 'false'); };
+  btn.addEventListener('click', function (e) { e.stopPropagation(); set(list.hidden); });
+  document.addEventListener('click', function (e) { if (!list.hidden && !list.contains(e.target)) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !list.hidden) { set(false); btn.focus(); } });
+})();
+
+// ============================================================
+//  Easter egg: a note for whoever opens the developer console
+// ============================================================
+(function () {
+  if (!window.console || !console.log) return;
+  const a = 'color:#7c9bdf;font-family:monospace;line-height:1.25';
+  const b = 'color:inherit;font-family:inherit;font-weight:600;font-size:13px';
+  const c = 'color:inherit;font-family:inherit';
+  console.log(
+    '%c' +
+    '    ___________\n' +
+    '   |  _  _  _  |      %cHi, curious one! 👋%c\n' +
+    '%c   | |_||_||_| |\n' +
+    '   |  _  _  _  |      %cYou opened the console: you are clearly my kind of person.\n' +
+    '%c   | |_||_||_| |      %cThis building passed its safety check, the site is handmade with\n' +
+    '%c   |  _  _  _  |      %cHugo, a lot of CSS and some help from Claude.\n' +
+    '%c   | |_||_|| | |\n' +
+    '  _|_______|_|_|_     %cSource code   github.com/AntonioSberna/PersonalWebPageSource\n' +
+    '%c  ///////////////     %cFor agents    /llms.txt\n' +
+    '%c                      %cFor humans    /humans.txt\n\n' +
+    '%c  P.S. The theme button has a secret. Try being impatient with it.',
+    a, b, c, a, c, a, c, a, c, a, c, a, c, a, c, c);
 })();

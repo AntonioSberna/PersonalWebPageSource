@@ -139,8 +139,15 @@ If that all sounded like jargon, here is [my research in plain words](/research/
   isPlainText = true
   notAlternative = true
 
+# humans: /humans.txt, who made the site and with what (humanstxt.org).
+[outputFormats.humans]
+  mediaType = "text/plain"
+  baseName = "humans"
+  isPlainText = true
+  notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "previews", "llms"]
+  home = ["HTML", "RSS", "previews", "llms", "humans"]
 
 [taxonomies]
   tag = "tags"
