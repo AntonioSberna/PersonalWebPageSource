@@ -15,8 +15,6 @@ abstract: "This study employs deterministic genetic and probabilistic Bayesian a
 summary: "Combined Genetic Algorithm and Bayesian model updating of soil properties to enhance seismic response predictions."
 in_short: "The ground under a building can change how an earthquake is felt at the surface. This study uses records from instruments placed below ground to fine-tune a computer model of the soil, and to measure how much uncertainty remains, for more reliable predictions of the shaking."
 tags: ["Seismic site response", "Downhole array data", "Model updating", "Genetic algorithm", "Bayesian model updating", "Uncertainties quantification"]
-
-url_pdf: "https://www.sciencedirect.com/science/article/pii/S0267726125005676"
 doi: "https://doi.org/10.1016/j.soildyn.2025.109773"
 url_source: "https://www.sciencedirect.com/science/article/pii/S0267726125005676"
 
