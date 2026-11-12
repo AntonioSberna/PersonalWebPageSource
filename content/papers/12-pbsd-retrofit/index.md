@@ -17,9 +17,9 @@ summary: "Performance-based seismic design framework of retrofitting systems for
 in_short: "Instead of only asking whether an older building passes a safety check, this method estimates how rarely earthquakes would push it past given levels of damage, including collapse. It then looks for the strengthening solutions that meet the target at the lowest cost."
 tags: ["Performance-based earthquake engineering", "performance-based seismic design", "seismic retrofitting", "non-ductile frame structures", "existing structures", "steel braces"]
 
-url_pdf: "https://www.sciencedirect.com/science/article/pii/S0266892025000906?via%3Dihub"
+
 doi: "https://doi.org/10.1016/j.probengmech.2025.103818"
-url_source: "https://www.sciencedirect.com/science/article/pii/S0266892025000906?via%3Dihub"
+url_source: "https://www.sciencedirect.com/science/article/pii/S0266892025000906"
 ---
 
 ## Highlights

@@ -15,9 +15,8 @@ abstract: "The paper presents a practice-oriented analytical formulation to eval
 summary: "Proposing an analytical model that accurately predicts additional shear demand due to frame-infill interaction under seismic loads."
 in_short: "During an earthquake, the masonry walls inside a concrete frame push against the columns and add extra force at their ends. This study provides a straightforward correction that lets engineers estimate this force while still using simple building models."
 tags: ["Infilled Frames", "Masonry", "Reinforced Concrete", "Micro-model", "Macro-model", "Additional shear demand", "OpenSees", "STKO"]
-url_pdf: "https://ascelibrary.org/doi/epdf/10.1061/JSENDH.STENG-14684"
 doi: "https://doi.org/10.1061/JSENDH.STENG-14684"
-url_source: "https://ascelibrary.org/doi/full/10.1061/JSENDH.STENG-14684?casa_token=4bfQ9IqoP84AAAAA%3A84A1yHJ7bmQG9yMByyZ216hi8F5_KRBcdLVjrBRr_kk6AwCv9FWCzTmgxqy98lz-3Ey_HBZJCCwCnfw"
+url_source: "https://ascelibrary.org/doi/full/10.1061/JSENDH.STENG-14684"
 ---
 
 ## Highlights
