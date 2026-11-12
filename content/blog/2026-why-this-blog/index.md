@@ -29,6 +29,9 @@ And here are the scattered notes of a post already in the pipeline{{< note >}}It
 
 Perhaps, then, this is not a blog at all, but a landfill of thoughts that I make the effort to sort, so that they do not stay vague and confused in my head. Which, now that I think about it, is what the subtitle has been saying from the start: scattered thoughts, loosely ordered.
 
+
+--- 
+
 <div class="post-credits">
 
 Ideas and text are my own, the English was Claude Opus 5.5 optimized. The cover image was generated with Gemini 3 from my prompt.

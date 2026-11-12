@@ -53,6 +53,9 @@ For decades the rule was *publish or perish*. The numbers say that the currency 
 
 Hanson and colleagues close by recommending CVs that highlight researchers' best work over total volume. It is a good start, and the choice ahead looks less like publish or perish and more like publish or plough. But ploughing may turn out to be only the first half of the job. Something will still have to drive the oxen, and someone, free at last from counting stars, will have to follow the paper trail to where it ends, and keep walking into the dark part of the sky that no map has charted yet.
 
+--- 
+
+
 <div class="post-credits">
 
 Ideas and text are mine, English Claude Opus 5.5 optimized. Illustrations were generated with ChatGPT Images 2.5 from prompts I wrote and Claude Opus 5.5 optimized.
