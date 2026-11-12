@@ -1788,8 +1788,8 @@ a[data-copy-doi].is-fading { opacity: 0; }
     linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
   background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
 }
-[data-theme="blueprint"] section, [data-theme="blueprint"] .page-header,
-[data-theme="blueprint"] section:nth-child(even) { background: transparent; }
+[data-theme="blueprint"] section, [data-theme="blueprint"] #about, [data-theme="blueprint"] .page-header,
+[data-theme="blueprint"] section:nth-child(even), [data-theme="blueprint"] .pub-full-list { background: transparent; }
 
 /* The bin of the blog counter opens on the posts that did not make it */
 .blog-bin { position: relative; display: inline-flex; }

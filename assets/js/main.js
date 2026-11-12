@@ -43,7 +43,7 @@
     if (btn) {
       // Easter egg: seven quick clicks open a secret "Blueprint" theme (not saved).
       // Quick clicks after the first do not switch the theme, so the page never flashes.
-      let clicks = 0, last = 0;
+      let clicks = 0, last = 0, before = null;
       btn.addEventListener('click', function () {
         const now = Date.now();
         const quick = now - last < 500;
@@ -51,8 +51,11 @@
         const current = root.getAttribute('data-theme');
         if (current === 'blueprint') { clicks = 0; applyTheme(getPreferred()); return; }
         clicks = quick ? clicks + 1 : 1;
+        // remember the choice before this burst of clicks, to give it back when leaving Blueprint
+        if (clicks === 1) { try { before = localStorage.getItem(STORAGE_KEY); } catch (e) { before = null; } }
         if (clicks >= 7) {
           clicks = 0;
+          try { if (before) localStorage.setItem(STORAGE_KEY, before); else localStorage.removeItem(STORAGE_KEY); } catch (e) {}
           applyTheme('blueprint');
           const t = document.createElement('div');
           t.className = 'toast is-visible'; t.setAttribute('role', 'status');
