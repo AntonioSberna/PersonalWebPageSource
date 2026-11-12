@@ -53,16 +53,11 @@ Put together, these three thoughts describe a strange situation. We have handed 
 
 I do not have a solution, and I am not even sure these are the right questions. But it would be nice if the academic community as a whole, from funding agencies to universities and journals, had guidance on this written by someone who actually knows what they are talking about. Until then, I will keep playing with local models, and keep using the server-based ones for the real work. The latter are changing the way I think in front of a computer, but that is material for another post coming soon.
 
-<br><br>
-
----
-**10th November 2026.** 
-
+{{% update date="2026-11-10" %}}
 Twenty days after this post{{< note >}} It is also the nudge I needed for a post I have been postponing for a while: why I started this blog, and why I keep writing it. Coming soon.{{< /note >}}, *Nature* published [an article](https://www.nature.com/articles/d41586-026-03476-3) on the flood of applications to the ERC Starting Grants: 7,710 proposals for the 2027 call, up from 4,807 the year before, a rise the article partly attributes to how easy AI tools have made writing them. Worth reading, starting from the question in its title. If ideas are no longer scarce, proposals certainly are not.
-
+{{% /update %}}
 
 <br><br>
-
 
 <p class="post-credits">Illustrations generated with Gemini 3 from my own prompts, refined with Claude Opus 5.5.</p>
 
