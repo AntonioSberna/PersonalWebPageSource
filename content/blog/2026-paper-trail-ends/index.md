@@ -1,7 +1,7 @@
 ---
 title: "Where the Paper Trail Ends"
 subtitle: "On the stagflation of academic currency"
-date: 2026-11-11
+date: 2026-11-15
 place: "Pescara, Italy"
 draft: false
 description: "Papers and ideas are losing value as fast as we produce them. What is left for a researcher to do, and where could they go?"
