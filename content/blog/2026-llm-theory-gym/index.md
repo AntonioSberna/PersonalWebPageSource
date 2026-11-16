@@ -7,7 +7,7 @@ draft: false
 description: "If agents are becoming the workforce of intellectual professions, what remains is theory, and the question of where to train it."
 featured_alt: "Greek red-figure vase painting: mannequin-like robots play flutes, led by a robed teacher, while a young athlete lifts weights on the right."
 ---
-
+<< note >> (https://www.internazionale.it/sommario/1691)<< /note >>
 Hardly anyone who worked the fields ever felt the need for a gym. We go to the gym because our jobs stopped asking anything of our bodies: machines took over the effort, and we had to invent a place where we could put it back on purpose. The Greeks, who gave us the word, already knew the pattern. Their gymnasia were meant for free citizens, while slaves, who did most of the work with their hands, were barred by law.{{< note >}}See [Gymnasium (ancient Greece)](https://en.wikipedia.org/wiki/Gymnasium_(ancient_Greece)) on Wikipedia.{{< /note >}}
 
 I have been thinking about this because something similar seems to be happening to the other half of us.
