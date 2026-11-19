@@ -6,7 +6,7 @@ place: "Pescara, Italy"
 draft: false
 description: "I no longer write code with my hands, and I no longer google. Notes from a millennial on a shift that will not be reversed."
 featured_alt: "Hand-drawn chart, 'What I type in a day', from 2010 to 2026: the lines for code and swear words collapse after the 'Karpathy tweet', while English shoots up; a note at the end reads 'The Vatican approves'."
-mastodon: ""
+mastodon: "https://mastodon.uno/@antoniosberna/117643541906128157"
 ---
 
 A few weeks ago I showed a professor the latest developments of the [framework](../2026-ecee-science-w-agents/) we are building together. Among them was something I was rather proud of: an MCP server, a layer that lets a language model use the framework directly, building models, running analyses, reading results.{{< note >}}How I stumbled upon MCP, and what it has been like to build one, deserves a post of its own.{{< /note >}} He scrolled through the code for a while, frowned, and said: *"But these are all English words."*
