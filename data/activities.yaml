@@ -481,6 +481,8 @@ reviewer:
         url: "https://www.mdpi.com/journal/biomimetics"
       - name: "Applied Artificial Intelligence"
         url: "https://www.tandfonline.com/journals/uaai20"
+      - name: "The Visual Computer"
+        url: "https://link.springer.com/journal/371"
     proceedings:
       - name: "13th U.S. National Conference on Earthquake Engineering"
         url: "https://13ncee.eeri.org/"
